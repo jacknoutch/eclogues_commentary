@@ -1,0 +1,32 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host = "localhost",
+    user = "root",
+    password = "44BCettubrute!",
+    database= "lexicon"
+)
+
+mycursor = mydb.cursor()
+
+# mycursor.execute("ALTER TABLE lemmata ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY")
+
+# mycursor.execute("SHOW TABLES")
+
+# for x in mycursor:
+#     print(x)
+
+# sql = "INSERT INTO lemmata (lemma, gloss) VALUES (%s, %s)"
+# val = ("umbra","shadow")
+# mycursor.execute(sql,val)
+
+# mydb.commit()
+
+mycursor.execute("SELECT lemma FROM lemmata")
+
+myresult = mycursor.fetchone()
+
+for x in myresult:
+    print(x)
+
+# print(mycursor.rowcount, "record/s inserted. ID: ", mycursor.lastrowid)

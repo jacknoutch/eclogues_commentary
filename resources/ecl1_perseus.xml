@@ -1,0 +1,129 @@
+<TEI.2>
+    <text>
+        <body>
+            <div1 type="Poem" n="1" org="uniform" sample="complete">
+                <head>ECLOGA I. MELIBOEUS, TITYRUS</head>
+                <sp>
+                    <speaker>Meliboeus</speaker>
+                    <l>Tityre, tu patulae recubans sub tegmine fagi</l>
+                    <l>silvestrem tenui Musam meditaris avena;</l>
+                    <l>nos patriae fines et dulcia linquimus arva:</l>
+                    <l>nos patriam fugimus; tu, Tityre, lentus in umbra</l>
+                    <l n="5">formosam resonare doces Amaryllida silvas.</l>
+                </sp>
+                <sp>
+                    <speaker>Tityrus</speaker>
+                    <l>O Meliboee, deus nobis haec otia fecit:</l>
+                    <l>namque erit ille mihi semper deus; illius aram</l>
+                    <l>saepe tener nostris ab ovilibus imbuet agnus.</l>
+                    <l>Ille meas errare boves, ut cernis, et ipsum</l>
+                    <l n="10">ludere, quae vellem, calamo permisit agresti.</l>
+                </sp>
+                <sp>
+                    <speaker>Meliboeus</speaker>
+                    <l>Non equidem invideo; miror magis: undique totis</l>
+                    <l>usque adeo turbatur agris. En, ipse capellas</l>
+                    <l>protinus aeger ago; hanc etiam vix, Tityre, duco:</l>
+                    <l>hic inter densas corylos modo namque gemellos,</l>
+                    <l n="15">spem gregis, ah, silice in nuda conixa reliquit.</l>
+                    <l>Saepe malum hoc nobis, si mens non laeva fuisset,</l>
+                    <l>de caelo tactas memini praedicere quercus:—</l>
+                    <l><del status="unremarkable">saepe sinistra cava praedixit ab ilice cornix.</del></l>
+                    <l>Sed tamen, iste deus qui sit, da, Tityre, nobis.</l>
+                </sp>
+                <sp>
+                    <speaker>Tityrus</speaker>
+                    <l n="20">Urbem, quam dicunt Romam, Meliboee, putavi</l>
+                    <l>stultus ego huic nostrae similem, quo saepe solemus</l>
+                    <l>pastores ovium teneros depellere fetus:</l>
+                    <l>sic canibus catulos similis, sic matribus haedos</l>
+                    <l>noram, sic parvis componere magna solebam:</l>
+                    <l n="25">verum haec tantum alias inter caput extulit urbes,</l>
+                    <l>quantum lenta solent inter viburna cupressi.</l>
+                </sp>
+                <sp>
+                    <speaker>Meliboeus</speaker>
+                    <l>Et quae tanta fuit Romam tibi causa videndi?</l>
+                </sp>
+                <sp>
+                    <speaker>Tityrus</speaker>
+                    <l>Libertas; quae sera, tamen respexit inertem,</l>
+                    <l>candidior postquam tondenti barba cadebat;</l>
+                    <l n="30">respexit tamen, et longo post tempore venit,</l>
+                    <l>postquam nos Amaryllis habet, Galatea reliquit:</l>
+                    <l>namque, fatebor enim, dum me Galatea tenebat,</l>
+                    <l>nec spes libertatis erat, nec cura peculi:</l>
+                    <l>quamvis multa meis exiret victima saeptis,</l>
+                    <l n="35">pinguis et ingratae premeretur caseus urbi,</l>
+                    <l>non umquam gravis aere domum mihi dextra redibat.</l>
+                </sp>
+                <sp>
+                    <speaker>Meliboeus</speaker>
+                    <l>Mirabar, quid maesta deos, Amarylli, vocares,</l>
+                    <l>cui pendere sua patereris in arbore poma:</l>
+                    <l>Tityrus hinc aberat. Ipsae te, Tityre, pinus,</l>
+                    <l n="40">ipsi te fontes, ipsa haec arbusta vocabant.</l>
+                </sp>
+                <sp>
+                    <speaker>Tityrus</speaker>
+                    <l>Quid facerem? Neque servitio me exire licebat,</l>
+                    <l>nec tam praesentis alibi cognoscere divos.</l>
+                    <l>hic illum vidi iuvenem, Meliboee, quot annis</l>
+                    <l>bis senos cui nostra dies altaria fumant;</l>
+                    <l n="45">hic mihi responsum primus dedit ille petenti:</l>
+                    <l>“pascite, ut ante, boves, pueri, submittite tauros.”</l>
+                </sp>
+                <sp>
+                    <speaker>Meliboeus</speaker>
+                    <l>Fortunate senex, ergo tua rura manebunt,</l>
+                    <l>et tibi magna satis, quamvis lapis omnia nudus</l>
+                    <l>limosoque palus obducat pascua iunco!</l>
+                    <l n="50">Non insueta gravis temptabunt pabula fetas,</l>
+                    <l>nec mala vicini pecoris contagia laedent.</l>
+                    <l>Fortunate senex, hic, inter flumina nota</l>
+                    <l>et fontis sacros, frigus captabis opacum!</l>
+                    <l>hinc tibi, quae semper, vicino ab limite, saepes</l>
+                    <l n="55">Hyblaeis apibus florem depasta salicti</l>
+                    <l>saepe levi somnum suadebit inire susurro;</l>
+                    <l>hinc alta sub rupe canet frondator ad auras;</l>
+                    <l>nec tamen interea raucae, tua cura, palumbes,</l>
+                    <l>nec gemere aëria cessabit turtur ab ulmo.</l>
+                </sp>
+                <sp>
+                    <speaker>Tityrus</speaker>
+                    <l n="60">Ante leves ergo pascentur in aequore cervi,</l>
+                    <l>et freta destituent nudos in litore pisces,</l>
+                    <l>ante pererratis amborum finibus exsul</l>
+                    <l>aut Ararim Parthus bibet, aut Germania Tigrim,</l>
+                    <l>quam nostro illius labatur pectore voltus.</l>
+                </sp>
+                <sp>
+                    <speaker>Meliboeus</speaker>
+                    <l n="65">At nos hinc alii sitientis ibimus Afros,</l>
+                    <l>pars Scythiam et rapidum Cretae veniemus Oaxen,</l>
+                    <l>et penitus toto divisos orbe Britannos.</l>
+                    <l>En umquam patrios longo post tempore finis,</l>
+                    <l>pauperis et tuguri congestum caespite culmen,</l>
+                    <l n="70">post aliquot mea regna videns mirabor aristas?</l>
+                    <l>Impius haec tam culta novalia miles habebit,</l>
+                    <l>barbarus has segetes? En, quo discordia civis</l>
+                    <l>produxit miseros! His nos consevimus agros!</l>
+                    <l>Insere nunc, Meliboee, piros, pone ordine vitis.</l>
+                    <l n="75">Ite meae, felix quondam pecus, ite capellae.</l>
+                    <l>Non ego vos posthac, viridi proiectus in antro,</l>
+                    <l>dumosa pendere procul de rupe videbo;</l>
+                    <l>carmina nulla canam; non, me pascente, capellae,</l>
+                    <l>florentem cytisum et salices carpetis amaras.</l>
+                </sp>
+                <sp>
+                    <speaker>Tityrus</speaker>
+                    <l n="80">Hic tamen hanc mecum poteras requiescere noctem</l>
+                    <l>fronde super viridi: sunt nobis mitia poma,</l>
+                    <l>castaneae molles, et pressi copia lactis;</l>
+                    <l>et iam summa procul villarum culmina fumant,</l>
+                    <l>maioresque cadunt altis de montibus umbrae.</l>
+                </sp>
+            </div1>
+        </body>
+    </text>
+</TEI.2>
