@@ -1,13 +1,17 @@
 * {
   cursor: default;
+  /* border: 1px dotted #C00; */
 }
 body {
   font-family: 'Noto Serif', serif;
   display: flex;
   justify-content: center;
 }
+section {
+  margin: 2em 0;
+}
 .container {
-  max-width: 800px;
+  max-width: 500px;
   margin: 1em;
 }
 nav {
@@ -53,7 +57,6 @@ li {
   line-height: 1.5em;
 }
 .section {
-  margin: 2em 0;
 }
 .subsection {
   margin: 1em 0;
@@ -93,4 +96,7 @@ li {
 }
 .superspecial {
   background-color: yellow;
+}
+.latin {
+  font-style: italic;
 }
