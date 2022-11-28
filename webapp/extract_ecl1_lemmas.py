@@ -28,7 +28,7 @@ lemmata_list.sort()
 
 # # FOR SAVING A csv OF ALL WORDS
 
-lemmata_csv_path = os.path.join(script_dir, "lemmata.csv")
+lemmata_csv_path = os.path.join(script_dir, "glosses.csv")
 g = open(lemmata_csv_path, "w")
 
 lemmata_csv_txt = "\n".join(lemmata_list)

@@ -1,0 +1,333 @@
+<body>
+    <entry n="Afri">
+        <lemma>Afri</lemma>
+        <pp>Afri, Afrorum</pp>
+        <pos>NOMpro</pos>
+        <instances>1.65</instances>
+    </entry>
+    <entry n="Amaryllis">
+        <lemma>Amaryllis</lemma>
+        <pp>Amaryllis, Amaryllidis</pp>
+        <pos>NOMpro</pos>
+        <gend>Fem</gend>
+        <gloss>Amaryllis, a shepherdess</gloss>
+        <instances>1.5, 1.31, 1.37</instances>
+    </entry>
+    <entry n="Meliboeus">
+        <lemma>Meliboeus</lemma>
+        <pp>Meliboeus, Meliboei</pp>
+        <pos>NOMpro</pos>
+        <gend>Masc</gend>
+        <gloss>Meliboeus, a shepherd</gloss>
+        <instances>1.6; 1.20; 1.43; 1.74</instances>
+    </entry>
+    <entry n="Musa">
+        <lemma>Musa</lemma>
+        <pp>Musa, Musae</pp>
+        <pos>NOMpro</pos>
+        <gend>Fem</gend>
+        <gloss>a Muse, hence: a song or poem</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="Tityrus">
+        <lemma>Tityrus</lemma>
+        <pp>Tityrus, Tityri</pp>
+        <pos>NOMpro</pos>
+        <gend>Masc</gend>
+        <gloss>Tityrus, a herdsman</gloss>
+        <instances>1.1; 1.4; 1.13; 1.19; 1.39; 1.39</instances>
+    </entry>
+    <entry n="ab">
+        <lemma>ab</lemma>
+        <pos>PRE</pos>
+        <gloss>from</gloss>
+        <instances>1.8; 1.54; 1.59</instances>
+    </entry>
+    <entry n="agnus">
+        <lemma>agnus</lemma>
+        <pp>agnus, agni</pp>
+        <pos>NOMcom</pos>
+        <gend>Masc</gend>
+        <gloss>lamb</gloss>
+        <instances>1.8</instances>
+    </entry>
+    <entry n="agrestis">
+        <lemma>agrestis</lemma>
+        <pp>agrestis, agreste</pp>
+        <pos>ADJqua</pos>
+        <gloss>country, rustic</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="ara">
+        <lemma>ara</lemma>
+        <pp>ara, arae</pp>
+        <pos>NOMcom</pos>
+        <gend>Fem</gend>
+        <gloss>altar</gloss>
+        <instances>1.7</instances>
+    </entry>
+    <entry n="aruum">
+        <lemma>aruum</lemma>
+        <pp>aruum, arui</pp>
+        <pos>NOMcom</pos>
+        <gend>Neut</gend>
+        <gloss>field, (pl.) fields, region</gloss>
+        <instances>1.3</instances>
+    </entry>
+    <entry n="auena">
+        <lemma>auena</lemma>
+        <pp>auena, auenae</pp>
+        <pos>NOMcom</pos>
+        <gend>Fem</gend>
+        <gloss>reed, pipe</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="bos">
+        <lemma>bos</lemma>
+        <pp>bos, bovis</pp>
+        <pos>NOMcom</pos>
+        <gend></gend>
+        <gloss>(m.) ox, bull, (f.) cow, (pl.) cattle</gloss>
+        <instances>1.9; 1.46</instances>
+    </entry>
+    <entry n="calamus">
+        <lemma>calamus</lemma>
+        <gloss>reed, reed-pipe</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="cerno">
+        <lemma>cerno</lemma>
+        <gloss>see</gloss>
+        <instances>1.9</instances>
+    </entry>
+    <entry n="deus">
+        <lemma>deus</lemma>
+        <gloss>a god</gloss>
+        <instances>1.6; 1.7; 1.19; 1.37</instances>
+    </entry>
+    <entry n="dulcis">
+        <lemma>dulcis</lemma>
+        <gloss>dear, beloved</gloss>
+        <instances>1.3</instances>
+    </entry>
+    <entry n="ego">
+        <lemma>ego</lemma>
+        <gloss>I, me</gloss>
+        <instances>1.7; 1.21; 1.32; 1.36; 1.41; 1.45; 1.76; 1.78; 1.80</instances>
+    </entry>
+    <entry n="erro2">
+        <lemma>erro</lemma>
+        <gloss>wander, roam</gloss>
+        <instances>1.9</instances>
+    </entry>
+    <entry n="et2">
+        <lemma>et</lemma>
+        <gloss>and</gloss>
+        <instances>1.3; 1.9; 1.27; 1.30; 1.35; 1.48; 1.53; 1.61; 1.66; 1.67; 1.69; 1.79; 1.82; 1.83</instances>
+    </entry>
+    <entry n="facio">
+        <lemma>facio</lemma>
+        <gloss>make, bring about</gloss>
+        <instances>1.6; 1.41</instances>
+    </entry>
+    <entry n="fagus">
+        <lemma>fagus</lemma>
+        <gloss>beech tree</gloss>
+        <instances>1.1</instances>
+    </entry>
+    <entry n="finis">
+        <lemma>finis</lemma>
+        <gloss>borders, territory</gloss>
+        <instances>1.3; 1.62; 1.68</instances>
+    </entry>
+    <entry n="formosus">
+        <lemma>formosus</lemma>
+        <gloss>lovely, beautiful</gloss>
+        <instances>1.5</instances>
+    </entry>
+    <entry n="fugio">
+        <lemma>fugio</lemma>
+        <gloss>flee, patriam fugio - to go into exile</gloss>
+        <instances>1.4</instances>
+    </entry>
+    <entry n="hic1">
+        <lemma>hic</lemma>
+        <gloss>this</gloss>
+        <instances>1.6; 1.13; 1.16; 1.21; 1.25; 1.40; 1.45; 1.71; 1.72; 1.73; 1.80</instances>
+    </entry>
+    <entry n="ille">
+        <lemma>ille</lemma>
+        <gloss>he, she, it, that (one)</gloss>
+        <instances>1.7; 1.7; 1.9; 1.43; 1.45; 1.64</instances>
+    </entry>
+    <entry n="imbuo">
+        <lemma>imbuo</lemma>
+        <gloss>stain (with blood)</gloss>
+        <instances>1.8</instances>
+    </entry>
+    <entry n="in">
+        <lemma>in</lemma>
+        <gloss>in, into</gloss>
+        <instances>1.4; 1.15; 1.38; 1.60; 1.61; 1.76</instances>
+    </entry>
+    <entry n="ipse">
+        <lemma>ipse</lemma>
+        <gloss>-self, him-/her-/itself, themselves</gloss>
+        <instances>1.9; 1.12; 1.39; 1.40; 1.40</instances>
+    </entry>
+    <entry n="lentus">
+        <lemma>lentus</lemma>
+        <gloss>slow, hence: untroubled</gloss>
+        <instances>1.4; 1.26</instances>
+    </entry>
+    <entry n="linquo">
+        <lemma>linquo</lemma>
+        <gloss>leave</gloss>
+        <instances>1.3</instances>
+    </entry>
+    <entry n="ludo">
+        <lemma>ludo</lemma>
+        <gloss>play, make music</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="meditor">
+        <lemma>meditor</lemma>
+        <gloss>rehearse, practise</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="meus">
+        <lemma>meus</lemma>
+        <gloss>my</gloss>
+        <instances>1.9; 1.34; 1.70; 1.75</instances>
+    </entry>
+    <entry n="namque">
+        <lemma>namque</lemma>
+        <gloss>yes, because</gloss>
+        <instances>1.7; 1.14; 1.32</instances>
+    </entry>
+    <entry n="">
+        <lemma></lemma>
+        <gloss></gloss>
+        <instances></instances>
+    </entry>
+    <entry n="nos">
+        <lemma>nos</lemma>
+        <gloss>we, us</gloss>
+        <instances>1.3; 1.4; 1.6; 1.16; 1.19; 1.31; 1.65; 1.73; 1.81</instances>
+    </entry>
+    <entry n="noster">
+        <lemma>noster</lemma>
+        <gloss>our</gloss>
+        <instances>1.8; 1.21; 1.44; 1.64</instances>
+    </entry>
+    <entry n="o">
+        <lemma>o</lemma>
+        <gloss>O...! A particle for addressing someone directly</gloss>
+        <instances>1.6</instances>
+    </entry>
+    <entry n="otium">
+        <lemma>otium</lemma>
+        <gloss>leisure, time for rest</gloss>
+        <instances>1.6</instances>
+    </entry>
+    <entry n="ouile">
+        <lemma>ouile</lemma>
+        <gloss>sheepfold</gloss>
+        <instances>1.8</instances>
+    </entry>
+    <entry n="patria">
+        <lemma>patria</lemma>
+        <gloss>homeland, fatherland</gloss>
+        <instances>1.3; 1.4</instances>
+    </entry>
+    <entry n="patulus">
+        <lemma>patulus</lemma>
+        <gloss>broad, spreading</gloss>
+        <instances>1.1</instances>
+    </entry>
+    <entry n="permitto">
+        <lemma>permitto</lemma>
+        <gloss>allow, sanction</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="qui1">
+        <lemma>qui</lemma>
+        <gloss>who, which, relative pronoun</gloss>
+        <instances>1.10; 1.19; 1.20; 1.28; 1.38; 1.44; 1.54</instances>
+    </entry>
+    <entry n="recubo">
+        <lemma>recubo</lemma>
+        <gloss>lie back, recline</gloss>
+        <instances>1.1</instances>
+    </entry>
+    <entry n="">
+        <lemma></lemma>
+        <gloss></gloss>
+        <instances></instances>
+    </entry>
+    <entry n="resono1">
+        <lemma>resono</lemma>
+        <gloss>resound, call out the name of</gloss>
+        <instances>1.5</instances>
+    </entry>
+    <entry n="saepe">
+        <lemma>saepe</lemma>
+        <gloss>often, frequently</gloss>
+        <instances>1.8; 1.16; 1.21; 1.56</instances>
+    </entry>
+    <entry n="semper">
+        <lemma>semper</lemma>
+        <gloss>always</gloss>
+        <instances>1.7; 1.54</instances>
+    </entry>
+    <entry n="siluestris">
+        <lemma>siluestris</lemma>
+        <gloss>woodland, of the forest</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="sub">
+        <lemma>sub</lemma>
+        <gloss>under, underneath</gloss>
+        <instances>1.1; 1.57</instances>
+    </entry>
+    <entry n="sum1">
+        <lemma>sum</lemma>
+        <gloss>to be</gloss>
+        <instances>1.7; 1.16; 1.19; 1.27; 1.33; 1.81</instances>
+    </entry>
+    <entry n="tegimen">
+        <lemma>tegmen</lemma>
+        <gloss>cover, covering</gloss>
+        <instances>1.1</instances>
+    </entry>
+    <entry n="tener">
+        <lemma>tener</lemma>
+        <gloss>tender, young</gloss>
+        <instances>1.8; 1.22</instances>
+    </entry>
+    <entry n="tenuis">
+        <lemma>tenuis</lemma>
+        <gloss>thin, slender</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="tu">
+        <lemma>tu</lemma>
+        <gloss>you</gloss>
+        <instances>1.1; 1.4; 1.27; 1.39; 1.40; 1.48; 1.54</instances>
+    </entry>
+    <entry n="umbra">
+        <lemma>umbra</lemma>
+        <gloss>shadow</gloss>
+        <instances>1.4; 1.84</instances>
+    </entry>
+    <entry n="uolo3">
+        <lemma>uolo</lemma>
+        <gloss>wish, want</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="ut1">
+        <lemma>ut</lemma>
+        <gloss>as</gloss>
+        <instances>1.9; 1.46</instances>
+    </entry>
+</body>

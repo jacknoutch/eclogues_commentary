@@ -12,51 +12,167 @@ $(document).ready(function(){
         })
     }
 
-    function writeParseData(parseData) {
-        html = "<span class='latin'>" + parseData[1] + "</span><br/>"
-        // var xmlText = parseData.join("<br>")
-        document.getElementById("demo").innerHTML = html;
-        return;
+    function getWordFromXML(xml, elem) {
+        var [lineNumber, wordIndex] = getIndices(elem);
+        var wordElements = $(xml).find("w[n='"+lineNumber+"']");
+        var word = wordElements[wordIndex];
+        return word;
     }
 
-    function openLexiconEntry(lineNumber, wordIndex) {
+    function openLexiconEntry(elem) {
         // Currently: get the lemma of the word and open Logeion at the appropriate page.
         var url = "https://logeion.uchicago.edu/"
 
-            $.get("ecl1_lascivaroma2.xml", function(xml){ 
-                var wordElements = $(xml).find("w[n='"+lineNumber+"']");
-                var word = wordElements[wordIndex];
+            $.get("ecl1_lascivaroma2.xml", function(xml){
+                var word = getWordFromXML(xml, elem);
                 var lemma = word.attributes.getNamedItem("lemma").nodeValue;
                 url += lemma
                 window.open(url, '_blank').focus();
             });
     }
 
-    function getParseData(lineNumber, wordIndex) {
-        var parseData = [];
+    function getPOS(elem) {
+        var shortPOS;
+        var fullPOS;
 
-        $.get("ecl1_lascivaroma2.xml", function(xml){ 
-            var wordElements = $(xml).find("w[n='"+lineNumber+"']");
-            var word = wordElements[wordIndex];
+        $.get("ecl1_lascivaroma2.xml", function(xml){
+            var word = getWordFromXML(xml, elem);
+            shortPOS = word.attributes.getNamedItem("pos").nodeValue;
 
-            parseData.push(word.childNodes[0].nodeValue); // wordform
-            parseData.push(word.attributes.getNamedItem("lemma").nodeValue);
-            parseData.push(word.attributes.getNamedItem("msd").nodeValue);
-            parseData.push(word.attributes.getNamedItem("pos").nodeValue);
-
-            writeParseData(parseData);
-            return;
+            switch(shortPOS) {
+                case "ADJadv.mul":
+                    fullPOS = ""
+                    break;
+                case "ADJcar":
+                    fullPOS = ""
+                    break;
+                case "ADJqua":
+                    fullPOS = ""
+                    break;
+                case "ADJdis":
+                    fullPOS = ""
+                    break;
+                case "ADJord":
+                    fullPOS = ""
+                    break;
+                case "ADJqua":
+                    fullPOS = ""
+                    break;
+                case "ADV":
+                    fullPOS = "Adverb"
+                    break;
+                case "ADVneg":
+                    fullPOS = ""
+                    break;
+                case "ADVrel":
+                    fullPOS = ""
+                    break;
+                case "CON":
+                    fullPOS = "Conjunction"
+                    break;
+                case "CONcoo":
+                    fullPOS = "Coordinating conjunction"
+                    break;
+                case "CONsub":
+                    fullPOS = "Subordinating conjunction"
+                    break;
+                case "INJ":
+                    fullPOS = "Interjection"
+                    break;
+                case "NOMcom":
+                    fullPOS = "Common noun"
+                    break;
+                case "NOMpro":
+                    fullPOS = "Proper noun"
+                    break;
+                case "PRE":
+                    fullPOS = "Preposition"
+                    break;
+                case "PROdem":
+                    fullPOS = "Demonstrative pronoun"
+                    break;
+                case "PROind":
+                    fullPOS = ""
+                    break;
+                case "PROint":
+                    fullPOS = ""
+                    break;
+                case "PROper":
+                    fullPOS = "Personal pronoun"
+                    break;
+                case "PROpos":
+                    fullPOS = ""
+                    break;
+                case "PROpos.ref":
+                    fullPOS = ""
+                    break;
+                case "PROrel":
+                    fullPOS = "Relative pronoun"
+                    break;
+                case "VER":
+                    fullPOS = "Verb"
+                    break;
+                }
+            $("#pos").html(fullPOS);
         });
     }
 
-    function getGloss(lineNumber, wordIndex) {
-        console.log("getGloss - Coming soon!");
+    function getPrincipalParts(elem) {
+        $.get("ecl1_lascivaroma2.xml", function(xml){
+            var word = getWordFromXML(xml, elem);
+            var lemma = word.attributes.getNamedItem("lemma").nodeValue;
+
+            $.get("glosses.xml", function(xml){
+                var entry = $(xml).find("entry[n='"+lemma+"']");
+                var principalParts = $(entry).find("pp").text();
+                var gend = $(entry).find("gend").text();
+                var ppGenderText = principalParts + ", " + gend + ".";
+                $("#pp").html(ppGenderText);
+            });
+        });
+    }
+
+    function parse(elem) {
+        $.get("ecl1_lascivaroma2.xml", function(xml){
+            var word = getWordFromXML(xml, elem);
+            var msd = word.attributes.getNamedItem("msd").nodeValue;
+            var msdList = msd.split("|");
+            var newText = msdList.join("\n");
+            $("#parse").html(newText);
+        });
+    }
+
+    function getGloss(elem) {
+        var lemma;
+        $.get("ecl1_lascivaroma2.xml", function(xml){
+            var word = getWordFromXML(xml, elem);
+            lemma = word.attributes.getNamedItem("lemma").nodeValue;
+            
+            $.get("glosses.xml", function(xml){
+                entry = $(xml).find("entry[n='"+lemma+"']");
+                gloss = $(entry).find("gloss").text();
+                $("#gloss").html(gloss);
+            })
+        })
+    }
+
+    function getAgreement(elem) {
+        console.log("getAgreement - Coming soon!");
         return;
     }
 
-    function getAgreement(lineNumber, wordIndex) {
-        console.log("getAgreement - Coming soon!");
-        return;
+    function getIndices(elem) {
+        var closestLine = $(elem).closest(".l");
+        var lineNumber = $(closestLine).attr("n");
+        var wordIndex = $(elem).index();
+        return [lineNumber, wordIndex];
+    }
+
+    function emptyReadingAids() {
+        $("#pp").empty();
+        $("#pos").empty();
+        $("#gloss").empty();
+        $("#parse").empty();
     }
 
 //  EVENTS
@@ -81,32 +197,100 @@ $(document).ready(function(){
             $(this).css("background-color", "transparent");
         });
 
-    $( "span" ).click(function() {
+    $( ".w" ).click(function() {
 
-        var closestLine = $(this).closest(".l");
-        var lineNumber = $(closestLine).attr("n");
-        var wordIndex = $(this).index();
-        console.log(lineNumber, wordIndex);
+        if (!$(".select")[0]) { // the select class does not exist, i.e. a word is not selected
+            $( this ).addClass("select");
+            emptyReadingAids()
+        }
+
+        else if ($(this).hasClass("select")) {
+            getGloss($(this));
+        }
+
+        else if (!$(this).hasClass("select")) { // a different word is currently selected
+            $( ".w" ).removeClass("select");
+            $( this ).addClass("select");
+            emptyReadingAids()
+        }
 
         if (window.event.ctrlKey && window.event.shiftKey) { // User is pressing CTRL & SHIFT
-            openLexiconEntry(lineNumber, wordIndex);
-            getParseData(lineNumber, wordIndex);
+            openLexiconEntry($(this));
         }
         else if (window.event.ctrlKey) { // User is pressing CTRL
-            getParseData(lineNumber, wordIndex);
+            getPOS($(this));
         }
         else if (window.event.shiftKey) { // User is pressing SHIFT
-            getAgreement(lineNumber, wordIndex);
-        }
-        else if ( $(this).hasClass("superspecial")){
-            // This word is already selected
-            getGloss(lineNumber, wordIndex);
+            getPrincipalParts($(this));
         }
         else { // User is not pressing CTRL or SHIFT
+                
+        }
+    });
 
+    $("#glossButton").click(function() {
+        
+        if (!$(".select")[0]) { // if the select class does not exist, i.e. a word has not been selected
+            return;
         }
 
-        $( "span" ).removeClass("superspecial");
-        $( this ).addClass("superspecial");
+        getGloss($(".select"))
+        return;
+
+    });
+
+    $("#ppButton").click(function() {
+        if (!$(".select")[0]) { // if the select class does not exist, i.e. a word has not been selected
+            console.log("running");
+            return;
+        }
+
+        getPrincipalParts($(".select"))
+        return;
+    });
+
+    $("#posButton").click(function() {
+        if (!$(".select")[0]) { // if the select class does not exist, i.e. a word has not been selected
+            console.log("running");
+            return;
+        }
+
+        getPOS($(".select"))
+        return;
+    });
+
+    $("#parseButton").click(function() {
+        if (!$(".select")[0]) { // if the select class does not exist, i.e. a word has not been selected
+            console.log("running");
+            return;
+        }
+
+        parse($(".select"))
+        return;
+    });
+
+    $(window).keydown(function(event) {
+        if (event.ctrlKey) { // User is pressing CTRL
+            $("#posButton").addClass("buttonReady");
+        }
+        else if (window.event.shiftKey) { // User is pressing SHIFT
+            $("#ppButton").addClass("buttonReady");
+        }
+        else { // User is not pressing CTRL or SHIFT
+            // Do some stuff
+        }
+    });
+
+    $(window).keyup(function(event) {
+        $("#posButton").removeClass("buttonReady");
+        $("#ppButton").removeClass("buttonReady");
+    });
+
+    $(document).click(function(event) {
+    // Remove the select class if user clicks somewhere other than on a word 
+        if (!$(event.target).is(".w") && !$(event.target).is("button")) {
+            $( ".w" ).removeClass("select");
+        }
     });
 });
+
