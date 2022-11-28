@@ -1,4 +1,9 @@
 <text>
+    <!-- 
+    This is an xml lexicon of all the lemmata which appear in Eclogue 1. The entries are taken from Logeion's (Helma Dik's) version of
+    Lewis & Short, which itself came from Perseus' version.
+    https://github.com/helmadik/LewisShortLogeion
+-->
     <body>
     <div0 type="alphabetic letter" n="A" org="uniform" sample="complete">
         <head lang="la">A</head>

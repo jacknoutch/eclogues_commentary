@@ -13,6 +13,9 @@ body {
 section {
   margin: 2em 0;
 }
+span {
+  cursor: pointer;
+}
 .container {
   max-width: 400px;
   margin: 1em;

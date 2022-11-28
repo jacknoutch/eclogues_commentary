@@ -23,7 +23,7 @@ $(document).ready(function(){
         // Currently: get the lemma of the word and open Logeion at the appropriate page.
         var url = "https://logeion.uchicago.edu/"
 
-            $.get("ecl1_lascivaroma2.xml", function(xml){
+            $.get("resources/eclogue1LR.xml", function(xml){
                 var word = getWordFromXML(xml, elem);
                 var lemma = word.attributes.getNamedItem("lemma").nodeValue;
                 url += lemma
@@ -35,7 +35,7 @@ $(document).ready(function(){
         var shortPOS;
         var fullPOS;
 
-        $.get("ecl1_lascivaroma2.xml", function(xml){
+        $.get("resources/eclogue1LR.xml", function(xml){
             var word = getWordFromXML(xml, elem);
             shortPOS = word.attributes.getNamedItem("pos").nodeValue;
 
@@ -118,7 +118,7 @@ $(document).ready(function(){
     }
 
     function getPrincipalParts(elem) {
-        $.get("ecl1_lascivaroma2.xml", function(xml){
+        $.get("resources/eclogue1LR.xml", function(xml){
             var word = getWordFromXML(xml, elem);
             var lemma = word.attributes.getNamedItem("lemma").nodeValue;
 
@@ -133,7 +133,7 @@ $(document).ready(function(){
     }
 
     function parse(elem) {
-        $.get("ecl1_lascivaroma2.xml", function(xml){
+        $.get("resources/eclogue1LR.xml", function(xml){
             var word = getWordFromXML(xml, elem);
             var msd = word.attributes.getNamedItem("msd").nodeValue;
             var msdList = msd.split("|");
@@ -144,7 +144,7 @@ $(document).ready(function(){
 
     function getGloss(elem) {
         var lemma;
-        $.get("ecl1_lascivaroma2.xml", function(xml){
+        $.get("resources/eclogue1LR.xml", function(xml){
             var word = getWordFromXML(xml, elem);
             lemma = word.attributes.getNamedItem("lemma").nodeValue;
             
