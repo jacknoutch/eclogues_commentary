@@ -122,10 +122,10 @@ $(document).ready(function(){
             var word = getWordFromXML(xml, elem);
             var lemma = word.attributes.getNamedItem("lemma").nodeValue;
 
-            $.get("glosses.xml", function(xml){
+            $.get("resources/glosses.xml", function(xml){
                 var entry = $(xml).find("entry[n='"+lemma+"']");
-                var principalParts = $(entry).find("pp").text();
-                var gend = $(entry).find("gend").text();
+                var principalParts = $(entry).find("pp").html();
+                var gend = $(entry).find("gend").html();
                 var ppGenderText = principalParts + ", " + gend + ".";
                 $("#pp").html(ppGenderText);
             });
@@ -148,9 +148,9 @@ $(document).ready(function(){
             var word = getWordFromXML(xml, elem);
             lemma = word.attributes.getNamedItem("lemma").nodeValue;
             
-            $.get("glosses.xml", function(xml){
+            $.get("resources/glosses.xml", function(xml){
                 entry = $(xml).find("entry[n='"+lemma+"']");
-                gloss = $(entry).find("gloss").text();
+                gloss = $(entry).find("gloss").html();
                 $("#gloss").html(gloss);
             })
         })
