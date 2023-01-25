@@ -6,9 +6,14 @@ $(document).ready(function(){
         // Wrap a <span> around each word in each verse line, to make it easier to click on the word 
         // and look up its details.
         $(".l").each(function(){
-            var words = $(this).text().split( /\s+/ );
-            var text = words.join( "</span> <span class='w'>" );
-            $(this).html( "<span class='w'>" + text + "</span>" );
+            var words = $(this).text().match(/\w+|\s+|[^\s\w]+/g); // Split the line into words, punctuation, and white space
+            for (let i = 0; i < words.length; i++) {
+                if (/\w+/.test(words[i])) {
+                    words[i] = "<span class='w'>" + words[i] + "</span>" // Wrap the words only in span tags
+                }
+            }
+            var text = words.join("");
+            $(this).html(text);
         })
     }
 
@@ -80,7 +85,7 @@ $(document).ready(function(){
                     fullPOS = "Interjection"
                     break;
                 case "NOMcom":
-                    fullPOS = "Common noun"
+                    fullPOS = "Noun"
                     break;
                 case "NOMpro":
                     fullPOS = "Proper noun"
@@ -117,43 +122,38 @@ $(document).ready(function(){
         });
     }
 
-    function getPrincipalParts(elem) {
-        $.get("resources/eclogue1LR.xml", function(xml){
-            var word = getWordFromXML(xml, elem);
-            var lemma = word.attributes.getNamedItem("lemma").nodeValue;
+    function getLookupDetails(elem) {
+        var card = $(".w3-card-4");
 
-            $.get("resources/glosses.xml", function(xml){
-                var entry = $(xml).find("entry[n='"+lemma+"']");
+        $.when($.get("resources/eclogue1LR.xml"), $.get("resources/glosses.xml")).done(function(xml1, xml2) {
+                var word = getWordFromXML(xml1, elem);
+                var lemma = word.attributes.getNamedItem("lemma").nodeValue;
+
+                var entry = $(xml2).find("entry[n='"+lemma+"']");
+                var gloss = $(entry).find("gloss").html();
+                var glossHTML = "<li>" + gloss + "</li>";
+                $("#lookup_list").append(glossHTML);
+
                 var principalParts = $(entry).find("pp").html();
                 var gend = $(entry).find("gend").html();
-                var ppGenderText = principalParts + ", " + gend + ".";
-                $("#pp").html(ppGenderText);
+                var ppHTML = "<li>" + principalParts + ", " + gend + ".</li>"; // BUG: not every word has a gender
+                $("#lookup_list").append(ppHTML);
+
+                var msd = word.attributes.getNamedItem("msd").nodeValue;
+                var msdList = msd.split("|");
+                var msdText = msdList.join(", ");
+                var parseHTML = "<li>" + msdText + "</li>"
+                $("#lookup_list").append(parseHTML);
+
+                focusOffset = $(".focus").offset();
+                focusOffsetTop = focusOffset["top"];
+
+                cardMiddle = card.height() / 2;
+
+                $(".w3-card-4").parent().css({position: 'relative'});
+                $(".w3-card-4").css({top: focusOffsetTop - cardMiddle, left: 0, position:'absolute'});
+                
             });
-        });
-    }
-
-    function parse(elem) {
-        $.get("resources/eclogue1LR.xml", function(xml){
-            var word = getWordFromXML(xml, elem);
-            var msd = word.attributes.getNamedItem("msd").nodeValue;
-            var msdList = msd.split("|");
-            var newText = msdList.join("\n");
-            $("#parse").html(newText);
-        });
-    }
-
-    function getGloss(elem) {
-        var lemma;
-        $.get("resources/eclogue1LR.xml", function(xml){
-            var word = getWordFromXML(xml, elem);
-            lemma = word.attributes.getNamedItem("lemma").nodeValue;
-            
-            $.get("resources/glosses.xml", function(xml){
-                entry = $(xml).find("entry[n='"+lemma+"']");
-                gloss = $(entry).find("gloss").html();
-                $("#gloss").html(gloss);
-            })
-        })
     }
 
     function getAgreement(elem) {
@@ -173,6 +173,25 @@ $(document).ready(function(){
         $("#pos").empty();
         $("#gloss").empty();
         $("#parse").empty();
+    }
+
+    function display_lookup_information(word_elem) {
+        $("#lookup").empty();
+
+        var newHTML = "\
+        <div class='w3-card-4 animate'> \
+            <header class='w3-container w3-blue'> \
+                <h2 id='lookup_header'></h2> \
+            </header> \
+            <div class='w3-container'> \
+                <ul id='lookup_list'></ul> \
+            </div> \
+        </div>"
+        
+        $("#lookup").html(newHTML);
+        $("#lookup_header").html(word_elem.text());
+
+        getLookupDetails(word_elem);
     }
 
 //  EVENTS
@@ -199,74 +218,10 @@ $(document).ready(function(){
 
     $( ".w" ).click(function() {
 
-        if (!$(".select")[0]) { // the select class does not exist, i.e. a word is not selected
-            $( this ).addClass("select");
-            emptyReadingAids()
-        }
+        $( ".w" ).removeClass("focus");
+        $(this).addClass("focus");
+        display_lookup_information($(this));
 
-        else if ($(this).hasClass("select")) {
-            getGloss($(this));
-        }
-
-        else if (!$(this).hasClass("select")) { // a different word is currently selected
-            $( ".w" ).removeClass("select");
-            $( this ).addClass("select");
-            emptyReadingAids()
-        }
-
-        if (window.event.ctrlKey && window.event.shiftKey) { // User is pressing CTRL & SHIFT
-            openLexiconEntry($(this));
-        }
-        else if (window.event.ctrlKey) { // User is pressing CTRL
-            getPOS($(this));
-        }
-        else if (window.event.shiftKey) { // User is pressing SHIFT
-            getPrincipalParts($(this));
-        }
-        else { // User is not pressing CTRL or SHIFT
-                
-        }
-    });
-
-    $("#glossButton").click(function() {
-        
-        if (!$(".select")[0]) { // if the select class does not exist, i.e. a word has not been selected
-            return;
-        }
-
-        getGloss($(".select"))
-        return;
-
-    });
-
-    $("#ppButton").click(function() {
-        if (!$(".select")[0]) { // if the select class does not exist, i.e. a word has not been selected
-            console.log("running");
-            return;
-        }
-
-        getPrincipalParts($(".select"))
-        return;
-    });
-
-    $("#posButton").click(function() {
-        if (!$(".select")[0]) { // if the select class does not exist, i.e. a word has not been selected
-            console.log("running");
-            return;
-        }
-
-        getPOS($(".select"))
-        return;
-    });
-
-    $("#parseButton").click(function() {
-        if (!$(".select")[0]) { // if the select class does not exist, i.e. a word has not been selected
-            console.log("running");
-            return;
-        }
-
-        parse($(".select"))
-        return;
     });
 
     $(window).keydown(function(event) {
@@ -287,9 +242,11 @@ $(document).ready(function(){
     });
 
     $(document).click(function(event) {
-    // Remove the select class if user clicks somewhere other than on a word 
+    // Remove the focus class if user clicks somewhere other than on a word 
         if (!$(event.target).is(".w") && !$(event.target).is("button")) {
+            $( ".w" ).removeClass("focus");
             $( ".w" ).removeClass("select");
+            emptyReadingAids();
         }
     });
 });

@@ -3,6 +3,7 @@
         <lemma>Afri</lemma>
         <pp>Afri, Afrorum</pp>
         <pos>NOMpro</pos>
+        <gloss>Africans</gloss>
         <instances>1.65</instances>
     </entry>
     <entry n="Amaryllis">
@@ -105,6 +106,10 @@
         <gloss>a god</gloss>
         <instances>1.6; 1.7; 1.19; 1.37</instances>
     </entry>
+    <entry n="doceo">
+        <lemma>doceo</lemma>
+        <gloss>teach, instruct, show</gloss>
+    </entry>
     <entry n="dulcis">
         <lemma>dulcis</lemma>
         <gloss>dear, beloved</gloss>
@@ -177,6 +182,7 @@
     </entry>
     <entry n="lentus">
         <lemma>lentus</lemma>
+        <pp>lentus, lenta, lentum</pp>
         <gloss>slow, hence: untroubled</gloss>
         <instances>1.4; 1.26</instances>
     </entry>
@@ -204,11 +210,6 @@
         <lemma>namque</lemma>
         <gloss>yes, because</gloss>
         <instances>1.7; 1.14; 1.32</instances>
-    </entry>
-    <entry n="">
-        <lemma></lemma>
-        <gloss></gloss>
-        <instances></instances>
     </entry>
     <entry n="nos">
         <lemma>nos</lemma>
@@ -260,11 +261,6 @@
         <gloss>lie back, recline</gloss>
         <instances>1.1</instances>
     </entry>
-    <entry n="">
-        <lemma></lemma>
-        <gloss></gloss>
-        <instances></instances>
-    </entry>
     <entry n="resono1">
         <lemma>resono</lemma>
         <gloss>resound, call out the name of</gloss>
@@ -279,6 +275,12 @@
         <lemma>semper</lemma>
         <gloss>always</gloss>
         <instances>1.7; 1.54</instances>
+    </entry>
+    <entry n="silua">
+        <lemma>silua</lemma>
+        <pp>silua, siluae</pp>
+        <gend>Fem.</gend>
+        <gloss>woods, forest</gloss>
     </entry>
     <entry n="siluestris">
         <lemma>siluestris</lemma>
