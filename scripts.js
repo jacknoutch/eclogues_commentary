@@ -1,3 +1,12 @@
+function hideCard() {
+    $cardList = $(".w3-card-4").children()[1];
+    $($cardList).toggle();
+}
+
+function closeCard() {
+    $(".w3-card-4").remove();   
+}
+
 $(document).ready(function(){
 
 //  FUNCTIONS
@@ -123,7 +132,7 @@ $(document).ready(function(){
     }
 
     function getLookupDetails(elem) {
-        var card = $(".w3-card-4");
+        var $card = $(".w3-card-4");
 
         $.when($.get("resources/eclogue1LR.xml"), $.get("resources/glosses.xml")).done(function(xml1, xml2) {
                 var word = getWordFromXML(xml1, elem);
@@ -135,6 +144,7 @@ $(document).ready(function(){
                 $("#lookup_list").append(glossHTML);
 
                 var principalParts = $(entry).find("pp").html();
+                
                 var gend = $(entry).find("gend").html();
                 var ppHTML = "<li>" + principalParts + ", " + gend + ".</li>"; // BUG: not every word has a gender
                 $("#lookup_list").append(ppHTML);
@@ -145,15 +155,31 @@ $(document).ready(function(){
                 var parseHTML = "<li>" + msdText + "</li>"
                 $("#lookup_list").append(parseHTML);
 
-                focusOffset = $(".focus").offset();
-                focusOffsetTop = focusOffset["top"];
+                windowWidth = checkWidth();
 
-                cardMiddle = card.height() / 2;
+                if (windowWidth=="l") {
+                    focusOffset = $(".focus").offset();
+                    focusOffsetTop = focusOffset["top"];
 
-                $(".w3-card-4").parent().css({position: 'relative'});
-                $(".w3-card-4").css({top: focusOffsetTop - cardMiddle, left: 0, position:'absolute'});
-                
+                    cardMiddle = $card.height() / 2;
+
+                    $(".w3-card-4").parent().css({position: 'relative'});
+                    $(".w3-card-4").css({top: focusOffsetTop - cardMiddle, left: 0, position:'absolute'});
+                }
             });
+    }
+
+    function checkWidth() {
+        var windowsize = $(window).width();
+        if (windowsize < 601) {
+            return "s";
+        }
+        else if (windowsize < 923) {
+            return "m";
+        }
+        else {
+            return "l";
+        }
     }
 
     function getAgreement(elem) {
@@ -181,6 +207,8 @@ $(document).ready(function(){
         var newHTML = "\
         <div class='w3-card-4 animate'> \
             <header class='w3-container w3-blue'> \
+                <span onclick='hideCard()' class='w3-hidebtn'>&#8597</span> \
+                <span onclick='closeCard()' class='w3-closebtn'>&times;</span> \
                 <h2 id='lookup_header'></h2> \
             </header> \
             <div class='w3-container'> \
@@ -214,13 +242,20 @@ $(document).ready(function(){
             $(this).css("background-color", "yellow");
         }}, function() {
             $(this).css("background-color", "transparent");
-        });
+        }
+    );
 
-    $( ".w" ).click(function() {
+    $(".w").click(function() {
 
         $( ".w" ).removeClass("focus");
         $(this).addClass("focus");
         display_lookup_information($(this));
+
+    });
+
+    $(".w3-closebtn").click(function() { // Why isn't this working?
+
+        alert("hello");
 
     });
 

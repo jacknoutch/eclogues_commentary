@@ -1,7 +1,7 @@
-* {
+/* * { */
   /* cursor: default; */
   /* border: 1px dotted #C00; */
-}
+/* } */
 span {
   cursor: pointer;
 }
@@ -28,25 +28,15 @@ a:hover {
 .latin {
   font-style: italic;
 }
-.w3-bar {
-  height: 4em;
-}
-.w3-bar-item {
-  height: inherit;
-}
 
 .w3-card-4 {
   width: 100%;
 }
 
 div .l {
-  -webkit-user-select: none; Safari
-  -ms-user-select: none; IE 10 and IE 11
-  user-select: none; Standard syntax
-}
-
-.container {
-  display: flex;
+  -webkit-user-select: none; /*Safari*/
+  -ms-user-select: none; /*IE 10 and IE 11*/
+  user-select: none; /*Standard syntax*/
 }
 
 footer {
@@ -54,18 +44,10 @@ footer {
   justify-content: center;
 }
 
-.panel {
-  /* min-width: 400px; */
-  margin: 1em;
-    /* border: 1px dotted #0C0; */
-}
-
-#reading {
-  min-width: 400px;
-}
-
-section {
-    /* border: 1px dotted #C00; */
+#lookup {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
 }
 
 .animate {
@@ -78,4 +60,99 @@ section {
 @keyframes animate-fade {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* For mobile phones */
+
+.panel {
+  /* */
+}
+
+.blurb {
+  display: none;
+}
+
+#utility {
+  display: none;
+}
+
+#lookup {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+}
+
+header.w3-container {
+  position: relative;
+}
+
+.w3-hidebtn {
+  position: absolute;
+  padding: 8px; /* rubbish fix for positioning of button */
+  right: 12%;
+  font-size: xx-large; 
+  height: 100%;
+  -webkit-user-select: none; Safari
+  -ms-user-select: none; IE 10 and IE 11
+  user-select: none; Standard syntax
+}
+
+.w3-hidebtn:hover {
+  background: #bbb;
+}
+
+.w3-closebtn {
+  position: absolute;
+  padding: 10px; /* rubbish fix for positioning of button */
+  right: 0%;
+  font-size: xx-large; 
+  height: 100%;
+  -webkit-user-select: none; Safari
+  -ms-user-select: none; IE 10 and IE 11
+  user-select: none; Standard syntax
+}
+
+.w3-closebtn:hover {
+  background: #bbb;
+}
+
+/* For tablets */
+
+@media only screen and (min-width: 600px) {
+  .panel {
+    margin: 1em;
+  }
+  .blurb {
+    display: inherit;
+  }
+  #utility {
+    display: inherit;
+  }
+  #reading {
+    min-width: 400px;
+  }
+}
+
+/* For desktops */
+
+@media only screen and (min-width: 992px) {
+  .panel {
+    margin: 1em;
+  }
+  .blurb {
+    display: inherit;
+  }
+  .container {
+    display: flex;
+  }
+  #utility {
+    display: inherit;
+  }
+  #reading {
+    min-width: 400px;
+  }
+  #lookup {
+    position: inherit;
+    min-width: 400px;
+  }
 }
