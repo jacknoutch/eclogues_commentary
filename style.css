@@ -37,6 +37,7 @@ div .l {
   -webkit-user-select: none; /*Safari*/
   -ms-user-select: none; /*IE 10 and IE 11*/
   user-select: none; /*Standard syntax*/
+  /* border: 1px solid red; */
 }
 
 footer {
@@ -72,8 +73,16 @@ footer {
   display: none;
 }
 
+footer {
+  display: none;
+}
+
 #utility {
   display: none;
+}
+
+#reading {
+  height: 100vh;
 }
 
 #lookup {
@@ -83,37 +92,59 @@ footer {
 }
 
 header.w3-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+#lookup_header {
+  width: 80%;
+}
+
+.cardbutton {
+  /* position: absolute; */
+  -webkit-user-select: none; /*Safari*/
+  -ms-user-select: none; /*IE 10 and IE 11*/
+  user-select: none; /*Standard syntax*/
+  width: 10%;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.cardbutton:hover {
+  background: #bbb;
+}
+
+#gloss {
+  font-weight: bold;
+}
+
+ul {
+  padding: 0px;
+}
+
+.relative {
   position: relative;
+  width: 0px;
+  height: 0px;
 }
 
-.w3-hidebtn {
+span.verse_ref {
+  color: #C00;
+  font-size: 70%;
+  line-height: 1;
   position: absolute;
-  padding: 8px; /* rubbish fix for positioning of button */
-  right: 12%;
-  font-size: xx-large; 
-  height: 100%;
-  -webkit-user-select: none; Safari
-  -ms-user-select: none; IE 10 and IE 11
-  user-select: none; Standard syntax
+  right: 1vh;
+  text-align: right;
+  /* border: 1px solid red; */
+  cursor:auto;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
 }
 
-.w3-hidebtn:hover {
-  background: #bbb;
-}
-
-.w3-closebtn {
-  position: absolute;
-  padding: 10px; /* rubbish fix for positioning of button */
-  right: 0%;
-  font-size: xx-large; 
-  height: 100%;
-  -webkit-user-select: none; Safari
-  -ms-user-select: none; IE 10 and IE 11
-  user-select: none; Standard syntax
-}
-
-.w3-closebtn:hover {
-  background: #bbb;
+li {
+  list-style: none;
 }
 
 /* For tablets */

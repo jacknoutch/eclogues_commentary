@@ -1,12 +1,3 @@
-function hideCard() {
-    $cardList = $(".w3-card-4").children()[1];
-    $($cardList).toggle();
-}
-
-function closeCard() {
-    $(".w3-card-4").remove();   
-}
-
 $(document).ready(function(){
 
 //  FUNCTIONS
@@ -23,7 +14,27 @@ $(document).ready(function(){
             }
             var text = words.join("");
             $(this).html(text);
-        })
+        });
+    }
+
+    function addLineNumbers() {
+        $(".l").each(function(){
+            var line_num = $(this).attr("n");
+            $(this).prepend("<span class=relative><span class=verse_ref>"+line_num+"</span></span>")
+            
+            var line_num_int = parseInt(line_num.slice(2)) /* Make every 5th line number visible. */
+            if (line_num_int % 5 == 0) {
+                var v_ref = $(this).find(".verse_ref");
+                v_ref.css("visibility", "visible");
+            }
+        });
+    }
+
+    function getIndices(elem) {
+        var closestLine = $(elem).closest(".l");
+        var lineNumber = $(closestLine).attr("n");
+        var wordIndex = $(elem).index() - 1; /* Minus one to account for the line number <span> in each .l div */
+        return [lineNumber, wordIndex];
     }
 
     function getWordFromXML(xml, elem) {
@@ -33,122 +44,46 @@ $(document).ready(function(){
         return word;
     }
 
-    function openLexiconEntry(elem) {
-        // Currently: get the lemma of the word and open Logeion at the appropriate page.
-        var url = "https://logeion.uchicago.edu/"
-
-            $.get("resources/eclogue1LR.xml", function(xml){
-                var word = getWordFromXML(xml, elem);
-                var lemma = word.attributes.getNamedItem("lemma").nodeValue;
-                url += lemma
-                window.open(url, '_blank').focus();
-            });
+    function checkWidth() {
+        var windowsize = $(window).width();
+        if (windowsize < 601) {
+            return "s";
+        }
+        else if (windowsize < 923) {
+            return "m";
+        }
+        else {
+            return "l";
+        }
     }
 
-    function getPOS(elem) {
-        var shortPOS;
-        var fullPOS;
-
-        $.get("resources/eclogue1LR.xml", function(xml){
-            var word = getWordFromXML(xml, elem);
-            shortPOS = word.attributes.getNamedItem("pos").nodeValue;
-
-            switch(shortPOS) {
-                case "ADJadv.mul":
-                    fullPOS = ""
-                    break;
-                case "ADJcar":
-                    fullPOS = ""
-                    break;
-                case "ADJqua":
-                    fullPOS = ""
-                    break;
-                case "ADJdis":
-                    fullPOS = ""
-                    break;
-                case "ADJord":
-                    fullPOS = ""
-                    break;
-                case "ADJqua":
-                    fullPOS = ""
-                    break;
-                case "ADV":
-                    fullPOS = "Adverb"
-                    break;
-                case "ADVneg":
-                    fullPOS = ""
-                    break;
-                case "ADVrel":
-                    fullPOS = ""
-                    break;
-                case "CON":
-                    fullPOS = "Conjunction"
-                    break;
-                case "CONcoo":
-                    fullPOS = "Coordinating conjunction"
-                    break;
-                case "CONsub":
-                    fullPOS = "Subordinating conjunction"
-                    break;
-                case "INJ":
-                    fullPOS = "Interjection"
-                    break;
-                case "NOMcom":
-                    fullPOS = "Noun"
-                    break;
-                case "NOMpro":
-                    fullPOS = "Proper noun"
-                    break;
-                case "PRE":
-                    fullPOS = "Preposition"
-                    break;
-                case "PROdem":
-                    fullPOS = "Demonstrative pronoun"
-                    break;
-                case "PROind":
-                    fullPOS = ""
-                    break;
-                case "PROint":
-                    fullPOS = ""
-                    break;
-                case "PROper":
-                    fullPOS = "Personal pronoun"
-                    break;
-                case "PROpos":
-                    fullPOS = ""
-                    break;
-                case "PROpos.ref":
-                    fullPOS = ""
-                    break;
-                case "PROrel":
-                    fullPOS = "Relative pronoun"
-                    break;
-                case "VER":
-                    fullPOS = "Verb"
-                    break;
-                }
-            $("#pos").html(fullPOS);
-        });
-    }
 
     function getLookupDetails(elem) {
         var $card = $(".w3-card-4");
 
         $.when($.get("resources/eclogue1LR.xml"), $.get("resources/glosses.xml")).done(function(xml1, xml2) {
                 var word = getWordFromXML(xml1, elem);
+                console.log(elem.text(), word);
                 var lemma = word.attributes.getNamedItem("lemma").nodeValue;
 
                 var entry = $(xml2).find("entry[n='"+lemma+"']");
                 var gloss = $(entry).find("gloss").html();
-                var glossHTML = "<li>" + gloss + "</li>";
+                var glossHTML = "<li id=''>" + gloss + "</li>";
                 $("#lookup_list").append(glossHTML);
 
-                var principalParts = $(entry).find("pp").html();
-                
-                var gend = $(entry).find("gend").html();
-                var ppHTML = "<li>" + principalParts + ", " + gend + ".</li>"; // BUG: not every word has a gender
-                $("#lookup_list").append(ppHTML);
+                if (entry.find("pp").length) {
+                        var principalParts = $(entry).find("pp").html();
 
+                    if ($(entry).find("gend").length) {
+                        var gend = $(entry).find("gend").html();
+                        var ppHTML = "<li>" + principalParts + ", " + gend + ".</li>";
+                    }
+                    else {
+                        var ppHTML = "<li>" + principalParts + "</li>";
+                    }
+                    $("#lookup_list").append(ppHTML);
+                }
+            
                 var msd = word.attributes.getNamedItem("msd").nodeValue;
                 var msdList = msd.split("|");
                 var msdText = msdList.join(", ");
@@ -169,46 +104,14 @@ $(document).ready(function(){
             });
     }
 
-    function checkWidth() {
-        var windowsize = $(window).width();
-        if (windowsize < 601) {
-            return "s";
-        }
-        else if (windowsize < 923) {
-            return "m";
-        }
-        else {
-            return "l";
-        }
-    }
-
-    function getAgreement(elem) {
-        console.log("getAgreement - Coming soon!");
-        return;
-    }
-
-    function getIndices(elem) {
-        var closestLine = $(elem).closest(".l");
-        var lineNumber = $(closestLine).attr("n");
-        var wordIndex = $(elem).index();
-        return [lineNumber, wordIndex];
-    }
-
-    function emptyReadingAids() {
-        $("#pp").empty();
-        $("#pos").empty();
-        $("#gloss").empty();
-        $("#parse").empty();
-    }
-
     function display_lookup_information(word_elem) {
         $("#lookup").empty();
 
         var newHTML = "\
         <div class='w3-card-4 animate'> \
             <header class='w3-container w3-blue'> \
-                <span onclick='hideCard()' class='w3-hidebtn'>&#8597</span> \
-                <span onclick='closeCard()' class='w3-closebtn'>&times;</span> \
+                <span class='cardbutton close'>&times;</span> \
+                <span class='cardbutton hide'>&#8597</span> \
                 <h2 id='lookup_header'></h2> \
             </header> \
             <div class='w3-container'> \
@@ -225,6 +128,8 @@ $(document).ready(function(){
 //  EVENTS
 
     spanAllWords(); // Wrap each word in a <span> for ease of reference
+
+    addLineNumbers();
 
     /*
     There are several actions a user can decide to do...
@@ -253,12 +158,15 @@ $(document).ready(function(){
 
     });
 
-    $(".w3-closebtn").click(function() { // Why isn't this working?
-
-        alert("hello");
-
+    $("#lookup").on("click", ".hide", function() {
+        $cardList = $(".w3-card-4").children()[1];
+        $($cardList).toggle();
     });
 
+    $("#lookup").on("click", ".close", function() {
+        $(".w3-card-4").remove();
+    });
+    
     $(window).keydown(function(event) {
         if (event.ctrlKey) { // User is pressing CTRL
             $("#posButton").addClass("buttonReady");
@@ -281,7 +189,6 @@ $(document).ready(function(){
         if (!$(event.target).is(".w") && !$(event.target).is("button")) {
             $( ".w" ).removeClass("focus");
             $( ".w" ).removeClass("select");
-            emptyReadingAids();
         }
     });
 });

@@ -1,7 +1,7 @@
 <body>
     <entry n="Afri">
         <lemma>Afri</lemma>
-        <pp>Afri, Afrorum</pp>
+        <pp>Āfrī, Āfrōrum</pp>
         <pos>NOMpro</pos>
         <gloss>Africans</gloss>
         <instances>1.65</instances>
@@ -10,31 +10,31 @@
         <lemma>Amaryllis</lemma>
         <pp>Amaryllis, Amaryllidis</pp>
         <pos>NOMpro</pos>
-        <gend>Fem</gend>
+        <gend>f</gend>
         <gloss>Amaryllis, a shepherdess</gloss>
         <instances>1.5, 1.31, 1.37</instances>
     </entry>
     <entry n="Meliboeus">
         <lemma>Meliboeus</lemma>
-        <pp>Meliboeus, Meliboei</pp>
+        <pp>Meliboeus, Meliboeī</pp>
         <pos>NOMpro</pos>
-        <gend>Masc</gend>
+        <gend>m</gend>
         <gloss>Meliboeus, a shepherd</gloss>
         <instances>1.6; 1.20; 1.43; 1.74</instances>
     </entry>
     <entry n="Musa">
         <lemma>Musa</lemma>
-        <pp>Musa, Musae</pp>
+        <pp>Mūsa, Mūsae</pp>
         <pos>NOMpro</pos>
-        <gend>Fem</gend>
+        <gend>f</gend>
         <gloss>Muse, <em>hence:</em> song, poem</gloss>
         <instances>1.2</instances>
     </entry>
     <entry n="Tityrus">
         <lemma>Tityrus</lemma>
-        <pp>Tityrus, Tityri</pp>
+        <pp>Tītyrus, Tītyrī</pp>
         <pos>NOMpro</pos>
-        <gend>Masc</gend>
+        <gend>m</gend>
         <gloss>Tityrus, a herdsman</gloss>
         <instances>1.1; 1.4; 1.13; 1.19; 1.39; 1.39</instances>
     </entry>
@@ -46,9 +46,9 @@
     </entry>
     <entry n="agnus">
         <lemma>agnus</lemma>
-        <pp>agnus, agni</pp>
+        <pp>agnus, agnī</pp>
         <pos>NOMcom</pos>
-        <gend>Masc</gend>
+        <gend>m</gend>
         <gloss>lamb</gloss>
         <instances>1.8</instances>
     </entry>
@@ -61,15 +61,15 @@
     </entry>
     <entry n="ara">
         <lemma>ara</lemma>
-        <pp>ara, arae</pp>
+        <pp>āra, ārae</pp>
         <pos>NOMcom</pos>
-        <gend>Fem</gend>
+        <gend>f</gend>
         <gloss>altar</gloss>
         <instances>1.7</instances>
     </entry>
     <entry n="aruum">
         <lemma>aruum</lemma>
-        <pp>aruum, arui</pp>
+        <pp>aruum, aruī</pp>
         <pos>NOMcom</pos>
         <gend>Neut</gend>
         <gloss>field, (pl.) fields, region</gloss>
@@ -77,41 +77,48 @@
     </entry>
     <entry n="auena">
         <lemma>auena</lemma>
-        <pp>auena, auenae</pp>
+        <pp>auēna, auēnae</pp>
         <pos>NOMcom</pos>
-        <gend>Fem</gend>
+        <gend>f</gend>
         <gloss>reed, pipe</gloss>
         <instances>1.2</instances>
     </entry>
     <entry n="bos">
         <lemma>bos</lemma>
-        <pp>bos, bovis</pp>
+        <pp>bōs, bovis</pp>
         <pos>NOMcom</pos>
-        <gend></gend>
+        <gend>c</gend>
         <gloss>(m.) ox, bull, (f.) cow, (pl.) cattle</gloss>
         <instances>1.9; 1.46</instances>
     </entry>
     <entry n="calamus">
         <lemma>calamus</lemma>
+        <pp>calamus, calamī</pp>
+        <gend>m</gend>
         <gloss>reed, reed-pipe</gloss>
         <instances>1.10</instances>
     </entry>
     <entry n="cerno">
         <lemma>cerno</lemma>
+        <pp>cernō, cernere, crēuē, crētum</pp>
         <gloss>see</gloss>
         <instances>1.9</instances>
     </entry>
     <entry n="deus">
         <lemma>deus</lemma>
+        <pp>deus, deī</pp>
+        <gend>m</gend>
         <gloss>a god</gloss>
         <instances>1.6; 1.7; 1.19; 1.37</instances>
     </entry>
     <entry n="doceo">
         <lemma>doceo</lemma>
+        <pp>doceō, docēre, docuī, doctum</pp>
         <gloss>teach, instruct, show</gloss>
     </entry>
     <entry n="dulcis">
         <lemma>dulcis</lemma>
+        <pp>dulcis, dulce</pp>
         <gloss>dear, beloved</gloss>
         <instances>1.3</instances>
     </entry>
@@ -122,6 +129,7 @@
     </entry>
     <entry n="erro2">
         <lemma>erro</lemma>
+        <pp>errō, errāre, errāuī, errātum</pp>
         <gloss>wander, roam</gloss>
         <instances>1.9</instances>
     </entry>
@@ -132,41 +140,51 @@
     </entry>
     <entry n="facio">
         <lemma>facio</lemma>
+        <pp>faciō, facere, fēcī, factum</pp>
         <gloss>make, bring about</gloss>
         <instances>1.6; 1.41</instances>
     </entry>
     <entry n="fagus">
         <lemma>fagus</lemma>
+        <pp>fāgus, fāgī</pp>
+        <gend>f</gend>
         <gloss>beech tree</gloss>
         <instances>1.1</instances>
     </entry>
     <entry n="finis">
         <lemma>finis</lemma>
+        <pp>fīnis, fīnis</pp>
+        <gend>m</gend>
         <gloss>borders, territory</gloss>
         <instances>1.3; 1.62; 1.68</instances>
     </entry>
     <entry n="formosus">
         <lemma>formosus</lemma>
+        <pp>formōsus, formōsa, formōsum</pp>
         <gloss>lovely, beautiful</gloss>
         <instances>1.5</instances>
     </entry>
     <entry n="fugio">
         <lemma>fugio</lemma>
+        <pp>fugiō, fugere, fūgī</pp>
         <gloss>flee, patriam fugio - to go into exile</gloss>
         <instances>1.4</instances>
     </entry>
     <entry n="hic1">
         <lemma>hic</lemma>
+        <pp>hic, haec, hoc</pp>
         <gloss>this</gloss>
         <instances>1.6; 1.13; 1.16; 1.21; 1.25; 1.40; 1.45; 1.71; 1.72; 1.73; 1.80</instances>
     </entry>
     <entry n="ille">
         <lemma>ille</lemma>
+        <pp>ille, illa, illud</pp>
         <gloss>he, she, it, that (one)</gloss>
         <instances>1.7; 1.7; 1.9; 1.43; 1.45; 1.64</instances>
     </entry>
     <entry n="imbuo">
         <lemma>imbuo</lemma>
+        <pp>imbuō, imbuere, imbuī, imbītum</pp>
         <gloss>stain (with blood)</gloss>
         <instances>1.8</instances>
     </entry>
@@ -177,31 +195,37 @@
     </entry>
     <entry n="ipse">
         <lemma>ipse</lemma>
+        <pp>ipse, ipsa, ipsum</pp>
         <gloss>-self, him-/her-/itself, themselves</gloss>
         <instances>1.9; 1.12; 1.39; 1.40; 1.40</instances>
     </entry>
     <entry n="lentus">
         <lemma>lentus</lemma>
+        <pp>lentus, lenta, lentum</pp>
         <gloss>slow, hence: untroubled</gloss>
         <instances>1.4; 1.26</instances>
     </entry>
     <entry n="linquo">
         <lemma>linquo</lemma>
+        <pp>linquō, linquere, līqui</pp>
         <gloss>leave</gloss>
         <instances>1.3</instances>
     </entry>
     <entry n="ludo">
         <lemma>ludo</lemma>
+        <pp>lūdō, lūdere, lūdī, lūdum</pp>
         <gloss>play, make music</gloss>
         <instances>1.10</instances>
     </entry>
     <entry n="meditor">
         <lemma>meditor</lemma>
+        <pp>meditor, meditārī, meditātus</pp>
         <gloss>rehearse, practise</gloss>
         <instances>1.2</instances>
     </entry>
     <entry n="meus">
         <lemma>meus</lemma>
+        <pp>meus, mea, meum</pp>
         <gloss>my</gloss>
         <instances>1.9; 1.34; 1.70; 1.75</instances>
     </entry>
@@ -217,6 +241,7 @@
     </entry>
     <entry n="noster">
         <lemma>noster</lemma>
+        <pp>noster, nostra, nostrum</pp>
         <gloss>our</gloss>
         <instances>1.8; 1.21; 1.44; 1.64</instances>
     </entry>
@@ -227,41 +252,52 @@
     </entry>
     <entry n="otium">
         <lemma>otium</lemma>
+        <pp>ōtium, ōtiī</pp>
+        <gend>n</gend>
         <gloss>leisure, time for rest</gloss>
         <instances>1.6</instances>
     </entry>
     <entry n="ouile">
         <lemma>ouile</lemma>
+        <pp>ouīle, ouīlis</pp>
+        <gend>n</gend>
         <gloss>sheepfold</gloss>
         <instances>1.8</instances>
     </entry>
     <entry n="patria">
         <lemma>patria</lemma>
+        <pp>patria, patriae</pp>
+        <gend>f</gend>
         <gloss>homeland, fatherland</gloss>
         <instances>1.3; 1.4</instances>
     </entry>
     <entry n="patulus">
         <lemma>patulus</lemma>
+        <pp>patulus, patula, patulum</pp>
         <gloss>broad, spreading</gloss>
         <instances>1.1</instances>
     </entry>
     <entry n="permitto">
         <lemma>permitto</lemma>
+        <pp>permittō, permittere, permīsī, permissum</pp>
         <gloss>allow, sanction</gloss>
         <instances>1.10</instances>
     </entry>
     <entry n="qui1">
         <lemma>qui</lemma>
+        <pp>quī, quae, quod</pp>
         <gloss>who, which, relative pronoun</gloss>
         <instances>1.10; 1.19; 1.20; 1.28; 1.38; 1.44; 1.54</instances>
     </entry>
     <entry n="recubo">
         <lemma>recubo</lemma>
+        <pp>recubō, recubāre, recubāuī, recubātum</pp>
         <gloss>lie back, recline</gloss>
         <instances>1.1</instances>
     </entry>
     <entry n="resono1">
         <lemma>resono</lemma>
+        <pp>resonō, resonāre, resonāuī</pp>
         <gloss>resound, call out the name of</gloss>
         <instances>1.5</instances>
     </entry>
@@ -278,11 +314,12 @@
     <entry n="silua">
         <lemma>silua</lemma>
         <pp>silua, siluae</pp>
-        <gend>Fem.</gend>
+        <gend>f</gend>
         <gloss>woods, forest</gloss>
     </entry>
     <entry n="siluestris">
         <lemma>siluestris</lemma>
+        <pp>siluestris, siluestre</pp>
         <gloss>woodland, of the forest</gloss>
         <instances>1.2</instances>
     </entry>
@@ -293,21 +330,26 @@
     </entry>
     <entry n="sum1">
         <lemma>sum</lemma>
+        <pp>sum, esse, fuī</pp>
         <gloss>to be</gloss>
         <instances>1.7; 1.16; 1.19; 1.27; 1.33; 1.81</instances>
     </entry>
     <entry n="tegimen">
         <lemma>tegmen</lemma>
+        <pp>tegimen/tegmen, tegiminis</pp>
+        <gend>n</gend>
         <gloss>cover, covering</gloss>
         <instances>1.1</instances>
     </entry>
     <entry n="tener">
         <lemma>tener</lemma>
+        <pp>tener, tenera, tenerum</pp>
         <gloss>tender, young</gloss>
         <instances>1.8; 1.22</instances>
     </entry>
     <entry n="tenuis">
         <lemma>tenuis</lemma>
+        <pp>tenuis, tenue</pp>
         <gloss>thin, slender</gloss>
         <instances>1.2</instances>
     </entry>
@@ -318,11 +360,14 @@
     </entry>
     <entry n="umbra">
         <lemma>umbra</lemma>
+        <pp>umbra, umbrae</pp>
+        <gend>f</gend>
         <gloss>shadow</gloss>
         <instances>1.4; 1.84</instances>
     </entry>
     <entry n="uolo3">
         <lemma>uolo</lemma>
+        <pp>uolō, uelle, uoluī</pp>
         <gloss>wish, want</gloss>
         <instances>1.10</instances>
     </entry>
