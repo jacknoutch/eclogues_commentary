@@ -79,6 +79,11 @@ a:hover {
   width: fit-content;  
 }
 
+nav {
+  margin: 0 auto;
+  width: fit-content;
+}
+
 .blurb {
   display: none;
 }
