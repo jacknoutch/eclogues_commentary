@@ -45,7 +45,7 @@ Source:
                 <w rend="line" n="1.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="fagus">fagi</w>
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.2">
-                <w rend="line" n="1.2" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="siluestris">silvestrem</w>
+                <w rend="line" n="1.2" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="siluestris">silvestrem</w>
                 <w rend="line" n="1.2" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="tenuis">tenui</w>
                 <w rend="line" n="1.2" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Musa">Musam</w>
                 <w rend="line" n="1.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=2" lemma="meditor">meditaris</w>
@@ -218,7 +218,7 @@ Source:
                 <w rend="line" n="1.21" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
                 <w rend="line" n="1.21" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="hic1">huic</w>
                 <w rend="line" n="1.21" pos="PROpos" msd="Case=Dat|Numb=Sing|Gend=Fem" lemma="noster">nostrae</w>
-                <w rend="line" n="1.21" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="similis">similem</w>
+                <w rend="line" n="1.21" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="similis">similem</w>
                 <w rend="line" n="1.21" pos="PROrel" msd="MORPH=empty" lemma="quo1">quo</w>
                 <w rend="line" n="1.21" pos="ADV" msd="Deg=Pos" lemma="saepe">saepe</w>
                 <w rend="line" n="1.21" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=SemDep|Person=1" lemma="soleo">solemus</w>
@@ -234,7 +234,7 @@ Source:
                 <w rend="line" n="1.23" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
                 <w rend="line" n="1.23" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="canis">canibus</w>
                 <w rend="line" n="1.23" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="catulus">catulos</w>
-                <w rend="line" n="1.23" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="similis">similis</w>
+                <w rend="line" n="1.23" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="similis">similis</w>
                 <w rend="line" n="1.23" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
                 <w rend="line" n="1.23" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="mater">matribus</w>
                 <w rend="line" n="1.23" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="haedus">haedos</w>
@@ -283,10 +283,10 @@ Source:
                 <w rend="line" n="1.28" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="serus">sera</w>
                 <w rend="line" n="1.28" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
                 <w rend="line" n="1.28" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="respicio">respexit</w>
-                <w rend="line" n="1.28" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="iners">inertem</w>
+                <w rend="line" n="1.28" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Masc|Deg=Pos" lemma="iners">inertem</w>
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.29">
-                <w rend="line" n="1.29" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="candidus">candidior</w>
+                <w rend="line" n="1.29" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Comp" lemma="candidus">candidior</w>
                 <w rend="line" n="1.29" pos="CONsub" msd="MORPH=empty" lemma="postquam">postquam</w>
                 <w rend="line" n="1.29" pos="VER" msd="Case=Dat|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="tondeo">tondenti</w>
                 <w rend="line" n="1.29" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="barba">barba</w>
@@ -296,7 +296,7 @@ Source:
                 <w rend="line" n="1.30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="respicio">respexit</w>
                 <w rend="line" n="1.30" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
                 <w rend="line" n="1.30" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w rend="line" n="1.30" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="longus">longo</w>
+                <w rend="line" n="1.30" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Neut|Deg=Pos" lemma="longus">longo</w>
                 <w rend="line" n="1.30" pos="ADV" msd="Deg=Pos" lemma="post1">post</w>
                 <w rend="line" n="1.30" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tempus1">tempore</w>
                 <w rend="line" n="1.30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="uenio">venit</w>
@@ -336,7 +336,7 @@ Source:
                 <w rend="line" n="1.34" pos="NOMcom" msd="Case=Abl|Numb=Plur|Mood=Par|Tense=Perf|Voice=Pass" lemma="saepio">saeptis</w>
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.35">
-                <w rend="line" n="1.35" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="pinguis">pinguis</w>
+                <w rend="line" n="1.35" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="pinguis">pinguis</w>
                 <w rend="line" n="1.35" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
                 <w rend="line" n="1.35" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=Fem|Deg=Pos" lemma="ingratus">ingratae</w>
                 <w rend="line" n="1.35" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Pass|Person=3" lemma="premo">premeretur</w>
@@ -346,7 +346,7 @@ Source:
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.36">
                 <w rend="line" n="1.36" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
                 <w rend="line" n="1.36" pos="ADV" msd="Deg=Pos" lemma="umquam">umquam</w>
-                <w rend="line" n="1.36" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="grauis">gravis</w>
+                <w rend="line" n="1.36" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="grauis">gravis</w>
                 <w rend="line" n="1.36" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="aes">aere</w>
                 <w rend="line" n="1.36" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="domus">domum</w>
                 <w rend="line" n="1.36" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
@@ -401,7 +401,7 @@ Source:
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.42">
                 <w rend="line" n="1.42" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
                 <w rend="line" n="1.42" pos="ADV" msd="Deg=Pos" lemma="tam">tam</w>
-                <w rend="line" n="1.42" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="praesens">praesentis</w>
+                <w rend="line" n="1.42" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="praesens">praesentis</w>
                 <w rend="line" n="1.42" pos="ADV" msd="Deg=Pos" lemma="alibi">alibi</w>
                 <w rend="line" n="1.42" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="cognosco">cognoscere</w>
                 <w rend="line" n="1.42" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="diuus1">divos</w>
@@ -444,7 +444,7 @@ Source:
                 </ab>
             <w rend="poem" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="Meliboeus">Meliboeus</w>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.47">
-                <w rend="line" n="1.47" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Fortunatus">Fortunate</w>
+                <w rend="line" n="1.47" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="fortunatus">Fortunate</w>
                 <w rend="line" n="1.47" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="senex1">senex</w>
                 <w rend="line" n="1.47" pos="CONcoo" msd="MORPH=empty" lemma="ergo2">ergo</w>
                 <w rend="line" n="1.47" pos="PROpos" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="tuus">tua</w>
@@ -462,7 +462,7 @@ Source:
                 <w rend="line" n="1.48" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="nudus">nudus</w>
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.49">
-                <w rend="line" n="1.49" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="limosus">limosoque</w>
+                <w rend="line" n="1.49" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Masc|Deg=Pos" lemma="limosus">limosoque</w>
                 <w rend="line" n="1.49" pos="CON" msd="MORPH=empty" lemma="que">{limosoque}</w>
                 <w rend="line" n="1.49" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="palus2">palus</w>
                 <w rend="line" n="1.49" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="obduco">obducat</w>
@@ -472,7 +472,7 @@ Source:
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.50">
                 <w rend="line" n="1.50" pos="ADVneg" msd="MORPH=empty" lemma="non">Non</w>
                 <w rend="line" n="1.50" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="insuetus">insueta</w>
-                <w rend="line" n="1.50" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="grauis">gravis</w>
+                <w rend="line" n="1.50" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="grauis">gravis</w>
                 <w rend="line" n="1.50" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="tento">temptabunt</w>
                 <w rend="line" n="1.50" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="pabulum">pabula</w>
                 <w rend="line" n="1.50" pos="ADJqua" msd="Case=Acc|Numb=Plur" lemma="fetus2">fetas</w>
@@ -480,7 +480,7 @@ Source:
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.51">
                 <w rend="line" n="1.51" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
                 <w rend="line" n="1.51" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="malum1">mala</w>
-                <w rend="line" n="1.51" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="uicinus2">vicini</w>
+                <w rend="line" n="1.51" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Neut|Deg=Pos" lemma="uicinus2">vicini</w>
                 <w rend="line" n="1.51" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="pecus1">pecoris</w>
                 <w rend="line" n="1.51" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="contagium">contagia</w>
                 <w rend="line" n="1.51" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="laedo">laedent</w>
@@ -499,14 +499,14 @@ Source:
                 <w rend="line" n="1.53" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="sacer">sacros</w>
                 <w rend="line" n="1.53" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="frigus">frigus</w>
                 <w rend="line" n="1.53" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="capto">captabis</w>
-                <w rend="line" n="1.53" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="opacus">opacum</w>
+                <w rend="line" n="1.53" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="opacus">opacum</w>
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.54">
                 <w rend="line" n="1.54" pos="ADV" msd="Deg=Pos" lemma="hinc">hinc</w>
                 <w rend="line" n="1.54" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
                 <w rend="line" n="1.54" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
                 <w rend="line" n="1.54" pos="ADV" msd="Deg=Pos" lemma="semper">semper</w>
-                <w rend="line" n="1.54" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="uicinus2">vicino</w>
+                <w rend="line" n="1.54" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Masc|Deg=Pos" lemma="uicinus2">vicino</w>
                 <w rend="line" n="1.54" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
                 <w rend="line" n="1.54" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="limes">limite</w>
                 <w rend="line" n="1.54" pos="NOMcom" msd="Numb=Sing" lemma="saepes">saepes</w>
@@ -557,9 +557,9 @@ Source:
             <w rend="line" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Tityrus">Tityrus</w>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.60">
                 <w rend="line" n="1.60" pos="PRE" msd="Deg=Pos" lemma="ante2">Ante</w>
-                <w rend="line" n="1.60" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="leuis1">leves</w>
+                <w rend="line" n="1.60" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="leuis1">leves</w>
                 <w rend="line" n="1.60" pos="CONcoo" msd="MORPH=empty" lemma="ergo2">ergo</w>
-                <w rend="line" n="1.60" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Dep|Person=3" lemma="pascor">pascentur</w>
+                <w rend="line" n="1.60" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Dep|Person=3" lemma="pasco">pascentur</w>
                 <w rend="line" n="1.60" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
                 <w rend="line" n="1.60" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="aequor">aequore</w>
                 <w rend="line" n="1.60" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="ceruus">cervi</w>
@@ -576,7 +576,7 @@ Source:
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.62">
                 <w rend="line" n="1.62" pos="ADV" msd="Deg=Pos" lemma="ante1">ante</w>
                 <w rend="line" n="1.62" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="pererro2">pererratis</w>
-                <w rend="line" n="1.62" pos="ADJcar" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="ambo2">amborum</w>
+                <w rend="line" n="1.62" pos="ADJcar" msd="Case=Gen|Numb=Plur|Gend=Masc" lemma="ambo2">amborum</w>
                 <w rend="line" n="1.62" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="finis">finibus</w>
                 <w rend="line" n="1.62" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="exsul">exsul</w>
                 </ab>
@@ -591,7 +591,7 @@ Source:
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.64">
                 <w rend="line" n="1.64" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
-                <w rend="line" n="1.64" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="noster">nostro</w>
+                <w rend="line" n="1.64" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=Neut" lemma="noster">nostro</w>
                 <w rend="line" n="1.64" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="ille">illius</w>
                 <w rend="line" n="1.64" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Dep|Person=3" lemma="labor2">labatur</w>
                 <w rend="line" n="1.64" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pectus">pectore</w>
@@ -603,7 +603,7 @@ Source:
                 <w rend="line" n="1.65" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">nos</w>
                 <w rend="line" n="1.65" pos="ADV" msd="Deg=Pos" lemma="hinc">hinc</w>
                 <w rend="line" n="1.65" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="alius">alii</w>
-                <w rend="line" n="1.65" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="sitio">sitientis</w>
+                <w rend="line" n="1.65" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Masc|Mood=Par|Tense=Pres|Voice=Act" lemma="sitio">sitientis</w>
                 <w rend="line" n="1.65" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="eo1">ibimus</w>
                 <w rend="line" n="1.65" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Afri">Afros</w>
                 </ab>
@@ -611,7 +611,7 @@ Source:
                 <w rend="line" n="1.66" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pars">pars</w>
                 <w rend="line" n="1.66" pos="ADJqua" msd="Case=Acc|Numb=Sing" lemma="Scythia">Scythiam</w>
                 <w rend="line" n="1.66" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w rend="line" n="1.66" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="rapidus">rapidum</w>
+                <w rend="line" n="1.66" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Masc|Deg=Pos" lemma="rapidus">rapidum</w>
                 <w rend="line" n="1.66" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Creta">Cretae</w>
                 <w rend="line" n="1.66" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="uenio">veniemus</w>
                 <w rend="line" n="1.66" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Oaxes">Oaxen</w>
@@ -619,7 +619,7 @@ Source:
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.67">
                 <w rend="line" n="1.67" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
                 <w rend="line" n="1.67" pos="ADV" msd="Deg=Pos" lemma="penitus2">penitus</w>
-                <w rend="line" n="1.67" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="totus">toto</w>
+                <w rend="line" n="1.67" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=Masc" lemma="totus">toto</w>
                 <w rend="line" n="1.67" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="diuido">divisos</w>
                 <w rend="line" n="1.67" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="orbis">orbe</w>
                 <w rend="line" n="1.67" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Britanni">Britannos</w>
@@ -628,7 +628,7 @@ Source:
                 <w rend="line" n="1.68" pos="INJ" msd="MORPH=empty" lemma="en">En</w>
                 <w rend="line" n="1.68" pos="ADV" msd="Deg=Pos" lemma="umquam">umquam</w>
                 <w rend="line" n="1.68" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="patrius">patrios</w>
-                <w rend="line" n="1.68" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="longus">longo</w>
+                <w rend="line" n="1.68" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Neut|Deg=Pos" lemma="longus">longo</w>
                 <w rend="line" n="1.68" pos="ADV" msd="Deg=Pos" lemma="post1">post</w>
                 <w rend="line" n="1.68" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tempus1">tempore</w>
                 <w rend="line" n="1.68" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="finis">finis</w>
@@ -637,7 +637,7 @@ Source:
                 <w rend="line" n="1.69" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Com|Deg=Pos" lemma="pauper">pauperis</w>
                 <w rend="line" n="1.69" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
                 <w rend="line" n="1.69" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="tugurium">tuguri</w>
-                <w rend="line" n="1.69" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="congero2">congestum</w>
+                <w rend="line" n="1.69" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="congero2">congestum</w>
                 <w rend="line" n="1.69" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="caespes">caespite</w>
                 <w rend="line" n="1.69" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="culmen">culmen</w>
                 </ab>
@@ -655,7 +655,7 @@ Source:
                 <w rend="line" n="1.71" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
                 <w rend="line" n="1.71" pos="ADV" msd="Deg=Pos" lemma="tam">tam</w>
                 <w rend="line" n="1.71" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="colo2">culta</w>
-                <w rend="line" n="1.71" pos="ADJqua" msd="Case=Acc|Numb=Plur" lemma="nouale">novalia</w>
+                <w rend="line" n="1.71" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="nouale">novalia</w>
                 <w rend="line" n="1.71" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="miles">miles</w>
                 <w rend="line" n="1.71" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="habeo">habebit</w>
                 </ab>
@@ -722,7 +722,7 @@ Source:
                 <w rend="line" n="1.78" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="capella">capellae</w>
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.79">
-                <w rend="line" n="1.79" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="floreo">florentem</w>
+                <w rend="line" n="1.79" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Masc|Deg=Pos" lemma="floreo">florentem</w>
                 <w rend="line" n="1.79" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="cytisus">cytisum</w>
                 <w rend="line" n="1.79" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
                 <w rend="line" n="1.79" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="salix">salices</w>
@@ -751,9 +751,9 @@ Source:
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.82">
                 <w rend="line" n="1.82" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="castanea">castaneae</w>
-                <w rend="line" n="1.82" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="mollis">molles</w>
+                <w rend="line" n="1.82" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Pos" lemma="mollis">molles</w>
                 <w rend="line" n="1.82" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w rend="line" n="1.82" pos="VER" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="premo">pressi</w>
+                <w rend="line" n="1.82" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="premo">pressi</w>
                 <w rend="line" n="1.82" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="copia">copia</w>
                 <w rend="line" n="1.82" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="lac">lactis</w>
                 </ab>
@@ -767,7 +767,7 @@ Source:
                 <w rend="line" n="1.83" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fumo">fumant</w>
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.84">
-                <w rend="line" n="1.84" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Comp" lemma="magnus">maioresque</w>
+                <w rend="line" n="1.84" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Comp" lemma="magnus">maioresque</w>
                 <w rend="line" n="1.84" pos="CON" msd="MORPH=empty" lemma="que">{maioresque}</w>
                 <w rend="line" n="1.84" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="cado">cadunt</w>
                 <w rend="line" n="1.84" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="altus">altis</w>

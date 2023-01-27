@@ -2,42 +2,9 @@
   /* cursor: default; */
   /* border: 1px dotted #C00; */
 /* } */
-span {
-  cursor: pointer;
-}
-html, body {
-  font-size: 1em;
-}
-a {
-  color: #C00;
-  text-decoration: none;
-}
-a:hover {
-  color: #F33;
-  text-decoration: underline;
-}
-.blurb {
-  font-style: italic;
-}
-.focus {
-  background-color: yellow;
-}
-.select {
-  text-decoration: underline;
-}
-.latin {
-  font-style: italic;
-}
-
 .w3-card-4 {
   width: 100%;
-}
-
-div .l {
-  -webkit-user-select: none; /*Safari*/
-  -ms-user-select: none; /*IE 10 and IE 11*/
-  user-select: none; /*Standard syntax*/
-  /* border: 1px solid red; */
+  background-color: white;
 }
 
 footer {
@@ -65,8 +32,51 @@ footer {
 
 /* For mobile phones */
 
+html, body {
+  font-size: 0.9em;
+}
+.w, .cardbutton {
+  cursor: pointer;
+}
+.l {
+  -webkit-user-select: none; /*Safari*/
+  -ms-user-select: none; /*IE 10 and IE 11*/
+  user-select: none; /*Standard syntax*/
+  /* border: 1px solid red; */
+}
+a {
+  color: #C00;
+  text-decoration: none;
+}
+a:hover {
+  color: #F33;
+  text-decoration: underline;
+}
+.blurb {
+  font-style: italic;
+}
+.focus {
+  background-color: yellow;
+}
+.select {
+  text-decoration: underline;
+}
+.lt {
+  font-style: italic;
+}
 .panel {
   /* */
+  /* border: 1px solid red; */
+}
+
+.panel>* {
+  /* border: 1px solid blue; */
+
+}
+
+#latin_text {
+  margin: 0 auto;
+  width: fit-content;  
 }
 
 .blurb {
@@ -82,7 +92,7 @@ footer {
 }
 
 #reading {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #lookup {
@@ -143,13 +153,28 @@ span.verse_ref {
   visibility: hidden;
 }
 
+.invisible {
+  display: none;
+}
+
+.visible span.verse_ref {
+  visibility: visible;
+}
+
 li {
   list-style: none;
+}
+
+.speaker {
+  font-variant: small-caps;
 }
 
 /* For tablets */
 
 @media only screen and (min-width: 600px) {
+  html, body {
+    font-size: 1em;
+  }
   .panel {
     margin: 1em;
   }
@@ -167,6 +192,9 @@ li {
 /* For desktops */
 
 @media only screen and (min-width: 992px) {
+  html, body {
+    font-size: 1em;
+  }
   .panel {
     margin: 1em;
   }
@@ -180,10 +208,10 @@ li {
     display: inherit;
   }
   #reading {
-    min-width: 400px;
+    min-width: 450px;
   }
   #lookup {
     position: inherit;
-    min-width: 400px;
+    min-width: 450px;
   }
 }

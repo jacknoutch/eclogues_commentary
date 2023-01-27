@@ -57,39 +57,142 @@ $(document).ready(function(){
         }
     }
 
+    function getParseFromMSD(msd) {
+        if (msd!="MORPH=empty") {
+            var msdList = msd.toLowerCase().split("|");
+            var msdDict = {};
+            for (let i=0; i<msdList.length; i++) {
+                var msdDouble = msdList[i].split("=");
+                msdDict[msdDouble[0]] = msdDouble[1];
+            }
+            var parseText = "";
+            
+            if (msdDict["morph"]) {
+                return false;
+            }
+
+            if (msdDict["case"]) {
+                parseText += msdDict["case"] + ". ";
+            }
+
+            if (msdDict["person"]) {
+                parseText += msdDict["person"] + ". ";
+            }
+
+            if (msdDict["numb"]) {
+                parseText += msdDict["numb"] + ". ";
+            }
+
+            if (msdDict["gen"]) {
+                parseText += msdDict["gen"] + ". ";
+            }
+
+            if (msdDict["deg"]) {
+                parseText += msdDict["deg"] + ". ";
+            }
+            
+            if (msdDict["mood"]) {
+                parseText += msdDict["mood"] + ". ";
+            }
+
+            if (msdDict["tense"]) {
+                parseText += msdDict["tense"] + ". ";
+            }
+
+            if (msdDict["voice"]) {
+                parseText += msdDict["voice"] + ". ";
+            }
+
+            if (msdDict["gen"]) {
+                parseText += msdDict["gen"] + ". ";
+            }
+            
+            return parseText;
+
+            /*
+            'case=Abl'
+            'case=Acc'
+            'case=Dat'
+            'case=Gen'
+            'case=Ind'
+            'case=Nom'
+            'case=Voc'
+            
+            'deg=Comp'
+            'deg=Pos'
+            'deg=Sup'
+            
+            'gen=Com'
+            'gen=Fem'
+            'gen=Masc'
+            'gen=MascFem'
+            'gen=MascNeut'
+            'gen=Neut'
+            
+            'morph=empty'
+            
+            'mood=Ger'
+            'mood=Imp'
+            'mood=Ind'
+            'mood=Inf'
+            'mood=Par'
+            'mood=Sub'
+            
+            'numb=Plur'
+            'numb=Sing'
+            
+            'person=1'
+            'person=2'
+            'person=3'
+            
+            'tense=Fut'
+            'tense=Impa'
+            'tense=Perf'
+            'tense=Pqp'
+            'tense=Pres'
+
+            'voice=Act'
+            'voice=Dep'
+            'voice=Pass'
+            'voice=SemDep'
+
+            */
+        }
+        return false;
+    }
 
     function getLookupDetails(elem) {
         var $card = $(".w3-card-4");
 
         $.when($.get("resources/eclogue1LR.xml"), $.get("resources/glosses.xml")).done(function(xml1, xml2) {
                 var word = getWordFromXML(xml1, elem);
-                console.log(elem.text(), word);
                 var lemma = word.attributes.getNamedItem("lemma").nodeValue;
-
                 var entry = $(xml2).find("entry[n='"+lemma+"']");
-                var gloss = $(entry).find("gloss").html();
-                var glossHTML = "<li id=''>" + gloss + "</li>";
-                $("#lookup_list").append(glossHTML);
 
                 if (entry.find("pp").length) {
                         var principalParts = $(entry).find("pp").html();
 
-                    if ($(entry).find("gend").length) {
-                        var gend = $(entry).find("gend").html();
-                        var ppHTML = "<li>" + principalParts + ", " + gend + ".</li>";
+                    if ($(entry).find("gen").length) {
+                        var gen = $(entry).find("gen").html();
+                        var ppHTML = "<li class='lt'>" + principalParts + ", " + gen + ".</li>";
                     }
                     else {
-                        var ppHTML = "<li>" + principalParts + "</li>";
+                        var ppHTML = "<li class='lt'>" + principalParts + "</li>";
                     }
                     $("#lookup_list").append(ppHTML);
                 }
+
+                var gloss = $(entry).find("gloss").html();
+                var glossHTML = "<li id=''>" + gloss + "</li>";
+                $("#lookup_list").append(glossHTML);
             
                 var msd = word.attributes.getNamedItem("msd").nodeValue;
-                var msdList = msd.split("|");
-                var msdText = msdList.join(", ");
-                var parseHTML = "<li>" + msdText + "</li>"
-                $("#lookup_list").append(parseHTML);
-
+                var msdText = getParseFromMSD(msd);
+                if (msdText) {
+                    var parseHTML = "<li>" + msdText + "</li>"
+                    $("#lookup_list").append(parseHTML);
+                }
+                
                 windowWidth = checkWidth();
 
                 if (windowWidth=="l") {

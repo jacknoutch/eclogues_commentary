@@ -17,15 +17,15 @@ with open(path) as file:
     elements = root.findall(".//{http://www.tei-c.org/ns/1.0}w")
 
     for element in elements:
-        new_tuple = (element.text, element.get("lemma"))
-        words.append(new_tuple)
+        words.append(element.get("lemma"))
 
     print(len(words))    
     words = list(dict.fromkeys(words))
+    words.sort()
     print(len(words))
 
     for word in words:
-        csv_text += word[0] + "," + word[1] + "\n"
+        csv_text += word + "\n"
 
     with open("/home/jacknoutch/ecl_commentary/resources/lemmas.csv", "w") as file2:
 
