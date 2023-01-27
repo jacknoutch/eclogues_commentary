@@ -164,47 +164,52 @@ $(document).ready(function(){
     function getLookupDetails(elem) {
         var $card = $(".w3-card-4");
 
+        $.get("resources/glosses.xml", function() {
+            console.log("success")
+        });
+
         $.when($.get("resources/eclogue1LR.xml"), $.get("resources/glosses.xml")).done(function(xml1, xml2) {
-                var word = getWordFromXML(xml1, elem);
-                var lemma = word.attributes.getNamedItem("lemma").nodeValue;
-                var entry = $(xml2).find("entry[n='"+lemma+"']");
+            console.log("done");
+            var word = getWordFromXML(xml1, elem);
+            var lemma = word.attributes.getNamedItem("lemma").nodeValue;
+            var entry = $(xml2).find("entry[n='"+lemma+"']");
 
-                if (entry.find("pp").length) {
-                        var principalParts = $(entry).find("pp").html();
+            if (entry.find("pp").length) {
+                    var principalParts = $(entry).find("pp").html();
 
-                    if ($(entry).find("gen").length) {
-                        var gen = $(entry).find("gen").html();
-                        var ppHTML = "<li class='lt'>" + principalParts + ", " + gen + ".</li>";
-                    }
-                    else {
-                        var ppHTML = "<li class='lt'>" + principalParts + "</li>";
-                    }
-                    $("#lookup_list").append(ppHTML);
+                if ($(entry).find("gen").length) {
+                    var gen = $(entry).find("gen").html();
+                    var ppHTML = "<li class='lt'>" + principalParts + ", " + gen + ".</li>";
                 }
+                else {
+                    var ppHTML = "<li class='lt'>" + principalParts + "</li>";
+                }
+                $("#lookup_list").append(ppHTML);
+            }
 
-                var gloss = $(entry).find("gloss").html();
-                var glossHTML = "<li id=''>" + gloss + "</li>";
-                $("#lookup_list").append(glossHTML);
+            var gloss = $(entry).find("gloss").html();
+            var glossHTML = "<li id=''>" + gloss + "</li>";
+            $("#lookup_list").append(glossHTML);
+        
+            var msd = word.attributes.getNamedItem("msd").nodeValue;
+            var msdText = getParseFromMSD(msd);
+            if (msdText) {
+                var parseHTML = "<li>" + msdText + "</li>"
+                $("#lookup_list").append(parseHTML);
+            }
             
-                var msd = word.attributes.getNamedItem("msd").nodeValue;
-                var msdText = getParseFromMSD(msd);
-                if (msdText) {
-                    var parseHTML = "<li>" + msdText + "</li>"
-                    $("#lookup_list").append(parseHTML);
-                }
-                
-                windowWidth = checkWidth();
+            windowWidth = checkWidth();
 
-                if (windowWidth=="l") {
-                    focusOffset = $(".focus").offset();
-                    focusOffsetTop = focusOffset["top"];
+            if (windowWidth=="l") {
+                focusOffset = $(".focus").offset();
+                focusOffsetTop = focusOffset["top"];
 
-                    cardMiddle = $card.height() / 2;
+                cardMiddle = $card.height() / 2;
 
-                    $(".w3-card-4").parent().css({position: 'relative'});
-                    $(".w3-card-4").css({top: focusOffsetTop - cardMiddle, left: 0, position:'absolute'});
-                }
-            });
+                $(".w3-card-4").parent().css({position: 'relative'});
+                $(".w3-card-4").css({top: focusOffsetTop - cardMiddle, left: 0, position:'absolute'});
+            }
+        });
     }
 
     function display_lookup_information(word_elem) {
