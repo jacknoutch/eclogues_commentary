@@ -222,7 +222,7 @@ $(document).ready(function(){
         $("#lookup").empty();
 
         var newHTML = "\
-        <div class='w3-card-4 animate undisplayed'> \
+        <div class='w3-card-4 animate invisible'> \
             <header class='w3-container w3-blue'> \
                 <span class='cardbutton close'>&times;</span> \
                 <span class='cardbutton hide'>&#8597</span> \
@@ -238,7 +238,7 @@ $(document).ready(function(){
 
         getLookupDetails(word_elem);
 
-        $(".w3-card-4").removeClass("undisplayed");
+        $(".w3-card-4").removeClass("invisible");
     }
 
 //  EVENTS
