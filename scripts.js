@@ -215,6 +215,8 @@ $(document).ready(function(){
                 $lookupCard.parent().css({position: 'relative'});
                 $lookupCard.css({top: focusOffsetTop - cardMiddle, left: 0, position:'absolute'});
             }
+
+            $(".w3-card-4").removeClass("invisible");
         });
     }
 
@@ -238,7 +240,6 @@ $(document).ready(function(){
 
         getLookupDetails(word_elem);
 
-        $(".w3-card-4").removeClass("invisible");
     }
 
 //  EVENTS
