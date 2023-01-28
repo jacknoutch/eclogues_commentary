@@ -408,60 +408,84 @@
     </entry>
     <entry n="Hyblaeus">
         <lemma>Hyblaeus</lemma>
-    </entry>
-    <entry n="Libertas">
-        <lemma>Libertas</lemma>
+        <pp>Hyblaeus, Hyblaea, Hyblaeum</pp>
+        <gloss>Hyblaean, of mount Hybla; Hybla is a mountain in Sicily, associated with the Greek poet Theocritus</gloss>
     </entry>
     <entry n="Oaxes">
         <lemma>Oaxes</lemma>
+        <pp>Oaxes, Oaxidis</pp>
+        <gen>f.</gen>
+        <gloss>the river Oaxes, a river in Crete</gloss>
     </entry>
     <entry n="Parthus">
         <lemma>Parthus</lemma>
+        <pp>Parthus, Parthī</pp>
+        <gen>m.</gen>
+        <gloss>a Parthian</gloss>
     </entry>
     <entry n="Roma">
         <lemma>Roma</lemma>
+        <pp>Rōma, Rōmae</pp>
+        <gen>f.</gen>
+        <gloss>Rome, the city of Rome</gloss>
     </entry>
     <entry n="Scythia">
         <lemma>Scythia</lemma>
+        <pp>Scythia, Scythiae</pp>
+        <gen>f.</gen>
+        <gloss>Scythia</gloss>
     </entry>
     <entry n="Tigris">
         <lemma>Tigris</lemma>
+        <gloss>the river Tigris, a river in the Euphrates</gloss>
+        <pp>Tīgris, Tīgridis</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="absum1">
-        <lemma>absum1</lemma>
+        <lemma>absum</lemma>
         <gloss>to be away from, be absent</gloss>
+        <pp>absum, abesse, āfuī, āfutūrus</pp>
     </entry>
     <entry n="ad2">
-        <lemma>ad2</lemma>
+        <lemma>ad</lemma>
         <gloss>to, toward</gloss>
     </entry>
     <entry n="adeo2">
-        <lemma>adeo2</lemma>
+        <lemma>adeo</lemma>
         <gloss>to this, thus far, so far, as far.</gloss>
     </entry>
     <entry n="aeger2">
-        <lemma>aeger2</lemma>
+        <lemma>aeger</lemma>
         <gloss>unwell, ill, sick, diseased, suffering, feeble</gloss>
+        <pp>aeger, aegra, aegrum</pp>
     </entry>
     <entry n="aequor">
         <lemma>aequor</lemma>
         <gloss>an even surface, level; (surface of the) sea</gloss>
+        <pp>aequor, aequoris</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="aerius">
         <lemma>aerius</lemma>
         <gloss>of the air, aerial, high, heavenly</gloss>
+        <pp>āërius, āëria, āërium</pp>
     </entry>
     <entry n="aes">
         <lemma>aes</lemma>
         <gloss>crude metal, base metal, copper</gloss>
+        <pp>aes, aeris</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="ager">
         <lemma>ager</lemma>
         <gloss>productive land, a field, farm, estate, arable land, pasture</gloss>
+        <pp>ager, agrī</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="ago">
         <lemma>ago</lemma>
         <gloss>to put in motion, move, lead, drive, tend, conduct</gloss>
+        <pp>agō, agere, ēgī, actum</pp>
     </entry>
     <entry n="ah">
         <lemma>ah</lemma>
@@ -478,62 +502,81 @@
     <entry n="alius">
         <lemma>alius</lemma>
         <gloss>another, other, different</gloss>
+        <pp>alius, alia, aliud</pp>
     </entry>
-    <entry n="altar">
-        <lemma>altar</lemma>
+    <entry n="altaria">
+        <lemma>altaria</lemma>
         <gloss>altar</gloss>
+        <pp>altāria, altārium</pp>
+        <gen>n. pl.</gen>
     </entry>
     <entry n="altus">
         <lemma>altus</lemma>
         <gloss>(nourished, grown great,) high, lofty, tall; deep</gloss>
+        <pp>altus, alta, altum</pp>
     </entry>
     <entry n="amarus">
         <lemma>amarus</lemma>
         <gloss>bitter, pungent</gloss>
+        <pp>amārus, amāra, amārum</pp>
     </entry>
     <entry n="ambo2">
-        <lemma>ambo2</lemma>
+        <lemma>ambo</lemma>
         <gloss>both</gloss>
     </entry>
     <entry n="annus">
         <lemma>annus</lemma>
         <gloss>a year</gloss>
+        <pp>annus, annī</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="ante1">
-        <lemma>ante1</lemma>
+        <lemma>ante</lemma>
         <gloss>before, in front, forwards</gloss>
     </entry>
     <entry n="ante2">
-        <lemma>ante2</lemma>
+        <lemma>ante</lemma>
         <gloss>before, in front, forwards</gloss>
     </entry>
     <entry n="antrum">
         <lemma>antrum</lemma>
         <gloss>a cave, cavern, grotto (poet.)</gloss>
+        <pp>antrum, antrī</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="apis">
         <lemma>apis</lemma>
         <gloss>a bee</gloss>
+        <pp>apis, apis</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="arbor">
         <lemma>arbor</lemma>
         <gloss>a tree</gloss>
+        <pp>arbor, arboris</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="arbustum">
         <lemma>arbustum</lemma>
         <gloss>a place where trees are planted, plantation, vineyard planted with trees</gloss>
+        <pp>arbustum, arbustī</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="arista">
         <lemma>arista</lemma>
         <gloss>the top of an ear, beard of grain</gloss>
+        <pp>arista, aristae</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="at2">
-        <lemma>at2</lemma>
+        <lemma>at</lemma>
         <gloss>but</gloss>
     </entry>
     <entry n="aura">
         <lemma>aura</lemma>
         <gloss>the air (in motion), a breeze, breath of air, wind, blast</gloss>
+        <pp>aura, aurae</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="aut">
         <lemma>aut</lemma>
@@ -542,14 +585,18 @@
     <entry n="barba">
         <lemma>barba</lemma>
         <gloss>the beard</gloss>
+        <pp>barba, barbae</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="barbarus2">
-        <lemma>barbarus2</lemma>
+        <lemma>barbarus</lemma>
         <gloss>of strange speech, speaking jargon, unintelligible</gloss>
+        <pp>barbarus, barbara, barbarum</pp>
     </entry>
     <entry n="bibo2">
-        <lemma>bibo2</lemma>
+        <lemma>bibo</lemma>
         <gloss>to drink</gloss>
+        <pp>bibō, bibere, bibī</pp>
     </entry>
     <entry n="bis">
         <lemma>bis</lemma>
@@ -558,10 +605,13 @@
     <entry n="cado">
         <lemma>cado</lemma>
         <gloss>to fall, fall down, descend</gloss>
+        <pp>cadō, cadere, cecidī, cāsum</pp>
     </entry>
     <entry n="caelum1">
-        <lemma>caelum1</lemma>
+        <lemma>caelum</lemma>
         <gloss>the sky, heaven, heavens, vault of heaven</gloss>
+        <pp>caelum, caelī</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="caespes">
         <lemma>caespes</lemma>

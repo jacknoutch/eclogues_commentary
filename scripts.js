@@ -4,11 +4,11 @@ $(document).ready(function(){
 
     $(document).ajaxStart(function () {
         $loading.removeClass("invisible");
-        $('selector').css('cursor', 'progress');
+        $('body').css('cursor', 'progress');
     })
     $(document).ajaxStop(function () {
         $loading.addClass("invisible");
-        $('selector').css('cursor', 'default');
+        $('body').css('cursor', 'default');
     });
 
 //  FUNCTIONS

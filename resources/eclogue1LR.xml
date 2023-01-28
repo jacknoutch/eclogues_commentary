@@ -421,7 +421,7 @@ Source:
                 <w rend="line" n="1.44" pos="PROrel" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="qui1">cui</w>
                 <w rend="line" n="1.44" pos="PROpos" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="noster">nostra</w>
                 <w rend="line" n="1.44" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dies">dies</w>
-                <w rend="line" n="1.44" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="altar">altaria</w>
+                <w rend="line" n="1.44" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="altaria">altaria</w>
                 <w rend="line" n="1.44" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fumo">fumant</w>
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.45">
