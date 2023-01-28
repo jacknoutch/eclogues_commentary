@@ -273,6 +273,20 @@ $(document).ready(function(){
         $(this).addClass("focus");
         display_lookup_information($(this));
 
+        var windowordHeight = $(window).height();
+        var wordHeight = $(this).height();
+        var wordOffset = $(this).offset().top;
+        var offset;
+
+        if (wordHeight < windowordHeight) {
+            offset = wordOffset - ((windowordHeight / 2) - (wordHeight / 2));
+        }
+        else {
+            offset = wordOffset;
+        }
+
+        $('html, body').animate({scrollTop: offset}, 'slow');
+
     });
 
     $("#lookup").on("click", ".hide", function() {
