@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
-    $(document)
-    .ajaxStart(function () {
+    var $loading = $("#loading");
+
+    $(document).ajaxStart(function () {
+        $loading.removeClass("invisible");
         $('selector').css('cursor', 'progress');
     })
-    .ajaxStop(function () {
+    $(document).ajaxStop(function () {
+        $loading.addClass("invisible");
         $('selector').css('cursor', 'default');
     });
 

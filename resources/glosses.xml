@@ -566,62 +566,87 @@
     <entry n="caespes">
         <lemma>caespes</lemma>
         <gloss>a turf, cut sod</gloss>
+        <pp>caespes, caespitis</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="candidus">
         <lemma>candidus</lemma>
         <gloss>shining white, clear, bright</gloss>
+        <pp>candidus, candida, candidum</pp>
     </entry>
     <entry n="canis">
         <lemma>canis</lemma>
         <gloss>a dog</gloss>
+        <pp>canis, canis</pp>
+        <gen>c.</gen>
     </entry>
     <entry n="cano">
         <lemma>cano</lemma>
         <gloss>to sing, to prophesy</gloss>
+        <pp>canō, canere, cecinī, cantum</pp>
     </entry>
     <entry n="capella">
         <lemma>capella</lemma>
         <gloss>a she-goat</gloss>
+        <pp>capella, capellae</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="capto">
         <lemma>capto</lemma>
         <gloss>to strive to seize, lay hold of, catch at, snatch, chase, hunt, capture</gloss>
+        <pp>captō, captāre, captāuī, captātum</pp>
     </entry>
     <entry n="caput">
         <lemma>caput</lemma>
         <gloss>the head</gloss>
+        <pp>caput, capitis</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="carmen1">
-        <lemma>carmen1</lemma>
+        <lemma>carmen</lemma>
         <gloss>a song, poem, verse, oracular response, prophecy, form of incantation, tune, air, lay, strain, note, sound</gloss>
+        <pp>carmen, carminis</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="carpo">
         <lemma>carpo</lemma>
         <gloss>to pick, pluck, pluck off, cull, crop, gather</gloss>
+        <pp>carpō, carpere, carpsī, carptum</pp>
     </entry>
     <entry n="caseus">
         <lemma>caseus</lemma>
         <gloss>cheese</gloss>
+        <pp>cāseus, cāseī</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="castanea">
         <lemma>castanea</lemma>
         <gloss>the chestnut-tree, a chestnut</gloss>
+        <pp>castanea, castaneae</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="catulus">
         <lemma>catulus</lemma>
         <gloss>a young animal, whelp</gloss>
+        <pp>catulus, catulī</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="causa">
         <lemma>causa</lemma>
         <gloss>a cause, reason, motive, inducement, occasion, opportunity</gloss>
+        <gen>f.</gen>
+        <pp>causa, causae</pp>
     </entry>
     <entry n="ceruus">
         <lemma>ceruus</lemma>
         <gloss>cervus, a stag, deer</gloss>
+        <gen>m.</gen>
+        <pp>ceruus, ceruī</pp>
     </entry>
     <entry n="cesso">
         <lemma>cesso</lemma>
         <gloss>to be remiss, delay, loiter, cease from, stop, give over</gloss>
+        <pp>cessō, cessāre, cessāuī, cessātum</pp>
     </entry>
     <entry n="ciuis">
         <lemma>ciuis</lemma>
