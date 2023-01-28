@@ -185,7 +185,7 @@ $(document).ready(function(){
 
                 if ($(entry).find("gen").length) {
                     var gen = $(entry).find("gen").html();
-                    var ppHTML = "<li class='lt'>" + principalParts + ", " + gen + ".</li>";
+                    var ppHTML = "<li class='lt'>" + principalParts + ", " + gen + "</li>";
                 }
                 else {
                     var ppHTML = "<li class='lt'>" + principalParts + "</li>";
