@@ -158,8 +158,12 @@ span.verse_ref {
   visibility: hidden;
 }
 
-.invisible {
+.undisplayed {
   display: none;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .visible span.verse_ref {
