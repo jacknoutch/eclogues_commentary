@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    $(document)
+    .ajaxStart(function () {
+        $('selector').css('cursor', 'progress');
+    })
+    .ajaxStop(function () {
+        $('selector').css('cursor', 'default');
+    });
+
 //  FUNCTIONS
 
     function spanAllWords() {
@@ -162,14 +170,9 @@ $(document).ready(function(){
     }
 
     function getLookupDetails(elem) {
-        var $card = $(".w3-card-4");
-
-        $.get("resources/glosses.xml", function() {
-            console.log("success")
-        });
+        var $lookupCard = $(".w3-card-4");
 
         $.when($.get("resources/eclogue1LR.xml"), $.get("resources/glosses.xml")).done(function(xml1, xml2) {
-            console.log("done");
             var word = getWordFromXML(xml1, elem);
             var lemma = word.attributes.getNamedItem("lemma").nodeValue;
             var entry = $(xml2).find("entry[n='"+lemma+"']");
@@ -204,10 +207,10 @@ $(document).ready(function(){
                 focusOffset = $(".focus").offset();
                 focusOffsetTop = focusOffset["top"];
 
-                cardMiddle = $card.height() / 2;
+                cardMiddle = $lookupCard.height() / 2;
 
-                $(".w3-card-4").parent().css({position: 'relative'});
-                $(".w3-card-4").css({top: focusOffsetTop - cardMiddle, left: 0, position:'absolute'});
+                $lookupCard.parent().css({position: 'relative'});
+                $lookupCard.css({top: focusOffsetTop - cardMiddle, left: 0, position:'absolute'});
             }
         });
     }
@@ -216,7 +219,7 @@ $(document).ready(function(){
         $("#lookup").empty();
 
         var newHTML = "\
-        <div class='w3-card-4 animate'> \
+        <div class='w3-card-4 animate undisplayed'> \
             <header class='w3-container w3-blue'> \
                 <span class='cardbutton close'>&times;</span> \
                 <span class='cardbutton hide'>&#8597</span> \
@@ -231,6 +234,8 @@ $(document).ready(function(){
         $("#lookup_header").html(word_elem.text());
 
         getLookupDetails(word_elem);
+
+        $(".w3-card-4").removeClass("undisplayed");
     }
 
 //  EVENTS
