@@ -12,12 +12,6 @@ footer {
   justify-content: center;
 }
 
-#lookup {
-  position: sticky;
-  position: -webkit-sticky;
-  bottom: 0;
-}
-
 .animate {
   animation-duration: 0.25s;
   animation-name: animate-fade;
@@ -101,6 +95,8 @@ footer {
 }
 
 #lookup {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   position: -webkit-sticky;
   bottom: 0;
@@ -166,6 +162,10 @@ span.verse_ref {
   visibility: hidden;
 }
 
+.comment {
+  color: darkgray;
+}
+
 .visible span.verse_ref {
   visibility: visible;
 }
@@ -222,5 +222,11 @@ li {
   #lookup {
     position: inherit;
     min-width: 450px;
+  }
+  .w3-card-4 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
+    margin-bottom: 1em;
   }
 }

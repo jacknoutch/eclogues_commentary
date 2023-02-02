@@ -1,0 +1,22 @@
+<body>
+    <entry id="1">
+        <text>nos... linquimus... nos.. fugimus</text>
+        <references>1.3.1, 1.3.6, 1.4.1, 1.4.3</references>
+        <comment>Poetic plural; Meliboeus is referring to himself.</comment>
+    </entry>
+    <entry id="2">
+        <text>deus... ille... illius... ille...</text>
+        <references>1.6.3, 1.7.3, 1.7.7, 1.9.1</references>
+        <comment>These all refer to the same person, the "god" to whom Tityrus attributes his new-found leisure.</comment>
+    </entry>
+    <entry id="3">
+        <text>malum hoc</text>
+        <references>1.16.2--3</references>
+        <comment>The death of the twin kids () is the evil Meliboeus is referring to.</comment>
+    </entry>
+    <entry id="4">
+        <text>de caelo tactas</text>
+        <references>1.17.1--3</references>
+        <comment>lit. "struck from the sky", i.e. "by lightning"</comment>
+    </entry>
+</body>

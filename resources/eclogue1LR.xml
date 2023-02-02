@@ -174,8 +174,8 @@ Source:
                 </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.16">
                 <w rend="line" n="1.16" pos="ADV" msd="Deg=Pos" lemma="saepe">Saepe</w>
-                <w rend="line" n="1.16" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="malum1">malum</w>
-                <w rend="line" n="1.16" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w rend="line" n="1.16" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="malum1">malum</w>
+                <w rend="line" n="1.16" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
                 <w rend="line" n="1.16" pos="PROper" msd="Case=Dat|Numb=Plur" lemma="nos">nobis</w>
                 <w rend="line" n="1.16" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
                 <w rend="line" n="1.16" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mens">mens</w>
@@ -278,7 +278,7 @@ Source:
                 </ab>
             <w rend="line" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Tityrus">Tityrus</w>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.28">
-                <w rend="line" n="1.28" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Libertas">Libertas</w>
+                <w rend="line" n="1.28" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="libertas">Libertas</w>
                 <w rend="line" n="1.28" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
                 <w rend="line" n="1.28" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="serus">sera</w>
                 <w rend="line" n="1.28" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
