@@ -59,13 +59,7 @@ a:hover {
   font-style: italic;
 }
 .panel {
-  /* */
   /* border: 1px solid red; */
-}
-
-.panel>* {
-  /* border: 1px solid blue; */
-
 }
 
 #latin_text {
@@ -91,7 +85,7 @@ footer {
 }
 
 #reading {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 #lookup {
@@ -189,16 +183,16 @@ li {
     font-size: 1em;
   }
   .panel {
-    margin: 1em;
+    /* margin: 1em; */
   }
   .blurb {
     display: inherit;
   }
   #utility {
-    display: inherit;
+    display: none;
   }
   #reading {
-    min-width: 400px;
+    padding: 1em;
   }
 }
 
@@ -209,13 +203,14 @@ li {
     font-size: 1em;
   }
   .panel {
-    margin: 1em;
+    padding: 1em;
   }
   .blurb {
     display: inherit;
   }
   .container {
     display: flex;
+    justify-content: center;
   }
   #utility {
     display: inherit;

@@ -75,15 +75,17 @@ $(document).ready(function(){
 
     function addLineNumbers() {
         $(".l").each(function(){
-            var line_num = $(this).attr("n");
+            var rawLineNum = $(this).attr("n");
+            var lineNum = rawLineNum.substring(1+rawLineNum.indexOf("."));
+            console.log(lineNum);
             /* The empty relative span is required to offset the line numbers correctly. */
-            $(this).prepend("<span class=relative><span class=verse_ref>"+line_num+"</span></span>")
+            $(this).prepend("<span class=relative><span class=verse_ref>"+lineNum+"</span></span>")
             
             /* Make every 5th line number visible. */
-            var line_num_int = parseInt(line_num.slice(2))
-            if (line_num_int % 5 == 0) { 
-                var v_ref = $(this).find(".verse_ref");
-                v_ref.css("visibility", "visible");
+            var lineNumInt = parseInt(lineNum)
+            if (lineNumInt % 5 == 0) { 
+                var vRef = $(this).find(".verse_ref");
+                vRef.css("visibility", "visible");
             }
         });
     }
