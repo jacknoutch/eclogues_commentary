@@ -28,7 +28,39 @@ $(document).ready(function(){
         });
     }
 
-    function getNodesBetween(startNode, endNode) {
+    function addNoteClasses() {
+        $.when($.get("resources/commentarynotes.xml")).done(function(xml) {
+            $(xml).find("entry").each(function() {
+                var references = $(this).find("references").html().split(", ");
+                var id = $(this).attr("id");
+                var noteClass = "comment" + id;
+
+                for (let i=0; i<references.length; i++) {
+                    let [poem, line, word] = references[i].split(".");
+                    var lineEl = $(".l[n='"+poem+"."+line+"']");
+                    var wordsInLine = $(lineEl).find(".w");
+
+                    if (word.indexOf("--")>=0) {
+                        let [w1, w2] = word.split("--");
+                        var startWord = wordsInLine[w1-1];
+                        var endWord = wordsInLine[w2-1];
+                        $(startWord).addClass(noteClass+" comment");
+                        $(endWord).addClass(noteClass+" comment");
+                        var wordEls = $(startWord).nextUntil("."+noteClass);
+                        for (let j=0; j<wordEls.length; j++) {
+                            $(wordEls[j]).addClass(noteClass+" comment");
+                        }
+                    }
+                    else {
+                        var wordEl = wordsInLine[word-1];
+                        $(wordEl).addClass(noteClass+" comment");
+                    }
+                }
+            });
+        }); 
+    }
+
+    function getNodesBetween(startNode, endNode) { // Currently not used, but possibly of use to highlight whole phrases, not just words
         var nodes = [];
         var node = startNode;
         while (node && node !== endNode) {
@@ -39,30 +71,6 @@ $(document).ready(function(){
             nodes.push(node);
         }
         return nodes;
-    }
-  
-    function spanNotes() {
-        $.when($.get("resources/commentarynotes.xml")).done(function(xml) {  
-            $(xml).find("entry").each(function() {
-                var references = $(this).find("references").html().split(", ");
-                var id = $(this).attr("id");
-                
-                for (let i=0; i<references.length; i++) {                    
-                    let [p, l, w] = references[i].split(".");
-                    var lineEl = $(".l[n='"+p+"."+l+"']");
-                    var wordsInLine = $(lineEl).find(".w");
-                    
-                    if (w.indexOf("--")>=0) {
-                        let [w1, w2] = w.split("--");
-                        var nodes = getNodesBetween(wordsInLine[w1-1], wordsInLine[w2-1]);
-                        $(nodes).wrapAll("<span class='comment comment" + id + "'></span>")
-                    }
-                    else {
-                        $(wordsInLine[w-1]).wrap("<span class='comment comment" + id + "'></span>")
-                    }
-                }                
-            });
-        });
     }
 
     function addLineNumbers() {
@@ -263,6 +271,7 @@ $(document).ready(function(){
 
     function getLookupInfo(elem, mode, card) {
         if (mode=="w") {
+            card.find("#lookup_header").html(elem.text());
 
             $.when($.get("resources/eclogue1LR.xml"), $.get("resources/glosses.xml")).done(function(xml1, xml2) {
                 var word = getWordFromXML(xml1, elem);
@@ -279,19 +288,19 @@ $(document).ready(function(){
                     else {
                         var ppHTML = "<li class='lt'>" + principalParts + "</li>";
                     }
-                    $(card).find("#lookup_list").append(ppHTML);
+                    $(card).find(".lookupList").append(ppHTML);
                 }
     
                 var gloss = $(entry).find("gloss").html();
                 var glossHTML = "<li>" + gloss + "</li>";
-                $(card).find("#lookup_list").append(glossHTML);
+                $(card).find(".lookupList").append(glossHTML);
             
                 var msd = word.attributes.getNamedItem("msd").nodeValue;
                 var msdText = getParseFromMSD(msd);
     
                 if (msdText) {
                     var parseHTML = "<li>" + msdText + "</li>"
-                    $(card).find("#lookup_list").append(parseHTML);
+                    $(card).find(".lookupList").append(parseHTML);
                 }
 
                 setCardPosition();
@@ -299,8 +308,8 @@ $(document).ready(function(){
             });
 
         } else if (mode="c") {
+            
             $.when($.get("resources/commentarynotes.xml")).done(function(xml) {
-                $(".focus").removeClass("focus");
                 
                 var elClasses = elem.attr("class");
                 var commentClass = elClasses.match(/comment\d+/)[0];
@@ -308,12 +317,31 @@ $(document).ready(function(){
                 var id = commentClass.substring(7);
                 var commentEntry = $(xml).find('entry[id="'+id+'"]')
                 var comment = commentEntry.find("comment").html();
+                card.find("#lookup_header").html(commentEntry.find("text")[0]);
+
+                var references = commentEntry.find("references").html().split(", ");
+                for (let i=0; i<references.length; i++) {
+                    let [poem, line, word] = references[i].split(".");
+                    var lineEl = $(".l[n='"+poem+"."+line+"']");
+                    var wordsInLine = $(lineEl).find(".w");
+
+                    if (word.indexOf("--")>=0) {
+                        let [w1, w2] = word.split("--");
+                        var startWord = wordsInLine[w1-1];
+                        var endWord = wordsInLine[w2-1];
+                        var nodes = getNodesBetween(startWord, endWord);
+                        $(nodes).wrapAll("<span class='focus'></span>");
+                    }
+                    else {
+                        var wordEl = wordsInLine[word-1];
+                        $(wordEl).addClass("focus");
+                    }
+                    }
+                // $("#reading").find(".comment"+id).each(function() {
+                //     $(this).addClass("focus");
+                // });
                 
-                $("#reading").find(".comment"+id).each(function() {
-                    $(this).addClass("focus");
-                });
-                
-                $(card).find("#lookup_list").append(comment);
+                $(card).find(".lookupList").append(comment);
             
                 setCardPosition();
 
@@ -341,8 +369,8 @@ $(document).ready(function(){
     }
 
     function displayLookupInfo(elem, mode) {
-        var cards = $("#lookup").find(".w3-card-4");
-        var newCardID = cards.length;
+        var newCardID = cardCounter;
+        cardCounter++;
 
         if (mode=="w") {
             var cardClass = "word";
@@ -352,9 +380,10 @@ $(document).ready(function(){
         else if (mode=="c") {
             var cardClass = "comment";
             var cardID = "card"+newCardID;
-            var color = "w3-red"
+            var color = "w3-red";
         }
 
+        $(".w3-card-4").filter("."+cardClass).remove();
 
         var newHTML = "\
         <div class='w3-card-4 animate invisible "+cardClass+"' id='"+cardID+"'> \
@@ -363,14 +392,13 @@ $(document).ready(function(){
                 <span class='cardbutton hide'>&#8597</span> \
                 <h2 id='lookup_header'></h2> \
             </header> \
-            <div class='w3-container'> \
-                <ul id='lookup_list'></ul> \
+            <div class='w3-container content'> \
+                <ul class='lookupList'></ul> \
             </div> \
         </div>"
         
         $("#lookup").append(newHTML);
         var newCard = $("#"+cardID);
-        newCard.find("#lookup_header").html(elem.text());
 
         getLookupInfo(elem, mode, newCard);
     }
@@ -378,43 +406,53 @@ $(document).ready(function(){
 //  EVENTS
 
     spanAllWords(); // Wrap each word in a <span> for ease of reference
-    spanNotes();
+    addNoteClasses();
     addLineNumbers();
+
+    var cardCounter = 0; // This is the counter for cards created in the #lookup pane, used in displayLookupInfo()
 
     $(document).on({
         "click": function(event) {
             $target = $(event.target);
-            if (event.ctrlKey && $($target.parents()).hasClass("comment")) {
-                var commentElement = $target.parents(".comment");
-                displayLookupInfo(commentElement, "c");
+            if (event.ctrlKey && $target.hasClass("comment")) {
+                $(".focus").children().unwrap()
+                $(".focus").removeClass("focus");
+                displayLookupInfo($target, "c");
             }
-            else if ($(event.target).hasClass("w")) {
+            else if ($target.hasClass("w")) {
+                $(".focus").children().unwrap()
                 $(".focus").removeClass("focus");
                 $target.addClass("focus");
                 displayLookupInfo($target, "w");
             }
+            else if ($target.hasClass("close")) {
+                card = $target.parents(".w3-card-4");
+                card.remove();
+                setCardPosition();
+            }
+            else if ($target.hasClass("hide")) {
+                card = $target.parents(".w3-card-4");
+                card.toggleClass("closed");
+                cardContent = card.find(".content");
+                cardContent.toggle();
+                setCardPosition();
+            }
             else {
+                $(".focus").children().unwrap()
                 $(".focus").removeClass("focus");
             }
+        },
+        "keydown": function(event) {
+            if (event.ctrlKey) {
+                $(".w.comment").addClass("highlight");
+            }
+        },
+        "keyup": function(event) {
+            $(".w.comment").removeClass("highlight");
         },
         "hover": function(event) {
             // Write a function to show words in a particular comment when hovering over any of them with the CTRL key depressed
         }
-    });
-
-    $("#lookup").on("click", function(event) {
-        $target = $(event.target);
-        if ($target.hasClass("close")) {
-            card = $target.parents(".w3-card-4");
-            card.remove();
-            setCardPosition();
-        }
-        else if ($target.hasClass("hide")) {
-            card = $target.parents(".w3-card-4");
-            cardLookupList = card.find("#lookup_list");
-            cardLookupList.toggle();
-            setCardPosition();
-        } 
     });
 });
 

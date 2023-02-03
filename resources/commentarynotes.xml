@@ -12,11 +12,16 @@
     <entry id="3">
         <text>malum hoc</text>
         <references>1.16.2--3</references>
-        <comment>The death of the twin kids () is the evil Meliboeus is referring to.</comment>
+        <comment>The death of the twin kids (<lt>gemellos</lt>) is the evil Meliboeus is referring to.</comment>
     </entry>
     <entry id="4">
         <text>de caelo tactas</text>
         <references>1.17.1--3</references>
         <comment>lit. "struck from the sky", i.e. "by lightning"</comment>
+    </entry>
+    <entry id="5">
+        <text>Musam meditaris</text>
+        <references>1.2.3--4</references>
+        <comment>"you are considering the Muse", or "you are practising a song", as <lt>Musam</lt>, in addition to one of the Muses, can metonymically mean a song.</comment>
     </entry>
 </body>
