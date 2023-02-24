@@ -27,7 +27,7 @@
         <pp>M&#363;sa, M&#363;sae</pp>
         <pos>NOMpro</pos>
         <gen>f.</gen>
-        <gloss>Muse, <em>hence:</em> song, poem</gloss>
+        <gloss>Muse, <span class="comment">hence:</span> song, poem</gloss>
         <instances>1.2</instances>
     </entry>
     <entry n="Tityrus">
@@ -71,7 +71,7 @@
         <lemma>aruum</lemma>
         <pp>aruum, aru&#299;</pp>
         <pos>NOMcom</pos>
-        <gen>Neut</gen>
+        <gen>n.</gen>
         <gloss>field, (pl.) fields, region</gloss>
         <instances>1.3</instances>
     </entry>
@@ -202,7 +202,7 @@
     <entry n="lentus">
         <lemma>lentus</lemma>
         <pp>lentus, lenta, lentum</pp>
-        <gloss>slow, hence: untroubled</gloss>
+        <gloss>slow, <span class="comment">hence:</span> untroubled</gloss>
         <instances>1.4; 1.26</instances>
     </entry>
     <entry n="linquo">
@@ -286,7 +286,7 @@
     <entry n="qui1">
         <lemma>qui</lemma>
         <pp>qu&#299;, quae, quod</pp>
-        <gloss>who, which, relative pronoun</gloss>
+        <gloss>who, which; <span class="comment">(relative pronoun)</span></gloss>
         <instances>1.10; 1.19; 1.20; 1.28; 1.38; 1.44; 1.54</instances>
     </entry>
     <entry n="recubo">
@@ -456,7 +456,7 @@
     </entry>
     <entry n="aeger2">
         <lemma>aeger</lemma>
-        <gloss>unwell, ill, sick, diseased, suffering, feeble</gloss>
+        <gloss>sick, diseased, feeble</gloss>
         <pp>aeger, aegra, aegrum</pp>
     </entry>
     <entry n="aequor">
@@ -478,13 +478,13 @@
     </entry>
     <entry n="ager">
         <lemma>ager</lemma>
-        <gloss>productive land, a field, farm, estate, arable land, pasture</gloss>
+        <gloss>field, pasture</gloss>
         <pp>ager, agrī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="ago">
         <lemma>ago</lemma>
-        <gloss>to put in motion, move, lead, drive, tend, conduct</gloss>
+        <gloss>to move, drive, tend</gloss>
         <pp>agō, agere, ēgī, actum</pp>
     </entry>
     <entry n="ah">
@@ -609,7 +609,7 @@
     </entry>
     <entry n="caelum1">
         <lemma>caelum</lemma>
-        <gloss>the sky, heaven, heavens, vault of heaven</gloss>
+        <gloss>the sky, heaven</gloss>
         <pp>caelum, caelī</pp>
         <gen>n.</gen>
     </entry>
@@ -643,7 +643,7 @@
     </entry>
     <entry n="capto">
         <lemma>capto</lemma>
-        <gloss>to strive to seize, lay hold of, catch at, snatch, chase, hunt, capture</gloss>
+        <gloss>to strive to seize, capture, seek</gloss>
         <pp>captō, captāre, captāuī, captātum</pp>
     </entry>
     <entry n="caput">
@@ -683,7 +683,7 @@
     </entry>
     <entry n="causa">
         <lemma>causa</lemma>
-        <gloss>a cause, reason, motive, inducement, occasion, opportunity</gloss>
+        <gloss>a cause, reason, motive,</gloss>
         <gen>f.</gen>
         <pp>causa, causae</pp>
     </entry>
@@ -749,7 +749,7 @@
     </entry>
     <entry n="corylus">
         <lemma>corylus</lemma>
-        <gloss>a hazel-tree, filberttree</gloss>
+        <gloss>a hazel-tree</gloss>
         <pp>corylus, corylī</pp>
         <gen>f.</gen>
 
@@ -794,7 +794,7 @@
     </entry>
     <entry n="densus">
         <lemma>densus</lemma>
-        <gloss>thick, close, compact, dense, crowded</gloss>
+        <gloss>thick, close, dense</gloss>
         <pp>densus, densa, densum</pp>
 
     </entry>
@@ -825,7 +825,7 @@
     </entry>
     <entry n="dico2">
         <lemma>dico</lemma>
-        <gloss>to say, speak, utter, tell, mention, relate, affirm, declare, state, assert</gloss>
+        <gloss>to say, speak, call</gloss>
         <pp>dīcō, dīcere, dīxī, dictum</pp>
 
     </entry>
@@ -871,7 +871,7 @@
     </entry>
     <entry n="duco">
         <lemma>duco</lemma>
-        <gloss>to lead, conduct, guide, direct, draw, bring, fetch, escort</gloss>
+        <gloss>to lead, guide</gloss>
         <pp>dūcō, dūcere, dūxī, ductum</pp>
 
     </entry>
@@ -894,7 +894,7 @@
     </entry>
     <entry n="en">
         <lemma>en</lemma>
-        <gloss>interj., calling attention, or expressing surprise or indignation, lo! behold! see! there!</gloss>
+        <gloss>look! see!</gloss>
 
     </entry>
     <entry n="enim2">
@@ -976,14 +976,14 @@
     </entry>
     <entry n="flumen">
         <lemma>flumen</lemma>
-        <gloss>a flowing, flood, stream, running water</gloss>
+        <gloss>river, stream</gloss>
         <pp>flūmen, flūminis</pp>
         <gen>n.</gen>
 
     </entry>
     <entry n="fons">
         <lemma>fons</lemma>
-        <gloss>a spring, fountain, well, source</gloss>
+        <gloss>a spring, fountain, well</gloss>
         <pp>fons, fontis</pp>
         <gen>m.</gen>
 
@@ -1003,7 +1003,7 @@
     </entry>
     <entry n="frigus">
         <lemma>frigus</lemma>
-        <gloss>cold, coldness, coolness, chilliness</gloss>
+        <gloss>cold, coolness</gloss>
         <pp>frīgus, frīgoris</pp>
         <gen>n.</gen>
 
@@ -1030,7 +1030,7 @@
     </entry>
     <entry n="gemellus2">
         <lemma>gemellus</lemma>
-        <gloss>born together, twin-born, twin-</gloss>
+        <gloss>twin</gloss>
         <pp>gemellus, gemella, gemellum</pp>
 
     </entry>
@@ -1048,7 +1048,7 @@
     </entry>
     <entry n="grex">
         <lemma>grex</lemma>
-        <gloss>a flock, herd, drove, swarm</gloss>
+        <gloss>a flock, herd</gloss>
         <pp>grex, gregis</pp>
         <gen>m.</gen>
 
@@ -1066,10 +1066,16 @@
         <gen>m.</gen>
 
     </entry>
+    <entry n="hic1">
+        <lemma>hic</lemma>
+        <gloss>this</gloss>
+        <pp>hic, haec, hoc</pp>
+
+    </entry>
     <entry n="hic2">
         <lemma>hic</lemma>
-        <gloss>this (proximate: this here and now)</gloss>
-        <pp>hic, haec, hoc</pp>
+        <gloss>here</gloss>
+        <pp>hīc</pp>
 
     </entry>
     <entry n="hinc">
@@ -1130,7 +1136,7 @@
     </entry>
     <entry n="inuideo">
         <lemma>inuideo</lemma>
-        <gloss>to look askance at, cast an evil eye upon</gloss>
+        <gloss>envy</gloss>
         <pp>inuideō, inuidēre, inuīsī, inuīsum</pp>
 
     </entry>
@@ -1175,7 +1181,7 @@
     </entry>
     <entry n="laeuus">
         <lemma>laeuus</lemma>
-        <gloss>left, on the left side</gloss>
+        <gloss>left; <span class="comment">(of omens)</span> unfavourable; <span class="comment">here: </span>ruled by an ill omen</gloss>
         <pp>laeuus, laeua, laeuum</pp>
 
     </entry>
@@ -1233,13 +1239,13 @@
     </entry>
     <entry n="maestus">
         <lemma>maestus</lemma>
-        <gloss>full of sadness, sad, sorrowful, dejected, melancholy, gloomy, despondent</gloss>
+        <gloss>sad, melancholy</gloss>
         <pp>maestus, maesta, maestum</pp>
 
     </entry>
     <entry n="magis2">
-        <lemma>magis2</lemma>
-        <gloss>more, in a higher degree, more completely</gloss>
+        <lemma>magis</lemma>
+        <gloss>more; rather</gloss>
 
     </entry>
     <entry n="magnus">
@@ -1271,7 +1277,7 @@
     <entry n="memini">
         <lemma>memini</lemma>
         <gloss>I remember, recollect, think of, am mindful of, bear in mind</gloss>
-        <pp>meminī, mwminisse</pp>
+        <pp>meminī, meminisse</pp>
 
     </entry>
     <entry n="mens">
@@ -1290,7 +1296,7 @@
     </entry>
     <entry n="miror">
         <lemma>miror</lemma>
-        <gloss>to wonder, marvel, be astonished, be amazed, admire</gloss>
+        <gloss>to marvel (at), be astonished, admire</gloss>
         <pp>mīror, mīrārī, mīrātus</pp>
 
     </entry>
@@ -1308,7 +1314,7 @@
     </entry>
     <entry n="modo1">
         <lemma>modo</lemma>
-        <gloss>by a measure, with a limit; just now; at all; only</gloss>
+        <gloss>just now</gloss>
 
     </entry>
     <entry n="mollis">
@@ -1353,7 +1359,7 @@
     </entry>
     <entry n="notus2">
         <lemma>notus</lemma>
-        <gloss>known</gloss>
+        <gloss>known, familiar</gloss>
         <pp>nōtus, nōta, nōtum</pp>
 
     </entry>
@@ -1373,7 +1379,7 @@
     </entry>
     <entry n="nudus">
         <lemma>nudus</lemma>
-        <gloss>naked, bare, unclothed, stripped, uncovered, exposed</gloss>
+        <gloss>naked, bare, exposed</gloss>
         <pp>nūdus, nūda, nūdum</pp>
 
     </entry>
@@ -1402,7 +1408,7 @@
     </entry>
     <entry n="opacus">
         <lemma>opacus</lemma>
-        <gloss>in the shade, shaded, shady</gloss>
+        <gloss>in the shade, shady</gloss>
         <pp>opācus, opāca, opācum</pp>
 
     </entry>
@@ -1557,7 +1563,7 @@
     </entry>
     <entry n="pinus">
         <lemma>pinus</lemma>
-        <gloss>a pine, pine-tree, fir, firtree</gloss>
+        <gloss>a pine or fir tree</gloss>
         <pp>pīnus, pīnūs; (also pīnus, pīnī)</pp>
         <gen>f.</gen>
 
@@ -1615,7 +1621,7 @@
     </entry>
     <entry n="praedico2">
         <lemma>praedico</lemma>
-        <gloss>to say before, premise</gloss>
+        <gloss>to foretell, prophesy</gloss>
         <pp>praedīcō, praedīcere, praedīxī, praedīctum</pp>
 
     </entry>
@@ -1668,7 +1674,7 @@
     </entry>
     <entry n="puto">
         <lemma>puto</lemma>
-        <gloss>to believe, reckon; to clean, cleanse, trim, prune</gloss>
+        <gloss>to reckon, think</gloss>
         <pp>putō, putāre, putāuī, putātum</pp>
         
     </entry>
@@ -1697,7 +1703,7 @@
     </entry>
     <entry n="quercus">
         <lemma>quercus</lemma>
-        <gloss>an oak, oak-tree, Italian oak</gloss>
+        <gloss>an oak (tree)</gloss>
         <pp>quercus, quercūs</pp>
         <gen>f.</gen>
 
@@ -1753,7 +1759,7 @@
     </entry>
     <entry n="relinquo">
         <lemma>relinquo</lemma>
-        <gloss>to leave behind, not take along, not stay with, leave, move away from, quit, abandon</gloss>
+        <gloss>to leave (behind), abandon</gloss>
         <pp>relinquō, relinquere, relīquī, relictum</pp>
 
     </entry>
@@ -1774,6 +1780,7 @@
         <gloss>an answer, reply, response</gloss>
         <pp>responsum, responsī</pp>
         <gen>n.</gen>
+        <pos>noun</pos>
 
     </entry>
     <entry n="rupes">
@@ -1792,7 +1799,7 @@
     </entry>
     <entry n="sacer">
         <lemma>sacer</lemma>
-        <gloss>dedicated, consecrated, devoted, sacred</gloss>
+        <gloss>sacred</gloss>
         <pp>sacer, sacra, sacrum</pp>
 
     </entry>
@@ -1862,7 +1869,7 @@
     </entry>
     <entry n="serus">
         <lemma>serus</lemma>
-        <gloss>a late time, late hour</gloss>
+        <gloss>slow, late</gloss>
         <pp>sērus, sēra, sērum</pp>
 
     </entry>
@@ -1878,7 +1885,7 @@
     </entry>
     <entry n="silex">
         <lemma>silex</lemma>
-        <gloss>a hard stone, flint, flint-stone, fire-stone, granite</gloss>
+        <gloss>a hard stone, rock, flagstone</gloss>
         <gen>m. (f.)</gen>
         <pp>silex, silicis</pp>
 
@@ -1917,7 +1924,7 @@
     </entry>
     <entry n="stultus">
         <lemma>stultus</lemma>
-        <gloss>foolish, simple, silly, fatuous, stupid, dull</gloss>
+        <gloss>foolish, stupid</gloss>
         <pp>stultus, stulta, stultum</pp>
 
     </entry>
@@ -1969,7 +1976,7 @@
     </entry>
     <entry n="tango">
         <lemma>tango</lemma>
-        <gloss>to touch</gloss>
+        <gloss>to touch; <span class="comment">(of lightning) </span>strike</gloss>
         <pp>tangō, tangere, tetigī, tactum</pp>
 
     </entry>
@@ -2018,7 +2025,7 @@
     </entry>
     <entry n="totus">
         <lemma>totus</lemma>
-        <gloss>all, all the, all at once, the whole, entire, total</gloss>
+        <gloss>all (the), whole, entire</gloss>
         <pp>tōtus, tōta, tōtum</pp>
 
     </entry>
@@ -2068,7 +2075,7 @@
     </entry>
     <entry n="uicinus2">
         <lemma>uicinus</lemma>
-        <gloss>of the neighborhood, near, neighboring; (noun) a neighbor</gloss>
+        <gloss>neighboring</gloss>
         <pp>uīcīnus, uīcīna, uīcīnum</pp>
 
     </entry>
@@ -2121,12 +2128,12 @@
     </entry>
     <entry n="undique">
         <lemma>undique</lemma>
-        <gloss>from all parts, from every quarter, on all sides, all around, on every part, everywhere</gloss>
+        <gloss>everywhere, on every part</gloss>
 
     </entry>
     <entry n="uoco">
         <lemma>uoco</lemma>
-        <gloss>to call, summon, invoke, call together, convoke</gloss>
+        <gloss>to call; summon</gloss>
         <pp>uocō, uocāre, uocāuī, uocātum</pp>
     </entry>
     <entry n="uos">
