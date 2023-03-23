@@ -1,42 +1,26 @@
-/* * { */
-  /* cursor: default; */
-  /* border: 1px dotted #C00; */
-/* } */
-.w3-card-4 {
-  width: 100%;
-  background-color: white;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.animate {
-  animation-duration: 0.25s;
-  animation-name: animate-fade;
-  animation-delay: 0.25s;
-  animation-fill-mode: backwards;
-}
-
-@keyframes animate-fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+/*** For testing ***/
+/* * {
+    cursor: default;
+    border: 1px dotted #C00;
+} */
 
 /* For mobile phones */
 
 html, body {
   font-size: 0.9em;
 }
-.w, .cardbutton {
-  cursor: pointer;
+nav {
+  /* ... */
 }
-.l {
-  -webkit-user-select: none; /*Safari*/
-  -ms-user-select: none; /*IE 10 and IE 11*/
-  user-select: none; /*Standard syntax*/
-  /* border: 1px solid red; */
+footer {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: justify;
 }
 a {
   color: #C00;
@@ -46,48 +30,27 @@ a:hover {
   color: #F33;
   text-decoration: underline;
 }
+.invisible { /* Simple in/visibility classes. */
+  visibility: hidden;
+}
+
+/*** Classes only in the reading pages ***/
 .blurb {
   font-style: italic;
 }
-.focus {
-  background-color: yellow;
-}
-.select {
-  text-decoration: underline;
-}
-.lt {
-  font-style: italic;
-}
-.panel {
-  /* border: 1px solid red; */
-}
-
 #latin_text {
   margin: 0 auto;
-  width: fit-content;  
-}
-
-nav {
-  margin: 0 auto;
   width: fit-content;
+  /* border: 1px dotted blue; */
+  padding-left: 25px;
 }
-
-.blurb {
-  display: none;
-}
-
-footer {
-  display: none;
-}
-
 #utility {
-  display: none;
+  /* ... */
+  text-align: center;
 }
-
 #reading {
   min-height: 100%;
 }
-
 #lookup {
   display: flex;
   flex-direction: column;
@@ -95,85 +58,100 @@ footer {
   position: -webkit-sticky;
   bottom: 0;
 }
-
-header.w3-container {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+.speaker {
+  font-variant: small-caps;
 }
-
-#lookup_header {
-  width: 80%;
+.undisplayed { /* for unused lines */
+  display: none;
 }
-
-.cardbutton {
-  /* position: absolute; */
+#loading {
+  text-align: right;
+}
+.l {
+  /* Lines of the poem cannot be selected */
   -webkit-user-select: none; /*Safari*/
   -ms-user-select: none; /*IE 10 and IE 11*/
   user-select: none; /*Standard syntax*/
-  width: 10%;
-  font-size: xx-large;
-  text-align: center;
+  padding-left: 20px;
+  text-indent: -20px;
 }
 
-.cardbutton:hover {
-  background: #bbb;
+/*** Dynamic classes ***/
+.w, .cardbutton {
+  cursor: pointer;
 }
-
-#gloss {
-  font-weight: bold;
+.focus {
+  background-color: lightyellow;
 }
-
-ul {
-  padding: 0px;
-}
-
-.relative {
-  position: relative;
-  width: 0px;
-  height: 0px;
-}
-
 span.verse_ref {
   color: #C00;
   font-size: 70%;
   line-height: 1;
   position: absolute;
-  right: 1vh;
   text-align: right;
-  /* border: 1px solid red; */
-  cursor:auto;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
-  visibility: hidden;
+  visibility: hidden; /* Most line numbers are hidden; every fifth line number, or one that is not the expected number, is displayed dynamically. */
 }
-
-.undisplayed {
-  display: none;
+.relative { /* For line numbers to be set back from the line they are wrapped in a .relative span */
+  position: relative;
+  width: 0px;
+  height: 0px;
 }
-
-.highlight {
-  background-color: #F33;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-/* .comment {
-  color: darkgray;
-} */
-
-.visible span.verse_ref {
+.visible span.verse_ref { /* To manually override which line numbers are visible. */
   visibility: visible;
 }
-
-li {
-  list-style: none;
+.highlight {
+  background-color: pink;
 }
 
-.speaker {
-  font-variant: small-caps;
+/*** Card classes ***/
+.w3-card-4 {
+  background-color: white;
+}
+.w3-card-4 header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.w3-card-4 header h2 {
+  width: 80%; /* this combines with the 2 buttons of 10% width each */
+}
+.cardbutton {
+  /* Button text cannot be selected */
+  -webkit-user-select: none; /*Safari*/
+  -ms-user-select: none; /*IE 10 and IE 11*/
+  user-select: none; /*Standard syntax*/
+  width: 10%; /* this combines with the h2 of 80% width*/
+  font-size: xx-large;
+  text-align: center;
+}
+.cardbutton:hover {
+  background: #bbb;
+}
+.animate {
+  animation-duration: 0.25s;
+  animation-name: animate-fade;
+  animation-delay: 0.25s;
+  animation-fill-mode: backwards;
+}
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+.lt { /* Is this required? */
+  font-style: italic;
+}
+
+ul {
+  padding: 0px;
+}
+li {
+  list-style: none;
 }
 
 /* For tablets */
@@ -182,16 +160,7 @@ li {
   html, body {
     font-size: 1em;
   }
-  .panel {
-    /* margin: 1em; */
-  }
-  .blurb {
-    display: inherit;
-  }
-  #utility {
-    display: none;
-  }
-  #reading {
+  .container.w3-row {
     padding: 1em;
   }
 }
@@ -201,12 +170,6 @@ li {
 @media only screen and (min-width: 992px) {
   html, body {
     font-size: 1em;
-  }
-  .panel {
-    padding: 1em;
-  }
-  .blurb {
-    display: inherit;
   }
   .container {
     display: flex;
@@ -229,6 +192,6 @@ li {
     margin-bottom: 1em;
   }
   .w3-card-4.closed {
-    margin-bottom: 0;
+    margin-bottom: 0; /* When a card is closed there is no gap between it and the card below. */
   }
 }

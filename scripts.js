@@ -60,7 +60,7 @@ $(document).ready(function(){
         }); 
     }
 
-    function getNodesBetween(startNode, endNode) { // Currently not used, but possibly of use to highlight whole phrases, not just words
+    function getNodesBetween(startNode, endNode) {
         var nodes = [];
         var node = startNode;
         while (node && node !== endNode) {
@@ -77,7 +77,6 @@ $(document).ready(function(){
         $(".l").each(function(){
             var rawLineNum = $(this).attr("n");
             var lineNum = rawLineNum.substring(1+rawLineNum.indexOf("."));
-            console.log(lineNum);
             /* The empty relative span is required to offset the line numbers correctly. */
             $(this).prepend("<span class=relative><span class=verse_ref>"+lineNum+"</span></span>")
             
@@ -273,7 +272,7 @@ $(document).ready(function(){
 
     function getLookupInfo(elem, mode, card) {
         if (mode=="w") {
-            card.find("#lookup_header").html(elem.text());
+            card.find("h2").html(elem.text());
 
             $.when($.get("resources/eclogue1LR.xml"), $.get("resources/glosses.xml")).done(function(xml1, xml2) {
                 var word = getWordFromXML(xml1, elem);
@@ -319,7 +318,7 @@ $(document).ready(function(){
                 var id = commentClass.substring(7);
                 var commentEntry = $(xml).find('entry[id="'+id+'"]')
                 var comment = commentEntry.find("comment").html();
-                card.find("#lookup_header").html(commentEntry.find("text")[0]);
+                card.find("h2").html(commentEntry.find("text")[0]);
 
                 var references = commentEntry.find("references").html().split(", ");
                 for (let i=0; i<references.length; i++) {
@@ -339,9 +338,6 @@ $(document).ready(function(){
                         $(wordEl).addClass("focus");
                     }
                     }
-                // $("#reading").find(".comment"+id).each(function() {
-                //     $(this).addClass("focus");
-                // });
                 
                 $(card).find(".lookupList").append(comment);
             
@@ -392,7 +388,7 @@ $(document).ready(function(){
             <header class='w3-container "+color+"'> \
                 <span class='cardbutton close'>&times;</span> \
                 <span class='cardbutton hide'>&#8597</span> \
-                <h2 id='lookup_header'></h2> \
+                <h2></h2> \
             </header> \
             <div class='w3-container content'> \
                 <ul class='lookupList'></ul> \
