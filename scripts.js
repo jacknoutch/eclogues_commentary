@@ -419,6 +419,14 @@ $(document).ready(function(){
             }
             else if ($target.hasClass("cardbutton") && $target.hasClass("w3-bar-item")) { // the user has clicked on one of the card's grammar/comment buttons
                 updateCardContent($target)
+                card = $target.parents(".w3-card-4");
+                console.log(card);
+                if (card.hasClass("closed")) {
+                    card = $target.parents(".w3-card-4");
+                    card.toggleClass("closed");
+                    cardContent = card.find(".content");
+                    cardContent.toggle();
+                }
             }
             else if ($target.hasClass("close")) { // the user has clicked on the close button of a card
                 // identify the card in question and delete it before rearranging the position of other cards
