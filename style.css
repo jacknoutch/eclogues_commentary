@@ -30,13 +30,15 @@ a:hover {
   color: #F33;
   text-decoration: underline;
 }
-.invisible { /* Simple in/visibility classes. */
+.invisible { /* Simple invisibility class */
   visibility: hidden;
 }
 
 /*** Classes only in the reading pages ***/
 .blurb {
   font-style: italic;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 #latin_text {
   margin: 0 auto;
@@ -44,9 +46,12 @@ a:hover {
   /* border: 1px dotted blue; */
   padding-left: 25px;
 }
+.panel {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 #utility {
   /* ... */
-  text-align: center;
 }
 #reading {
   min-height: 100%;
