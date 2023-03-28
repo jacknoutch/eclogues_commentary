@@ -403,7 +403,6 @@ $(document).ready(function(){
 //  EVENTS
 
     spanAllWords(); // Wrap each word in a <span> for ease of reference
-    addNoteClasses();
     addLineNumbers();
 
     var cardCounter = 0; // This is the counter for cards created in the #lookup pane, used in makeCard()
