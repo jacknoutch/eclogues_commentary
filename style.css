@@ -31,7 +31,7 @@ a:hover {
   text-decoration: underline;
 }
 .invisible { /* Simple invisibility class */
-  visibility: hidden;
+  display: none;
 }
 
 /*** Classes only in the reading pages ***/
@@ -45,10 +45,6 @@ a:hover {
   width: fit-content;
   /* border: 1px dotted blue; */
   padding-left: 25px;
-}
-.panel {
-  padding-left: 1em;
-  padding-right: 1em;
 }
 #utility {
   /* ... */
@@ -123,7 +119,7 @@ span.verse_ref {
 .w3-card-4 header h2 {
   width: 80%; /* this combines with the 2 buttons of 10% width each */
 }
-.cardbutton {
+.cardbutton.hide, .cardbutton.close{
   /* Button text cannot be selected */
   -webkit-user-select: none; /*Safari*/
   -ms-user-select: none; /*IE 10 and IE 11*/
@@ -179,6 +175,10 @@ li {
   .container {
     display: flex;
     justify-content: center;
+  }
+  .panel {
+    padding-left: 1em;
+    padding-right: 1em;
   }
   #utility {
     display: inherit;

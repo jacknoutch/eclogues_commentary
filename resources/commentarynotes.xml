@@ -1,27 +1,62 @@
 <body>
-    <entry id="1">
-        <text>nos... linquimus... nos.. fugimus</text>
-        <references>1.3.1, 1.3.6, 1.4.1, 1.4.3</references>
-        <comment>Poetic plural; Meliboeus is referring to himself.</comment>
-    </entry>
     <entry id="2">
-        <text>deus... ille... illius... ille...</text>
-        <references>1.6.3, 1.7.3, 1.7.7, 1.9.1</references>
-        <comment>These all refer to the same person, the "god" to whom Tityrus attributes his new-found leisure.</comment>
+        <text>ille... illius... ille...</text>
+        <references>1.7.3, 1.7.7, 1.9.1</references>
+        <comment>Referring back to the <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.6.3')">deus</a></span> (l. 6) to whom Tityrus attributes his new-found leisure.</comment>
     </entry>
     <entry id="3">
         <text>malum hoc</text>
-        <references>1.16.2--3</references>
+        <references>1.16.2, 1.16.3</references>
         <comment>The death of the twin kids (<lt>gemellos</lt>) is the evil Meliboeus is referring to.</comment>
     </entry>
     <entry id="4">
         <text>de caelo tactas</text>
-        <references>1.17.1--3</references>
+        <references>1.17.1, 1.17.2, 1.17.3</references>
         <comment>lit. "struck from the sky", i.e. "by lightning"</comment>
     </entry>
     <entry id="5">
         <text>Musam meditaris</text>
-        <references>1.2.3--4</references>
+        <references>1.2.3, 1.2.4</references>
         <comment>"you are considering the Muse", or "you are practising a song", as <lt>Musam</lt>, in addition to one of the Muses, can metonymically mean a song.</comment>
+    </entry>
+    <entry id="6">
+        <text>Musam</text>
+        <references>1.2.3</references>
+        <comment>lit. "a Muse", hence metonymically "a song"</comment>
+    </entry>
+    <entry id="7">
+        <text>tegmine</text>
+        <references>1.1.6</references>
+        <comment>abl. with <lt><a href="javascript:void(0)" onclick="quickHighlight('1.1.5')">sub</a></lt>; "under the cover..."</comment>
+    </entry>
+    <entry id="8">
+        <text>patulae</text>
+        <references>1.1.3</references>
+        <comment>with <lt><a href="javascript:void(0)" onclick="quickHighlight('1.1.7')">fagi</a></lt>; "of the spreading beech tree"</comment>
+    </entry>
+    <entry id="9">
+        <text>recubans</text>
+        <references>1.1.4</references>
+        <comment>with <lt><a href="javascript:void(0)" onclick="quickHighlight('1.1.2')">tu</a></lt>, that is, Tityrus</comment>
+    </entry>
+    <entry id="10">
+        <text>sub</text>
+        <references>1.1.5</references>
+        <comment>with <lt><a href="javascript:void(0)" onclick="quickHighlight('1.1.6')">tegmine</a></lt>; "under the cover"</comment>
+    </entry>
+    <entry id="11">
+        <text>various</text>
+        <references>1.3.1, 1.3.6, 1.4.1, 1.4.3, 1.6.4, 1.8.3</references>
+        <comment>poetic plural</comment>
+    </entry>
+    <entry id="12">
+        <text>ipsum</text>
+        <references>1.9.8</references>
+        <comment>reflexively referring to Tityrus</comment>
+    </entry>
+    <entry id="13">
+        <text>permisit</text>
+        <references>1.10.5</references>
+        <comment>introduces two acc. + inf. indirect statements (<lt><a href="javascript:void(0)" onclick="quickHighlight('1.9.2--1.9.4')">meas errare boves</a></lt>; <lt><a href="javascript:void(0)" onclick="quickHighlight('1.9.8--1.10.1')">ipsum ludere</a></lt>)</comment>
     </entry>
 </body>
