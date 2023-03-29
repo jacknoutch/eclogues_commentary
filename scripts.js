@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    var lemmatiserPath = "resources/eclogue1LR.xml";
+    var lexiconPath = "resources/glosses.xml";
+    var commentaryPath = "resources/commentarynotes.xml";
+
     var $loading = $("#loading");
 
     $(document).ajaxStart(function () {
@@ -249,9 +253,9 @@ $(document).ready(function(){
 
         // call the XML docs
         $.when(
-            $.get("resources/eclogue1LR.xml"), // the lemmatiser
-            $.get("resources/glosses.xml"), // the lexicon
-            $.get("resources/commentarynotes.xml"), // the commentary
+            $.get(lemmatiserPath),
+            $.get(lexiconPath),
+            $.get(commentaryPath), // the commentary
         ).done(function(lemmatiser_xml, lexicon_xml, commentary_xml) {
 
             // from the lemmatiser get the word's XML object, its lemma
