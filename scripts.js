@@ -20,15 +20,33 @@ $(document).ready(function(){
     function spanAllWords() {
         // Wrap a <span> around each word in each verse line, to make it easier to click on the word 
         // and look up its details.
-        $(".l").each(function(){
-            var words = $(this).text().match(/\w+|\s+|[^\s\w]+/g); // Split the line into words, punctuation, and white space
-            for (let i = 0; i < words.length; i++) {
-                if (/\w+/.test(words[i])) {
-                    words[i] = "<span class='w'>" + words[i] + "</span>" // Wrap the words only in span tags
+
+        $.when($.get(lemmatiserPath)).done(function(xml){
+            $(".l").each(function(){
+                var words = $(this).text().match(/\w+|\s+|[^\s\w]+/g); // Split the line into words, punctuation, and white space
+                for (let i = 0; i < words.length; i++) {
+                    if (/\w+/.test(words[i])) {
+                        words[i] = "<span class='w'>" + words[i] + "</span>" // Wrap the words only in span tags
+                    }
                 }
-            }
-            var text = words.join("");
-            $(this).html(text);
+                var text = words.join("");
+                $(this).html(text);
+            });
+
+            queInstances = $(xml).find("[lemma=que]")
+            console.log(queInstances)
+            queInstances.each(function() {
+                lineNumber = $(this).attr("n") // e.g. "1.2"
+                queIndex = $(this).index()
+                console.log(lineNumber, queIndex);
+                lineDiv = $(".l[n='"+lineNumber+"']")
+                spanWithQue = $(lineDiv).find(".w:nth-child("+queIndex+")");
+                oldHTML = spanWithQue.html();
+                newHTML = "<span class='w'>" + oldHTML.slice(0,-3) + "</span><span class='w'>que"
+                spanWithQue.replaceWith(newHTML);
+            })
+
+            addLineNumbers()
         });
     }
 
@@ -407,7 +425,7 @@ $(document).ready(function(){
 //  EVENTS
 
     spanAllWords(); // Wrap each word in a <span> for ease of reference
-    addLineNumbers();
+    // addLineNumbers();
 
     var cardCounter = 0; // This is the counter for cards created in the #lookup pane, used in makeCard()
 
