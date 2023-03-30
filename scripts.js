@@ -51,7 +51,7 @@ function spanAllWords() {
 
     $.when($.get(lemmatiserPath)).done(function(xml){
         $(".l").each(function(){
-            var words = $(this).text().match(/\p{L}+|\s+|[^\s]+/g); // Split the line into words, punctuation, and white space
+            var words = $(this).text().match(/\b[mts]e(?:(?!cum).)*|\b[vn]obis(?:(?!cum).)*|\p{L}+|\s+|[^\s]+/g); // Split the line into words, punctuation, and white space; split enclitic cum from mecum, tecum, secum, nobiscum, vobiscum
             console.log(words);
             for (let i = 0; i < words.length; i++) {
                 if (/\w+/.test(words[i])) {
