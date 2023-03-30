@@ -16,11 +16,14 @@ footer {
   display: m;
   justify-content: center;
 }
+footer p {
+  text-align: center;
+}
 h1 {
   text-align: center;
 }
 p {
-  text-align: center;
+  text-align: justify;
 }
 a {
   color: #C00;
@@ -82,7 +85,7 @@ a:hover {
   cursor: pointer;
 }
 .focus {
-  background-color: lightyellow;
+  background-color: yellow;
 }
 span.verse_ref {
   color: #C00;
@@ -184,11 +187,11 @@ li {
     display: inherit;
   }
   #reading {
-    min-width: 450px;
+    min-width: 500px;
   }
   #lookup {
     position: inherit;
-    min-width: 450px;
+    min-width: 400px;
   }
   .w3-card-4 {
     position: -webkit-sticky;
