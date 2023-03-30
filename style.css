@@ -12,6 +12,10 @@ html, body {
 nav {
   /* ... */
 }
+.container.w3-row {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 footer {
   display: m;
   justify-content: center;
@@ -40,20 +44,22 @@ a:hover {
 /*** Classes only in the reading pages ***/
 .blurb {
   font-style: italic;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 #latin_text {
-  margin: 0 auto;
-  width: fit-content;
+  margin-left: 1em;
   /* border: 1px dotted blue; */
-  padding-left: 25px;
+  /* padding-left: 10px; */
+}
+.margin_control {
+  width: fit-content;
+  margin: 0 auto;
 }
 #utility {
   /* ... */
 }
 #reading {
   min-height: 100%;
+  margin-bottom: 2em;
 }
 #lookup {
   display: flex;
@@ -163,9 +169,6 @@ li {
 @media only screen and (min-width: 600px) {
   html, body {
     font-size: 1em;
-  }
-  .container.w3-row {
-    padding: 1em;
   }
 }
 
