@@ -27,7 +27,7 @@
         <pp>M&#363;sa, M&#363;sae</pp>
         <pos>NOMpro</pos>
         <gen>f.</gen>
-        <gloss>Muse, <span class="comment">hence:</span> song, poem</gloss>
+        <gloss>Muse</gloss>
         <instances>1.2</instances>
     </entry>
     <entry n="Tityrus">
@@ -173,7 +173,7 @@
     <entry n="hic1">
         <lemma>hic</lemma>
         <pp>hic, haec, hoc</pp>
-        <gloss>this</gloss>
+        <gloss>this, these</gloss>
         <instances>1.6; 1.13; 1.16; 1.21; 1.25; 1.40; 1.45; 1.71; 1.72; 1.73; 1.80</instances>
     </entry>
     <entry n="ille">
@@ -202,7 +202,7 @@
     <entry n="lentus">
         <lemma>lentus</lemma>
         <pp>lentus, lenta, lentum</pp>
-        <gloss>slow, <span class="comment">hence:</span> untroubled</gloss>
+        <gloss>slow; pliant, malleable; (l. 4) untroubled</gloss>
         <instances>1.4; 1.26</instances>
     </entry>
     <entry n="linquo">
@@ -231,7 +231,7 @@
     </entry>
     <entry n="namque">
         <lemma>namque</lemma>
-        <gloss>yes, because</gloss>
+        <gloss>certainly, to be sure; because</gloss>
         <instances>1.7; 1.14; 1.32</instances>
     </entry>
     <entry n="nos">
@@ -286,7 +286,7 @@
     <entry n="qui1">
         <lemma>qui</lemma>
         <pp>qu&#299;, quae, quod</pp>
-        <gloss>who, which; <span class="comment">(relative pronoun)</span></gloss>
+        <gloss>who, which (relative pronoun)</gloss>
         <instances>1.10; 1.19; 1.20; 1.28; 1.38; 1.44; 1.54</instances>
     </entry>
     <entry n="recubo">
@@ -298,7 +298,7 @@
     <entry n="resono1">
         <lemma>resono</lemma>
         <pp>reson&#333;, reson&#257;re, reson&#257;u&#299;</pp>
-        <gloss>resound, call out the name of</gloss>
+        <gloss>resound; "call out the name of"</gloss>
         <instances>1.5</instances>
     </entry>
     <entry n="saepe">
@@ -336,7 +336,7 @@
     </entry>
     <entry n="tegimen">
         <lemma>tegmen</lemma>
-        <pp>tegimen/tegmen, tegiminis</pp>
+        <pp>tegmen, tegminis</pp>
         <gen>n.</gen>
         <gloss>cover, covering</gloss>
         <instances>1.1</instances>
@@ -402,14 +402,14 @@
     </entry>
     <entry n="Germania">
         <lemma>Germania</lemma>
-        <gloss>Germany</gloss>
+        <gloss>Germany, the people of Germany</gloss>
         <gen>f.</gen>
         <pp>Germānia, Germāniae</pp>
     </entry>
     <entry n="Hyblaeus">
         <lemma>Hyblaeus</lemma>
         <pp>Hyblaeus, Hyblaea, Hyblaeum</pp>
-        <gloss>Hyblaean, of mount Hybla; Hybla is a mountain in Sicily, associated with the Greek poet Theocritus</gloss>
+        <gloss>Hyblaean, of mount Hybla</gloss>
     </entry>
     <entry n="Oaxes">
         <lemma>Oaxes</lemma>
@@ -452,27 +452,27 @@
     </entry>
     <entry n="adeo2">
         <lemma>adeo</lemma>
-        <gloss>to this, thus far, so far, as far.</gloss>
+        <gloss>very, very much; likewise; (<span class='lt'>usque adeo</span>: "so much")</gloss>
     </entry>
     <entry n="aeger2">
         <lemma>aeger</lemma>
-        <gloss>sick, diseased, feeble</gloss>
+        <gloss>sick, feeble</gloss>
         <pp>aeger, aegra, aegrum</pp>
     </entry>
     <entry n="aequor">
         <lemma>aequor</lemma>
-        <gloss>an even surface, level; (surface of the) sea</gloss>
+        <gloss>the sea</gloss>
         <pp>aequor, aequoris</pp>
         <gen>n.</gen>
     </entry>
     <entry n="aerius">
         <lemma>aerius</lemma>
-        <gloss>of the air, aerial, high, heavenly</gloss>
+        <gloss>of the air, high</gloss>
         <pp>āërius, āëria, āërium</pp>
     </entry>
     <entry n="aes">
         <lemma>aes</lemma>
-        <gloss>crude metal, base metal, copper</gloss>
+        <gloss>copper (coins)</gloss>
         <pp>aes, aeris</pp>
         <gen>n.</gen>
     </entry>
@@ -489,15 +489,15 @@
     </entry>
     <entry n="ah">
         <lemma>ah</lemma>
-        <gloss>interj. --Of distress or pity, of reproach or admonition, of surprise</gloss>
+        <gloss>ah!</gloss>
     </entry>
     <entry n="alibi">
         <lemma>alibi</lemma>
-        <gloss>elsewhere, somewhere else, at another place (cf. alio loco)</gloss>
+        <gloss>elsewhere, somewhere else, at another place</gloss>
     </entry>
     <entry n="aliquot">
         <lemma>aliquot</lemma>
-        <gloss>some, several, a few, not many, a number</gloss>
+        <gloss>some, several</gloss>
     </entry>
     <entry n="alius">
         <lemma>alius</lemma>
@@ -512,7 +512,7 @@
     </entry>
     <entry n="altus">
         <lemma>altus</lemma>
-        <gloss>(nourished, grown great,) high, lofty, tall; deep</gloss>
+        <gloss>high, tall; deep</gloss>
         <pp>altus, alta, altum</pp>
     </entry>
     <entry n="amarus">
@@ -532,15 +532,11 @@
     </entry>
     <entry n="ante1">
         <lemma>ante</lemma>
-        <gloss>before, in front, forwards</gloss>
-    </entry>
-    <entry n="ante2">
-        <lemma>ante</lemma>
-        <gloss>before, in front, forwards</gloss>
+        <gloss>before, in front, forwards; previously</gloss>
     </entry>
     <entry n="antrum">
         <lemma>antrum</lemma>
-        <gloss>a cave, cavern, grotto (poet.)</gloss>
+        <gloss>a cave</gloss>
         <pp>antrum, antrī</pp>
         <gen>n.</gen>
     </entry>
@@ -558,13 +554,13 @@
     </entry>
     <entry n="arbustum">
         <lemma>arbustum</lemma>
-        <gloss>a place where trees are planted, plantation, vineyard planted with trees</gloss>
+        <gloss>copse, a wood; (pl.) trees, shrubs</gloss>
         <pp>arbustum, arbustī</pp>
         <gen>n.</gen>
     </entry>
     <entry n="arista">
         <lemma>arista</lemma>
-        <gloss>the top of an ear, beard of grain</gloss>
+        <gloss>ear of corn; (poet. pl.) a crop of grain</gloss>
         <pp>arista, aristae</pp>
         <gen>f.</gen>
     </entry>
@@ -574,23 +570,23 @@
     </entry>
     <entry n="aura">
         <lemma>aura</lemma>
-        <gloss>the air (in motion), a breeze, breath of air, wind, blast</gloss>
+        <gloss>a breeze, wind</gloss>
         <pp>aura, aurae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="aut">
         <lemma>aut</lemma>
-        <gloss>or</gloss>
+        <gloss>either, or</gloss>
     </entry>
     <entry n="barba">
         <lemma>barba</lemma>
-        <gloss>the beard</gloss>
+        <gloss>beard</gloss>
         <pp>barba, barbae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="barbarus2">
         <lemma>barbarus</lemma>
-        <gloss>of strange speech, speaking jargon, unintelligible</gloss>
+        <gloss>barbarian</gloss>
         <pp>barbarus, barbara, barbarum</pp>
     </entry>
     <entry n="bibo2">
@@ -600,11 +596,11 @@
     </entry>
     <entry n="bis">
         <lemma>bis</lemma>
-        <gloss>twice, at two times, on two occasions</gloss>
+        <gloss>twice</gloss>
     </entry>
     <entry n="cado">
         <lemma>cado</lemma>
-        <gloss>to fall, fall down, descend</gloss>
+        <gloss>to fall (down), descend</gloss>
         <pp>cadō, cadere, cecidī, cāsum</pp>
     </entry>
     <entry n="caelum1">
@@ -621,7 +617,7 @@
     </entry>
     <entry n="candidus">
         <lemma>candidus</lemma>
-        <gloss>shining white, clear, bright</gloss>
+        <gloss>white; clear, bright</gloss>
         <pp>candidus, candida, candidum</pp>
     </entry>
     <entry n="canis">
@@ -632,7 +628,7 @@
     </entry>
     <entry n="cano">
         <lemma>cano</lemma>
-        <gloss>to sing, to prophesy</gloss>
+        <gloss>to sing; to prophesy</gloss>
         <pp>canō, canere, cecinī, cantum</pp>
     </entry>
     <entry n="capella">
@@ -643,7 +639,7 @@
     </entry>
     <entry n="capto">
         <lemma>capto</lemma>
-        <gloss>to strive to seize, capture, seek</gloss>
+        <gloss>to try to get, try to capture, seek</gloss>
         <pp>captō, captāre, captāuī, captātum</pp>
     </entry>
     <entry n="caput">
@@ -654,13 +650,13 @@
     </entry>
     <entry n="carmen1">
         <lemma>carmen</lemma>
-        <gloss>a song, poem, verse, oracular response, prophecy, form of incantation, tune, air, lay, strain, note, sound</gloss>
+        <gloss>a song, poem</gloss>
         <pp>carmen, carminis</pp>
         <gen>n.</gen>
     </entry>
     <entry n="carpo">
         <lemma>carpo</lemma>
-        <gloss>to pick, pluck, pluck off, cull, crop, gather</gloss>
+        <gloss>to pick, pluck off, crop gather</gloss>
         <pp>carpō, carpere, carpsī, carptum</pp>
     </entry>
     <entry n="caseus">
@@ -671,31 +667,31 @@
     </entry>
     <entry n="castanea">
         <lemma>castanea</lemma>
-        <gloss>the chestnut-tree, a chestnut</gloss>
+        <gloss>chestnut (the nut or the tree)</gloss>
         <pp>castanea, castaneae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="catulus">
         <lemma>catulus</lemma>
-        <gloss>a young animal, whelp</gloss>
+        <gloss>pup, puppy</gloss>
         <pp>catulus, catulī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="causa">
         <lemma>causa</lemma>
-        <gloss>a cause, reason, motive,</gloss>
+        <gloss>a cause, reason, motive</gloss>
         <gen>f.</gen>
         <pp>causa, causae</pp>
     </entry>
     <entry n="ceruus">
         <lemma>ceruus</lemma>
-        <gloss>cervus, a stag, deer</gloss>
+        <gloss>deer</gloss>
         <gen>m.</gen>
         <pp>ceruus, ceruī</pp>
     </entry>
     <entry n="cesso">
         <lemma>cesso</lemma>
-        <gloss>to be remiss, delay, loiter, cease from, stop, give over</gloss>
+        <gloss>cease from, stop</gloss>
         <pp>cessō, cessāre, cessāuī, cessātum</pp>
     </entry>
     <entry n="ciuis">
@@ -706,7 +702,7 @@
     </entry>
     <entry n="cognosco">
         <lemma>cognosco</lemma>
-        <gloss>to become acquainted with, acquire knowledge of, ascertain, learn, perceive, understand ; perf., to know</gloss>
+        <gloss>to get to know, learn, understand; (perf.) to know</gloss>
         <pp>cognoscō, cognoscere, cognōuī, cognitum</pp>
     </entry>
     <entry n="colo2">
@@ -716,18 +712,18 @@
     </entry>
     <entry n="compono">
         <lemma>compono</lemma>
-        <gloss>to bring together, place together, collect, unite, join, connect, aggregate</gloss>
+        <gloss>to bring together; arrange; compare</gloss>
         <pp>compōnō, compōnere, composuī, compositum</pp>
     </entry>
     <entry n="congero2">
         <lemma>congero</lemma>
-        <gloss>to bring together, collect, heap up, throw together</gloss>
+        <gloss>to bring together, collect, heap up</gloss>
         <pp>congerō, congerere, congessī, congestum</pp>
     </entry>
     <entry n="connitor2">
         <lemma>connitor</lemma>
-        <gloss>to put forth all one's strength, make an effort, strive, struggle, endeavor</gloss>
-        <pp>cōnītor, cōnītī, cōnīxus/cōnīsus</pp>
+        <gloss>strive, struggle, endeavor; (l. 15) give birth</gloss>
+        <pp>cōnītor, cōnītī, cōnīxus</pp>
     </entry>
     <entry n="consero3">
         <lemma>consero</lemma>
@@ -736,13 +732,13 @@
     </entry>
     <entry n="contagium">
         <lemma>contagium</lemma>
-        <gloss>infection, contagion, taint</gloss>
+        <gloss>infection, taint</gloss>
         <pp>contāgium, contāgiī</pp>
         <gen>n.</gen>
     </entry>
     <entry n="copia">
         <lemma>copia</lemma>
-        <gloss>an abundance, ample supply, plenty; (usu. pl.) troops, forces</gloss>
+        <gloss>an abundance, plenty</gloss>
         <pp>cōpia, cōpiae</pp>
         <gen>f.</gen>
 
@@ -756,40 +752,40 @@
     </entry>
     <entry n="culmen">
         <lemma>culmen</lemma>
-        <gloss>the top, summit, roof, gable</gloss>
+        <gloss>the top; roof</gloss>
         <pp>culmen, culminis</pp>
         <gen>n.</gen>
 
     </entry>
     <entry n="cum3">
         <lemma>cum</lemma>
-        <gloss>with, together with, in the company of, in connection with, along with, together, and</gloss>
+        <gloss>with</gloss>
 
     </entry>
     <entry n="cupressus">
         <lemma>cupressus</lemma>
-        <gloss>the cypress (an evergreen tree, sacred to Pluto)</gloss>
+        <gloss>cypress (tree)</gloss>
         <pp>cupressus, cupressī</pp>
         <gen>f.</gen>
 
     </entry>
     <entry n="cura">
         <lemma>cura</lemma>
-        <gloss>trouble, care, attention, pains, industry, diligence, exertion</gloss>
+        <gloss>care, attention; (l. 58) object of care, pet</gloss>
         <pp>cūra, cūrae</pp>
         <gen>f.</gen>
 
     </entry>
     <entry n="cytisus">
         <lemma>cytisus</lemma>
-        <gloss>a kind of clover, shrubby clover</gloss>
+        <gloss>cytisus, a kind of clover</gloss>
         <pp>cytisus, cytisī</pp>
         <gen>f.</gen>
 
     </entry>
     <entry n="de">
         <lemma>de</lemma>
-        <gloss>from, away from, down from, out of</gloss>
+        <gloss>from, down (from), out of</gloss>
 
     </entry>
     <entry n="densus">
@@ -806,13 +802,13 @@
     </entry>
     <entry n="depello">
         <lemma>depello</lemma>
-        <gloss>to drive out, drive away, remove, expel, put out, put off, turn aside</gloss>
+        <gloss>to drive (away), remove; expel</gloss>
         <pp>dēpellō, dēpellere, dēpulī, dēpulsum</pp>
 
     </entry>
     <entry n="destituo">
         <lemma>destituo</lemma>
-        <gloss>to set down, set forth, put away, bring forward, leave alone</gloss>
+        <gloss>to set down, abandon, leave alone</gloss>
         <pp>destituō, destituere, destituī, destitūtum</pp>
 
     </entry>
@@ -831,21 +827,21 @@
     </entry>
     <entry n="dies">
         <lemma>dies</lemma>
-        <gloss>a day, civil day</gloss>
+        <gloss>day</gloss>
         <pp>diēs, diēī</pp>
         <gen>m. (f.)</gen>
 
     </entry>
     <entry n="discordia">
         <lemma>discordia</lemma>
-        <gloss>disunion, disagreement, dissension, variance, discord</gloss>
+        <gloss> disagreement, discord</gloss>
         <pp>discordia, discordiae</pp>
         <gen>f.</gen>
 
     </entry>
     <entry n="diuido">
         <lemma>diuido</lemma>
-        <gloss>to divide, force asunder, part</gloss>
+        <gloss>to divide, force apart, part</gloss>
         <pp>dīuidō, dīuidere, dīuīsī, dīuīsum</pp>
 
     </entry>
@@ -858,13 +854,13 @@
     </entry>
     <entry n="do">
         <lemma>do</lemma>
-        <gloss>to hand over, deliver, give up, render, furnish, pay, surrender</gloss>
+        <gloss>give, hand over; tell</gloss>
         <pp>dō, dāre, dedī, dātum</pp>
 
     </entry>
     <entry n="domus">
         <lemma>domus</lemma>
-        <gloss>a house, dwelling-house, building, mansion, palace</gloss>
+        <gloss>house, home</gloss>
         <pp>domus, domūs</pp>
         <gen>f.</gen>
 
@@ -877,18 +873,18 @@
     </entry>
     <entry n="dum2">
         <lemma>dum2</lemma>
-        <gloss>a while, now, yet</gloss>
+        <gloss>while, until</gloss>
 
     </entry>
     <entry n="dumosus">
         <lemma>dumosus</lemma>
-        <gloss>full of thorn-bushes, bushy</gloss>
+        <gloss>bushy</gloss>
         <pp>dūmōsus, dūmōsa, dūmōsum</pp>
 
     </entry>
     <entry n="effero2">
         <lemma>effero</lemma>
-        <gloss>to carry out, take out, bring forth, take away, remove</gloss>
+        <gloss>to carry out; take away, remove; lift up</gloss>
         <pp>efferō, efferre, extulī, ēlātum</pp>
 
     </entry>
@@ -899,33 +895,33 @@
     </entry>
     <entry n="enim2">
         <lemma>enim</lemma>
-        <gloss>for, for instance, namely, that is to say, I mean, in fact</gloss>
+        <gloss>for; namely, I mean, in fact</gloss>
 
     </entry>
     <entry n="eo1">
         <lemma>eo</lemma>
-        <gloss>to go, walk, ride, sail, fly, move, pass</gloss>
+        <gloss>to go</gloss>
         <pp>eō, īre, iī (iuī), itum</pp>
 
     </entry>
     <entry n="equidem">
         <lemma>equidem</lemma>
-        <gloss>verily, truly, indeed, at all events</gloss>
+        <gloss>indeed, at least; (with first person) for my part</gloss>
 
     </entry>
     <entry n="ergo2">
         <lemma>ergo</lemma>
-        <gloss>in consequence of, on account of, because of, for the sake of (old)</gloss>
+        <gloss>therefore, because of (this)</gloss>
 
     </entry>
     <entry n="etiam">
         <lemma>etiam</lemma>
-        <gloss>now too, yet, as yet, even yet, still, even now</gloss>
+        <gloss>yet, still, even now</gloss>
 
     </entry>
     <entry n="exeo1">
         <lemma>exeo</lemma>
-        <gloss>to go out, go forth, go away, depart, withdraw, retire</gloss>
+        <gloss>to go out, depart, leave</gloss>
         <pp>exeō, exīre, exiī (exiuī), exitum</pp>
 
     </entry>
@@ -938,13 +934,13 @@
     </entry>
     <entry n="fateor">
         <lemma>fateor</lemma>
-        <gloss>to confess, own, grant, acknowledge</gloss>
+        <gloss>to confess, acknowledge</gloss>
         <pp>fateor, fatērī, fassus</pp>
 
     </entry>
     <entry n="felix">
         <lemma>felix</lemma>
-        <gloss>fruitful, productive</gloss>
+        <gloss>fruitful, productive; happy</gloss>
         <pp>fēlix, fēlicis</pp>
 
     </entry>
@@ -957,13 +953,13 @@
     </entry>
     <entry n="fetus2">
         <lemma>fetus</lemma>
-        <gloss>filled with young, pregnant, breeding, with young</gloss>
+        <gloss>pregnant, with young</gloss>
         <pp>fētus, fēta, fētum</pp>
 
     </entry>
     <entry n="floreo">
         <lemma>floreo</lemma>
-        <gloss>to bloom, blossom, flower</gloss>
+        <gloss>to bloom, flower</gloss>
         <pp>flōreō, flōrēre, flōruī</pp>
         
     </entry>
@@ -990,13 +986,13 @@
     </entry>
     <entry n="fortunatus">
         <lemma>fortunatus</lemma>
-        <gloss>prospered, prosperous, lucky, happy, fortunate</gloss>
+        <gloss>lucky, happy</gloss>
         <pp>fortūnātus, fortūnāta, fortūnātum</pp>
 
     </entry>
     <entry n="fretum">
         <lemma>fretum</lemma>
-        <gloss>a strait, sound, channel</gloss>
+        <gloss>a strait; the sea, waters</gloss>
         <pp>fretum, fretī</pp>
         <gen>n.</gen>
 
@@ -1010,21 +1006,21 @@
     </entry>
     <entry n="frondator">
         <lemma>frondator</lemma>
-        <gloss>one who strips off leaves, a dresser, pruner</gloss>
+        <gloss>pruner</gloss>
         <pp>frondātor, frondātōris</pp>
         <gen>m.</gen>
 
     </entry>
     <entry n="frons2">
         <lemma>frons</lemma>
-        <gloss>foliage, garland</gloss>
+        <gloss>foliage</gloss>
         <pp>frons, frontis</pp>
         <gen>f. (m.)</gen>
 
     </entry>
     <entry n="fumo">
         <lemma>fumo</lemma>
-        <gloss>to smoke, steam, reek, fume</gloss>
+        <gloss>to smoke</gloss>
         <pp>fūmō, fūmāre, fūmātus</pp>
 
     </entry>
@@ -1042,7 +1038,7 @@
     </entry>
     <entry n="grauis">
         <lemma>grauis</lemma>
-        <gloss>heavy, weighty, ponderous, burdensome, loaded, laden, burdened</gloss>
+        <gloss>heavy, weighty, laden</gloss>
         <pp>grauis, graue</pp>
 
     </entry>
@@ -1055,7 +1051,7 @@
     </entry>
     <entry n="habeo">
         <lemma>habeo</lemma>
-        <gloss>to have, hold, support, carry, wear</gloss>
+        <gloss>to have, hold</gloss>
         <pp>habeō, habēre, habuī, habitum</pp>
 
     </entry>
@@ -1066,12 +1062,6 @@
         <gen>m.</gen>
 
     </entry>
-    <entry n="hic1">
-        <lemma>hic</lemma>
-        <gloss>this</gloss>
-        <pp>hic, haec, hoc</pp>
-
-    </entry>
     <entry n="hic2">
         <lemma>hic</lemma>
         <gloss>here</gloss>
@@ -1080,17 +1070,17 @@
     </entry>
     <entry n="hinc">
         <lemma>hinc</lemma>
-        <gloss>from this place, hence</gloss>
+        <gloss>from this place, hence; henceforth</gloss>
 
     </entry>
     <entry n="iam">
         <lemma>iam</lemma>
-        <gloss>I. Of time, at the moment, at the present moment, now, at this time, just now, at present</gloss>
+        <gloss>now, just now</gloss>
 
     </entry>
     <entry n="impius">
         <lemma>impius</lemma>
-        <gloss>of persons, irreverent, ungodly, undutiful, unpatriotic, abandoned, wicked, impious</gloss>
+        <gloss>ungodly, wicked, impious</gloss>
         <pp>impius, impia, impium</pp>
 
     </entry>
@@ -1102,36 +1092,36 @@
     </entry>
     <entry n="iners">
         <lemma>iners</lemma>
-        <gloss>without skill, unskilful, incompetent</gloss>
+        <gloss>unskilful; lazy; idle, inactive</gloss>
         <pp>iners, inertis</pp>
 
     </entry>
     <entry n="ingratus">
         <lemma>ingratus</lemma>
-        <gloss>unpleasant, disagreeable, unacceptable</gloss>
+        <gloss>unpleasant, disagreeable; ungrateful</gloss>
         <pp>ingrātus, ingrāta, ingrātum</pp>
 
     </entry>
     <entry n="insero3">
         <lemma>insero</lemma>
-        <gloss>to implant, ingraft</gloss>
+        <gloss>to plant, sow</gloss>
         <pp>inserō, inserere, inseruī, insertum</pp>
 
     </entry>
     <entry n="insuetus">
         <lemma>insuetus</lemma>
-        <gloss>unaccustomed, unused, inexperienced</gloss>
+        <gloss>unaccustomed, unused</gloss>
         <pp>insuētus, insuēta, insuētum</pp>
 
     </entry>
     <entry n="inter">
         <lemma>inter</lemma>
-        <gloss>between, betwixt</gloss>
+        <gloss>between, among</gloss>
 
     </entry>
     <entry n="interea">
         <lemma>interea</lemma>
-        <gloss>meanwhile, in the meantime, in the interim</gloss>
+        <gloss>meanwhile</gloss>
 
     </entry>
     <entry n="inuideo">
@@ -1155,14 +1145,14 @@
     </entry>
     <entry n="iuuenis1">
         <lemma>iuuenis</lemma>
-        <gloss>young, youthful</gloss>
+        <gloss>young man, youth</gloss>
         <pp>iuuenis, iuuenis</pp>
         <gen>m. (f.)</gen>
 
     </entry>
     <entry n="labor2">
         <lemma>labor</lemma>
-        <gloss>to glide, slide, move, slip, float, pass, flow</gloss>
+        <gloss>to glide, slip (away), pass</gloss>
         <pp>lābor, lābī, lāpsus</pp>
 
     </entry>
@@ -1175,13 +1165,13 @@
     </entry>
     <entry n="laedo">
         <lemma>laedo</lemma>
-        <gloss>to hurt, wound, injure, damage</gloss>
+        <gloss>to hurt, wound, injure</gloss>
         <pp>laedō, laedere, laesī, laesum</pp>
 
     </entry>
     <entry n="laeuus">
         <lemma>laeuus</lemma>
-        <gloss>left; <span class="comment">(of omens)</span> unfavourable; <span class="comment">here: </span>ruled by an ill omen</gloss>
+        <gloss>left; (of omens) unfavourable; (l. 16) "ruled by an ill omen"</gloss>
         <pp>laeuus, laeua, laeuum</pp>
 
     </entry>
@@ -1207,20 +1197,20 @@
     </entry>
     <entry n="licet1">
         <lemma>licet</lemma>
-        <gloss>It is lawful, is allowed, is permitted; (conj) although</gloss>
+        <gloss>(impers.) it is lawful, is allowed, is permitted</gloss>
         <pp>licet, licēre, licuit/licitum est</pp>
 
     </entry>
     <entry n="limes">
         <lemma>limes</lemma>
-        <gloss>a path, passage, road, way, track</gloss>
+        <gloss>a path, way, track</gloss>
         <pp>līmes, līmitis</pp>
         <gen>m.</gen>
 
     </entry>
     <entry n="limosus">
         <lemma>limosus</lemma>
-        <gloss>full of mud, slimy, miry, muddy</gloss>
+        <gloss>muddy, slimy</gloss>
         <pp>līmōsus, līmōsa, līmōsum</pp>
 
     </entry>
@@ -1250,39 +1240,45 @@
     </entry>
     <entry n="magnus">
         <lemma>magnus</lemma>
-        <gloss>large, great, big, high, tall, long, broad, extensive, spacious</gloss>
+        <gloss>large, great, big, high</gloss>
         <pp>magnus, magna, magnum</pp>
 
     </entry>
     <entry n="malum1">
-        <lemma>malum1</lemma>
+        <lemma>malum</lemma>
         <gloss>an evil, mischief</gloss>
         <pp>malum, malī</pp>
         <gen>n.</gen>
 
     </entry>
+    <entry n="malus">
+        <lemma>malus</lemma>
+        <gloss>bad, evil, harmful</gloss>
+        <pp>malus, mala, malum</pp>
+
+    </entry>
     <entry n="maneo">
         <lemma>maneo</lemma>
-        <gloss>to stay, remain, abide, tarry</gloss>
+        <gloss>to stay, remain</gloss>
         <pp>maneō, manēre, mānsī, mānsum</pp>
 
     </entry>
     <entry n="mater">
         <lemma>mater</lemma>
-        <gloss>a mother</gloss>
+        <gloss>a mother; (l. 23) dam, mother goat</gloss>
         <pp>māter, mātris</pp>
         <gen>f.</gen>
 
     </entry>
     <entry n="memini">
         <lemma>memini</lemma>
-        <gloss>I remember, recollect, think of, am mindful of, bear in mind</gloss>
+        <gloss>I remember, think of</gloss>
         <pp>meminī, meminisse</pp>
 
     </entry>
     <entry n="mens">
         <lemma>mens</lemma>
-        <gloss>the mind, disposition, feeling, character, heart, soul</gloss>
+        <gloss>the mind</gloss>
         <pp>mens, mentis</pp>
         <gen>f.</gen>
 
@@ -1302,13 +1298,13 @@
     </entry>
     <entry n="miser">
         <lemma>miser</lemma>
-        <gloss>wretched, unfortunate, miserable, pitiable, lamentable, in distress</gloss>
+        <gloss>wretched, unhappy, pitiable</gloss>
         <pp>miser, misera, miserum</pp>
 
     </entry>
     <entry n="mitis">
         <lemma>mitis</lemma>
-        <gloss>mild, mellow, mature, ripe</gloss>
+        <gloss>juicy, ripe</gloss>
         <pp>mītis, mīte</pp>
 
     </entry>
@@ -1319,41 +1315,41 @@
     </entry>
     <entry n="mollis">
         <lemma>mollis</lemma>
-        <gloss>yielding, pliant, flexible, supple, soft, tender, delicate, gentle, mild, pleasant</gloss>
+        <gloss>soft, tender, pleasant</gloss>
         <pp>mollis, molle</pp>
 
     </entry>
     <entry n="mons">
         <lemma>mons</lemma>
-        <gloss>a mountain, mount, range of mountains</gloss>
+        <gloss>a mountain, mount</gloss>
         <gen>f.</gen>
         <pp>mons, montis</pp>
 
     </entry>
     <entry n="multus">
         <lemma>multus</lemma>
-        <gloss>many, a great number</gloss>
+        <gloss>much, many</gloss>
         <pp>multus, multa, multum</pp>
 
     </entry>
     <entry n="nec2">
         <lemma>nec2</lemma>
-        <gloss>and not, also not, nor</gloss>
+        <gloss>and not; neither, nor</gloss>
 
     </entry>
     <entry n="neque">
         <lemma>neque</lemma>
-        <gloss>and not</gloss>
+        <gloss>and not; neither, nor</gloss>
 
     </entry>
     <entry n="non">
         <lemma>non</lemma>
-        <gloss>not, by no means, not at all</gloss>
+        <gloss>not</gloss>
 
     </entry>
     <entry n="nosco">
         <lemma>nosco</lemma>
-        <gloss>to get knowledge of, become acquainted with, come to know, learn, discern</gloss>
+        <gloss>come to know, learn, be familiar with, know</gloss>
         <pp>noscō, noscere, nōuī, nōtum</pp>
 
     </entry>
@@ -1366,7 +1362,7 @@
     <entry n="nouale">
         <lemma>nouale</lemma>
         <gloss>newly ploughed land, fallow land, field</gloss>
-        <pp>nouāle, nouālis; (also nouālis, nouālis)</pp>
+        <pp>nouāle, nouālis</pp>
         <gen>n. (also f.)</gen>
 
     </entry>
@@ -1385,18 +1381,18 @@
     </entry>
     <entry n="nullus">
         <lemma>nullus</lemma>
-        <gloss>not any, none, no</gloss>
+        <gloss>no, none</gloss>
         <pp>nullus, nulla, nullum</pp>
 
     </entry>
     <entry n="nunc">
         <lemma>nunc</lemma>
-        <gloss>now, at present, at this time</gloss>
+        <gloss>now</gloss>
 
     </entry>
     <entry n="obduco">
         <lemma>obduco</lemma>
-        <gloss>to draw before, draw forward, bring over</gloss>
+        <gloss>to draw before, obstruct, cover</gloss>
         <pp>obdūcō, obdūcere, obdūxī, obductum</pp>
 
     </entry>
@@ -1414,14 +1410,14 @@
     </entry>
     <entry n="orbis">
         <lemma>orbis</lemma>
-        <gloss>a ring, circle, circular path, hoop, orbit; the world</gloss>
+        <gloss>circle; the world</gloss>
         <pp>orbis, orbis</pp>
         <gen>m.</gen>
 
     </entry>
     <entry n="ordo">
         <lemma>ordo</lemma>
-        <gloss>a row, line, series, order, rank; here: "in rows"</gloss>
+        <gloss>a row, line, order</gloss>
         <pp>ordo, ordinis</pp>
         <gen>m.</gen>
 
@@ -1435,41 +1431,41 @@
     </entry>
     <entry n="pabulum">
         <lemma>pabulum</lemma>
-        <gloss>food, nourishment, food for cattle, fodder, pasturage, grass</gloss>
+        <gloss>fodder, pasturage, grass</gloss>
         <gen>n.</gen>
         <pp>pābulum, pābulī</pp>
 
     </entry>
     <entry n="palumbes">
         <lemma>palumbes</lemma>
-        <gloss>a woodpigeon, ring-dove</gloss>
+        <gloss>pigeon, dove</gloss>
         <pp>palumbēs, palumbis</pp>
         <gen>m. f.</gen>
 
     </entry>
     <entry n="palus2">
         <lemma>palus</lemma>
-        <gloss>a stake, prop, stay, pale</gloss>
+        <gloss>pool, pond</gloss>
         <gen>f.</gen>
         <pp>palūs, palūdis</pp>
 
     </entry>
     <entry n="pars">
         <lemma>pars</lemma>
-        <gloss>a part, piece, portion, share, division, section</gloss>
+        <gloss>part</gloss>
         <pp>pars, partis</pp>
         <gen>f.</gen>
 
     </entry>
     <entry n="paruus2">
         <lemma>paruus</lemma>
-        <gloss>little, small; (superl adv minime) not at all</gloss>
+        <gloss>little, small; (superl. adv. <span class='lt'>minime</span>) not at all</gloss>
         <pp>paruus, parua, paruum</pp>
 
     </entry>
     <entry n="pasco">
         <lemma>pasco</lemma>
-        <gloss>to cause to eat, feed, supply with food</gloss>
+        <gloss>feed, supply with food</gloss>
         <pp>pascō, pascere, pāuī, pastum</pp>
 
     </entry>
@@ -1489,39 +1485,39 @@
     </entry>
     <entry n="patior">
         <lemma>patior</lemma>
-        <gloss>to bear, support, undergo, suffer, endure</gloss>
+        <gloss>to suffer, endure, allow</gloss>
         <pp>patior, patī, passus</pp>
 
     </entry>
     <entry n="patrius">
         <lemma>patrius</lemma>
-        <gloss>of a father, fatherly, paternal</gloss>
+        <gloss>of a father, paternal, ancestral</gloss>
         <pp>patrius, patria, patrium</pp>
 
     </entry>
     <entry n="pauper">
         <lemma>pauper</lemma>
-        <gloss>poor, not wealthy, of small means</gloss>
+        <gloss>poor, not wealthy</gloss>
         <pp>pauper, pauperis</pp>
 
     </entry>
     <entry n="pectus">
         <lemma>pectus</lemma>
-        <gloss>a breast, breast-bone</gloss>
+        <gloss>a breast, chest</gloss>
         <gen>n.</gen>
         <pp>pectus, pectoris</pp>
 
     </entry>
     <entry n="peculium">
         <lemma>peculium</lemma>
-        <gloss>property</gloss>
+        <gloss>money, (a slave's) allowance</gloss>
         <gen>n.</gen>
         <pp>peculium, peculiī</pp>
 
     </entry>
     <entry n="pecus1">
         <lemma>pecus</lemma>
-        <gloss>cattle</gloss>
+        <gloss>cattle, flock</gloss>
         <gen>n.</gen>
         <pp>pecus, pecoris</pp>
 
@@ -1540,7 +1536,7 @@
     </entry>
     <entry n="penitus2">
         <lemma>penitus</lemma>
-        <gloss>inwardly, deeply, far within, into the inmost part</gloss>
+        <gloss>(from) within, inwardly, deeply</gloss>
 
     </entry>
     <entry n="pererro2">
@@ -1551,7 +1547,7 @@
     </entry>
     <entry n="peto">
         <lemma>peto</lemma>
-        <gloss>to strive for, seek, aim at, repair to, make for, travel to</gloss>
+        <gloss>make for, seek, ask (for)</gloss>
         <pp>petō, petere, petīuī, petītum</pp>
 
     </entry>
@@ -1584,14 +1580,14 @@
     </entry>
     <entry n="pomum">
         <lemma>pomum</lemma>
-        <gloss>a fruit, tree-fruit, orchard-fruit</gloss>
+        <gloss>a fruit, apple, pear</gloss>
         <pp>pōmum, pōmī; (also pōmus, pōmī)</pp>
         <gen>n. (f.)</gen>
 
     </entry>
     <entry n="pono">
         <lemma>pono</lemma>
-        <gloss>to put down, set down, put, place, set, fix, lay, deposit</gloss>
+        <gloss>to put, place, plant</gloss>
         <p>pōnō, pōnere, posuī, positum</p>
 
     </entry>
@@ -1602,21 +1598,18 @@
 
     </entry>
     <entry n="post1">
-        <lemma>post1</lemma>
-
-    </entry>
-    <entry n="post2">
-        <lemma>post2</lemma>
+        <lemma>post</lemma>
+        <gloss>after, afterwards</gloss>
 
     </entry>
     <entry n="posthac">
         <lemma>posthac</lemma>
-        <gloss>after this, hereafter, henceforth, in future</gloss>
+        <gloss>after this, in future</gloss>
 
     </entry>
     <entry n="postquam">
         <lemma>postquam</lemma>
-        <gloss>after that, after, as soon as, when</gloss>
+        <gloss>after, when</gloss>
 
     </entry>
     <entry n="praedico2">
@@ -1627,7 +1620,7 @@
     </entry>
     <entry n="praesens">
         <lemma>praesens</lemma>
-        <gloss>at hand, in sight, present, in person</gloss>
+        <gloss>being at hand, present, immediate</gloss>
         <pp>praesens, praesentis</pp>
 
     </entry>
@@ -1645,29 +1638,29 @@
     </entry>
     <entry n="procul">
         <lemma>procul</lemma>
-        <gloss>in the distance, at a distance, away, apart, far, afar off, from afar</gloss>
+        <gloss>at a distance, from afar</gloss>
 
     </entry>
     <entry n="produco">
         <lemma>produco</lemma>
-        <gloss>to lead forth, lead forward, bring out</gloss>
+        <gloss>to lead forth, lead forward; bring up</gloss>
         <pp>prōdūcō, prōdūcere, prōdūxī, prōductum</pp>
 
     </entry>
     <entry n="proicio">
         <lemma>proicio</lemma>
-        <gloss>to throw forth, cast before, throw out, throw down, throw</gloss>
+        <gloss>to throw (forth), cast before; abandon</gloss>
         <pp>prōiciō, prōicere, prōiēcī, prōiectum</pp>
 
     </entry>
     <entry n="protinus">
         <lemma>protinus</lemma>
-        <gloss>right onward, forward, farther on, onward</gloss>
+        <gloss>forward, farther on, onward</gloss>
 
     </entry>
     <entry n="puer">
         <lemma>puer</lemma>
-        <gloss>a male child, boy, lad, young man</gloss>
+        <gloss>boy; slave</gloss>
         <pp>puer, puerī</pp>
         <gen>m. (f.)</gen>
 
@@ -1680,20 +1673,17 @@
     </entry>
     <entry n="quam1">
         <lemma>quam1</lemma>
-        <gloss>in what manner, to what degree, how greatly, how, how much</gloss>
+        <gloss>how, how much; than</gloss>
 
     </entry>
     <entry n="quamuis1">
-        <lemma>quamuis1</lemma>
-
-    </entry>
-    <entry n="quamuis2">
         <lemma>quamuis2</lemma>
+        <gloss>however much, as ... as you like, although</gloss>
 
     </entry>
     <entry n="quantum3">
         <lemma>quantum3</lemma>
-        <gloss>as much as, so much as, to as great an extent</gloss>
+        <gloss>as, as much as</gloss>
 
     </entry>
     <entry n="que">
@@ -1710,21 +1700,18 @@
     </entry>
     <entry n="quis1">
         <lemma>quis1</lemma>
-        <gloss>who? which one?</gloss>
+        <gloss>who? what? which one?</gloss>
         <pp>quis, quid</pp>
 
     </entry>
     <entry n="quo1">
         <lemma>quo1</lemma>
-
-    </entry>
-    <entry n="quo2">
-        <lemma>quo2</lemma>
+        <gloss>whither, to where</gloss>
 
     </entry>
     <entry n="quondam">
         <lemma>quondam</lemma>
-        <gloss>at some time, at one time, once, heretofore, formerly, on a time</gloss>
+        <gloss>once, formerly</gloss>
 
     </entry>
     <entry n="quot1">
@@ -1732,27 +1719,32 @@
         <gloss>how many?</gloss>
 
     </entry>
+    <entry n="quotannis">
+        <lemma>quotannis</lemma>
+        <gloss>yearly, every year</gloss>
+
+    </entry>
     <entry n="rapidus">
         <lemma>rapidus</lemma>
-        <gloss>tearing away, seizing, fierce</gloss>
+        <gloss>swift, rapid, fierce</gloss>
         <pp>rapidus, rapida, rapidum</pp>
 
     </entry>
     <entry n="raucus">
         <lemma>raucus</lemma>
-        <gloss>hoarse</gloss>
+        <gloss>noisy</gloss>
         <pp>raucus, rauca, raucum</pp>
 
     </entry>
     <entry n="redeo1">
         <lemma>redeo1</lemma>
-        <gloss>Of persons, to go back, turn back, return, turn around</gloss>
+        <gloss>to go back, return</gloss>
         <pp>redeō, redīre, rediī, reditum</pp>
 
     </entry>
     <entry n="regnum">
         <lemma>regnum</lemma>
-        <gloss>kingly government, royal authority, kingship, royalty</gloss>
+        <gloss>monarchy; kingdom, realm</gloss>
         <gen>n.</gen>
         <pp>regnum, regnī</pp>
 
@@ -1771,7 +1763,7 @@
     </entry>
     <entry n="respicio">
         <lemma>respicio</lemma>
-        <gloss>to look back, look behind, look about, see behind, look back upon, gaze at, look for</gloss>
+        <gloss>to look back (upon), gaze at, look for</gloss>
         <pp>respiciō, respicere, respexī, respectum</pp>
 
     </entry>
@@ -1792,7 +1784,7 @@
     </entry>
     <entry n="rus">
         <lemma>rus</lemma>
-        <gloss>the country, lands, fields, a country-seat, farm, estate (opp. urbs)</gloss>
+        <gloss>the country, countryside; farm, fields</gloss>
         <gen>n.</gen>
         <pp>rūs, rūris</pp>
 
@@ -1807,7 +1799,7 @@
         <lemma>saepes</lemma>
         <gloss>a hedge, fence</gloss>
         <gen>f.</gen>
-        <pp>saepēs, saepis; also sēp~</pp>
+        <pp>saepēs, saepis</pp>
 
     </entry>
     <entry n="saepio">
@@ -1816,28 +1808,34 @@
         <pp>saepiō, saepīre, saepsī, saeptum</pp>
 
     </entry>
+    <entry n="saeptum">
+        <lemma>saeptum</lemma>
+        <gloss>enclosure, paddock, animal fold</gloss>
+        <gen>n.</gen>
+        <pp>saeptum, saeptī</pp>
+    </entry>
     <entry n="salictum">
         <lemma>salictum</lemma>
-        <gloss>a plantation of willows, willow-grove</gloss>
+        <gloss>a group of willows, willow-grove</gloss>
         <gen>n.</gen>
         <pp>salictum, salictī</pp>
 
     </entry>
     <entry n="salix">
         <lemma>salix</lemma>
-        <gloss>a willow-tree, willow, sallow</gloss>
+        <gloss>willow (tree)</gloss>
         <gen>f.</gen>
         <pp>salix, salicis</pp>
 
     </entry>
     <entry n="satis1">
         <lemma>satis1</lemma>
-        <gloss>enough, sufficient, satisfactory, ample, adequate</gloss>
+        <gloss>enough</gloss>
 
     </entry>
     <entry n="sed">
         <lemma>sed</lemma>
-        <gloss>but, on the contrary, but also, but even, but in fact</gloss>
+        <gloss>but</gloss>
 
     </entry>
     <entry n="seges">
@@ -1849,7 +1847,7 @@
     </entry>
     <entry n="senex1">
         <lemma>senex1</lemma>
-        <gloss>old, aged, advanced in years</gloss>
+        <gloss>old man</gloss>
         <gen>m.</gen>
         <pp>senex, senis</pp>
 
@@ -1862,7 +1860,7 @@
     </entry>
     <entry n="seruitium">
         <lemma>seruitium</lemma>
-        <gloss>the condition of a slave, service, slavery, servitude</gloss>
+        <gloss>slavery, servitude</gloss>
         <gen>n.</gen>
         <pp>seruitium, seruitiī</pp>
 
@@ -1875,12 +1873,12 @@
     </entry>
     <entry n="si2">
         <lemma>si2</lemma>
-        <gloss>if, when, inasmuch as, since</gloss>
+        <gloss>if</gloss>
 
     </entry>
     <entry n="sic">
         <lemma>sic</lemma>
-        <gloss>thus, in this way, as I do, as you see</gloss>
+        <gloss>thus, in this way</gloss>
 
     </entry>
     <entry n="silex">
@@ -1892,7 +1890,7 @@
     </entry>
     <entry n="similis">
         <lemma>similis</lemma>
-        <gloss>like, resembling, similar</gloss>
+        <gloss>like, similar</gloss>
         <pp>similis, simile</pp>
 
     </entry>
@@ -1904,7 +1902,7 @@
     </entry>
     <entry n="soleo">
         <lemma>soleo</lemma>
-        <gloss>to use, be wont, be accustomed</gloss>
+        <gloss>be used to, be wont, be accustomed</gloss>
         <pp>soleō, solēre, solitus</pp>
 
     </entry>
@@ -1930,48 +1928,52 @@
     </entry>
     <entry n="suadeo">
         <lemma>suadeo</lemma>
-        <gloss>to advise, recommend, exhort, urge, persuade</gloss>
+        <gloss>to recommend, urge, persuade</gloss>
         <pp>suādeō, suādēre, suāsī, suāsum</pp>
 
     </entry>
     <entry n="submitto">
         <lemma>submitto</lemma>
-        <gloss>to let down, put down, lower, sink, drop; send secretly; substitute</gloss>
-        <pp>submittō, submittere, submīsī, submissum; (also summ~)</pp>
+        <gloss>(of animals) to rear, raise; let down, lower</gloss>
+        <pp>submittō, submittere, submīsī, submissum</pp>
 
     </entry>
     <entry n="super1">
-        <lemma>super1</lemma>
-        <gloss>to lie down on, cast oneself upon</gloss>
+        <lemma>super</lemma>
+        <gloss>above, on top (of)</gloss>
 
     </entry>
     <entry n="superus">
         <lemma>superus</lemma>
-        <gloss>that is above, upper, higher</gloss>
+        <gloss>upper, higher</gloss>
         <pp>superus, supera, superum</pp>
 
     </entry>
+    <entry n="summus">
+        <lemma>summus</lemma>
+        <gloss>highest, uppermost; most, greatest</gloss>
+    </entry>
     <entry n="susurrus">
         <lemma>susurrus</lemma>
-        <gloss>a humming, murmuring, muttering, whispering</gloss>
+        <gloss>a humming, murmuring, whispering</gloss>
         <gen>m.</gen>
         <pp> susurrus, susurrī</pp>
 
     </entry>
     <entry n="suus">
         <lemma>suus</lemma>
-        <gloss>of oneself, belonging to oneself, his own, her own, his, her, its, their</gloss>
+        <gloss>his/her/its/their (own), of oneself</gloss>
         <pp>suus, sua, suum</pp>
 
     </entry>
     <entry n="tam">
         <lemma>tam</lemma>
-        <gloss>in such a degree, as much, so, so much</gloss>
+        <gloss>as much, so, so much</gloss>
 
     </entry>
     <entry n="tamen">
         <lemma>tamen</lemma>
-        <gloss>notwithstanding, nevertheless, for all that, however, yet, still</gloss>
+        <gloss>nevertheless, yet, still</gloss>
 
     </entry>
     <entry n="tango">
@@ -1982,44 +1984,44 @@
     </entry>
     <entry n="tantum2">
         <lemma>tantum</lemma>
-        <gloss>so much, so greatly, to such a degree, so far, so long, so</gloss>
+        <gloss>so much, to such a degree</gloss>
 
     </entry>
     <entry n="tantus">
         <lemma>tantus</lemma>
-        <gloss>of such size, of such a measure, so great, such</gloss>
+        <gloss>so great, such</gloss>
         <pp>tantus, tanta, tantum</pp>
 
     </entry>
     <entry n="taurus">
         <lemma>taurus</lemma>
-        <gloss>a bull, bullock, steer</gloss>
+        <gloss>bull</gloss>
         <gen>m.</gen>
         <pp>taurus, taurī</pp>
 
     </entry>
     <entry n="tempus1">
         <lemma>tempus1</lemma>
-        <gloss>time, period, season, interval; (pl.) temples, face</gloss>
+        <gloss>time, season; (pl.) temples (of the head)</gloss>
         <gen>n.</gen>
         <pp>tempus, temporis</pp>
 
     </entry>
     <entry n="teneo">
         <lemma>teneo</lemma>
-        <gloss>to hold, keep, have, grasp, hold fast</gloss>
+        <gloss>to hold, keep, hold fast</gloss>
         <pp>teneō, tenēre, tenuī, tentum</pp>
 
     </entry>
     <entry n="tento">
         <lemma>tento</lemma>
-        <gloss>to handle, touch, feel; try</gloss>
+        <gloss>to handle, touch, feel; try; afflict</gloss>
         <pp>temptō, temptāre, temptāuī, temptātum; (also tent~)</pp>
 
     </entry>
     <entry n="tondeo">
         <lemma>tondeo</lemma>
-        <gloss>to shear, clip, crop, shave</gloss>
+        <gloss>to shear, crop, shave</gloss>
         <pp>tondeō, tondēre, (totondī), tonsum</pp>
 
     </entry>
@@ -2031,27 +2033,27 @@
     </entry>
     <entry n="tugurium">
         <lemma>tugurium</lemma>
-        <gloss>a hut, cot, cottage</gloss>
+        <gloss>a hut, cottage</gloss>
         <gen>n.</gen>
         <pp>tugurium, tuguriī</pp>
 
     </entry>
     <entry n="turbo2">
         <lemma>turbo2</lemma>
-        <gloss>to make an uproar, move confusedly, be in disorder</gloss>
+        <gloss>to make an uproar, disturb, be in disorder</gloss>
         <pp>turbō, turbāre, turbāuī, turbātum</pp>
 
     </entry>
     <entry n="turtur">
         <lemma>turtur</lemma>
-        <gloss>a turtle-dove</gloss>
+        <gloss>turtle-dove</gloss>
         <gen>m.</gen>
         <pp>turtur, turturis</pp>
 
     </entry>
     <entry n="tuus">
         <lemma>tuus</lemma>
-        <gloss>thy, thine, your, yours</gloss>
+        <gloss>(sg.) your, yours</gloss>
         <pp>tuus, tua, tuum</pp>
 
     </entry>
@@ -2063,7 +2065,7 @@
     </entry>
     <entry n="uerum4">
         <lemma>uerum</lemma>
-        <gloss>but, yet (in truth); (more rarely:) truly, certainly</gloss>
+        <gloss>but, yet (in truth)</gloss>
 
     </entry>
     <entry n="uiburnum">
@@ -2075,13 +2077,13 @@
     </entry>
     <entry n="uicinus2">
         <lemma>uicinus</lemma>
-        <gloss>neighboring</gloss>
+        <gloss>neighboring, neighbour's</gloss>
         <pp>uīcīnus, uīcīna, uīcīnum</pp>
 
     </entry>
     <entry n="uictima">
         <lemma>uictima</lemma>
-        <gloss>a beast for sacrifice, sacrifice, victim</gloss>
+        <gloss>(a beast for) sacrifice, victim</gloss>
         <gen>f.</gen>
         <pp>uictima, uictimae</pp>
 
@@ -2094,7 +2096,7 @@
     </entry>
     <entry n="uilla">
         <lemma>uilla</lemma>
-        <gloss>a country-house, country-seat, farm, villa</gloss>
+        <gloss>a country-house, farm, villa</gloss>
         <gen>f.</gen>
         <pp>uilla, uillae</pp>
 
@@ -2106,18 +2108,18 @@
     </entry>
     <entry n="uitis">
         <lemma>uitis</lemma>
-        <gloss>a vine, grape-vine</gloss>
+        <gloss>a (grape) vine</gloss>
         <gen>f.</gen>
         <pp>uītis, uītis</pp>
     </entry>
     <entry n="uix">
         <lemma>uix</lemma>
-        <gloss>with difficulty, with much ado, hardly, scarcely, barely</gloss>
+        <gloss>scarcely, barely</gloss>
 
     </entry>
     <entry n="ulmus">
         <lemma>ulmus</lemma>
-        <gloss>an elm, elm-tree</gloss>
+        <gloss>elm (tree)</gloss>
         <gen>f.</gen>
         <pp>ulmus, ulmī</pp>
     </entry>
@@ -2149,13 +2151,13 @@
     </entry>
     <entry n="usque">
         <lemma>usque</lemma>
-        <gloss>all the way, right on, without interruption, continuously, even</gloss>
+        <gloss>(right) up to, continuously so much; (with <span class='lt'>adeo</span>) "so much"</gloss>
 
     </entry>
     <entry n="uultus">
         <lemma>uultus</lemma>
         <gloss>facial expression, face</gloss>
         <gen>m.</gen>
-        <pp>vultus, vultūs</pp>
+        <pp>vultus, vultūs (also volt-)</pp>
     </entry>
 </body>

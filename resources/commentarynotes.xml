@@ -7,7 +7,7 @@
     <entry id="3">
         <text>malum hoc</text>
         <references>1.16.2, 1.16.3</references>
-        <comment>The death of the twin kids (<lt>gemellos</lt>) is the evil Meliboeus is referring to.</comment>
+        <comment>The death of the twin kids (<span class='lt'>gemellos</span>) is the evil Meliboeus is referring to.</comment>
     </entry>
     <entry id="4">
         <text>de caelo tactas</text>
@@ -17,7 +17,7 @@
     <entry id="5">
         <text>Musam meditaris</text>
         <references>1.2.3, 1.2.4</references>
-        <comment>"you are considering the Muse", or "you are practising a song", as <lt>Musam</lt>, in addition to one of the Muses, can metonymically mean a song.</comment>
+        <comment>"you are considering the Muse", or "you are practising a song", as <span class='lt'>Musam</span>, in addition to one of the Muses, can metonymically mean a song.</comment>
     </entry>
     <entry id="6">
         <text>Musam</text>
@@ -27,22 +27,22 @@
     <entry id="7">
         <text>tegmine</text>
         <references>1.1.6</references>
-        <comment>abl. with <lt><a href="javascript:void(0)" onclick="quickHighlight('1.1.5')">sub</a></lt>; "under the cover..."</comment>
+        <comment>abl. with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.5')">sub</a></span>; "under the cover..."</comment>
     </entry>
     <entry id="8">
         <text>patulae</text>
         <references>1.1.3</references>
-        <comment>with <lt><a href="javascript:void(0)" onclick="quickHighlight('1.1.7')">fagi</a></lt>; "of the spreading beech tree"</comment>
+        <comment>with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.7')">fagi</a></span>; "of the spreading beech tree"</comment>
     </entry>
     <entry id="9">
         <text>recubans</text>
         <references>1.1.4</references>
-        <comment>with <lt><a href="javascript:void(0)" onclick="quickHighlight('1.1.2')">tu</a></lt>, that is, Tityrus</comment>
+        <comment>with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.2')">tu</a></span>, that is, Tityrus</comment>
     </entry>
     <entry id="10">
         <text>sub</text>
         <references>1.1.5</references>
-        <comment>with <lt><a href="javascript:void(0)" onclick="quickHighlight('1.1.6')">tegmine</a></lt>; "under the cover"</comment>
+        <comment>with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.6')">tegmine</a></span>; "under the cover"</comment>
     </entry>
     <entry id="11">
         <text>various</text>
@@ -57,6 +57,36 @@
     <entry id="13">
         <text>permisit</text>
         <references>1.10.5</references>
-        <comment>introduces two acc. + inf. indirect statements (<lt><a href="javascript:void(0)" onclick="quickHighlight('1.9.2--1.9.4')">meas errare boves</a></lt>; <lt><a href="javascript:void(0)" onclick="quickHighlight('1.9.8--1.10.1')">ipsum ludere</a></lt>)</comment>
+        <comment>introduces two acc. + inf. indirect statements (<span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.9.2--1.9.4')">meas errare boves</a></span>; <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.9.8--1.10.1')">ipsum ludere</a></span>)</comment>
+    </entry>
+    <entry id="14">
+        <text>fugimus</text>
+        <references>1.4.3</references>
+        <comment>perfect or present</comment>
+    </entry>
+    <entry id="15">
+        <text>turbatur</text>
+        <references>1.12.3</references>
+        <comment>impersonal - "there is disorder"</comment>
+    </entry>
+    <entry id="16">
+        <text>usque adeo</text>
+        <references>1.12.1, 1.12.2</references>
+        <comment><span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.12.1--1.12.2')">usque adeo</a></span> "to such an extent", "so much"</comment>
+    </entry>
+    <entry id="17">
+        <text>ipse</text>
+        <references>1.12.6</references>
+        <comment>first person, reflexively referring to Meliboeus</comment>
+    </entry>
+    <entry id="18">
+        <text>namque</text>
+        <references>1.14.6</references>
+        <comment>delayed in the line, explanatory and giving evidence for his previous statement</comment>
+    </entry>
+    <entry id="19">
+        <text>namque</text>
+        <references>1.14.6</references>
+        <comment>Clausen (1970) pp. 85-6 suggests <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.14.6--1.14.7')">namque gemellos</a></span> was in imitation of Catullus' <span class='lt'>namque Leonis</span> (66.65)</comment>
     </entry>
 </body>
