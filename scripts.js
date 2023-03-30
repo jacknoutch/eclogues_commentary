@@ -592,6 +592,8 @@ $(document).ready(function(){
                 card = $target.parents(".w3-card-4");
                 card.remove();
                 updateCardPositions();
+                $(".focus").children().unwrap()
+                $(".focus").removeClass("focus");
             }
             else if ($target.hasClass("hide")) { // the user has clicked on the hide button of a card
                 // identify the card in question, close it and its content before rearranging the position of other cards
