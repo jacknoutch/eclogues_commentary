@@ -51,7 +51,8 @@ function spanAllWords() {
 
     $.when($.get(lemmatiserPath)).done(function(xml){
         $(".l").each(function(){
-            var words = $(this).text().match(/\w+|\s+|[^\s\w]+/g); // Split the line into words, punctuation, and white space
+            var words = $(this).text().match(/\p{L}+|\s+|[^\s]+/g); // Split the line into words, punctuation, and white space
+            console.log(words);
             for (let i = 0; i < words.length; i++) {
                 if (/\w+/.test(words[i])) {
                     words[i] = "<span class='w'>" + words[i] + "</span>" // Wrap the words only in span tags
@@ -600,7 +601,7 @@ $(document).ready(function(){
                 card = $target.parents(".w3-card-4");
                 card.toggleClass("closed");
                 cardContent = card.find(".content");
-                cardContent.toggle();
+                cardContent.toggle();   
                 updateCardPositions();
             }
             else { // the user has clicked anywhere else
