@@ -48,10 +48,13 @@ function getWordSpans(rawReferences) {
 function spanAllWords() {
     // Wrap a <span> around each word in each verse line, to make it easier to click on the word 
     // and look up its details.
+    // var oldRe = new RegExp(/\p{L}+|[^\p{L}]+/gu);
+    var re = new RegExp(/(?<=([mts]e|[nv]obis))cum|([mts]e|[nv]obis)(?=cum)|\p{L}+|[^\p{L}]+/gu);
 
     $.when($.get(lemmatiserPath)).done(function(xml){
         $(".l").each(function(){
-            var words = $(this).text().match(/\w+|[^\s\w]+|\s+/g); // Split the line into words, punctuation, and white space
+            var words = $(this).text().match(re); // Split the line into words, punctuation, and white space
+            // console.log($(this))
             console.log(words);
             for (let i = 0; i < words.length; i++) {
                 if (/\w+/.test(words[i])) {
