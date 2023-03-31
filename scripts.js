@@ -484,7 +484,7 @@ function quickHighlight(rawReferences) {
                     backgroundColor: "none",
                 }, 500)
             })
-            return;
+            continue;
         }
         
         // otherwise the reference is to a series of words

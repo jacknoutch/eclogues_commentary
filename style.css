@@ -49,7 +49,7 @@ a:hover {
 .blurb {
   font-style: italic;
 }
-#latin_text {
+.latin_text {
   margin-left: 1em;
   /* border: 1px dotted blue; */
   /* padding-left: 10px; */
@@ -93,6 +93,9 @@ a:hover {
 /*** Dynamic classes ***/
 .w, .cardbutton {
   cursor: pointer;
+}
+.w:hover {
+  text-decoration: underline;
 }
 .focus {
   background-color: yellow;

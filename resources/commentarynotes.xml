@@ -17,7 +17,7 @@
     <entry id="5">
         <text>Musam meditaris</text>
         <references>1.2.3, 1.2.4</references>
-        <comment>"you are considering the Muse", or "you are practising a song", as <span class='lt'>Musam</span>, in addition to one of the Muses, can metonymically mean a song.</comment>
+        <comment><span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.2.3--1.2.4')">Musam meditaris</a></span> can mean either "you are considering the Muse", or "you are practising a song"</comment>
     </entry>
     <entry id="6">
         <text>Musam</text>
@@ -29,16 +29,16 @@
         <references>1.1.6</references>
         <comment>abl. with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.5')">sub</a></span>; "under the cover..."</comment>
     </entry>
-    <entry id="8">
+    <!-- <entry id="8">
         <text>patulae</text>
         <references>1.1.3</references>
         <comment>with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.7')">fagi</a></span>; "of the spreading beech tree"</comment>
-    </entry>
-    <entry id="9">
+    </entry> -->
+    <!-- <entry id="9">
         <text>recubans</text>
         <references>1.1.4</references>
         <comment>with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.2')">tu</a></span>, that is, Tityrus</comment>
-    </entry>
+    </entry> -->
     <entry id="10">
         <text>sub</text>
         <references>1.1.5</references>
@@ -138,5 +138,40 @@
         <text>habet… reliquit</text>
         <references>1.31.4, 1.31.6</references>
         <comment>historic present</comment>
+    </entry>
+    <entry id="31">
+        <type>agreement</type>
+        <references>1.1.3</references>>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.1.3, 1.1.7')">fagi</a></span></comment>
+    </entry>
+    <entry id="32">
+        <type>agreement</type>
+        <references>1.1.4</references>>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.1.4, 1.1.2')">tu</a></span></comment>
+    </entry>
+    <entry id="33">
+        <type>agreement</type>
+        <references>1.2.1</references>>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.2.1, 1.2.3')">Musam</a></span></comment>
+    </entry>
+    <entry id="34">
+        <type>agreement</type>
+        <references>1.2.2</references>>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.2.2, 1.2.5')">auena</a></span></comment>
+    </entry>
+    <entry id="35">
+        <type>agreement</type>
+        <references>1.3.5</references>>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.3.5, 1.3.7')">auena</a></span></comment>
+    </entry>
+    <entry id="36">
+        <type>agreement</type>
+        <references>1.4.6</references>>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.4.4, 1.4.6')">auena</a></span></comment>
+    </entry>
+    <entry id="37">
+        <type>agreement</type>
+        <references>1.5.1</references>>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.5.1, 1.5.4')">auena</a></span></comment>
     </entry>
 </body>
