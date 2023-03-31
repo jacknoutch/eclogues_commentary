@@ -3,8 +3,62 @@ var lexiconPath = "resources/glosses.xml";
 var commentaryPath = "resources/commentarynotes.xml";
 
 var cardCounter = 0; // This is the counter for cards created in the #lookup pane, used in makeCard()
+var sectionCounter = 1;
 
 //  FUNCTIONS
+
+function nextSection() {
+    // get the .latintext class elements, find the one which has the .currently_reading class, remove it, and add it to the next one
+    console.log(sectionCounter)
+    if (sectionCounter<$(".latin_text").length-1) {
+        var currentSection = $(".latin_text")[sectionCounter-1]
+        sectionCounter++
+        var nextSection = $(".latin_text")[sectionCounter-1]
+        $(currentSection).removeClass("currently_reading");
+        $(nextSection).addClass("currently_reading");
+        $(".middle_sections").removeClass("invisible"); 
+        $(".previous").removeClass("invisible");
+    }
+    else if (sectionCounter==$(".latin_text").length-1) {
+        var currentSection = $(".latin_text")[sectionCounter-1]
+        sectionCounter++
+        var nextSection = $(".latin_text")[sectionCounter-1]
+        $(currentSection).removeClass("currently_reading");
+        $(nextSection).addClass("currently_reading"); 
+        $(".previous").removeClass("invisible");
+        $(".middle_sections").addClass("invisible");
+        $(".next").addClass("invisible");
+    }
+    else {
+        console.log("error - currentSection out of range")
+    }
+}
+
+function previousSection() {
+    console.log(sectionCounter)
+    if (sectionCounter>2) {
+        var currentSection = $(".latin_text")[sectionCounter-1]
+        sectionCounter--
+        var previousSection = $(".latin_text")[sectionCounter-1]
+        $(currentSection).removeClass("currently_reading");
+        $(previousSection).addClass("currently_reading");
+        $(".middle_sections").removeClass("invisible"); 
+        $(".next").removeClass("invisible");
+    }
+    else if (sectionCounter==2) {
+        var currentSection = $(".latin_text")[sectionCounter-1]
+        sectionCounter--
+        var previousSection = $(".latin_text")[sectionCounter-1]
+        $(currentSection).removeClass("currently_reading");
+        $(previousSection).addClass("currently_reading"); 
+        $(".previous").addClass("invisible");
+        $(".middle_sections").addClass("invisible");
+        $(".next").removeClass("invisible");
+    }
+    else {
+        console.log("error - currentSection out of range")
+    }
+}
 
 function getReferences(rawReference) {
     var references = [];
