@@ -15,9 +15,9 @@ nav {
 .container.w3-row {
   padding-left: 1em;
   padding-right: 1em;
+  min-width: 360px;
 }
 footer {
-  display: m;
   justify-content: center;
 }
 footer p {
@@ -50,15 +50,10 @@ a:hover {
   font-style: italic;
 }
 .latin_text {
-  /* margin-left: 1em; */
-  /* border: 1px dotted blue; */
-  /* padding-left: 10px; */
   display: none;
 }
 .latin_text.currently_reading {
   display: inherit;
-  min-width: 350px;
-  padding-right: 1em;
 }
 .margin_control {
   margin-left: 1em;
@@ -124,8 +119,11 @@ span.verse_ref {
 .visible span.verse_ref { /* To manually override which line numbers are visible. */
   visibility: visible;
 }
-.highlight {
+.quickHighlight {
   background-color: pink;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 /*** Card classes ***/

@@ -9,7 +9,6 @@ var sectionCounter = 1;
 
 function nextSection() {
     // get the .latintext class elements, find the one which has the .currently_reading class, remove it, and add it to the next one
-    console.log(sectionCounter)
     if (sectionCounter<$(".latin_text").length-1) {
         var currentSection = $(".latin_text")[sectionCounter-1]
         sectionCounter++
@@ -18,6 +17,13 @@ function nextSection() {
         $(nextSection).addClass("currently_reading");
         $(".middle_sections").removeClass("invisible"); 
         $(".previous").removeClass("invisible");
+
+        card = $(".w3-card-4");
+        card.remove();
+        $(".focus").children().unwrap()
+        $(".focus").removeClass("focus");
+        $(".temporarySpan.quickHighlight").children().unwrap();
+        $(".quickHighlight").removeClass("quickHighlight");
     }
     else if (sectionCounter==$(".latin_text").length-1) {
         var currentSection = $(".latin_text")[sectionCounter-1]
@@ -28,6 +34,13 @@ function nextSection() {
         $(".previous").removeClass("invisible");
         $(".middle_sections").addClass("invisible");
         $(".next").addClass("invisible");
+
+        card = $(".w3-card-4");
+        card.remove();
+        $(".focus").children().unwrap()
+        $(".focus").removeClass("focus");
+        $(".temporarySpan.quickHighlight").children().unwrap();
+        $(".quickHighlight").removeClass("quickHighlight");
     }
     else {
         console.log("error - currentSection out of range")
@@ -35,7 +48,6 @@ function nextSection() {
 }
 
 function previousSection() {
-    console.log(sectionCounter)
     if (sectionCounter>2) {
         var currentSection = $(".latin_text")[sectionCounter-1]
         sectionCounter--
@@ -44,6 +56,13 @@ function previousSection() {
         $(previousSection).addClass("currently_reading");
         $(".middle_sections").removeClass("invisible"); 
         $(".next").removeClass("invisible");
+
+        card = $(".w3-card-4");
+        card.remove();
+        $(".focus").children().unwrap()
+        $(".focus").removeClass("focus");
+        $(".temporarySpan.quickHighlight").children().unwrap();
+        $(".quickHighlight").removeClass("quickHighlight");
     }
     else if (sectionCounter==2) {
         var currentSection = $(".latin_text")[sectionCounter-1]
@@ -54,6 +73,13 @@ function previousSection() {
         $(".previous").addClass("invisible");
         $(".middle_sections").addClass("invisible");
         $(".next").removeClass("invisible");
+        
+        card = $(".w3-card-4");
+        card.remove();
+        $(".focus").children().unwrap()
+        $(".focus").removeClass("focus");
+        $(".temporarySpan.quickHighlight").children().unwrap();
+        $(".quickHighlight").removeClass("quickHighlight");
     }
     else {
         console.log("error - currentSection out of range")
@@ -530,14 +556,7 @@ function quickHighlight(rawReferences) {
         if (!reference.isMultiple) {
             var [poemNumber, lineNumber, wordIndex] = reference["wordSpans"].split(".");
             var wordSpan = getWordSpan(poemNumber, lineNumber, wordIndex);
-            $(wordSpan).animate({
-                backgroundColor: "yellow",
-                
-            }, 500, function() {
-                $(this).animate({
-                    backgroundColor: "none",
-                }, 500)
-            })
+            $(wordSpan).addClass("quickHighlight")
             continue;
         }
         
@@ -562,15 +581,15 @@ function quickHighlight(rawReferences) {
             var startLine = parseInt(startLineNumber);
             var endLine = parseInt(endLineNumber);
 
-            $(startLineTextNodes).wrapAll("<span class='quickHighlight' />");
-            $(endLineTextNodes).wrapAll("<span class='quickHighlight' />");
+            $(startLineTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />");
+            $(endLineTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />");
 
             while (endLine - startLine > 1) {
                 var nextLineDiv = $(startLineDiv).next(".l").not(".undisplayed");
                 var nextLineFirstElem = $(nextLineDiv).find(".w:first()");
                 var nextLineLastElem = $(nextLineDiv).find(".w:last()");
                 var nextLineNodes = getNodesBetween(nextLineFirstElem[0], nextLineLastElem[0]);
-                $(nextLineNodes).wrapAll("<span class='quickHighlight' />");
+                $(nextLineNodes).wrapAll("<span class='temporarySpan quickHighlight' />");
                 startLine++;
             }
 
@@ -591,18 +610,8 @@ function quickHighlight(rawReferences) {
         // for references that are within a single line but cover a series of words
         var textNodes = getNodesBetween(startSpan[0], endSpan[0])
 
-        $(textNodes).wrapAll("<span class='quickHighlight' />")
+        $(textNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
 
-        $(".quickHighlight").animate({
-                backgroundColor: "yellow",
-                
-            }, 500, function() {
-                $(this).animate({
-                    backgroundColor: "none",
-                }, 500, function () {
-                    return $(textNodes).unwrap()
-                })
-        })
     }
 }
 
@@ -659,10 +668,16 @@ $(document).ready(function(){
                 cardContent.toggle();   
                 updateCardPositions();
             }
+            else if ($target.is("a")) {
+                $(".focus").children().unwrap();
+                $(".focus").removeClass("focus");
+            }
             else { // the user has clicked anywhere else
                 // remove focus from the text
-                $(".focus").children().unwrap()
+                $(".focus").children().unwrap();
                 $(".focus").removeClass("focus");
+                $(".temporarySpan.quickHighlight").children().unwrap();
+                $(".quickHighlight").removeClass("quickHighlight");
             }
         },
     });
