@@ -29,6 +29,10 @@ h1 {
 p {
   text-align: justify;
 }
+p.center {
+  text-align: center;
+  font-variant: small-caps;
+}
 a {
   color: #C00;
   text-decoration: none;
