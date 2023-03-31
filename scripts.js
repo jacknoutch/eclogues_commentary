@@ -53,9 +53,7 @@ function spanAllWords() {
 
     $.when($.get(lemmatiserPath)).done(function(xml){
         $(".l").each(function(){
-            var words = $(this).text().match(re); // Split the line into words, punctuation, and white space
-            // console.log($(this))
-            console.log(words);
+            var words = $(this).text().match(re); // Split the line into words, punctuation, and white space; mecum, tecum, secum, nobiscum and vobiscum are split into pronoun and enclitic
             for (let i = 0; i < words.length; i++) {
                 if (/\w+/.test(words[i])) {
                     words[i] = "<span class='w'>" + words[i] + "</span>" // Wrap the words only in span tags
