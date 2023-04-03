@@ -104,9 +104,9 @@ function getReferences(rawReference) {
 }
 
 function getWordSpan(poemNumber, lineNumber, wordIndex) {
-    var wordIndex = String(parseInt(wordIndex)+1);
+    var wordIndex = String(parseInt(wordIndex)-1);
     var lineDiv = $(".l[n='"+ poemNumber + "." + lineNumber + "']");
-    var wordSpan = $(lineDiv).children(".w:nth-of-type("+wordIndex+")")
+    var wordSpan = $(lineDiv).find(".w").eq(wordIndex);
     return wordSpan
 }
 
@@ -567,51 +567,35 @@ function quickHighlight(rawReferences) {
         var startSpan = getWordSpan(startPoemNumber, startLineNumber, startWordIndex);
         var endSpan = getWordSpan(endPoemNumber, endLineNumber, endWordIndex)
 
-        // the reference may cross over into more than one
-        if (startLineNumber!=endLineNumber) {
-
-            var startLineDiv = $(".l[n='"+startPoemNumber+"."+startLineNumber+"']");
-            var startLineLastElem = $(startLineDiv).find(".w:last()");
-            var startLineTextNodes = getNodesBetween(startSpan[0], startLineLastElem[0])
-            
-            var endLineDiv = $(".l[n='"+endPoemNumber+"."+endLineNumber+"']");
-            var endLineFirstElem = $(endLineDiv).find(".w:first()");
-            var endLineTextNodes = getNodesBetween(endLineFirstElem[0], endSpan[0]);
-
-            var startLine = parseInt(startLineNumber);
-            var endLine = parseInt(endLineNumber);
-
-            $(startLineTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />");
-            $(endLineTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />");
-
-            while (endLine - startLine > 1) {
-                var nextLineDiv = $(startLineDiv).next(".l").not(".undisplayed");
-                var nextLineFirstElem = $(nextLineDiv).find(".w:first()");
-                var nextLineLastElem = $(nextLineDiv).find(".w:last()");
-                var nextLineNodes = getNodesBetween(nextLineFirstElem[0], nextLineLastElem[0]);
-                $(nextLineNodes).wrapAll("<span class='temporarySpan quickHighlight' />");
-                startLine++;
-            }
-
-            $(".quickHighlight").animate({
-                backgroundColor: "yellow",
-                    
-                }, 500, function() {
-                    $(this).animate({
-                        backgroundColor: "none",
-                    }, 500, function () {
-                        $(".quickHighlight").children().unwrap();
-                        return
-                    })
-                }
-            )
+        // the reference is on one line
+        if (startLineNumber==endLineNumber) {
+            textNodes = getNodesBetween(startSpan[0], endSpan[0])
+            $(textNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
+            continue;
         }
+
+        // the reference is over multiple lines
+        var startLineDiv = $(".l[n='"+startPoemNumber+"."+startLineNumber+"']");
+        var startLineLastElem = $(startLineDiv).find(".w:last()");
+        var startLineTextNodes = getNodesBetween(startSpan[0], startLineLastElem[0])
+        $(startLineTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
         
-        // for references that are within a single line but cover a series of words
-        var textNodes = getNodesBetween(startSpan[0], endSpan[0])
+        var endLineDiv = $(".l[n='"+endPoemNumber+"."+endLineNumber+"']");
+        var endLineFirstElem = $(endLineDiv).find(".w:first()");
+        var endLineTextNodes = getNodesBetween(endLineFirstElem[0], endSpan[0]);
+        $(endLineTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
 
-        $(textNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
+        var startLine = parseInt(startLineNumber);
+        var endLine = parseInt(endLineNumber);
 
+        while (endLine - startLine > 1) {
+            var nextLineDiv = $(startLineDiv).next(".l").not(".undisplayed");
+            var nextLineFirstElem = $(nextLineDiv).find(".w:first()");
+            var nextLineLastElem = $(nextLineDiv).find(".w:last()");
+            var nextLineNodes = getNodesBetween(nextLineFirstElem[0], nextLineLastElem[0]);
+            $(nextTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
+            startLine++;
+        }
     }
 }
 
