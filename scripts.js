@@ -129,7 +129,7 @@ function spanAllWords() {
     // Wrap a <span> around each word in each verse line, to make it easier to click on the word 
     // and look up its details.
     // var oldRe = new RegExp(/\p{L}+|[^\p{L}]+/gu);
-    var re = new RegExp(/(?<=([mts]e|[nv]obis))cum|([mts]e|[nv]obis)(?=cum)|\p{L}+|[^\p{L}]+/gu);
+    var re = new RegExp(/([mts]e|[nv]obis)(?=cum)|\p{L}+|[^\p{L}]+/gu);
 
     $.when($.get(lemmatiserPath)).done(function(xml){
         $(".l").each(function(){
