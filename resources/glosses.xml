@@ -1,7 +1,7 @@
 <body>
     <entry n="Afri">
         <lemma>Afri</lemma>
-        <pp>&#256;fr&#299;, &#256;fr&#333;rum</pp>
+        <pp>Āfrī, Āfrōrum</pp>
         <pos>NOMpro</pos>
         <gloss>Africans</gloss>
         <instances>1.65</instances>
@@ -16,7 +16,7 @@
     </entry>
     <entry n="Meliboeus">
         <lemma>Meliboeus</lemma>
-        <pp>Meliboeus, Meliboe&#299;</pp>
+        <pp>Meliboeus, Meliboeī</pp>
         <pos>NOMpro</pos>
         <gen>m.</gen>
         <gloss>Meliboeus, a shepherd</gloss>
@@ -24,7 +24,7 @@
     </entry>
     <entry n="Musa">
         <lemma>Musa</lemma>
-        <pp>M&#363;sa, M&#363;sae</pp>
+        <pp>Mūsa, Mūsae</pp>
         <pos>NOMpro</pos>
         <gen>f.</gen>
         <gloss>Muse</gloss>
@@ -32,7 +32,7 @@
     </entry>
     <entry n="Tityrus">
         <lemma>Tityrus</lemma>
-        <pp>T&#299;tyrus, T&#299;tyr&#299;</pp>
+        <pp>Tītyrus, Tītyrī</pp>
         <pos>NOMpro</pos>
         <gen>m.</gen>
         <gloss>Tityrus, a herdsman</gloss>
@@ -46,7 +46,7 @@
     </entry>
     <entry n="agnus">
         <lemma>agnus</lemma>
-        <pp>agnus, agn&#299;</pp>
+        <pp>agnus, agnī</pp>
         <pos>NOMcom</pos>
         <gen>m.</gen>
         <gloss>lamb</gloss>
@@ -61,7 +61,7 @@
     </entry>
     <entry n="ara">
         <lemma>ara</lemma>
-        <pp>&#257;ra, &#257;rae</pp>
+        <pp>āra, ārae</pp>
         <pos>NOMcom</pos>
         <gen>f.</gen>
         <gloss>altar</gloss>
@@ -69,7 +69,7 @@
     </entry>
     <entry n="aruum">
         <lemma>aruum</lemma>
-        <pp>aruum, aru&#299;</pp>
+        <pp>aruum, aruī</pp>
         <pos>NOMcom</pos>
         <gen>n.</gen>
         <gloss>field, (pl.) fields, region</gloss>
@@ -77,7 +77,7 @@
     </entry>
     <entry n="auena">
         <lemma>auena</lemma>
-        <pp>au&#275;na, au&#275;nae</pp>
+        <pp>auēna, auēnae</pp>
         <pos>NOMcom</pos>
         <gen>f.</gen>
         <gloss>reed, pipe</gloss>
@@ -85,7 +85,7 @@
     </entry>
     <entry n="bos">
         <lemma>bos</lemma>
-        <pp>b&#333;s, bovis</pp>
+        <pp>bōs, bovis</pp>
         <pos>NOMcom</pos>
         <gen>c.</gen>
         <gloss>(m.) ox, bull, (f.) cow, (pl.) cattle</gloss>
@@ -93,27 +93,27 @@
     </entry>
     <entry n="calamus">
         <lemma>calamus</lemma>
-        <pp>calamus, calam&#299;</pp>
+        <pp>calamus, calamī</pp>
         <gen>m.</gen>
         <gloss>reed, reed-pipe</gloss>
         <instances>1.10</instances>
     </entry>
     <entry n="cerno">
         <lemma>cerno</lemma>
-        <pp>cern&#333;, cernere, cr&#275;u&#275;, cr&#275;tum</pp>
+        <pp>cernō, cernere, crēuē, crētum</pp>
         <gloss>see</gloss>
         <instances>1.9</instances>
     </entry>
     <entry n="deus">
         <lemma>deus</lemma>
-        <pp>deus, de&#299;</pp>
+        <pp>deus, deī</pp>
         <gen>m.</gen>
         <gloss>a god</gloss>
         <instances>1.6; 1.7; 1.19; 1.37</instances>
     </entry>
     <entry n="doceo">
         <lemma>doceo</lemma>
-        <pp>doce&#333;, doc&#275;re, docu&#299;, doctum</pp>
+        <pp>doceō, docēre, docuī, doctum</pp>
         <gloss>teach, instruct, show</gloss>
     </entry>
     <entry n="dulcis">
@@ -129,7 +129,7 @@
     </entry>
     <entry n="erro2">
         <lemma>erro</lemma>
-        <pp>err&#333;, err&#257;re, err&#257;u&#299;, err&#257;tum</pp>
+        <pp>errō, errāre, errāuī, errātum</pp>
         <gloss>wander, roam</gloss>
         <instances>1.9</instances>
     </entry>
@@ -140,33 +140,33 @@
     </entry>
     <entry n="facio">
         <lemma>facio</lemma>
-        <pp>faci&#333;, facere, f&#275;c&#299;, factum</pp>
+        <pp>faciō, facere, fēcī, factum</pp>
         <gloss>make, bring about</gloss>
         <instances>1.6; 1.41</instances>
     </entry>
     <entry n="fagus">
         <lemma>fagus</lemma>
-        <pp>f&#257;gus, f&#257;g&#299;</pp>
+        <pp>fāgus, fāgī</pp>
         <gen>f.</gen>
         <gloss>beech tree</gloss>
         <instances>1.1</instances>
     </entry>
     <entry n="finis">
         <lemma>finis</lemma>
-        <pp>f&#299;nis, f&#299;nis</pp>
+        <pp>fīnis, fīnis</pp>
         <gen>m.</gen>
         <gloss>borders, territory</gloss>
         <instances>1.3; 1.62; 1.68</instances>
     </entry>
     <entry n="formosus">
         <lemma>formosus</lemma>
-        <pp>form&#333;sus, form&#333;sa, form&#333;sum</pp>
+        <pp>formōsus, formōsa, formōsum</pp>
         <gloss>lovely, beautiful</gloss>
         <instances>1.5</instances>
     </entry>
     <entry n="fugio">
         <lemma>fugio</lemma>
-        <pp>fugi&#333;, fugere, f&#363;g&#299;</pp>
+        <pp>fugiō, fugere, fūgī</pp>
         <gloss>flee, patriam fugio - to go into exile</gloss>
         <instances>1.4</instances>
     </entry>
@@ -184,7 +184,7 @@
     </entry>
     <entry n="imbuo">
         <lemma>imbuo</lemma>
-        <pp>imbu&#333;, imbuere, imbu&#299;, imb&#299;tum</pp>
+        <pp>imbuō, imbuere, imbuī, imbītum</pp>
         <gloss>stain (with blood)</gloss>
         <instances>1.8</instances>
     </entry>
@@ -207,19 +207,19 @@
     </entry>
     <entry n="linquo">
         <lemma>linquo</lemma>
-        <pp>linqu&#333;, linquere, l&#299;qui</pp>
+        <pp>linquō, linquere, līqui</pp>
         <gloss>leave</gloss>
         <instances>1.3</instances>
     </entry>
     <entry n="ludo">
         <lemma>ludo</lemma>
-        <pp>l&#363;d&#333;, l&#363;dere, l&#363;d&#299;, l&#363;dum</pp>
+        <pp>lūdō, lūdere, lūdī, lūdum</pp>
         <gloss>play, make music</gloss>
         <instances>1.10</instances>
     </entry>
     <entry n="meditor">
         <lemma>meditor</lemma>
-        <pp>meditor, medit&#257;r&#299;, medit&#257;tus</pp>
+        <pp>meditor, meditārī, meditātus</pp>
         <gloss>consider; rehearse, practise</gloss>
         <instances>1.2</instances>
     </entry>
@@ -252,14 +252,14 @@
     </entry>
     <entry n="otium">
         <lemma>otium</lemma>
-        <pp>&#333;tium, &#333;ti&#299;</pp>
+        <pp>ōtium, ōtiī</pp>
         <gen>n.</gen>
         <gloss>leisure, time for rest</gloss>
         <instances>1.6</instances>
     </entry>
     <entry n="ouile">
         <lemma>ouile</lemma>
-        <pp>ou&#299;le, ou&#299;lis</pp>
+        <pp>ouīle, ouīlis</pp>
         <gen>n.</gen>
         <gloss>sheepfold</gloss>
         <instances>1.8</instances>
@@ -279,25 +279,25 @@
     </entry>
     <entry n="permitto">
         <lemma>permitto</lemma>
-        <pp>permitt&#333;, permittere, perm&#299;s&#299;, permissum</pp>
+        <pp>permittō, permittere, permīsī, permissum</pp>
         <gloss>allow, sanction</gloss>
         <instances>1.10</instances>
     </entry>
     <entry n="qui1">
         <lemma>qui</lemma>
-        <pp>qu&#299;, quae, quod</pp>
+        <pp>quī, quae, quod</pp>
         <gloss>who, which (relative pronoun)</gloss>
         <instances>1.10; 1.19; 1.20; 1.28; 1.38; 1.44; 1.54</instances>
     </entry>
     <entry n="recubo">
         <lemma>recubo</lemma>
-        <pp>recub&#333;, recub&#257;re, recub&#257;u&#299;, recub&#257;tum</pp>
+        <pp>recubō, recubāre, recubāuī, recubātum</pp>
         <gloss>lie back, recline</gloss>
         <instances>1.1</instances>
     </entry>
     <entry n="resono1">
         <lemma>resono</lemma>
-        <pp>reson&#333;, reson&#257;re, reson&#257;u&#299;</pp>
+        <pp>resonō, resonāre, resonāuī</pp>
         <gloss>resound; "call out the name of"</gloss>
         <instances>1.5</instances>
     </entry>
@@ -330,7 +330,7 @@
     </entry>
     <entry n="sum1">
         <lemma>sum</lemma>
-        <pp>sum, esse, fu&#299;</pp>
+        <pp>sum, esse, fuī</pp>
         <gloss>to be</gloss>
         <instances>1.7; 1.16; 1.19; 1.27; 1.33; 1.81</instances>
     </entry>
@@ -367,7 +367,7 @@
     </entry>
     <entry n="uolo3">
         <lemma>uolo</lemma>
-        <pp>uol&#333;, uelle, uolu&#299;</pp>
+        <pp>uolō, uelle, uoluī</pp>
         <gloss>wish, want</gloss>
         <instances>1.10</instances>
     </entry>

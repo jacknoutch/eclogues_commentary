@@ -620,6 +620,8 @@ $(document).ready(function(){
         "click": function(event) {
             $target = $(event.target);
             if ($target.hasClass("w")) { // the user has clicked on a word
+                $(".temporarySpan.quickHighlight").children().unwrap();
+                $(".quickHighlight").removeClass("quickHighlight");
                 // remove focus from all other words, focus on this one, and then get its information
                 $(".focus").children().unwrap()
                 $(".focus").removeClass("focus");
