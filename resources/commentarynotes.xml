@@ -29,16 +29,6 @@
         <references>1.1.6</references>
         <comment>abl. with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.5')">sub</a></span>; "under the cover..."</comment>
     </entry>
-    <!-- <entry id="8">
-        <text>patulae</text>
-        <references>1.1.3</references>
-        <comment>with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.7')">fagi</a></span>; "of the spreading beech tree"</comment>
-    </entry> -->
-    <!-- <entry id="9">
-        <text>recubans</text>
-        <references>1.1.4</references>
-        <comment>with <span class='lt'><a href="javascript:void(0)" onclick="quickHighlight('1.1.2')">tu</a></span>, that is, Tityrus</comment>
-    </entry> -->
     <entry id="10">
         <text>sub</text>
         <references>1.1.5</references>
@@ -141,37 +131,37 @@
     </entry>
     <entry id="31">
         <type>agreement</type>
-        <references>1.1.3</references>>
+        <references>1.1.3</references>
         <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.1.3, 1.1.7')">fagi</a></span></comment>
     </entry>
     <entry id="32">
         <type>agreement</type>
-        <references>1.1.4</references>>
+        <references>1.1.4</references>
         <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.1.4, 1.1.2')">tu</a></span></comment>
     </entry>
     <entry id="33">
         <type>agreement</type>
-        <references>1.2.1</references>>
+        <references>1.2.1</references>
         <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.2.1, 1.2.3')">Musam</a></span></comment>
     </entry>
     <entry id="34">
         <type>agreement</type>
-        <references>1.2.2</references>>
+        <references>1.2.2</references>
         <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.2.2, 1.2.5')">auena</a></span></comment>
     </entry>
     <entry id="35">
         <type>agreement</type>
-        <references>1.3.5</references>>
-        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.3.5, 1.3.7')">auena</a></span></comment>
+        <references>1.3.5</references>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.3.5, 1.3.7')">arua</a></span></comment>
     </entry>
     <entry id="36">
         <type>agreement</type>
-        <references>1.4.6</references>>
-        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.4.4, 1.4.6')">auena</a></span></comment>
+        <references>1.4.6</references>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.4.4, 1.4.6')">tu</a></span></comment>
     </entry>
     <entry id="37">
         <type>agreement</type>
-        <references>1.5.1</references>>
-        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.5.1, 1.5.4')">auena</a></span></comment>
+        <references>1.5.1</references>
+        <comment>Agrees with: <span class="lt"><a href="javascript:void(0)" onclick="quickHighlight('1.5.1, 1.5.4')">Amaryllida</a></span></comment>
     </entry>
 </body>

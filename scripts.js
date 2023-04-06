@@ -620,6 +620,13 @@ $(document).ready(function(){
         "click": function(event) {
             $target = $(event.target);
             if ($target.hasClass("w")) { // the user has clicked on a word
+                console.log($target)
+                var indices = getIndices($target)
+                var indices = indices[0] + "." + String(indices[1]+1)
+                var wordform = $target[0].innerText
+                console.log(indices)
+                console.log("<a href=javascript:void(0) onclick='quickHighlight("+indices+")'><span class=lt>"+wordform+"</span></a>")
+
                 $(".temporarySpan.quickHighlight").children().unwrap();
                 $(".quickHighlight").removeClass("quickHighlight");
                 // remove focus from all other words, focus on this one, and then get its information
