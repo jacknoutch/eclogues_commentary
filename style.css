@@ -25,6 +25,12 @@ footer p {
 h1 {
   text-align: center;
 }
+.subtitle {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
 p {
   text-align: justify;
 }
