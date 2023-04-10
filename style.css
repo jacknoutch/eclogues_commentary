@@ -7,7 +7,8 @@
 /* For mobile phones */
 
 html, body {
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
   /* ... */
@@ -52,6 +53,7 @@ a:hover {
 
 /*** Classes only in the reading pages ***/
 .blurb {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
 }
 .latin_text {
@@ -103,7 +105,7 @@ a:hover {
   text-decoration: underline;
 }
 .focus {
-  background-color: yellow;
+  color: #C00;
 }
 span.verse_ref {
   color: #C00;
@@ -205,7 +207,7 @@ li {
     display: inherit;
   }
   #reading {
-    min-width: 500px;
+    min-width: 400px;
   }
   #lookup {
     position: inherit;
