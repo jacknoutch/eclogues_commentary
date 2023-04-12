@@ -196,7 +196,7 @@ li {
     font-size: 1em;
   }
   .container {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
   }
   .panel {
