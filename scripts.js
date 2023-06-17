@@ -1,88 +1,44 @@
-var lemmatiserPath = "resources/eclogue1LR.xml";
-var lexiconPath = "resources/glosses.xml";
-var commentaryPath = "resources/commentarynotes.xml";
+const lemmatiserPath = "resources/eclogue1LR.xml";
+const lexiconPath = "resources/glosses.xml";
+const commentaryPath = "resources/commentarynotes.xml";
 
-var cardCounter = 0; // This is the counter for cards created in the #lookup pane, used in makeCard()
-var sectionCounter = 1;
+let cardCounter = 0; // This is the counter for cards created in the #lookup pane, used in makeCard()
+
+let $sections; // populated after $(document).ready with the sections of text
+let sectionCounter = 0; // keeps count of current section
 
 //  FUNCTIONS
 
 function nextSection() {
-    // get the .latintext class elements, find the one which has the .currently_reading class, remove it, and add it to the next one
-    if (sectionCounter<$(".latin_text").length-1) {
-        var currentSection = $(".latin_text")[sectionCounter-1]
-        sectionCounter++
-        var nextSection = $(".latin_text")[sectionCounter-1]
-        $(currentSection).removeClass("currently_reading");
-        $(nextSection).addClass("currently_reading");
-        $(".middle_sections").removeClass("invisible"); 
-        $(".previous").removeClass("invisible");
 
-        card = $(".w3-card-4");
-        card.remove();
-        $(".focus").children().unwrap()
-        $(".focus").removeClass("focus");
-        $(".temporarySpan.quickHighlight").children().unwrap();
-        $(".quickHighlight").removeClass("quickHighlight");
-    }
-    else if (sectionCounter==$(".latin_text").length-1) {
-        var currentSection = $(".latin_text")[sectionCounter-1]
-        sectionCounter++
-        var nextSection = $(".latin_text")[sectionCounter-1]
-        $(currentSection).removeClass("currently_reading");
-        $(nextSection).addClass("currently_reading"); 
-        $(".previous").removeClass("invisible");
-        $(".middle_sections").addClass("invisible");
-        $(".next").addClass("invisible");
+    $($sections[sectionCounter]).toggleClass("currently_reading invisible")
+    sectionCounter++
+    $($sections[sectionCounter]).toggleClass("currently_reading invisible")
 
-        card = $(".w3-card-4");
-        card.remove();
-        $(".focus").children().unwrap()
-        $(".focus").removeClass("focus");
-        $(".temporarySpan.quickHighlight").children().unwrap();
-        $(".quickHighlight").removeClass("quickHighlight");
-    }
-    else {
-        console.log("error - currentSection out of range")
-    }
+    setSectionNavButtons()
 }
 
 function previousSection() {
-    if (sectionCounter>2) {
-        var currentSection = $(".latin_text")[sectionCounter-1]
-        sectionCounter--
-        var previousSection = $(".latin_text")[sectionCounter-1]
-        $(currentSection).removeClass("currently_reading");
-        $(previousSection).addClass("currently_reading");
-        $(".middle_sections").removeClass("invisible"); 
-        $(".next").removeClass("invisible");
 
-        card = $(".w3-card-4");
-        card.remove();
-        $(".focus").children().unwrap()
-        $(".focus").removeClass("focus");
-        $(".temporarySpan.quickHighlight").children().unwrap();
-        $(".quickHighlight").removeClass("quickHighlight");
+    $($sections[sectionCounter]).toggleClass("currently_reading invisible")
+    sectionCounter--
+    $($sections[sectionCounter]).toggleClass("currently_reading invisible")
+
+    setSectionNavButtons()
+}
+
+function setSectionNavButtons() {
+    if (sectionCounter == 0) {
+        $("#previous").addClass("invisible")
     }
-    else if (sectionCounter==2) {
-        var currentSection = $(".latin_text")[sectionCounter-1]
-        sectionCounter--
-        var previousSection = $(".latin_text")[sectionCounter-1]
-        $(currentSection).removeClass("currently_reading");
-        $(previousSection).addClass("currently_reading"); 
-        $(".previous").addClass("invisible");
-        $(".middle_sections").addClass("invisible");
-        $(".next").removeClass("invisible");
-        
-        card = $(".w3-card-4");
-        card.remove();
-        $(".focus").children().unwrap()
-        $(".focus").removeClass("focus");
-        $(".temporarySpan.quickHighlight").children().unwrap();
-        $(".quickHighlight").removeClass("quickHighlight");
+
+    else if (sectionCounter == $sections.length - 1) {
+        $("#next").addClass("invisible")
     }
+    
     else {
-        console.log("error - currentSection out of range")
+        $("#next").removeClass("invisible")
+        $("#previous").removeClass("invisible")
     }
 }
 
@@ -599,7 +555,9 @@ function quickHighlight(rawReferences) {
     }
 }
 
-$(document).ready(function(){
+$(document).ready(() => {
+    $sections = $(".latin_text")
+    setSectionNavButtons()
 
     var $loading = $("#loading");
 
@@ -614,19 +572,24 @@ $(document).ready(function(){
 
 //  EVENTS
 
+    $("#next").on({"click": () => {
+        nextSection()
+    }})
+    $("#previous").on({"click": () => {
+        previousSection()
+    }})
+
+
     spanAllWords(); // Wrap each word in a <span> for ease of reference
 
     $(document).on({
         "click": function(event) {
             $target = $(event.target);
             if ($target.hasClass("w")) { // the user has clicked on a word
-                console.log($target)
                 var indices = getIndices($target)
                 var indices = indices[0] + "." + String(indices[1]+1)
                 var wordform = $target[0].innerText
-                console.log(indices)
-                console.log("<a href=javascript:void(0) onclick='quickHighlight("+indices+")'><span class=lt>"+wordform+"</span></a>")
-
+                
                 $(".temporarySpan.quickHighlight").children().unwrap();
                 $(".quickHighlight").removeClass("quickHighlight");
                 // remove focus from all other words, focus on this one, and then get its information
