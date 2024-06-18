@@ -158,6 +158,7 @@ const cardInfo = card.querySelector(".grammar ul");
 const cardContent = card.querySelector("#lookup_card_content")
 
 async function updateCard(word) { // word is an element
+    console.log(word)
     cardTitle.innerHTML = word.innerHTML;
     card.classList.remove("invisible");
 
@@ -169,12 +170,12 @@ async function updateCard(word) { // word is an element
 
     Promise.all(requests)
         .then((responses) => Promise.all(responses.map((r) => r.text())))
-        .then((results) => doSomething(word, results))
+        .then((results) => loadDetails(word, results))
         .catch((error) => console.error(error)); 
 
 }
 
-function doSomething(wordElement, xmlFiles) {
+function loadDetails(wordElement, xmlFiles) {
     clearCard();
 
     const parser = new DOMParser();
@@ -199,7 +200,6 @@ function doSomething(wordElement, xmlFiles) {
     
         cardInfo.append(principalPartsElement);
     }
-
 
     // the gloss
     const glossElement = document.createElement("li");
