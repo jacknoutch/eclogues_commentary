@@ -149,6 +149,9 @@ makeWordsClickable()
 // Cards
 
 const card = document.getElementById("lookup_card");
+const card_hide = card.querySelector(".hide")
+const card_close = card.querySelector(".close")
+
 const cardTitle = card.querySelector(".title");
 const cardInfo = card.querySelector(".grammar ul");
 
@@ -221,128 +224,17 @@ function clearCard() {
     cardInfo.replaceChildren();
 }
 
+card_hide.addEventListener("click", () => hideCard())
+card_close.addEventListener("click", () => closeCard())
 
-
-function makeCard(wordElement) { 
-    const lookupPanel = document.querySelector("#lookup");
-
-    // remove any existing cards
-    const existingCards = document.querySelectorAll(".w3-card-4")
-    if (existingCards) { existingCards.forEach((card) => card.remove())}
-
-    // create the card elements
-    const card = document.createElement("div");
-    card.classList.add("w3-card-4", "animate", "invisible");
-    
-    const cardHeader = document.createElement("header");
-    cardHeader.classList.add("w3-container", "w3-blue");
-    card.appendChild(cardHeader);
-
-    const closeButton = document.createElement("span");
-    closeButton.classList.add("cardbutton", "close");
-    closeButton.innerHTML = "&times;"
-
-    const hideButton = document.createElement("span");
-    hideButton.classList.add("cardbutton", "hide");
-    hideButton.innerHTML = "&#8597"
-
-    const cardTitle = document.createElement("h2");
-
-    cardHeader.append(closeButton, hideButton, cardTitle);
-
-    const cardBar = document.createElement("div");
-    cardBar.classList.add("w3-bar", "w3-blue");
-
-    const cardContainer = document.createElement("div");
-    cardContainer.classList.add("w3-container", "content");
-
-    const cardGrammarInfo = document.createElement("div");
-    cardGrammarInfo.classList.add("grammar");
-
-    card.append(cardBar, cardContainer, cardGrammarInfo);
-
-    const cardGrammarList = document.createElement("ul");
-    cardGrammarInfo.appendChild(cardGrammarList);
-    
-    lookupPanel.append(card);
-
-    populateCard(wordElement);
+function hideCard() {
+    card.classList.toggle("closed");
+    cardContent = card.querySelector("#lookup_card_content");
+    cardContent.classList.toggle("invisible");
 }
 
-function populateCard(wordElement) {
-    const card = document.querySelector("#lookup .w3-card-4");
-
-    // populate the header of the card with the word-form as it is in the text
-    
-    const cardHeader = card.querySelector("h2");
-    cardHeader.innerHTML = wordElement.text();
-
-    // call the XML docs
-    $.when(
-        $.get(lemmatiserPath),
-        $.get(lexiconPath),
-        $.get(commentaryPath),
-    ).done(function(lemmatiserXML, lexiconXML, commentaryXML) {
-
-        // from the lemmatiser get the word's XML object, its lemma
-        var word = getWordFromXML(lemmatiserXML, wordElement);
-        var lemma = word.attributes.getNamedItem("lemma").nodeValue;
-        
-        // from the lexicon get the lemma's XML object
-        var entry = $(lexiconXML).find("entry[n='"+lemma+"']");
-
-        // get all the comments which include this word
-        // make a list of what will be the relevant comments
-        relevantComments = []
-        
-        // determine the word's reference as a string for comparison
-        var [lineNumber, wordIndex] = getIndices(wordElement); // e.g. ["1,2", "3"]
-        var wordReference = lineNumber + "." + String(parseInt(wordIndex)+1); // wordIndex is 0-indexed usually, but commentary notes are 1-indexed
-
-        // loop through the comments and check which has a reference matching that of the word in question
-        $(commentaryXML).find("entry").each(function() {
-
-            references = $(this).find("references").html().split(", ")
-            
-            for (i=0; i<references.length; i++){
-                if (references[i]==wordReference){
-                    // the comment is a note on this word
-                    relevantComments.push($(this));
-                }
-            }
-        })
-
-        // for each comment make a new note number in the header
-        for (i=0; i<relevantComments.length; i++){
-            comment = relevantComments[i].find("comment").html()
-            cardBar = card.querySelector(".w3-bar")
-
-            // if there are comments, then add a button first to allow users to return to the grammar notes
-            if (i==0){
-                const grammarButton = document.createElement("a");
-                grammarButton.href = "javascript:void(0)";
-                grammarButton.classList.add("cardbutton", "w3-bar-item", "w3-button", "w3-hover-white");
-                grammarButton.innerHTML = "Grammar";
-                cardBar.appendChild(grammarButton);
-            }
-
-            // add a button to the card bar
-
-            let commentButton = document.createElement("a");
-            commentButton.href = "javascript:void(0)";
-            commentButton.classList.add("cardbutton", "w3-bar-item", "w3-button", "w3-hover-white");
-            commentButton.innerHTML = String(i+1)
-            cardBar.appendChild(commentButton);
-
-            // add an invisible div with the comment            
-            let commentElement = document.createElement("ul");
-            commentElement.classList.add("comment", "invisible");
-            commentElement.innerHTML = comment;
-            card.querySelector(".content").append(commentElement);
-        }
-
-        card.classList.remove("invisible");
-    });
+function closeCard() {
+    card.classList.toggle("invisible");
 }
 
 //  FUNCTIONS
@@ -371,21 +263,6 @@ function getWordSpan(poemNumber, lineNumber, wordIndex) {
     var lineDiv = $(".l[n='"+ poemNumber + "." + lineNumber + "']");
     var wordSpan = $(lineDiv).find(".w").eq(wordIndex);
     return wordSpan
-}
-
-function getWordSpans(rawReferences) {
-    var rawReferenceList = rawReferences.split(", ")
-    var wordSpans = []
-
-    for (i=0; i<rawReferenceList.length; i++) {
-        var reference = rawReferenceList[i];
-        var [poemNumber, lineNumber, wordIndex] = reference.split(".");
-        var wordIndex = String(parseInt(wordIndex)+1);
-        var lineDiv = $(".l[n='"+ poemNumber + "." + lineNumber + "']");
-        var wordSpan = $(lineDiv).children(".w:nth-of-type("+wordIndex+")")
-        wordSpans.push(wordSpan);
-    }
-    return wordSpans
 }
 
 function addLineNumbers() {
@@ -585,23 +462,6 @@ function getParseFromMSD(msd) {
     return false;
 }
 
-function updateCardContent(button){
-    $card = $(button).parents(".w3-card-4")
-    buttonText = $(button).text()
-
-    if (buttonText=="Grammar") {
-        $card.find(".comment").addClass("invisible")
-        $card.find(".grammar").removeClass("invisible")
-    }
-    else if (buttonText) {
-        commentIndex = parseInt(buttonText);
-        $card.find(".grammar").addClass("invisible");
-        $card.find("ul.comment").addClass("invisible");
-        $card.find("ul.comment:nth-of-type("+commentIndex+")").removeClass("invisible");
-    }
-}    
-
-
 function getNodesBetween(startNode, endNode) {
     var nodes = [];
     var node = startNode;
@@ -678,56 +538,3 @@ function clearFocus() {
     $(".focus").children().unwrap()
     $(".focus").toggleClass("focus");
 }
-
-$(document).ready( async () => {
-
-//  EVENTS
-
-    $(document).on({
-        "click": function(event) {
-            
-            const $target = $(event.target);
-
-            if ($target.hasClass("cardbutton") && $target.hasClass("w3-bar-item")) { // the user has clicked on one of the card's grammar/comment buttons
-                updateCardContent($target)
-                card = $target.parents(".w3-card-4");
-                if (card.hasClass("closed")) {
-                    card = $target.parents(".w3-card-4");
-                    card.toggleClass("closed");
-                    cardContent = card.find(".content");
-                    cardContent.toggle();
-                }
-            }
-
-            else if ($target.hasClass("close")) { // the user has clicked on the close button of a card
-                // identify the card in question and delete it before rearranging the position of other cards
-                card = $target.parents(".w3-card-4");
-                card.remove();
-                $(".focus").children().unwrap()
-                $(".focus").removeClass("focus");
-            }
-
-            else if ($target.hasClass("hide")) { // the user has clicked on the hide button of a card
-                // identify the card in question, close it and its content before rearranging the position of other cards
-                card = $target.parents(".w3-card-4");
-                card.toggleClass("closed");
-                cardContent = card.find(".content");
-                cardContent.toggle();   
-            }
-
-            else if ($target.is("a")) {
-                $(".focus").children().unwrap();
-                $(".focus").removeClass("focus");
-            }
-
-            else { // the user has clicked anywhere else
-                // remove focus from the text
-                $(".focus").children().unwrap();
-                $(".focus").removeClass("focus");
-                $(".temporarySpan.quickHighlight").children().unwrap();
-                $(".quickHighlight").removeClass("quickHighlight");
-            }
-        },
-    });
-});
-
