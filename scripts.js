@@ -158,7 +158,6 @@ const cardInfo = card.querySelector(".grammar ul");
 const cardContent = card.querySelector("#lookup_card_content")
 
 async function updateCard(word) { // word is an element
-    console.log(word)
     cardTitle.innerHTML = word.innerHTML;
     card.classList.remove("invisible");
 
@@ -166,7 +165,7 @@ async function updateCard(word) { // word is an element
         fetch(lemmatiserPath),
         fetch(lexiconPath),
         fetch(commentaryPath)
-    ]
+    ] // TODO: why is this called every time cardUpdate is called?
 
     Promise.all(requests)
         .then((responses) => Promise.all(responses.map((r) => r.text())))
@@ -181,45 +180,75 @@ function loadDetails(wordElement, xmlFiles) {
     const parser = new DOMParser();
     const [lemmatiser, lexicon, commentary] = xmlFiles.map(
         (file) => parser.parseFromString(file, "text/xml"));
+
+    const xmlWord = getWordFromXML(lemmatiser, wordElement);
+    const lemma = loadLemma(xmlWord);
+    const parseData = loadParseData(xmlWord);
+    const principalPartData = loadPrincipalPartData(lemma, lexicon)
+    const glossData = loadGlossData(lemma, lexicon);
+    const commentaryData = loadCommentaryData(wordElement, commentary);
     
-    const word = getWordFromXML(lemmatiser, wordElement);
-    const lemma = word.attributes.getNamedItem("lemma").nodeValue;
-    
+    loadDetailsToCard(parseData, glossData, commentaryData);
+}
+
+function loadLemma(xmlWord) {
+    return xmlWord.attributes.getNamedItem("lemma").nodeValue;
+}
+
+function loadParseData(xmlWord) {
+    // morpho-syntactic descrition
+    const msd = xmlWord.attributes.getNamedItem("msd").nodeValue;
+    const msdText = getParseFromMSD(msd);
+
+    return msdText
+}
+
+function loadPrincipalPartData(lemma, lexicon) {
     const entry = lexicon.querySelector("entry[n='"+lemma+"']");
-    console.log(entry)
-    
+
     // the principal parts
     let principalParts = entry.querySelector("pp")
     let gender = entry.querySelector("gen");
     if (principalParts != null && gender != null) {
         principalParts = principalParts.innerHTML;
         gender = gender.innerHTML;
-        
-        const principalPartsElement = document.createElement("li");
-        principalPartsElement.innerHTML = [principalParts, gender].join(", ");
-    
-        cardInfo.append(principalPartsElement);
+
+        return [principalParts, gender].join(",");
     }
+}
 
-    // the gloss
-    const glossElement = document.createElement("li");
-    glossElement.innerHTML = entry.querySelector("gloss").innerHTML;
+function loadGlossData(lemma, lexicon) {
+    const entry = lexicon.querySelector("entry[n='"+lemma+"']");
+    return entry.querySelector("gloss").innerHTML;
+}
 
-    cardInfo.append(glossElement);
+function loadCommentaryData(wordElement, commentary) {
+    return true;
+}
 
-    // morpho-syntactic descrition
-    const msd = word.attributes.getNamedItem("msd").nodeValue;
-    const msdText = getParseFromMSD(msd);
+    // TODO: include comments
 
-    if (msdText) { 
+function loadDetailsToCard(parseData, principalPartData, glossData, commentaryData) {
+    if (parseData != null) { 
         const parseInfo = document.createElement("li");
-        parseInfo.innerHTML = msdText;
+        parseInfo.innerHTML = parseData;
         
         cardInfo.append(parseInfo);
     }
 
-    // TODO: include comments
+    if (principalPartData != null) {
+        const principalPartsElement = document.createElement("li");
+        principalPartsElement.innerHTML = principalPartData;
+    
+        cardInfo.append(principalPartsElement);
+    }
 
+    if (glossData != null) {
+        const glossElement = document.createElement("li");
+        glossElement.innerHTML = glossData
+    
+        cardInfo.append(glossElement);
+    }
 }
 
 function clearCard() {
