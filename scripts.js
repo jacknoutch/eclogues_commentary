@@ -242,30 +242,6 @@ function closeCard() {
 
 // Section navigation
 
-function getReferences(rawReference) {
-    var references = [];
-    var rawReferences = rawReference.split(", ");
-
-    for (i=0; i<rawReferences.length; i++) {
-        var reference = {
-            wordSpans: rawReferences[i],
-            isMultiple: false
-        }
-        if (reference.wordSpans.includes("--")) {
-            reference.isMultiple = true;
-        }
-        references.push(reference);
-    }
-    return references;
-}
-
-function getWordSpan(poemNumber, lineNumber, wordIndex) {
-    var wordIndex = String(parseInt(wordIndex)-1);
-    var lineDiv = $(".l[n='"+ poemNumber + "." + lineNumber + "']");
-    var wordSpan = $(lineDiv).find(".w").eq(wordIndex);
-    return wordSpan
-}
-
 function addLineNumbers() {
     $(".l").each(function(){
         var rawLineNum = $(this).attr("n");
@@ -461,76 +437,6 @@ function getParseFromMSD(msd) {
         */
     }
     return false;
-}
-
-function getNodesBetween(startNode, endNode) {
-    var nodes = [];
-    var node = startNode;
-    while ((node.nodeType=1 && node !== endNode) || (node.nodeType==3 && node !== endNode)) {
-        nodes.push(node);
-        node = node.nextSibling;
-    }
-    if (node == endNode) {
-        nodes.push(node);
-    }
-    return nodes;
-}
-
-function quickHighlight(rawReferences) {
-    // Quickly highlight text for drawing attention of the user.
-
-    // get an array of references; each reference is a dict
-    references = getReferences(rawReferences);
-
-    // cycle through the references
-    for (i=0; i<references.length; i++) {
-        var reference = references[i];
-        
-        // the reference is to a single, discrete word
-        if (!reference.isMultiple) {
-            var [poemNumber, lineNumber, wordIndex] = reference["wordSpans"].split(".");
-            var wordSpan = getWordSpan(poemNumber, lineNumber, wordIndex);
-            $(wordSpan).addClass("quickHighlight")
-            continue;
-        }
-        
-        // otherwise the reference is to a series of words
-        var [startReference, endReference] = reference["wordSpans"].split("--");
-        var [startPoemNumber, startLineNumber, startWordIndex] = startReference.split(".");
-        var [endPoemNumber, endLineNumber, endWordIndex] = endReference.split(".");
-        var startSpan = getWordSpan(startPoemNumber, startLineNumber, startWordIndex);
-        var endSpan = getWordSpan(endPoemNumber, endLineNumber, endWordIndex)
-
-        // the reference is on one line
-        if (startLineNumber==endLineNumber) {
-            textNodes = getNodesBetween(startSpan[0], endSpan[0])
-            $(textNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
-            continue;
-        }
-
-        // the reference is over multiple lines
-        var startLineDiv = $(".l[n='"+startPoemNumber+"."+startLineNumber+"']");
-        var startLineLastElem = $(startLineDiv).find(".w:last()");
-        var startLineTextNodes = getNodesBetween(startSpan[0], startLineLastElem[0])
-        $(startLineTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
-        
-        var endLineDiv = $(".l[n='"+endPoemNumber+"."+endLineNumber+"']");
-        var endLineFirstElem = $(endLineDiv).find(".w:first()");
-        var endLineTextNodes = getNodesBetween(endLineFirstElem[0], endSpan[0]);
-        $(endLineTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
-
-        var startLine = parseInt(startLineNumber);
-        var endLine = parseInt(endLineNumber);
-
-        while (endLine - startLine > 1) {
-            var nextLineDiv = $(startLineDiv).next(".l").not(".undisplayed");
-            var nextLineFirstElem = $(nextLineDiv).find(".w:first()");
-            var nextLineLastElem = $(nextLineDiv).find(".w:last()");
-            var nextLineNodes = getNodesBetween(nextLineFirstElem[0], nextLineLastElem[0]);
-            $(nextTextNodes).wrapAll("<span class='temporarySpan quickHighlight' />")
-            startLine++;
-        }
-    }
 }
 
 function clearFocus() {
