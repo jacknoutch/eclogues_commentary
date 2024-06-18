@@ -1,46 +1,348 @@
+// Paths for resources
+
 const lemmatiserPath = "resources/eclogue1LR.xml";
 const lexiconPath = "resources/glosses.xml";
 const commentaryPath = "resources/commentarynotes.xml";
 
-let cardCounter = 0; // This is the counter for cards created in the #lookup pane, used in makeCard()
+// Sections and their buttons
 
-let $sections; // populated after $(document).ready with the sections of text
-let sectionCounter = 0; // keeps count of current section
+const sections = document.querySelectorAll(".latin_text");
+const nextSectionButton = document.querySelector("#next");
+const previousSectionButton = document.querySelector("#previous");
 
-//  FUNCTIONS
+let currentSection = 0;
+
+nextSectionButton.addEventListener("click", () => nextSection() );
+previousSectionButton.addEventListener("click", () => previousSection() );
 
 function nextSection() {
+    if (currentSection == sections.length - 1) { // there are no sections after this one
+        return
+    }
 
-    $($sections[sectionCounter]).toggleClass("currently_reading invisible")
-    sectionCounter++
-    $($sections[sectionCounter]).toggleClass("currently_reading invisible")
+    $(sections[currentSection]).toggleClass("currently_reading")
+    currentSection++
+    $(sections[currentSection]).toggleClass("currently_reading")
 
     setSectionNavButtons()
 }
 
 function previousSection() {
+    if (currentSection == 0) { // there are no sections before this one
+        return
+    }
 
-    $($sections[sectionCounter]).toggleClass("currently_reading invisible")
-    sectionCounter--
-    $($sections[sectionCounter]).toggleClass("currently_reading invisible")
+    $(sections[currentSection]).toggleClass("currently_reading")
+    currentSection--
+    $(sections[currentSection]).toggleClass("currently_reading")
 
     setSectionNavButtons()
 }
 
 function setSectionNavButtons() {
-    if (sectionCounter == 0) {
-        $("#previous").addClass("invisible")
-    }
-
-    else if (sectionCounter == $sections.length - 1) {
-        $("#next").addClass("invisible")
+    if (currentSection == 0) { // first section is displayed
+        previousSectionButton.classList.add("invisible");        
     }
     
-    else {
-        $("#next").removeClass("invisible")
-        $("#previous").removeClass("invisible")
+    else if (currentSection == sections.length - 1) { // last section is displayed
+        nextSectionButton.classList.add("invisible");
+    }
+    
+    else { // a middle section is displayed
+        previousSectionButton.classList.remove("invisible");        
+        nextSectionButton.classList.remove("invisible");
     }
 }
+
+setSectionNavButtons()
+
+// Loading request indicator
+    
+const loading = document.querySelector("#loading");
+
+function handleFetchStart() {
+    loading.classList.remove("invisible");
+    $('body').css('cursor', 'progress');
+}
+
+function handleFetchEnd() {
+    loading.classList.add("invisible");
+    $('body').css('cursor', 'default');
+}
+
+async function makeFetchRequest(url) {
+    try {
+        handleFetchStart();
+        const response = await fetch(url);
+        handleFetchEnd();
+        return response
+
+    } catch (error) {
+        console.log("Fetch request failed: ", error);
+        return error
+    }
+}
+
+// Words
+
+let words = null;
+
+async function makeWordsClickable() {
+    words = await spanAllWords()
+    words.forEach(word => {
+        word.addEventListener("click", (event) => {
+            word = $(event.target)
+            clearFocus();
+            word.toggleClass("focus");
+            updateCard(word);
+        })
+    });
+}
+
+async function spanAllWords() {
+    // Wraps a <span> around each word in each verse line, to make it easier to click on the word.
+
+    // This regex splits a line into words, punctuation, and white space; mecum, tecum, secum, nobiscum and vobiscum are split into pronoun and enclitic
+    const spanWordsRegex = new RegExp(/([mts]e|[nv]obis)(?=cum)|\p{L}+|[^\p{L}]+/gu);
+
+    // Wrap a <span> around each match
+    $(".l").each((index, value) => {
+        const matches = $(value).text().match(spanWordsRegex);
+        for (let i = 0; i < matches.length; i++) {
+            if (/\w+/.test(matches[i])) { // Wrap only the regex matches that are words
+                matches[i] = "<span class='w'>" + matches[i] + "</span>" 
+            }
+            let text = matches.join("");
+            $(value).html(text);
+        }
+    });
+
+    // So far the enclitic -que is not separated from the word it is attached to.
+    // All instances of -que are retrieved from the lemmatised text, the span which contains that instance is identified and split so as to give que its own span.
+
+    const lemmatiserXML = await makeFetchRequest(lemmatiserPath)
+        .then(response => response.text())
+        .then(text => $.parseXML(text))
+
+    const $queTokens = $(lemmatiserXML).find("[lemma=que]");
+    $queTokens.each((index, value) => {
+        const queLineNumber = $(value).attr("n") // e.g. "1.2"
+        const queIndex = $(value).index()
+
+        const lineDiv = $(".l[n='"+queLineNumber+"']")
+        const queSpan = $(lineDiv).find(".w:nth-child("+queIndex+")");
+
+        const oldHTML = queSpan.html();
+        const newHTML = "<span class='w'>" + oldHTML.slice(0,-3) + "</span><span class='w'>que"
+
+        queSpan.replaceWith(newHTML);
+    });
+
+    addLineNumbers() // required here since there is an ajax call on which it is dependent
+
+    return document.querySelectorAll(".w")
+
+}
+
+makeWordsClickable()
+
+// Cards
+
+const card = document.getElementById("lookup_card");
+const cardTitle = card.querySelector(".title");
+const cardInfo = card.querySelector(".grammar ul");
+
+async function updateCard(word) { // word is an element
+    cardTitle.innerHTML = word.html();
+    card.classList.remove("invisible");
+
+    const requests = [
+        fetch(lemmatiserPath),
+        fetch(lexiconPath),
+        fetch(commentaryPath)
+    ]
+
+    Promise.all(requests)
+        .then((responses) => Promise.all(responses.map((r) => r.text())))
+        .then((results) => doSomething(word, results))
+        .catch((error) => console.error(error)); 
+
+}
+
+function doSomething(wordElement, xmlFiles) {
+    clearCard();
+
+    const parser = new DOMParser();
+    const [lemmatiser, lexicon, commentary] = xmlFiles.map(
+        (file) => parser.parseFromString(file, "text/xml"));
+    
+    const word = getWordFromXML(lemmatiser, wordElement);
+    const lemma = word.attributes.getNamedItem("lemma").nodeValue;
+    
+    const entry = lexicon.querySelector("entry[n='"+lemma+"']");
+    console.log(entry)
+    
+    // the principal parts
+    const principalParts = entry.querySelector("pp").innerHTML;
+    const gender = entry.querySelector("gen").innerHTML;
+
+    const principalPartsElement = document.createElement("li");
+    principalPartsElement.innerHTML = [principalParts, gender].join(", ");
+
+    cardInfo.append(principalPartsElement);
+
+    // the gloss
+    const glossElement = document.createElement("li");
+    glossElement.innerHTML = entry.querySelector("gloss").innerHTML;
+
+    cardInfo.append(glossElement);
+
+    // morpho-syntactic descrition
+    const msd = word.attributes.getNamedItem("msd").nodeValue;
+    const msdText = getParseFromMSD(msd);
+
+    if (msdText) { 
+        const parseInfo = document.createElement("li");
+        parseInfo.innerHTML = msdText;
+        
+        cardInfo.append(parseInfo);
+    }
+
+    // TODO: include comments
+
+}
+
+function clearCard() {
+    cardInfo.replaceChildren();
+}
+
+
+
+function makeCard(wordElement) { 
+    const lookupPanel = document.querySelector("#lookup");
+
+    // remove any existing cards
+    const existingCards = document.querySelectorAll(".w3-card-4")
+    if (existingCards) { existingCards.forEach((card) => card.remove())}
+
+    // create the card elements
+    const card = document.createElement("div");
+    card.classList.add("w3-card-4", "animate", "invisible");
+    
+    const cardHeader = document.createElement("header");
+    cardHeader.classList.add("w3-container", "w3-blue");
+    card.appendChild(cardHeader);
+
+    const closeButton = document.createElement("span");
+    closeButton.classList.add("cardbutton", "close");
+    closeButton.innerHTML = "&times;"
+
+    const hideButton = document.createElement("span");
+    hideButton.classList.add("cardbutton", "hide");
+    hideButton.innerHTML = "&#8597"
+
+    const cardTitle = document.createElement("h2");
+
+    cardHeader.append(closeButton, hideButton, cardTitle);
+
+    const cardBar = document.createElement("div");
+    cardBar.classList.add("w3-bar", "w3-blue");
+
+    const cardContainer = document.createElement("div");
+    cardContainer.classList.add("w3-container", "content");
+
+    const cardGrammarInfo = document.createElement("div");
+    cardGrammarInfo.classList.add("grammar");
+
+    card.append(cardBar, cardContainer, cardGrammarInfo);
+
+    const cardGrammarList = document.createElement("ul");
+    cardGrammarInfo.appendChild(cardGrammarList);
+    
+    lookupPanel.append(card);
+
+    populateCard(wordElement);
+}
+
+function populateCard(wordElement) {
+    const card = document.querySelector("#lookup .w3-card-4");
+
+    // populate the header of the card with the word-form as it is in the text
+    
+    const cardHeader = card.querySelector("h2");
+    cardHeader.innerHTML = wordElement.text();
+
+    // call the XML docs
+    $.when(
+        $.get(lemmatiserPath),
+        $.get(lexiconPath),
+        $.get(commentaryPath),
+    ).done(function(lemmatiserXML, lexiconXML, commentaryXML) {
+
+        // from the lemmatiser get the word's XML object, its lemma
+        var word = getWordFromXML(lemmatiserXML, wordElement);
+        var lemma = word.attributes.getNamedItem("lemma").nodeValue;
+        
+        // from the lexicon get the lemma's XML object
+        var entry = $(lexiconXML).find("entry[n='"+lemma+"']");
+
+        // get all the comments which include this word
+        // make a list of what will be the relevant comments
+        relevantComments = []
+        
+        // determine the word's reference as a string for comparison
+        var [lineNumber, wordIndex] = getIndices(wordElement); // e.g. ["1,2", "3"]
+        var wordReference = lineNumber + "." + String(parseInt(wordIndex)+1); // wordIndex is 0-indexed usually, but commentary notes are 1-indexed
+
+        // loop through the comments and check which has a reference matching that of the word in question
+        $(commentaryXML).find("entry").each(function() {
+
+            references = $(this).find("references").html().split(", ")
+            
+            for (i=0; i<references.length; i++){
+                if (references[i]==wordReference){
+                    // the comment is a note on this word
+                    relevantComments.push($(this));
+                }
+            }
+        })
+
+        // for each comment make a new note number in the header
+        for (i=0; i<relevantComments.length; i++){
+            comment = relevantComments[i].find("comment").html()
+            cardBar = card.querySelector(".w3-bar")
+
+            // if there are comments, then add a button first to allow users to return to the grammar notes
+            if (i==0){
+                const grammarButton = document.createElement("a");
+                grammarButton.href = "javascript:void(0)";
+                grammarButton.classList.add("cardbutton", "w3-bar-item", "w3-button", "w3-hover-white");
+                grammarButton.innerHTML = "Grammar";
+                cardBar.appendChild(grammarButton);
+            }
+
+            // add a button to the card bar
+
+            let commentButton = document.createElement("a");
+            commentButton.href = "javascript:void(0)";
+            commentButton.classList.add("cardbutton", "w3-bar-item", "w3-button", "w3-hover-white");
+            commentButton.innerHTML = String(i+1)
+            cardBar.appendChild(commentButton);
+
+            // add an invisible div with the comment            
+            let commentElement = document.createElement("ul");
+            commentElement.classList.add("comment", "invisible");
+            commentElement.innerHTML = comment;
+            card.querySelector(".content").append(commentElement);
+        }
+
+        card.classList.remove("invisible");
+    });
+}
+
+//  FUNCTIONS
+
+// Section navigation
 
 function getReferences(rawReference) {
     var references = [];
@@ -79,39 +381,6 @@ function getWordSpans(rawReferences) {
         wordSpans.push(wordSpan);
     }
     return wordSpans
-}
-
-function spanAllWords() {
-    // Wrap a <span> around each word in each verse line, to make it easier to click on the word 
-    // and look up its details.
-    // var oldRe = new RegExp(/\p{L}+|[^\p{L}]+/gu);
-    var re = new RegExp(/([mts]e|[nv]obis)(?=cum)|\p{L}+|[^\p{L}]+/gu);
-
-    $.when($.get(lemmatiserPath)).done(function(xml){
-        $(".l").each(function(){
-            var words = $(this).text().match(re); // Split the line into words, punctuation, and white space; mecum, tecum, secum, nobiscum and vobiscum are split into pronoun and enclitic
-            for (let i = 0; i < words.length; i++) {
-                if (/\w+/.test(words[i])) {
-                    words[i] = "<span class='w'>" + words[i] + "</span>" // Wrap the words only in span tags
-                }
-            }
-            var text = words.join("");
-            $(this).html(text);
-        });
-
-        queInstances = $(xml).find("[lemma=que]")
-        queInstances.each(function() {
-            lineNumber = $(this).attr("n") // e.g. "1.2"
-            queIndex = $(this).index()
-            lineDiv = $(".l[n='"+lineNumber+"']")
-            spanWithQue = $(lineDiv).find(".w:nth-child("+queIndex+")");
-            oldHTML = spanWithQue.html();
-            newHTML = "<span class='w'>" + oldHTML.slice(0,-3) + "</span><span class='w'>que"
-            spanWithQue.replaceWith(newHTML);
-        })
-
-        addLineNumbers() // required here since there is an ajax call on which it is dependent
-    });
 }
 
 function addLineNumbers() {
@@ -327,163 +596,6 @@ function updateCardContent(button){
     }
 }    
 
-function populateCard($elem, $card) {
-
-    // populate the header of the card with the word-form as it is in the text
-    $card.find("h2").html($elem.text());
-
-    // call the XML docs
-    $.when(
-        $.get(lemmatiserPath),
-        $.get(lexiconPath),
-        $.get(commentaryPath),
-    ).done(function(lemmatiserXML, lexiconXML, commentaryXML) {
-
-        // from the lemmatiser get the word's XML object, its lemma
-        var word = getWordFromXML(lemmatiserXML, $elem);
-        var lemma = word.attributes.getNamedItem("lemma").nodeValue;
-        
-        // from the lexicon get the lemma's XML object
-        var entry = $(lexiconXML).find("entry[n='"+lemma+"']");
-
-        // the principal parts
-        if (entry.find("pp").length) { // if they exist
-            var principalParts = $(entry).find("pp").html();
-            
-            // if word has a gender, include it in the principal parts displayed
-            if ($(entry).find("gen").length) { 
-                var gender = $(entry).find("gen").html();
-                principalParts += ", " + gender
-            }
-
-            // the html to display
-            var principalPartsHTML = "<li class='lt'>" + principalParts + "</li>";
-
-            // display in the card's content list
-            $card.find(".grammar > ul").append(principalPartsHTML);
-        }
-
-        // the gloss
-        var gloss = $(entry).find("gloss").html(); // html to allow markup in the lexicon
-        
-        // the html to display
-        var glossHTML = "<li>" + gloss + "</li>";
-
-        // display in the card's content list
-        $card.find(".grammar > ul").append(glossHTML);
-    
-        // the morphosyntactic description (msd)
-        var msd = word.attributes.getNamedItem("msd").nodeValue; // from the lemmatiser's XML object
-        var msdText = getParseFromMSD(msd); // the information is acronymic and must be expanded
-
-        if (msdText) { // the word has msd
-            // the html to display
-            var parseHTML = "<li>" + msdText + "</li>";
-            
-            // display in the card's content list  
-            $card.find(".grammar > ul").append(parseHTML);
-        }
-
-        // get all the comments which include this word
-        // make a list of what will be the relevant comments
-        relevantComments = []
-        
-        // determine the word's reference as a string for comparison
-        var [lineNumber, wordIndex] = getIndices($elem); // e.g. ["1,2", "3"]
-        var wordReference = lineNumber + "." + String(parseInt(wordIndex)+1); // wordIndex is 0-indexed usually, but commentary notes are 1-indexed
-
-        // loop through the comments and check which has a reference matching that of the word in question
-        $(commentaryXML).find("entry").each(function() {
-
-            references = $(this).find("references").html().split(", ")
-            
-            for (i=0; i<references.length; i++){
-                if (references[i]==wordReference){
-                    // the comment is a note on this word
-                    relevantComments.push($(this));
-                }
-            }
-        })
-
-        // for each comment make a new note number in the header
-        for (i=0; i<relevantComments.length; i++){
-            comment = relevantComments[i].find("comment").html()
-            $cardBar = $card.find(".w3-bar")
-
-            // if there are comments, then add a button first to allow users to return to the grammar notes
-            if (i==0){
-                $cardBar.append("<a href='javascript:void(0)' class='cardbutton w3-bar-item w3-button w3-hover-white'>Grammar</a>")
-            }
-
-            // add a button to the card bar
-            commentButtonHTML = "<a href='javascript:void(0)' class='cardbutton w3-bar-item w3-button w3-hover-white'>"+String(i+1)+"</a>";
-            $cardBar.append(commentButtonHTML);
-
-            // add an invisible div with the comment
-            commentHMTL = "<ul class='comment invisible'><li>"+comment+"</li></ul>";
-            $card.find(".content").append(commentHMTL);
-        }
-
-        updateCardPositions();
-
-        $card.removeClass("invisible");
-    });
-}
-
-function updateCardPositions() {
-    cards = $("#lookup").find(".w3-card-4");
-
-    if (cards.length) {
-        var heightAllCards = 0;
-        $(".w3-card-4").each(function() {
-            var cardTop = heightAllCards;
-            $(this).css({"top": cardTop+16});
-            heightAllCards += $(this).outerHeight(true);
-        })
-    }
-
-    $("w3-card-4").each(function() {
-        $(this).removeClass("invisible");
-    })
-}
-
-function makeCard($elem) {
-    
-    // get a unique id for the card and increment the counter
-    var newCardID = cardCounter;
-    cardCounter++;
-
-    // set the card class, id and colo(u)r
-    var cardClass = "word";
-    var cardID = "card"+newCardID;
-    var color = "w3-blue";
-
-    // remove any existing card of the same class
-    $(".w3-card-4").filter("."+cardClass).remove();
-
-    // the html of the card without content
-    var newHTML = "\
-    <div class='w3-card-4 animate invisible "+cardClass+"' id='"+cardID+"'> \
-        <header class='w3-container "+color+"'> \
-            <span class='cardbutton close'>&times;</span> \
-            <span class='cardbutton hide'>&#8597</span> \
-            <h2></h2> \
-        </header> \
-        <div class='w3-bar "+color+"'></div> \
-        <div class='w3-container content'> \
-            <div class='grammar'> \
-                <ul></ul> \
-            </div> \
-        </div> \
-    </div>"
-    
-    // insert the html into the page
-    $("#lookup").append(newHTML);
-    var $card = $("#"+cardID);
-
-    // populate the card with the element's information
-    populateCard($elem, $card);
-}
 
 function getNodesBetween(startNode, endNode) {
     var nodes = [];
@@ -555,50 +667,23 @@ function quickHighlight(rawReferences) {
     }
 }
 
-$(document).ready(() => {
-    $sections = $(".latin_text")
-    setSectionNavButtons()
+function clearFocus() {
+    $(".temporarySpan.quickHighlight").children().unwrap();
+    $(".quickHighlight").toggleClass("quickHighlight");
+    $(".focus").children().unwrap()
+    $(".focus").toggleClass("focus");
+}
 
-    var $loading = $("#loading");
-
-    $(document).ajaxStart(function () {
-        $loading.removeClass("invisible");
-        $('body').css('cursor', 'progress');
-    })
-    $(document).ajaxStop(function () {
-        $loading.addClass("invisible");
-        $('body').css('cursor', 'default');
-    });
+$(document).ready( async () => {
 
 //  EVENTS
 
-    $("#next").on({"click": () => {
-        nextSection()
-    }})
-    $("#previous").on({"click": () => {
-        previousSection()
-    }})
-
-
-    spanAllWords(); // Wrap each word in a <span> for ease of reference
-
     $(document).on({
         "click": function(event) {
-            $target = $(event.target);
-            if ($target.hasClass("w")) { // the user has clicked on a word
-                var indices = getIndices($target)
-                var indices = indices[0] + "." + String(indices[1]+1)
-                var wordform = $target[0].innerText
-                
-                $(".temporarySpan.quickHighlight").children().unwrap();
-                $(".quickHighlight").removeClass("quickHighlight");
-                // remove focus from all other words, focus on this one, and then get its information
-                $(".focus").children().unwrap()
-                $(".focus").removeClass("focus");
-                $target.addClass("focus");
-                makeCard($target);
-            }
-            else if ($target.hasClass("cardbutton") && $target.hasClass("w3-bar-item")) { // the user has clicked on one of the card's grammar/comment buttons
+            
+            const $target = $(event.target);
+
+            if ($target.hasClass("cardbutton") && $target.hasClass("w3-bar-item")) { // the user has clicked on one of the card's grammar/comment buttons
                 updateCardContent($target)
                 card = $target.parents(".w3-card-4");
                 if (card.hasClass("closed")) {
@@ -608,26 +693,28 @@ $(document).ready(() => {
                     cardContent.toggle();
                 }
             }
+
             else if ($target.hasClass("close")) { // the user has clicked on the close button of a card
                 // identify the card in question and delete it before rearranging the position of other cards
                 card = $target.parents(".w3-card-4");
                 card.remove();
-                updateCardPositions();
                 $(".focus").children().unwrap()
                 $(".focus").removeClass("focus");
             }
+
             else if ($target.hasClass("hide")) { // the user has clicked on the hide button of a card
                 // identify the card in question, close it and its content before rearranging the position of other cards
                 card = $target.parents(".w3-card-4");
                 card.toggleClass("closed");
                 cardContent = card.find(".content");
                 cardContent.toggle();   
-                updateCardPositions();
             }
+
             else if ($target.is("a")) {
                 $(".focus").children().unwrap();
                 $(".focus").removeClass("focus");
             }
+
             else { // the user has clicked anywhere else
                 // remove focus from the text
                 $(".focus").children().unwrap();
