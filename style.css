@@ -104,7 +104,7 @@ button {
 }
 
 /*** Dynamic classes ***/
-.w, .cardbutton {
+.w, .close, .hide {
   cursor: pointer;
 }
 .w:hover {
@@ -160,7 +160,7 @@ span.verse_ref {
   font-size: xx-large;
   text-align: center;
 }
-.cardbutton:hover {
+.close:hover, .hide:hover {
   background: #bbb;
 }
 .animate {
