@@ -183,13 +183,18 @@ function doSomething(wordElement, xmlFiles) {
     console.log(entry)
     
     // the principal parts
-    const principalParts = entry.querySelector("pp").innerHTML;
-    const gender = entry.querySelector("gen").innerHTML;
+    let principalParts = entry.querySelector("pp")
+    let gender = entry.querySelector("gen");
+    if (principalParts != null && gender != null) {
+        principalParts = principalParts.innerHTML;
+        gender = gender.innerHTML;
+        
+        const principalPartsElement = document.createElement("li");
+        principalPartsElement.innerHTML = [principalParts, gender].join(", ");
+    
+        cardInfo.append(principalPartsElement);
+    }
 
-    const principalPartsElement = document.createElement("li");
-    principalPartsElement.innerHTML = [principalParts, gender].join(", ");
-
-    cardInfo.append(principalPartsElement);
 
     // the gloss
     const glossElement = document.createElement("li");
