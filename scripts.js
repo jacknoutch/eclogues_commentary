@@ -188,7 +188,7 @@ function loadDetails(wordElement, xmlFiles) {
     const glossData = loadGlossData(lemma, lexicon);
     const commentaryData = loadCommentaryData(wordElement, commentary);
     
-    loadDetailsToCard(parseData, glossData, commentaryData);
+    loadDetailsToCard(parseData, principalPartData, glossData, commentaryData);
 }
 
 function loadLemma(xmlWord) {
@@ -222,11 +222,10 @@ function loadGlossData(lemma, lexicon) {
     return entry.querySelector("gloss").innerHTML;
 }
 
-function loadCommentaryData(wordElement, commentary) {
+function loadCommentaryData(wordElement, commentary) { 
+        // TODO: include comments
     return true;
 }
-
-    // TODO: include comments
 
 function loadDetailsToCard(parseData, principalPartData, glossData, commentaryData) {
     if (parseData != null) { 
