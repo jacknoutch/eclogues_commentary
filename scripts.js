@@ -94,6 +94,8 @@ async function makeWordsClickable() {
             clearFocus();
             word.classList.toggle("focus");
             updateCard(word);
+            card.classList.remove("closed");
+            cardContent.classList.remove("invisible");
         })
     });
 }
@@ -153,6 +155,7 @@ const card_close = card.querySelector(".close")
 
 const cardTitle = card.querySelector(".title");
 const cardInfo = card.querySelector(".grammar ul");
+const cardContent = card.querySelector("#lookup_card_content")
 
 async function updateCard(word) { // word is an element
     cardTitle.innerHTML = word.innerHTML;
@@ -228,7 +231,6 @@ card_close.addEventListener("click", () => closeCard())
 
 function hideCard() {
     card.classList.toggle("closed");
-    cardContent = card.querySelector("#lookup_card_content");
     cardContent.classList.toggle("invisible");
 }
 
