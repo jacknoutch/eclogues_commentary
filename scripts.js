@@ -90,10 +90,9 @@ let words = null;
 async function makeWordsClickable() {
     words = await spanAllWords()
     words.forEach(word => {
-        word.addEventListener("click", (event) => {
-            word = $(event.target)
+        word.addEventListener("click", () => {
             clearFocus();
-            word.toggleClass("focus");
+            word.classList.toggle("focus");
             updateCard(word);
         })
     });
@@ -156,7 +155,7 @@ const cardTitle = card.querySelector(".title");
 const cardInfo = card.querySelector(".grammar ul");
 
 async function updateCard(word) { // word is an element
-    cardTitle.innerHTML = word.html();
+    cardTitle.innerHTML = word.innerHTML;
     card.classList.remove("invisible");
 
     const requests = [
