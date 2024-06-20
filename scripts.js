@@ -2,7 +2,7 @@
 
 const lemmatiserPath = "resources/eclogue1LR.xml";
 const lexiconPath = "resources/glosses.xml";
-const commentaryPath = "resources/commentarynotes.xml";
+const commentaryPath = "resources/commentary.xml";
 
 // Sections and their buttons
 
@@ -223,8 +223,19 @@ function loadGlossData(lemma, lexicon) {
 }
 
 function loadCommentaryData(wordElement, commentary) { 
-        // TODO: include comments
-    return true;
+    let indices = getIndices(wordElement);
+    indices = indices[0] + "." + (indices[1]+1);
+    const entries  = commentary.getElementsByTagName("entry")
+    let data = null
+    for (const entry of entries) {
+        const references = entry.getElementsByTagName("reference")
+        for (reference of references) {
+            if (reference.textContent == indices) {
+                data = entry.getElementsByTagName("comment")[0].innerHTML
+            }
+        }
+    }
+    return data
 }
 
 function loadDetailsToCard(parseData, principalPartData, glossData, commentaryData) {
@@ -247,6 +258,13 @@ function loadDetailsToCard(parseData, principalPartData, glossData, commentaryDa
         glossElement.innerHTML = glossData
     
         cardInfo.append(glossElement);
+    }
+
+    if (commentaryData != null) {
+        const commentaryElement = document.createElement("li");
+        commentaryElement.innerHTML = commentaryData
+
+        cardInfo.append(commentaryElement)
     }
 }
 
