@@ -224,7 +224,6 @@ function loadGlossData(lemma, lexicon) {
 
 function loadCommentaryData(wordElement, commentary) { 
     let indices = getIndices(wordElement);
-    indices = indices[0] + "." + (indices[1]+1);
     const entries  = commentary.getElementsByTagName("entry")
     let data = null
     for (const entry of entries) {
@@ -310,12 +309,13 @@ function getIndices(elem) {
     var wordsInLine = $(closestLine).find(".w");
     var wordIndex = $(wordsInLine).index(elem);
 
-    return [lineNumber, wordIndex];
+    return lineNumber + "." + wordIndex;
 }
 
 function getWordFromXML(xml, elem) {
-    var [lineNumber, wordIndex] = getIndices(elem);
-    var wordElements = $(xml).find("w[n='"+lineNumber+"']");
+    var index = getIndices(elem);
+    var [poemNumber, lineNumber, wordIndex] = index.split(".")
+    var wordElements = $(xml).find("w[n='"+poemNumber + "." + lineNumber+"']");
     var word = wordElements[wordIndex];
     return word;
 }
