@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <entry>
+        <text>ille... illius... ille...</text>
+        <reference>1.7.3</reference>
+        <reference>1.7.7</reference>
+        <reference>1.9.1</reference>
+        <comment>Referring back to the [deus](1.6.3){.lt} (l. 6) to whom Tityrus attributes his new-found leisure.
+</comment>
+    </entry>
+    <entry>
+        <text>malum hoc</text>
+        <reference>1.16.2</reference>
+        <reference>1.16.3</reference>
+        <comment>The death of the twin kids ([gemellos]{.lt}) is the evil Meliboeus is referring to.
+</comment>
+    </entry>
+    <entry>
+        <text>de caelo tactas</text>
+        <reference>1.17.1</reference>
+        <reference>1.17.2</reference>
+        <reference>1.17.3</reference>
+        <comment>lit. "struck from the sky", i.e. "by lightning"
+</comment>
+    </entry>
+    <entry>
+        <text>Musam meditaris</text>
+        <reference>1.2.3</reference>
+        <reference>1.2.4</reference>
+        <comment>[Musam meditaris](1.2.3--1.2.4){.lt} can mean either "you are considering the Muse", or "you are practising a song"
+</comment>
+    </entry>
+</root>
