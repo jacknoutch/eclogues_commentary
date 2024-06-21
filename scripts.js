@@ -223,14 +223,14 @@ function loadGlossData(lemma, lexicon) {
 }
 
 function loadCommentaryData(wordElement, commentary) { 
-    let indices = getIndices(wordElement);
-    console.log(indices)
+    let index = getIndex(wordElement);
+    console.log(index)
     const entries  = commentary.getElementsByTagName("entry")
     let data = null
     for (const entry of entries) {
         const references = entry.getElementsByTagName("reference")
         for (reference of references) {
-            if (reference.textContent == indices) {
+            if (reference.textContent == index) {
                 data = entry.getElementsByTagName("comment")[0].innerHTML
             }
         }
@@ -304,7 +304,7 @@ function addLineNumbers() {
     });
 }
 
-function getIndices(elem) {
+function getIndex(elem) {
     var closestLine = $(elem).closest(".l");        
     var lineNumber = $(closestLine).attr("n");
     var wordsInLine = $(closestLine).find(".w");
@@ -314,7 +314,7 @@ function getIndices(elem) {
 }
 
 function getWordFromXML(xml, elem) {
-    var index = getIndices(elem);
+    var index = getIndex(elem);
     var [poemNumber, lineNumber, wordIndex] = index.split(".")
     var wordElements = $(xml).find("w[n='"+poemNumber + "." + lineNumber+"']");
     var word = wordElements[wordIndex - 1]; // -1 for zero indexing
