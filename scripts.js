@@ -1,3 +1,5 @@
+// Global variables
+
 // Paths for resources
 
 const lemmatiserPath = "resources/eclogue1LR.xml";
@@ -11,6 +13,18 @@ const nextSectionButton = document.querySelector("#next");
 const previousSectionButton = document.querySelector("#previous");
 
 let currentSection = 0;
+
+// The card
+
+const card = document.getElementById("lookup_card");
+const card_hide = card.querySelector(".hide")
+const card_close = card.querySelector(".close")
+
+const cardTitle = card.querySelector(".title");
+const cardInfo = card.querySelector(".grammar ul");
+const cardContent = card.querySelector("#lookup_card_content")
+
+//
 
 nextSectionButton.addEventListener("click", () => nextSection() );
 previousSectionButton.addEventListener("click", () => previousSection() );
@@ -40,6 +54,8 @@ function previousSection() {
 }
 
 function setSectionNavButtons() {
+    closeCard()
+
     if (currentSection == 0) { // first section is displayed
         previousSectionButton.classList.add("invisible");        
     }
@@ -148,14 +164,6 @@ async function spanAllWords() {
 makeWordsClickable()
 
 // Cards
-
-const card = document.getElementById("lookup_card");
-const card_hide = card.querySelector(".hide")
-const card_close = card.querySelector(".close")
-
-const cardTitle = card.querySelector(".title");
-const cardInfo = card.querySelector(".grammar ul");
-const cardContent = card.querySelector("#lookup_card_content")
 
 async function updateCard(word) { // word is an element
     cardTitle.innerHTML = word.innerHTML;
@@ -283,7 +291,7 @@ function hideCard() {
 }
 
 function closeCard() {
-    card.classList.toggle("invisible");
+    card.classList.add("invisible");
 }
 
 //  FUNCTIONS
