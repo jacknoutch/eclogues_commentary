@@ -223,10 +223,12 @@ function loadGlossData(lemma, lexicon) {
 }
 
 function loadCommentaryData(wordElement, commentary) { 
-    let index = getIndex(wordElement);
-    console.log(index)
-    const entries  = commentary.getElementsByTagName("entry")
-    let data = null
+    const index = getIndex(wordElement);
+    const entries  = commentary.getElementsByTagName("entry");
+
+    const matchingEntries = [];
+    let data = null;
+
     for (const entry of entries) {
         const references = entry.getElementsByTagName("reference")
         for (reference of references) {
