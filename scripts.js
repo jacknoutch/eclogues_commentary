@@ -238,24 +238,62 @@ function loadCommentaryData(wordElement, commentary) {
     let data = null;
 
     for (const entry of entries) {
-        const references = entry.getElementsByTagName("reference")
-        for (reference of references) {
-            if (reference.textContent == index) {
-                data = entry.getElementsByTagName("comment")[0].innerHTML
-            }
+        const references = entry.getElementsByTagName("references")[0].innerHTML
+        if (isReferenced(index, references)) {
+            data = entry.getElementsByTagName("comment")[0].innerHTML
         }
     }
     return data
 }
 
-function isReferenced(index, reference) {
+function isReferenced(index, references) {
     // references may be "1.2.3, 1.2.4, 1.3.5--1.4.2"
+    const references_indexes = references.split(", ")
+
+    for (reference_index of references_indexes) {
+        if (index === reference_index) {
+            return true
+        }
+
+        const index_range = reference_index.split("--")
+        if (index_range.length === 2 && indexWithinRange(index, index_range[0], index_range[1])) {
+            return true
+        }
+    }
+
+    return false
 }
 
 function indexWithinRange(index, lowBound, highBound) {
     // e.g. 1.2.3, 1.2.1, 1.2.4 -> true
     // e.g. 1.2.3, 1.2.4, 1.2.5 -> false
     // highBound must be larger than lowBound
+    if (!isLargerOrEqual(lowBound, index)) {
+        return false
+    }
+
+    if (!isLargerOrEqual(index, highBound)) {
+        return false
+    }
+
+    return true
+
+    }
+
+function isLargerOrEqual(low, high) {
+    console.log(low, high)
+    const low_split = low.split(".")
+    const high_split = high.split(".")
+
+    for (i = 0; i < 3; i++) {
+        low_split[i] = Number(low_split[i])
+        high_split[i] = Number(high_split[i])
+        if (low_split[i] != high_split[i]) {
+            return low_split[i] < high_split[i]
+        }
+    }
+
+    return true
 }
 
 function loadDetailsToCard(parseData, principalPartData, glossData, commentaryData) {

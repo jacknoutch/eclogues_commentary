@@ -2,55 +2,46 @@
 <root>
     <entry>
         <text>ille... illius... ille...</text>
-        <reference>1.7.3</reference>
-        <reference>1.7.7</reference>
-        <reference>1.9.1</reference>
+        <references>1.7.3, 1.7.7, 1.9.1</references>
         <comment>Referring back to the <span class="link lt" onclick="refer('1.6.3')">deus</span> (l. 6) to whom Tityrus attributes his new-found leisure.
 </comment>
     </entry>
     <entry>
         <text>malum hoc</text>
-        <reference>1.16.2</reference>
-        <reference>1.16.3</reference>
+        <references>1.16.2--1.16.3</references>
         <comment>The death of the twin kids ([gemellos]{.lt}) is the evil Meliboeus is referring to.
 </comment>
     </entry>
     <entry>
         <text>de caelo tactas</text>
-        <reference>1.17.1</reference>
-        <reference>1.17.2</reference>
-        <reference>1.17.3</reference>
+        <references>1.17.1--1.17.3</references>
         <comment>lit. "struck from the sky", i.e. "by lightning"
 </comment>
     </entry>
     <entry>
         <text>Musam meditaris</text>
-        <reference>1.2.3</reference>
-        <reference>1.2.4</reference>
+        <references>1.2.3--1.2.4</references>
         <comment><p><span onclick="refer('1.2.3--1.2.4')" class="link lt">Musam meditaris</span> can mean either "you are considering the Muse", or "you are practising a song"</p>
 </comment>
     </entry>
     <entry>
         <text>silvestrem musam</text>
-        <reference>1.2.1</reference>
-        <reference>1.2.3</reference>
+        <references>1.2.1, 1.2.3</references>
         <comment>‘woodland song’, the woodland being the forest pasture where the shepherds feed their flocks.</comment>
     </entry>
     <entry>
         <text>tenui avena</text>
-        <reference>1.2.2</reference>
-        <reference>1.2.5</reference>
+        <references>1.2.2, 1.2.5</references>
         <comment>‘the slender oat’, i.e. the rustic pipe. (So the English pastoral poets speak of ‘oaten stop’, ‘oaten pipe’.)</comment>
     </entry>
     <entry>
         <text>tu, Tityre</text>
-        <reference>1.4.4</reference>
-        <reference>1.4.5</reference>
+        <references>1.4.4--1.4.5</references>
         <comment>Notice the pretty artifice, whereby he begins and ends with Tityrus.</comment>
     </entry>
     <entry>
         <text>lentus</text>
-        <reference>1.4.6</reference>
+        <references>1.4.6</references>
         <comment>‘at ease’</comment>
     </entry>
 </root>
