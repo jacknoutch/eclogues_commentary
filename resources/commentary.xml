@@ -5,7 +5,7 @@
         <reference>1.7.3</reference>
         <reference>1.7.7</reference>
         <reference>1.9.1</reference>
-        <comment>Referring back to the [deus](1.6.3){.lt} (l. 6) to whom Tityrus attributes his new-found leisure.
+        <comment>Referring back to the <span class="link lt" onclick="refer('1.6.3')">deus</span> (l. 6) to whom Tityrus attributes his new-found leisure.
 </comment>
     </entry>
     <entry>
@@ -27,7 +27,30 @@
         <text>Musam meditaris</text>
         <reference>1.2.3</reference>
         <reference>1.2.4</reference>
-        <comment>[Musam meditaris](1.2.3--1.2.4){.lt} can mean either "you are considering the Muse", or "you are practising a song"
+        <comment><p><span onclick="refer('1.2.3--1.2.4')" class="link lt">Musam meditaris</span> can mean either "you are considering the Muse", or "you are practising a song"</p>
 </comment>
+    </entry>
+    <entry>
+        <text>silvestrem musam</text>
+        <reference>1.2.1</reference>
+        <reference>1.2.3</reference>
+        <comment>‘woodland song’, the woodland being the forest pasture where the shepherds feed their flocks.</comment>
+    </entry>
+    <entry>
+        <text>tenui avena</text>
+        <reference>1.2.2</reference>
+        <reference>1.2.5</reference>
+        <comment>‘the slender oat’, i.e. the rustic pipe. (So the English pastoral poets speak of ‘oaten stop’, ‘oaten pipe’.)</comment>
+    </entry>
+    <entry>
+        <text>tu, Tityre</text>
+        <reference>1.4.4</reference>
+        <reference>1.4.5</reference>
+        <comment>Notice the pretty artifice, whereby he begins and ends with Tityrus.</comment>
+    </entry>
+    <entry>
+        <text>lentus</text>
+        <reference>1.4.6</reference>
+        <comment>‘at ease’</comment>
     </entry>
 </root>
