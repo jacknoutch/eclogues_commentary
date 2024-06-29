@@ -248,6 +248,16 @@ function loadCommentaryData(wordElement, commentary) {
     return data
 }
 
+function isReferenced(index, reference) {
+    // references may be "1.2.3, 1.2.4, 1.3.5--1.4.2"
+}
+
+function indexWithinRange(index, lowBound, highBound) {
+    // e.g. 1.2.3, 1.2.1, 1.2.4 -> true
+    // e.g. 1.2.3, 1.2.4, 1.2.5 -> false
+    // highBound must be larger than lowBound
+}
+
 function loadDetailsToCard(parseData, principalPartData, glossData, commentaryData) {
     if (parseData != null) { 
         const parseInfo = document.createElement("li");
@@ -501,4 +511,8 @@ function clearFocus() {
     $(".quickHighlight").toggleClass("quickHighlight");
     $(".focus").children().unwrap()
     $(".focus").toggleClass("focus");
+}
+
+function refer(arg) {
+    console.log("refer:" + arg)
 }
