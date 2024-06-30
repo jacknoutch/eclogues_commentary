@@ -44,4 +44,14 @@
         <references>1.4.6</references>
         <comment>‘at ease’</comment>
     </entry>
+    <entry>
+        <text>deus</text>
+        <reference>1.6.3</reference>
+        <comment>deus is Octavianus. To speak of Octavianus as a god to whom lambs will be sacrificed is at this date probably only a half playful exaggeration; but afterwards of course the emperor Augustus was regularly deified, and even in the Georgics (I. 34) Vergil speaks of the signs of the Zodiac crowding up to make room for Augustus. The sacrifice is further explained (43) as being 12 days every year, evidently referring to the offerings on the first of every month to the household gods or Lares.</comment>
+    </entry>
+    <entry>
+        <text>meas errare boves permisit</text>
+        <reference>1.9.2--1.9.4, 1.10.5</reference>
+        <comment>9. meas errare boves permisit, unusual poetic construction, acc. inf. after permitto: the ordinary prose constr. is ut and subj. ludo, often used half modestly for poetry: carmina qui lusi pastorum Georg. IV. 567; iuvenilia lusi Ov. Trist. v. 1, 7.</comment>
+    </entry>
 </root>

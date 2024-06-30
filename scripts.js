@@ -204,7 +204,7 @@ function loadLemma(xmlWord) {
 }
 
 function loadParseData(xmlWord) {
-    // morpho-syntactic descrition
+    // morpho-syntactic description
     const msd = xmlWord.attributes.getNamedItem("msd").nodeValue;
     const msdText = getParseFromMSD(msd);
 
