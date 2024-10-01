@@ -221,7 +221,7 @@ function loadPrincipalPartData(lemma, lexicon) {
         principalParts = principalParts.innerHTML;
         gender = gender.innerHTML;
 
-        return [principalParts, gender].join(",");
+        return [principalParts, gender].join(", ");
     }
 }
 
