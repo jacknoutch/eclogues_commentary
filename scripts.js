@@ -230,20 +230,26 @@ function loadGlossData(lemma, lexicon) {
     return entry.querySelector("gloss").innerHTML;
 }
 
-function loadCommentaryData(wordElement, commentary) { 
+/**
+ * Retrieves the comment entry elements for a given HTML word element.
+ * @param {HTMLElement} wordElement
+ * @param {Element}
+ * @returns {Element[]}
+ */
+function loadCommentaryData(wordElement, commentary) {
+
     const index = getIndex(wordElement);
     const entries  = commentary.getElementsByTagName("entry");
 
     const matchingEntries = [];
-    let data = null;
 
     for (const entry of entries) {
         const references = entry.getElementsByTagName("references")[0].innerHTML
         if (isReferenced(index, references)) {
-            data = entry.getElementsByTagName("comment")[0].innerHTML
+            matchingEntries.push(entry)
         }
     }
-    return data
+    return matchingEntries
 }
 
 function isReferenced(index, references) {
@@ -319,10 +325,11 @@ function loadDetailsToCard(parseData, principalPartData, glossData, commentaryDa
     }
 
     if (commentaryData != null) {
-        const commentaryElement = document.createElement("li");
-        commentaryElement.innerHTML = commentaryData
-
-        cardInfo.append(commentaryElement)
+        for (entry of commentaryData) {
+            const commentaryElement = document.createElement("li");
+            commentaryElement.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML
+            cardInfo.append(commentaryElement)
+        }
     }
 }
 
