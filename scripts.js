@@ -327,6 +327,7 @@ function loadDetailsToCard(parseData, principalPartData, glossData, commentaryDa
         for (entry of commentaryData) {
             const commentaryElement = document.createElement("li");
             commentaryElement.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML
+            console.log(entry.getElementsByTagName("comment")[0].innerHTML)
             cardInfo.append(commentaryElement)
         }
     }
