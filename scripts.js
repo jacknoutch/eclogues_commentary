@@ -287,7 +287,6 @@ function indexWithinRange(index, lowBound, highBound) {
     }
 
 function isLargerOrEqual(low, high) {
-    console.log(low, high)
     const low_split = low.split(".")
     const high_split = high.split(".")
 
