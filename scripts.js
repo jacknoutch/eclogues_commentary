@@ -325,16 +325,22 @@ function loadDetailsToCard(parseData, principalPartData, glossData, commentaryDa
 
     if (commentaryData != null) {
         for (entry of commentaryData) {
-            const commentaryElement = document.createElement("li");
+            const commentaryElement = document.createElement("div");
+            commentaryElement.classList.add("comment");
             commentaryElement.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML
             console.log(entry.getElementsByTagName("comment")[0].innerHTML)
-            cardInfo.append(commentaryElement)
+            cardContent.append(commentaryElement)
         }
     }
 }
 
 function clearCard() {
     cardInfo.replaceChildren();
+    cardContent.querySelectorAll(".comment").forEach(element => {
+        while (element.firstChild) {
+            element.removeChild(element.firstChild);
+        }
+    })
 }
 
 card_hide.addEventListener("click", () => hideCard())
