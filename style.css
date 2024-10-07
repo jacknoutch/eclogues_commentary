@@ -173,10 +173,13 @@ span.verse_ref {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+.comment {
+  padding-bottom: 0.5em;
+}
 
 
 
-.lt { /* Is this required? */
+.lt {
   font-style: italic;
 }
 
