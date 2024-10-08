@@ -328,7 +328,6 @@ function loadDetailsToCard(parseData, principalPartData, glossData, commentaryDa
             const commentaryElement = document.createElement("div");
             commentaryElement.classList.add("comment");
             commentaryElement.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML
-            console.log(entry.getElementsByTagName("comment")[0].innerHTML)
             cardContent.append(commentaryElement)
         }
     }
@@ -336,10 +335,8 @@ function loadDetailsToCard(parseData, principalPartData, glossData, commentaryDa
 
 function clearCard() {
     cardInfo.replaceChildren();
-    cardContent.querySelectorAll(".comment").forEach(element => {
-        while (element.firstChild) {
-            element.removeChild(element.firstChild);
-        }
+    cardContent.querySelectorAll("div.comment").forEach(element => {
+        element.remove()
     })
 }
 
