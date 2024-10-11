@@ -200,10 +200,11 @@ function loadDetails(wordElement, xmlFiles) {
     const lemma = loadLemma(xmlWord);
     const parseData = loadParseData(xmlWord);
     const principalPartData = loadPrincipalPartData(lemma, lexicon)
+    const genderData = loadGenderData(lemma, lexicon);
     const glossData = loadGlossData(lemma, lexicon);
     const commentaryData = loadCommentaryData(wordElement, commentary);
     
-    loadDetailsToCard(parseData, principalPartData, glossData, commentaryData);
+    loadDetailsToCard(parseData, principalPartData, genderData, glossData, commentaryData);
 }
 
 function loadLemma(xmlWord) {
@@ -219,21 +220,25 @@ function loadParseData(xmlWord) {
 }
 
 function loadPrincipalPartData(lemma, lexicon) {
-    const entry = lexicon.querySelector("entry[n='"+lemma+"']");
-
-    // the principal parts
-    let principalParts = entry.querySelector("pp")
-    let gender = entry.querySelector("gen");
-    if (principalParts != null && gender != null) {
-        principalParts = principalParts.innerHTML;
-        gender = gender.innerHTML;
-
-        return [principalParts, gender].join(", ");
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    const pp = entry.querySelector("pp");
+    if (pp != null) {1
+        return pp.innerHTML;
     }
+    return null;
+}
+
+function loadGenderData(lemma, lexicon) {
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    const gen = entry.querySelector("gen");
+    if (gen != null) {1
+        return gen.innerHTML;
+    }
+    return null;
 }
 
 function loadGlossData(lemma, lexicon) {
-    const entry = lexicon.querySelector("entry[n='"+lemma+"']");
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
     return entry.querySelector("gloss").innerHTML;
 }
 
@@ -308,9 +313,23 @@ function isLargerOrEqual(low, high) {
     return true
 }
 
-function loadDetailsToCard(parseData, principalPartData, glossData, commentaryData) {
+function loadDetailsToCard(parseData, principalPartData, genderData, glossData, commentaryData) {
+    let principalPartsSpan = null;
+
     if (principalPartData != null) {
-        cardPrincipalParts.innerHTML = principalPartData;
+        principalPartsSpan = document.createElement("span");
+        principalPartsSpan.classList.add("lt");
+        principalPartsSpan.innerHTML = principalPartData;
+        cardPrincipalParts.appendChild(principalPartsSpan);
+    }
+    
+    if (genderData != null) {
+        if (principalPartsSpan != null) {
+            principalPartsSpan.insertAdjacentHTML("afterend",` ${genderData}`);
+        }
+        else {
+            cardPrincipalParts.innerHTML = genderData;
+        }
     }
 
     if (glossData != null) {
