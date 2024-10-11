@@ -104,6 +104,7 @@ button {
   width: 20px;
   margin-right: 12px;
   vertical-align: middle;
+  visibility: hidden;
 }
 #utility {
   /* ... */

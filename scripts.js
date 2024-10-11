@@ -163,13 +163,12 @@ async function spanAllWords() {
         queSpan.replaceWith(newHTML);
     });
 
-    // addLineNumbers() // required here since there is an ajax call on which it is dependent
-
     return document.querySelectorAll(".w")
 
 }
 
-makeWordsClickable()
+revealNthLineNumbers(5);
+makeWordsClickable();
 
 // Cards
 
@@ -359,18 +358,11 @@ function closeCard() {
 
 // Section navigation
 
-function addLineNumbers() {
-    $(".l").each(function(){
-        var rawLineNum = $(this).attr("n");
-        var lineNum = rawLineNum.substring(1+rawLineNum.indexOf("."));
-        /* The empty relative span is required to offset the line numbers correctly. */
-        $(this).prepend("<span class=relative><span class=verse_ref>"+lineNum+"</span></span>")
-        
-        /* Make every 5th line number visible. */
-        var lineNumInt = parseInt(lineNum)
-        if (lineNumInt % 5 == 0) { 
-            var vRef = $(this).find(".verse_ref");
-            vRef.css("visibility", "visible");
+function revealNthLineNumbers(n) {
+    const lineNumbers = document.querySelectorAll(".line_number");
+    lineNumbers.forEach((lineNumber, index) => {
+        if ((index + 1) % n == 0) {
+            lineNumber.style.visibility = "visible";
         }
     });
 }
