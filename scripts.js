@@ -565,7 +565,7 @@ function getParseFromMSD(msd) {
 
         */
     }
-    return false;
+    return null;
 }
 
 function clearFocus() {
