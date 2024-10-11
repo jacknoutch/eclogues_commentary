@@ -1,15 +1,29 @@
 /*** For testing ***/
 /* * {
     cursor: default;
-    border: 1px dotted #C00;
+    outline: 1px dotted #C00;
 } */
 
+:root {
+  --body-font-family: Alegreya, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --body-font-size: 16px;
+  --body-line-height: 32.7px;
+
+  --h1-font-size: 48px;
+  --h1-font-weight: 500;
+  
+  --h2-font-size: 32px;
+  --h2-font-weight: var(var(--h1-font-weight));
+
+  --verse-max-width: 392px;
+}
 
 /* For mobile phones */
 
 html, body {
-  /* font-size: 0.9em; */
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
 }
 nav {
   /* ... */
@@ -26,6 +40,16 @@ footer p {
 }
 h1 {
   text-align: center;
+  font-family: var(--body-font-family);
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+
+  margin: 1em 0;
+}
+h2 {
+  font-family: var(--body-font-family);
+  font-size: var(--h2-font-size);
+  font-weight: var(h2-font-weight);
 }
 .subtitle {
   text-align: center;
@@ -61,6 +85,8 @@ button {
 /*** Classes only in the reading pages ***/
 .blurb {
   font-style: italic;
+  max-width: var(--verse-max-width);
+  margin: 0 auto;
 }
 .latin_text {
   display: none;
@@ -70,6 +96,18 @@ button {
 }
 .margin_control {
   margin-left: 1em;
+}
+.line_number {
+  color: #C00;
+  font-size: 12px;
+  line-height: 28px;
+  height: 32.7px;
+  text-align: right;
+  display: inline-block;
+  width: 20px;
+  margin-right: 12px;
+  vertical-align: middle;
+  visibility: hidden;
 }
 #utility {
   /* ... */
@@ -87,6 +125,8 @@ button {
 }
 .speaker {
   font-variant: small-caps;
+  margin: 0 auto;
+  max-width: var(--verse-max-width);
 }
 .undisplayed { /* for unused lines */
   display: none;
@@ -99,12 +139,14 @@ button {
   -webkit-user-select: none; /*Safari*/
   -ms-user-select: none; /*IE 10 and IE 11*/
   user-select: none; /*Standard syntax*/
-  padding-left: 20px;
-  text-indent: -20px;
+  /* padding-left: 20px; */
+  /* text-indent: -20px; */
+  max-width: var(--verse-max-width);
+  margin: 0 auto;
 }
 
 /*** Dynamic classes ***/
-.w, .close, .hide {
+.w, #lookup_card .button {
   cursor: pointer;
 }
 .w:hover {
@@ -145,22 +187,33 @@ span.verse_ref {
 }
 .w3-card-4 header {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   align-items: center;
 }
 .w3-card-4 header h2 {
-  width: 80%; /* this combines with the 2 buttons of 10% width each */
+  width: calc(100% - 4.5em); /* this combines with the 2 buttons of 10% width each */
 }
-.hide, .close{
+
+#lookup_card .button {
   /* Button text cannot be selected */
   -webkit-user-select: none; /*Safari*/
   -ms-user-select: none; /*IE 10 and IE 11*/
   user-select: none; /*Standard syntax*/
-  width: 10%; /* this combines with the h2 of 80% width*/
-  font-size: xx-large;
+  display: inline-block;
+  width: 32px; /* this combines with the h2 of 70% width */
+  height: 32px;
+  line-height: 32px;
   text-align: center;
+  font-size: xx-large;
+  margin: 0 0.25em;
 }
-.close:hover, .hide:hover {
+#lookup_card .button.info {
+  font-size: x-large;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+#lookup_card .button:hover {
   background: #bbb;
 }
 .animate {
@@ -173,8 +226,27 @@ span.verse_ref {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-.comment {
-  padding-bottom: 0.5em;
+
+#grammar > div {
+  margin: 0.25em 0;
+  padding-left: 10%;
+}
+
+#comments > .comment {
+  background-color: lightcyan;
+  margin: 0.25em 0;
+  padding: 0.25em 0;
+  display: flex;
+  align-items: center;
+}
+
+.bookIcon {
+  width: 10%;
+  text-align: center;
+}
+
+.commentText {
+  width: 90%;
 }
 
 
@@ -231,4 +303,3 @@ li {
   .w3-card-4.closed {
     margin-bottom: 0; /* When a card is closed there is no gap between it and the card below. */
   }
-}

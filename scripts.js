@@ -17,12 +17,14 @@ let currentSection = 0;
 // The card
 
 const card = document.getElementById("lookup_card");
-const card_hide = card.querySelector(".hide")
 const card_close = card.querySelector(".close")
 
 const cardTitle = card.querySelector(".title");
-const cardInfo = card.querySelector(".grammar ul");
-const cardContent = card.querySelector("#lookup_card_content")
+const cardContent = card.querySelector("#lookup_card_content");
+const cardPrincipalParts = card.querySelector("#principalParts");
+const cardGloss = card.querySelector("#gloss");
+const cardParsing = card.querySelector("#parsing");
+const cardComments = card.querySelector("#comments");
 
 //
 
@@ -122,16 +124,21 @@ async function spanAllWords() {
     // This regex splits a line into words, punctuation, and white space; mecum, tecum, secum, nobiscum and vobiscum are split into pronoun and enclitic
     const spanWordsRegex = new RegExp(/([mts]e|[nv]obis)(?=cum)|\p{L}+|[^\p{L}]+/gu);
 
-    // Wrap a <span> around each match
-    $(".l").each((index, value) => {
-        const matches = $(value).text().match(spanWordsRegex);
-        for (let i = 0; i < matches.length; i++) {
-            if (/\w+/.test(matches[i])) { // Wrap only the regex matches that are words
-                matches[i] = "<span class='w'>" + matches[i] + "</span>" 
+    const lines = document.querySelectorAll(".line_text");
+    lines.forEach(line => {
+        const matches = line.textContent.match(spanWordsRegex); 
+        let text = "";
+        
+        // Wrap a <span> around each match which is not a number
+        matches.forEach(match => {
+            if (/\w+/.test(match)) {
+                match = `<span class='w'>${match}</span>`
             }
-            let text = matches.join("");
-            $(value).html(text);
-        }
+            text += match;
+        });
+
+        // Insert the new spanned word into the line
+        line.innerHTML = text;
     });
 
     // So far the enclitic -que is not separated from the word it is attached to.
@@ -155,13 +162,12 @@ async function spanAllWords() {
         queSpan.replaceWith(newHTML);
     });
 
-    addLineNumbers() // required here since there is an ajax call on which it is dependent
-
     return document.querySelectorAll(".w")
 
 }
 
-makeWordsClickable()
+revealNthLineNumbers(5);
+makeWordsClickable();
 
 // Cards
 
@@ -193,10 +199,11 @@ function loadDetails(wordElement, xmlFiles) {
     const lemma = loadLemma(xmlWord);
     const parseData = loadParseData(xmlWord);
     const principalPartData = loadPrincipalPartData(lemma, lexicon)
+    const genderData = loadGenderData(lemma, lexicon);
     const glossData = loadGlossData(lemma, lexicon);
     const commentaryData = loadCommentaryData(wordElement, commentary);
     
-    loadDetailsToCard(parseData, principalPartData, glossData, commentaryData);
+    loadDetailsToCard(parseData, principalPartData, genderData, glossData, commentaryData);
 }
 
 function loadLemma(xmlWord) {
@@ -212,21 +219,25 @@ function loadParseData(xmlWord) {
 }
 
 function loadPrincipalPartData(lemma, lexicon) {
-    const entry = lexicon.querySelector("entry[n='"+lemma+"']");
-
-    // the principal parts
-    let principalParts = entry.querySelector("pp")
-    let gender = entry.querySelector("gen");
-    if (principalParts != null && gender != null) {
-        principalParts = principalParts.innerHTML;
-        gender = gender.innerHTML;
-
-        return [principalParts, gender].join(", ");
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    const pp = entry.querySelector("pp");
+    if (pp != null) {1
+        return pp.innerHTML;
     }
+    return null;
+}
+
+function loadGenderData(lemma, lexicon) {
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    const gen = entry.querySelector("gen");
+    if (gen != null) {1
+        return gen.innerHTML;
+    }
+    return null;
 }
 
 function loadGlossData(lemma, lexicon) {
-    const entry = lexicon.querySelector("entry[n='"+lemma+"']");
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
     return entry.querySelector("gloss").innerHTML;
 }
 
@@ -301,52 +312,76 @@ function isLargerOrEqual(low, high) {
     return true
 }
 
-function loadDetailsToCard(parseData, principalPartData, glossData, commentaryData) {
-    if (parseData != null) { 
-        const parseInfo = document.createElement("li");
-        parseInfo.innerHTML = parseData;
-        
-        cardInfo.append(parseInfo);
-    }
+function loadDetailsToCard(parseData, principalPartData, genderData, glossData, commentaryData) {
+    let principalPartsSpan = null;
 
     if (principalPartData != null) {
-        const principalPartsElement = document.createElement("li");
-        principalPartsElement.innerHTML = principalPartData;
+        principalPartsSpan = document.createElement("span");
+        principalPartsSpan.classList.add("lt");
+        principalPartsSpan.innerHTML = principalPartData;
+        cardPrincipalParts.appendChild(principalPartsSpan);
+    }
     
-        cardInfo.append(principalPartsElement);
+    if (genderData != null) {
+        if (principalPartsSpan != null) {
+            principalPartsSpan.insertAdjacentHTML("afterend",` ${genderData}`);
+        }
+        else {
+            cardPrincipalParts.innerHTML = genderData;
+        }
     }
 
     if (glossData != null) {
-        const glossElement = document.createElement("li");
-        glossElement.innerHTML = glossData
-    
-        cardInfo.append(glossElement);
+        cardGloss.innerHTML = glossData;
+    }
+
+    if (parseData != null) { 
+        cardParsing.innerHTML = parseData;   
     }
 
     if (commentaryData != null) {
-        for (entry of commentaryData) {
+        commentaryData.forEach(entry => {
+            
+            // Create new element
             const commentaryElement = document.createElement("div");
             commentaryElement.classList.add("comment");
-            commentaryElement.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML
-            cardContent.append(commentaryElement)
-        }
+
+            // Get SVG
+            fetch("./resources/book.svg")
+                .then(response => response.text())
+                .then(data => {
+                    // Create SVG element
+                    const SVGContainer = document.createElement("span");
+                    SVGContainer.classList.add("bookIcon");
+                    SVGContainer.innerHTML = data;
+
+                    // Create the text element
+                    commentText = document.createElement("span");
+                    commentText.classList.add("commentText");
+                    commentText.innerHTML = entry.querySelector("comment").innerHTML;
+
+                    // Insert the new elements
+                    commentaryElement.append(SVGContainer);
+                    commentaryElement.appendChild(commentText);
+                    cardComments.append(commentaryElement);
+                })
+                .catch(error => console.log("Error fetching SVG: ", error));
+        });
     }
 }
 
 function clearCard() {
-    cardInfo.replaceChildren();
-    cardContent.querySelectorAll("div.comment").forEach(element => {
+
+    cardComments.querySelectorAll("div.comment").forEach(element => {
         element.remove()
     })
+
+    principalParts.innerHTML = "";
+    gloss.innerHTML = "";
+    parsing.innerHTML = "";
 }
 
-card_hide.addEventListener("click", () => hideCard())
 card_close.addEventListener("click", () => closeCard())
-
-function hideCard() {
-    card.classList.toggle("closed");
-    cardContent.classList.toggle("invisible");
-}
 
 function closeCard() {
     card.classList.add("invisible");
@@ -356,18 +391,11 @@ function closeCard() {
 
 // Section navigation
 
-function addLineNumbers() {
-    $(".l").each(function(){
-        var rawLineNum = $(this).attr("n");
-        var lineNum = rawLineNum.substring(1+rawLineNum.indexOf("."));
-        /* The empty relative span is required to offset the line numbers correctly. */
-        $(this).prepend("<span class=relative><span class=verse_ref>"+lineNum+"</span></span>")
-        
-        /* Make every 5th line number visible. */
-        var lineNumInt = parseInt(lineNum)
-        if (lineNumInt % 5 == 0) { 
-            var vRef = $(this).find(".verse_ref");
-            vRef.css("visibility", "visible");
+function revealNthLineNumbers(n) {
+    const lineNumbers = document.querySelectorAll(".line_number");
+    lineNumbers.forEach((lineNumber, index) => {
+        if ((index + 1) % n == 0) {
+            lineNumber.style.visibility = "visible";
         }
     });
 }
@@ -551,7 +579,7 @@ function getParseFromMSD(msd) {
 
         */
     }
-    return false;
+    return null;
 }
 
 function clearFocus() {
