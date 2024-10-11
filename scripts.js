@@ -340,26 +340,33 @@ function loadDetailsToCard(parseData, principalPartData, genderData, glossData, 
     }
 
     if (commentaryData != null) {
-        for (entry of commentaryData) {
+        commentaryData.forEach(entry => {
+            
+            // Create new element
             const commentaryElement = document.createElement("div");
             commentaryElement.classList.add("comment");
+
+            // Get SVG
             fetch("./resources/book.svg")
-            .then(response => response.text())
-            .then(data => {
-                    let SVGContainer = document.createElement("span");
+                .then(response => response.text())
+                .then(data => {
+                    // Create SVG element
+                    const SVGContainer = document.createElement("span");
                     SVGContainer.classList.add("bookIcon");
-                    commentaryElement.appendChild(SVGContainer);
                     SVGContainer.innerHTML = data;
+
+                    // Create the text element
                     commentText = document.createElement("span");
                     commentText.classList.add("commentText");
-                    commentText.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML;
-                    cardComments.append(commentaryElement);
+                    commentText.innerHTML = entry.querySelector("comment").innerHTML;
+
+                    // Insert the new elements
+                    commentaryElement.append(SVGContainer);
                     commentaryElement.appendChild(commentText);
+                    cardComments.append(commentaryElement);
                 })
-                .catch(error => {
-                    console.error("Error fetching SVG:", error);
-                })
-            }
+                .catch(error => console.log("Error fetching SVG: ", error));
+        });
     }
 }
 
