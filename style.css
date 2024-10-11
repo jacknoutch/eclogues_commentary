@@ -16,6 +16,22 @@
   --h2-font-weight: var(var(--h1-font-weight));
 
   --verse-max-width: 392px;
+
+  /* Colours */
+  --background-secondary-color: #F5F5F5;
+
+  --border-color: #D9D9D9;
+
+  --icon-tertiary-color: #B3B3B3;
+
+  /* Lengths */
+
+  --space-600: 24px;
+  --space-300: 12px;
+  --space-150: 6px;
+
+  --button-size-regular: 32px;
+
 }
 
 /* For mobile phones */
@@ -72,7 +88,8 @@ a[target="_blank"]::after {
   content: "↗";
 }
 .invisible { /* Simple invisibility class */
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 .w3-bar {
   display: flex;
@@ -182,62 +199,79 @@ span.verse_ref {
 }
 
 /*** Card classes ***/
-.w3-card-4 {
-  background-color: white;
-}
-.w3-card-4 header {
+#lookup_card {
   display: flex;
-  /* flex-direction: row-reverse; */
-  align-items: center;
+  flex-direction: column;
+  
+  padding: var(--space-600);
+  column-gap: var(--space-150);
+  
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
 }
-.w3-card-4 header h2 {
-  width: calc(100% - 4.5em); /* this combines with the 2 buttons of 10% width each */
+
+#lookup_card header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 0 var(--space-300);
+  row-gap: var(--space-600);
+}
+
+#lookup_card header h2 {
+  flex-basis: 75%;
 }
 
 #lookup_card .button {
-  /* Button text cannot be selected */
-  -webkit-user-select: none; /*Safari*/
-  -ms-user-select: none; /*IE 10 and IE 11*/
-  user-select: none; /*Standard syntax*/
-  display: inline-block;
-  width: 32px; /* this combines with the h2 of 70% width */
-  height: 32px;
-  line-height: 32px;
-  text-align: center;
-  font-size: xx-large;
-  margin: 0 0.25em;
+  width: var(--button-size-regular);
+  height: var(--button-size-regular);
 }
-#lookup_card .button.info {
-  font-size: x-large;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-}
+
 #lookup_card .button:hover {
   background: #bbb;
 }
+
 .animate {
   animation-duration: 0.25s;
   animation-name: animate-fade;
   animation-delay: 0.25s;
   animation-fill-mode: backwards;
 }
+
 @keyframes animate-fade {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
+#lookup_card_content {
+  display: flex;
+  flex-direction: column;
+  column-gap: var(--space-150);
+}
+
 #grammar > div {
-  margin: 0.25em 0;
   padding-left: 10%;
 }
 
-#comments > .comment {
-  background-color: lightcyan;
-  margin: 0.25em 0;
-  padding: 0.25em 0;
+#comments {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  column-gap: var(--space-150);
+}
+
+#comments > .comment {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin: var(--space-150) 0;
+  padding: var(--space-300);
+
+  background-color: var(--background-secondary-color);
+  border-radius: 4px;
+
 }
 
 .bookIcon {
@@ -294,12 +328,12 @@ li {
     position: inherit;
     min-width: 400px;
   }
-  .w3-card-4 {
+  #lookup_card {
     position: -webkit-sticky;
     position: sticky;
     top: 1em;
     margin-bottom: 1em;
   }
-  .w3-card-4.closed {
+  #lookup_card.closed {
     margin-bottom: 0; /* When a card is closed there is no gap between it and the card below. */
   }
