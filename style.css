@@ -85,6 +85,8 @@ button {
 /*** Classes only in the reading pages ***/
 .blurb {
   font-style: italic;
+  max-width: var(--verse-max-width);
+  margin: 0 auto;
 }
 .latin_text {
   display: none;
