@@ -17,12 +17,15 @@ let currentSection = 0;
 // The card
 
 const card = document.getElementById("lookup_card");
-const card_hide = card.querySelector(".hide")
+// const card_hide = card.querySelector(".hide")
 const card_close = card.querySelector(".close")
 
 const cardTitle = card.querySelector(".title");
-const cardInfo = card.querySelector(".grammar ul");
-const cardContent = card.querySelector("#lookup_card_content")
+const cardContent = card.querySelector("#lookup_card_content");
+const cardPrincipalParts = card.querySelector("#principalParts");
+const cardGloss = card.querySelector("#gloss");
+const cardParsing = card.querySelector("#parsing");
+const cardComments = card.querySelector("#comments");
 
 //
 
@@ -122,16 +125,21 @@ async function spanAllWords() {
     // This regex splits a line into words, punctuation, and white space; mecum, tecum, secum, nobiscum and vobiscum are split into pronoun and enclitic
     const spanWordsRegex = new RegExp(/([mts]e|[nv]obis)(?=cum)|\p{L}+|[^\p{L}]+/gu);
 
-    // Wrap a <span> around each match
-    $(".l").each((index, value) => {
-        const matches = $(value).text().match(spanWordsRegex);
-        for (let i = 0; i < matches.length; i++) {
-            if (/\w+/.test(matches[i])) { // Wrap only the regex matches that are words
-                matches[i] = "<span class='w'>" + matches[i] + "</span>" 
+    const lines = document.querySelectorAll(".line_text");
+    lines.forEach(line => {
+        const matches = line.textContent.match(spanWordsRegex); 
+        let text = "";
+        
+        // Wrap a <span> around each match which is not a number
+        matches.forEach(match => {
+            if (/\w+/.test(match)) {
+                match = `<span class='w'>${match}</span>`
             }
-            let text = matches.join("");
-            $(value).html(text);
-        }
+            text += match;
+        });
+
+        // Insert the new spanned word into the line
+        line.innerHTML = text;
     });
 
     // So far the enclitic -que is not separated from the word it is attached to.
@@ -155,7 +163,7 @@ async function spanAllWords() {
         queSpan.replaceWith(newHTML);
     });
 
-    addLineNumbers() // required here since there is an ajax call on which it is dependent
+    // addLineNumbers() // required here since there is an ajax call on which it is dependent
 
     return document.querySelectorAll(".w")
 
@@ -302,25 +310,16 @@ function isLargerOrEqual(low, high) {
 }
 
 function loadDetailsToCard(parseData, principalPartData, glossData, commentaryData) {
-    if (parseData != null) { 
-        const parseInfo = document.createElement("li");
-        parseInfo.innerHTML = parseData;
-        
-        cardInfo.append(parseInfo);
-    }
-
     if (principalPartData != null) {
-        const principalPartsElement = document.createElement("li");
-        principalPartsElement.innerHTML = principalPartData;
-    
-        cardInfo.append(principalPartsElement);
+        cardPrincipalParts.innerHTML = principalPartData;
     }
 
     if (glossData != null) {
-        const glossElement = document.createElement("li");
-        glossElement.innerHTML = glossData
-    
-        cardInfo.append(glossElement);
+        cardGloss.innerHTML = glossData;
+    }
+
+    if (parseData != null) { 
+        cardParsing.innerHTML = parseData;   
     }
 
     if (commentaryData != null) {
@@ -328,19 +327,23 @@ function loadDetailsToCard(parseData, principalPartData, glossData, commentaryDa
             const commentaryElement = document.createElement("div");
             commentaryElement.classList.add("comment");
             commentaryElement.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML
-            cardContent.append(commentaryElement)
+            cardComments.append(commentaryElement)
         }
     }
 }
 
 function clearCard() {
-    cardInfo.replaceChildren();
-    cardContent.querySelectorAll("div.comment").forEach(element => {
+
+    cardComments.querySelectorAll("div.comment").forEach(element => {
         element.remove()
     })
+
+    principalParts.innerHTML = "";
+    gloss.innerHTML = "";
+    parsing.innerHTML = "";
 }
 
-card_hide.addEventListener("click", () => hideCard())
+// card_hide.addEventListener("click", () => hideCard())
 card_close.addEventListener("click", () => closeCard())
 
 function hideCard() {
