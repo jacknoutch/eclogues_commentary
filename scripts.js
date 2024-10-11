@@ -17,7 +17,6 @@ let currentSection = 0;
 // The card
 
 const card = document.getElementById("lookup_card");
-// const card_hide = card.querySelector(".hide")
 const card_close = card.querySelector(".close")
 
 const cardTitle = card.querySelector(".title");
@@ -375,13 +374,7 @@ function clearCard() {
     parsing.innerHTML = "";
 }
 
-// card_hide.addEventListener("click", () => hideCard())
 card_close.addEventListener("click", () => closeCard())
-
-function hideCard() {
-    card.classList.toggle("closed");
-    cardContent.classList.toggle("invisible");
-}
 
 function closeCard() {
     card.classList.add("invisible");
