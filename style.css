@@ -42,8 +42,9 @@ h1 {
   text-align: center;
   font-family: var(--body-font-family);
   font-size: var(--h1-font-size);
-
   font-weight: var(--h1-font-weight);
+
+  margin: 1em 0;
 }
 h2 {
   font-family: var(--body-font-family);
@@ -143,7 +144,7 @@ button {
 }
 
 /*** Dynamic classes ***/
-.w, .close, .hide {
+.w, #lookup_card .button {
   cursor: pointer;
 }
 .w:hover {
@@ -188,22 +189,29 @@ span.verse_ref {
   align-items: center;
 }
 .w3-card-4 header h2 {
-  width: 80%; /* this combines with the 2 buttons of 10% width each */
+  width: calc(100% - 4.5em); /* this combines with the 2 buttons of 10% width each */
 }
-.w3-card-4 .button {
-  font-size: xx-large;
-  /* TODO: vertical alignm */
 
-  width: 10%; /* this combines with the h2 of 80% width*/
-}
-.hide, .close{
+#lookup_card .button {
   /* Button text cannot be selected */
   -webkit-user-select: none; /*Safari*/
   -ms-user-select: none; /*IE 10 and IE 11*/
   user-select: none; /*Standard syntax*/
+  display: inline-block;
+  width: 32px; /* this combines with the h2 of 70% width */
+  height: 32px;
+  line-height: 32px;
   text-align: center;
+  font-size: xx-large;
+  margin: 0 0.25em;
 }
-.close:hover, .hide:hover {
+#lookup_card .button.info {
+  font-size: x-large;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+#lookup_card .button:hover {
   background: #bbb;
 }
 .animate {
@@ -225,7 +233,18 @@ span.verse_ref {
 #comments > .comment {
   background-color: lightcyan;
   margin: 0.25em 0;
-  padding: 0.25em 0 0.25em 10%;
+  padding: 0.25em 0;
+  display: flex;
+  align-items: center;
+}
+
+.bookIcon {
+  width: 10%;
+  text-align: center;
+}
+
+.commentText {
+  width: 90%;
 }
 
 

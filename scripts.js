@@ -344,9 +344,23 @@ function loadDetailsToCard(parseData, principalPartData, genderData, glossData, 
         for (entry of commentaryData) {
             const commentaryElement = document.createElement("div");
             commentaryElement.classList.add("comment");
-            commentaryElement.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML
-            cardComments.append(commentaryElement)
-        }
+            fetch("./resources/book.svg")
+            .then(response => response.text())
+            .then(data => {
+                    let SVGContainer = document.createElement("span");
+                    SVGContainer.classList.add("bookIcon");
+                    commentaryElement.appendChild(SVGContainer);
+                    SVGContainer.innerHTML = data;
+                    commentText = document.createElement("span");
+                    commentText.classList.add("commentText");
+                    commentText.innerHTML = entry.getElementsByTagName("comment")[0].innerHTML;
+                    cardComments.append(commentaryElement);
+                    commentaryElement.appendChild(commentText);
+                })
+                .catch(error => {
+                    console.error("Error fetching SVG:", error);
+                })
+            }
     }
 }
 
