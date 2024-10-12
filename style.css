@@ -232,8 +232,8 @@ span.verse_ref {
   height: var(--button-size-regular);
 }
 
-#lookup_card .button:hover {
-  background: #bbb;
+#lookup_card .button:hover path {
+  stroke: black;
 }
 
 .animate {
