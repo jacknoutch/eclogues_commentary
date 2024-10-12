@@ -88,7 +88,7 @@ a[target="_blank"]::after {
   content: "↗";
 }
 .invisible { /* Simple invisibility class */
-  /* display: none; */
+  display: none;
   visibility: hidden;
 }
 .w3-bar {
@@ -203,8 +203,8 @@ span.verse_ref {
   display: flex;
   flex-direction: column;
   
-  padding: var(--space-600);
-  column-gap: var(--space-150);
+  padding: var(--space-300);
+  gap: var(--space-150);
   
   border-radius: 8px;
   border: 1px solid var(--border-color);
@@ -215,16 +215,19 @@ span.verse_ref {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
-  padding: 0 var(--space-300);
-  row-gap: var(--space-600);
+
+  margin: 0 var(--space-300);
+  gap: var(--space-300);
 }
 
 #lookup_card header h2 {
-  flex-basis: 75%;
+  flex: 1;
+  flex-shrink: 0;
 }
 
 #lookup_card .button {
+  flex-shrink: 0;
+
   width: var(--button-size-regular);
   height: var(--button-size-regular);
 }
@@ -248,17 +251,18 @@ span.verse_ref {
 #lookup_card_content {
   display: flex;
   flex-direction: column;
-  column-gap: var(--space-150);
+  gap: var(--space-150);
 }
 
-#grammar > div {
-  padding-left: 10%;
+#grammar {
+  margin: 0 var(--space-300);
+  padding-left: calc(var(--button-size-regular) + var(--space-300));
 }
 
 #comments {
   display: flex;
   flex-direction: column;
-  column-gap: var(--space-150);
+  gap: var(--space-150);
 }
 
 #comments > .comment {
@@ -266,8 +270,7 @@ span.verse_ref {
   flex-direction: row;
   align-items: flex-start;
 
-  margin: var(--space-150) 0;
-  padding: var(--space-300);
+  padding: var(--space-150) var(--space-300);
 
   background-color: var(--background-secondary-color);
   border-radius: 4px;
@@ -275,12 +278,12 @@ span.verse_ref {
 }
 
 .bookIcon {
-  width: 10%;
+  width: var(--button-size-regular);
   text-align: center;
 }
 
 .commentText {
-  width: 90%;
+  margin-left: var(--space-300);
 }
 
 
