@@ -147,9 +147,6 @@ img {
 .latin_text.currently_reading {
   display: inherit;
 }
-.margin_control {
-  /* margin-left: 1em; */
-}
 .line_number {
   color: #C00;
   font-size: 12px;
