@@ -114,12 +114,6 @@ body > .container {
   justify-items: center;
 }
 
-@media (min-width: 1000px) {
-  body > .container {
-    grid-template-columns: minmax(100px, 1fr) repeat(2, minmax(400px, 1fr));
-  }
-}
-
 #utility {
   /* ... */
 }
@@ -131,6 +125,8 @@ body > .container {
 #lookup {
   display: flex;
   flex-direction: column;
+
+  /* In mobile the lookup panel sticks to the window bottom. */
   position: fixed;
   bottom: 0;
 }
@@ -361,10 +357,7 @@ li {
 
 @media only screen and (min-width: 600px) {
   :root {
-    --body-font-size: 16px;
-  }
-  html, body {
-    font-size: 1em;
+    --body-font-size: 18px;
   }
   h1 {
     font-size: var(--h1-font-size);
@@ -377,26 +370,23 @@ li {
 
 /* For desktops */
 
-@media only screen and (min-width: 992px) {
-  html, body {
-    font-size: 1em;
-  }
-  .container {
-    justify-content: center;
+@media only screen and (min-width: 1000px) {
+  
+  body > .container {
+    grid-template-columns: minmax(100px, 1fr) repeat(2, minmax(400px, 1fr));
     padding: 0 1em;
   }
-  .panel {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  #utility {
-    display: inherit;
-  }
-  #reading {
-    min-width: 400px;
-  }
+
   #lookup {
-    position: inherit;
-    min-width: 400px;
+    width: 100%;
+    grid-column: span 1;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  body > .container {
+    grid-template-columns: repeat(3 1fr);
   }
 }
