@@ -115,7 +115,10 @@ async function makeWordsClickable() {
             updateCard(word);
             card.classList.remove("closed");
             cardContent.classList.remove("invisible");
-            word.scrollIntoView({ behavior: 'smooth' });
+            word.scrollIntoView({ 
+                behavior: "smooth",
+                block: "center",
+            });
         })
     });
 }
