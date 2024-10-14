@@ -42,6 +42,7 @@ html, body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
+  margin: 0;
 }
 
 h1, h2, button {
@@ -100,11 +101,16 @@ button:hover {
 /*** Layout ***/
 
 body > .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
 }
 
-.panel {
-  flex: 1;
+@media (min-width: 1000px) {
+  body > .container {
+    grid-template-columns: minmax(100px, 1fr) repeat(2, minmax(400px, 1fr));
+  }
 }
 
 footer {
@@ -115,21 +121,24 @@ footer p {
   text-align: center;
 }
 
+
+/*** Index Page ***/
+
 .subtitle {
   text-align: center;
 }
+
 img {
   max-width: 100%;
-}
-.invisible, #lookup_card.invisible { /* Simple invisibility class */
-  display: none;
 }
 
 .call_to_action {
   text-align: center;
 }
 
+
 /*** Classes only in the reading pages ***/
+
 #sectionNav {
   display: flex;
   justify-content: center;
@@ -177,6 +186,7 @@ img {
   margin: 0 auto;
   text-align: center;
 }
+
 .l {
   /* Lines of the poem cannot be selected */
   -webkit-user-select: none; /*Safari*/
@@ -231,6 +241,10 @@ span.verse_ref {
 }
 
 .undisplayed { /* for unused lines */
+  display: none;
+}
+
+.invisible, #lookup_card.invisible { /* Simple invisibility class */
   display: none;
 }
 
