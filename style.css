@@ -9,11 +9,13 @@
   --body-font-size: 16px;
   --body-line-height: 32.7px;
 
+  --h1-font-size-mobile: 32px;
   --h1-font-size: 48px;
   --h1-font-weight: 500;
   
+  --h2-font-size-mobile: 24px;
   --h2-font-size: 32px;
-  --h2-font-weight: var(var(--h1-font-weight));
+  --h2-font-weight: var(--h1-font-weight);
 
   --verse-max-width: 392px;
 
@@ -44,10 +46,6 @@ html, body {
 nav {
   /* ... */
 }
-.container.w3-row {
-  padding-left: 1em;
-  padding-right: 1em;
-}
 footer {
   justify-content: center;
 }
@@ -57,15 +55,13 @@ footer p {
 h1 {
   text-align: center;
   font-family: var(--body-font-family);
-  font-size: var(--h1-font-size);
+  font-size: var(--h1-font-size-mobile);
   font-weight: var(--h1-font-weight);
-
-  margin: 1em 0;
 }
 h2 {
   font-family: var(--body-font-family);
-  font-size: var(--h2-font-size);
-  font-weight: var(h2-font-weight);
+  font-size: var(--h2-font-size-mobile);
+  font-weight: var(--h2-font-weight);
 }
 .subtitle {
   text-align: center;
@@ -87,9 +83,8 @@ a:hover {
 a[target="_blank"]::after {
   content: "↗";
 }
-.invisible { /* Simple invisibility class */
+.invisible, #lookup_card.invisible { /* Simple invisibility class */
   display: none;
-  visibility: hidden;
 }
 .w3-bar {
   display: flex;
@@ -107,12 +102,13 @@ button {
 }
 .latin_text {
   display: none;
+  padding: 0 1em;
 }
 .latin_text.currently_reading {
   display: inherit;
 }
 .margin_control {
-  margin-left: 1em;
+  /* margin-left: 1em; */
 }
 .line_number {
   color: #C00;
@@ -128,10 +124,10 @@ button {
 }
 #utility {
   /* ... */
+  padding: 0 1em;
 }
 #reading {
   min-height: 100%;
-  margin-bottom: 2em;
 }
 #lookup {
   display: flex;
@@ -142,8 +138,9 @@ button {
 }
 .speaker {
   font-variant: small-caps;
-  margin: 0 auto;
   max-width: var(--verse-max-width);
+  margin: 0 auto;
+  text-align: center;
 }
 .undisplayed { /* for unused lines */
   display: none;
@@ -156,8 +153,8 @@ button {
   -webkit-user-select: none; /*Safari*/
   -ms-user-select: none; /*IE 10 and IE 11*/
   user-select: none; /*Standard syntax*/
-  /* padding-left: 20px; */
-  /* text-indent: -20px; */
+  padding-left: 3em;
+  text-indent: -3em;
   max-width: var(--verse-max-width);
   margin: 0 auto;
 }
@@ -208,6 +205,8 @@ span.verse_ref {
   
   border-radius: 8px;
   border: 1px solid var(--border-color);
+
+  background-color: white;
 }
 
 #lookup_card header {
@@ -314,8 +313,8 @@ li {
     font-size: 1em;
   }
   .container {
-    /* display: flex; */
     justify-content: center;
+    padding: 0 1em;
   }
   .panel {
     padding-left: 1em;
