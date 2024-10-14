@@ -109,11 +109,16 @@ async function makeWordsClickable() {
     words = await spanAllWords()
     words.forEach(word => {
         word.addEventListener("click", () => {
+            card.classList.add("invisible");
             clearFocus();
             word.classList.toggle("focus");
             updateCard(word);
             card.classList.remove("closed");
             cardContent.classList.remove("invisible");
+            word.scrollIntoView({ 
+                behavior: "smooth",
+                block: "center",
+            });
         })
     });
 }
@@ -172,9 +177,9 @@ makeWordsClickable();
 // Cards
 
 async function updateCard(word) { // word is an element
+    handleFetchStart();
     cardTitle.innerHTML = word.innerHTML;
-    card.classList.remove("invisible");
-
+    
     const requests = [
         fetch(lemmatiserPath),
         fetch(lexiconPath),
@@ -190,20 +195,22 @@ async function updateCard(word) { // word is an element
 
 function loadDetails(wordElement, xmlFiles) {
     clearCard();
-
+    
     const parser = new DOMParser();
     const [lemmatiser, lexicon, commentary] = xmlFiles.map(
         (file) => parser.parseFromString(file, "text/xml"));
 
-    const xmlWord = getWordFromXML(lemmatiser, wordElement);
-    const lemma = loadLemma(xmlWord);
-    const parseData = loadParseData(xmlWord);
-    const principalPartData = loadPrincipalPartData(lemma, lexicon)
-    const genderData = loadGenderData(lemma, lexicon);
-    const glossData = loadGlossData(lemma, lexicon);
-    const commentaryData = loadCommentaryData(wordElement, commentary);
-    
+        const xmlWord = getWordFromXML(lemmatiser, wordElement);
+        const lemma = loadLemma(xmlWord);
+        const parseData = loadParseData(xmlWord);
+        const principalPartData = loadPrincipalPartData(lemma, lexicon)
+        const genderData = loadGenderData(lemma, lexicon);
+        const glossData = loadGlossData(lemma, lexicon);
+        const commentaryData = loadCommentaryData(wordElement, commentary);
+        
     loadDetailsToCard(parseData, principalPartData, genderData, glossData, commentaryData);
+    card.classList.remove("invisible");
+    handleFetchEnd();
 }
 
 function loadLemma(xmlWord) {
@@ -591,4 +598,8 @@ function clearFocus() {
 
 function refer(arg) {
     console.log("refer:" + arg)
+}
+
+function scrollTo(word) {
+
 }
