@@ -374,13 +374,20 @@ function loadDetailsToCard(parseData, principalPartData, genderData, glossData, 
                     SVGContainer.innerHTML = data;
 
                     // Create the text element
+                    newPara = document.createElement("p");
+                    quotationText = document.createElement("span");
+                    quotationText.classList.add("lt");
+                    quotationText.innerHTML = entry.querySelector("text").innerHTML + ": ";
+
                     commentText = document.createElement("span");
                     commentText.classList.add("commentText");
                     commentText.innerHTML = entry.querySelector("comment").innerHTML;
 
                     // Insert the new elements
                     commentaryElement.append(SVGContainer);
-                    commentaryElement.appendChild(commentText);
+                    newPara.appendChild(quotationText);
+                    newPara.appendChild(commentText);
+                    commentaryElement.append(newPara);
                     cardComments.append(commentaryElement);
                 })
                 .catch(error => console.log("Error fetching SVG: ", error));
@@ -609,8 +616,4 @@ function clearFocus() {
 
 function refer(arg) {
     console.log("refer:" + arg)
-}
-
-function scrollTo(word) {
-
 }
