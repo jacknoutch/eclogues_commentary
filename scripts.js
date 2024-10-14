@@ -26,6 +26,10 @@ const cardGloss = card.querySelector("#gloss");
 const cardParsing = card.querySelector("#parsing");
 const cardComments = card.querySelector("#comments");
 
+const infoButton = card.querySelector(".button.info");
+
+let currentLemma = "";
+
 //
 
 nextSectionButton.addEventListener("click", () => nextSection() );
@@ -115,10 +119,12 @@ async function makeWordsClickable() {
             updateCard(word);
             card.classList.remove("closed");
             cardContent.classList.remove("invisible");
+
             word.scrollIntoView({ 
                 behavior: "smooth",
                 block: "center",
             });
+
         })
     });
 }
@@ -176,6 +182,10 @@ makeWordsClickable();
 
 // Cards
 
+infoButton.addEventListener("click",() => {
+    window.location.href = `https://logeion.uchicago.edu/${currentLemma}`
+});
+
 async function updateCard(word) { // word is an element
     handleFetchStart();
     cardTitle.innerHTML = word.innerHTML;
@@ -202,6 +212,7 @@ function loadDetails(wordElement, xmlFiles) {
 
         const xmlWord = getWordFromXML(lemmatiser, wordElement);
         const lemma = loadLemma(xmlWord);
+        currentLemma = lemma;
         const parseData = loadParseData(xmlWord);
         const principalPartData = loadPrincipalPartData(lemma, lexicon)
         const genderData = loadGenderData(lemma, lexicon);
