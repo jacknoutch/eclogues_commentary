@@ -28,6 +28,7 @@
 
   --full-red: #C00;
   --bright-red: #F33;
+  --black: #000;
   --white: #FFF;
 
 
@@ -43,7 +44,7 @@
 
 /* For mobile phones */
 
-/*** Text ***/
+/*** HTML tags ***/
 
 html, body {
   font-family: var(--body-font-family);
@@ -102,6 +103,13 @@ button {
 button:hover {
   background-color: var(--background-secondary-color);
   cursor: pointer;
+}
+
+ul {
+  padding: 0px;
+}
+li {
+  list-style: none;
 }
 
 
@@ -240,6 +248,10 @@ img {
   display: none;
 }
 
+.lt {
+  font-style: italic;
+}
+
 
 /* Utility classes */
 #loading {
@@ -260,6 +272,18 @@ img {
   background-color: white;
 
   max-height: 40vh;
+}
+
+.animate {
+  animation-duration: 0.25s;
+  animation-name: animate-fade;
+  animation-delay: 0.25s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #lookup_card header {
@@ -287,19 +311,7 @@ img {
 }
 
 #lookup_card .button:hover path {
-  stroke: black;
-}
-
-.animate {
-  animation-duration: 0.25s;
-  animation-name: animate-fade;
-  animation-delay: 0.25s;
-  animation-fill-mode: backwards;
-}
-
-@keyframes animate-fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  stroke: var(--black);
 }
 
 #lookup_card_content {
@@ -330,7 +342,6 @@ img {
 
   background-color: var(--background-secondary-color);
   border-radius: 4px;
-
 }
 
 .bookIcon {
@@ -340,17 +351,6 @@ img {
 
 .commentText {
   margin-left: var(--space-300);
-}
-
-.lt {
-  font-style: italic;
-}
-
-ul {
-  padding: 0px;
-}
-li {
-  list-style: none;
 }
 
 /* For tablets */
@@ -381,6 +381,10 @@ li {
     width: 100%;
     grid-column: span 1;
     position: relative;
+  }
+
+  #lookup_card {
+    max-height: fit-content;
   }
 }
 
