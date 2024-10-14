@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+
+    <entry>
+        <references>1.1--1.5</references>
+        <comment>Meliboeus. You lie at ease and sing of your love: I am driven into exile.</comment>
+    </entry>
+    <entry>
+        <text>silvestrem musam</text>
+        <references>1.2.1, 1.2.3</references>
+        <comment>'woodland song', the woodland being the forest pasture where the shepherds feed their
+        flocks.</comment>
+    </entry>
+    <entry>
+        <text>tenui avena</text>
+        <references>1.2.2, 1.2.5</references>
+        <comment>'the slender oat', i.e. the rustic pipe. (So the English pastoral poets speak of 'oaten
+        stop', 'oaten pipe'.)</comment>
+    </entry>
+    <entry>
+        <text>tu, Tityre</text>
+        <references>1.4.4--1.4.5</references>
+        <comment>Notice the pretty artifice, whereby he begins and ends with Tityrus.</comment>
+    </entry>
+    <entry>
+        <text>lentus</text>
+        <references>1.4.6</references>
+        <comment>'at ease'</comment>
+    </entry>
+    <entry>
+        <text>deus</text>
+        <references>1.6.3</references>
+        <comment>
+            <span class="lt">deus</span> is Octavianus. To speak of Octavianus as a god to whom lambs will be sacrificed is
+        at this date probably only a half playful exaggeration; but afterwards of course the emperor
+        Augustus was regularly deified, and even in the Georgics (I. 34) Vergil speaks of the signs
+        of the Zodiac crowding up to make room for Augustus. The sacrifice is further explained (43)
+        as being 12 days every year, evidently referring to the offerings on the first of every
+        month to the household gods or Lares.</comment>
+    </entry>
+    <entry>
+        <text>meas errare boves permisit</text>
+        <references>1.9.2--1.9.4, 1.10.5</references>
+        <comment>
+            <span class="lt">meas errare boves permisit</span>, unusual poetic construction, acc. inf. after <span class="lt">permitto</span>: the
+        ordinary prose constr. is <span class="lt">ut</span> and subj. <span class="lt">ludo</span>, often used half modestly for poetry: <span class="lt">
+            carmina
+            qui lusi pastorum
+            </span> Georg. IV. 567; <span class="lt">iuvenilia lusi</span> Ov. Trist. v. 1, 7.</comment>
+    </entry>
+    <entry>
+        <text>formosam resonare doces Amaryllida siluas</text>
+        <references>1.5.1--1.5.5</references>
+        <comment>'teach the woodland to reecho the fair Amaryllis', i.e. the shepherd sings or calls
+        upon his love, and the woods reecho the name.</comment>
+    </entry>
+    <entry>
+        <text>Amayillida</text>
+        <references>1.5.4</references>
+        <comment>The acc. <span class="lt">Amaryllida</span> is a kind of internal or extended cognate like <span class="lt">
+            agere Antiopen,
+            saltare Cyclopa, vox hominem sonat.
+            </span>
+        </comment>
+    </entry>
+    <entry>
+        <references>1.6--1.10</references>
+        <comment>6–10. Tit. Thanks to him to whom I shall always sacrifice as a god.</comment>
+    </entry>
+    <entry>
+        <references>1.11--1.19</references>
+        <comment>Mel. I don't grudge it. There is trouble all over; I am tired, sick, driving my goats,
+        one lately a mother: I ought to have known what that thunder meant!</comment>
+    </entry>
+    <entry>
+        <text>usque adeo turbatur</text>
+        <references>1.12.1--1.12.3</references>
+        <comment>12. usque<span class="lt"> adeo </span>turbatur, 'such trouble there is', impers. pass. He is speaking of the
+        suffering and confusion caused by the confiscation of the lands and allotment to the
+        veterans. See introduction.
+
+        The poor Meliboeus then (with a touch of dramatic pathos) laments his own troubles: he has
+        to go on and on (<span class="lt">protenus</span>): he is sick and tired (<span class="lt">aeger</span>): one of his she goats he can hardly
+        pull by a cord (<span class="lt">duco vix</span>) having left the new-born twin kids on the hard stones (<span class="lt">silice</span>).
+        Then with rustic superstition he adds 'he might have known the coming trouble, from seeing
+        the oaks struck by lightning'.</comment>
+    </entry>
+    <entry>
+        <text>protenus</text>
+        <references>1.13.1</references>
+        <comment>
+            <span class="lt">protenus</span>, 'on and on': expressing his weariness.</comment>
+    </entry>
+    <entry>
+        <text>1.14.1--1.15.8</text>
+        <references></references>
+        <comment>The goat had given birth to (<span class="lt">conixa</span> 'travailed' for the commoner <span class="lt">enixa</span>) two kids among
+        the nut bushes on the stony soil. There is a touch of pity in a <span class="lt">silice in nuda</span>; the little
+        things had to die, as they must be left behind: but they might at least have had soft moss
+        or grass to die on!</comment>
+    </entry>
+    <entry>
+        <text>si mens non laeva fuisset</text>
+        <references>1.16.5--1.16.9</references>
+        <comment>
+            <span class="lt">si mens non laeva fuisset</span>, elliptical use of the conditional common in all
+        colloquial speech: he means 'I remember the prophecy and might have expected this misfortune
+        had I not been blind'.</comment>
+    </entry>
+    <entry>
+        <text>de caelo tactas</text>
+        <references>1.17.1--1.17.3</references>
+        <comment>
+            <span class="lt">de caelo tactas</span>, 'struck from heaven', picturesque (perhaps augurial) phrase for
+        lightning. Old authorities tell us that the striking of different trees portended different
+        misfortunes, the oak being a sign of exile.
+            <span class="lt">memini praedicere</span>, 'I remember that they foretold', the pres. inf. being the regular idiom
+        when the thing remembered is part of the person's own experience, as here.
+        </comment>
+    </entry>
+    <entry>
+        <text>da</text>
+        <references>1.19.7</references>
+        <comment>
+            <span class="lt">da</span>, 'tell': just as <span class="lt">accipio</span> is used both in prose and poetry for 'hear'.</comment>
+    </entry>
+    <entry>
+        <references>1.19</references>
+        <comment>[Before this line a spurious verse '<span class="lt">saepe sinistra cava praedixit ab ilice cornix</span>' has
+        got into the text from IX. 15.]</comment>
+    </entry>
+    <entry>
+        <references>1.20--1.26</references>
+        <comment>[20–26. Tit. I used to think Rome a small town like ours: it is quite big.]</comment>
+    </entry>
+    <entry>
+        <text>1.20.1--1.20.6</text>
+        <references></references>
+        <comment>The dramatic colour is kept up. Tityrus tells his story in a roundabout rustic
+        style.</comment>
+    </entry>
+    <entry>
+        <text>huic nostrae</text>
+        <references>1.21.3--1.21.4</references>
+        <comment>
+            <span class="lt">huic nostrae</span>, Mantua, near which (at the village of Andes) was Vergil's home.</comment>
+    </entry>
+    <entry>
+        <text>depellere</text>
+        <references>1.22.4</references>
+        <comment>
+            <span class="lt">depellere</span>, 'drive down' to 'our town' Mantua.</comment>
+    </entry>
+    <entry>
+        <text>sic canibus catulos similis, sic matribus haedos</text>
+        <references>1.23.1--1.23-7</references>
+        <comment>i.e. I thought Mantua was to Rome just as kids are to goats, puppies to dogs, or
+        any other little things to big ones.</comment>
+    </entry>
+    <entry>
+        <text>lenta... uiburna</text>
+        <references>1.26.2, 1.26.5</references>
+        <comment>
+            <span class="lt">lenta viburna</span>, 'pliant osiers'.</comment>
+    </entry>
+    <entry>
+        <references>1.27--1.36</references>
+        <comment>[27–36. M. What took you to Rome? Tit. To get freedom, now that I have left Galatea and
+        love Amaryllis.]</comment>
+    </entry>
+    <entry>
+        <text>Libertas; quae sera, tamen respexit inertem</text>
+        <references>1.28.1--1.28.6</references>
+        <comment>'Freedom, which though late has cast her eyes upon the sluggard'. A slave might buy his
+        freedom: but as long as he was bound to his first love Galatea, he was slow (<span class="lt">iners</span>) to buy
+        it, for all his savings were squandered. Now he has a new love Amaryllis, evidently more
+        thrifty: so he has saved up and been to Rome to buy his freedom.
+            <span class="lt">sera tamen respexit</span>, abridged neat phrase (like the Greek use with ὅμως) for 'though late,
+        yet has looked upon me'.
+        </comment>
+    </entry>
+    <entry>
+        <text>postquam... cadebat</text>
+        <references>1.29.2, 1.29.5</references>
+        <comment>
+            <span class="lt">postquam</span>, with imperfect (or present, 31) in its proper precise use, dating the
+        beginning of the new habit or state of things.</comment>
+    </entry>
+    <entry>
+        <text>peculi</text>
+        <references>1.33.7</references>
+        <comment>
+            <span class="lt">peculi</span>, slaves were allowed to have private money, called <span class="lt">peculium</span>. They were also
+        allowed to marry, (though not a legal recognised conubium): but Vergil is here thinking less
+        of the life of Roman slaves and more of the free loves of Sicilian shepherds.</comment>
+    </entry>
+    <entry>
+        <text>pinguis</text>
+        <references>1.35.1</references>
+        <comment>
+            <span class="lt">pinguis</span>, 'rich': perhaps what we call cream-cheese; anyhow good of its kind.
+        ingratae, playful indignation: the city did not pay him as much as he wanted for his
+        cheeses.
+        </comment>
+    </entry>
+    <entry>
+        <references>1.37--1.46</references>
+        <comment>[37–46. M. I wondered why Amaryllis was so sad. Tit. I had to go. At Rome I saw the
+        youth who gave me leave to stay on my land.]</comment>
+    </entry>
+    <entry>
+        <references>1.37--1.38</references>
+        <comment>Mel. playfully apostrophises the absent Amaryllis, who, in her sorrow for having to
+        part from Tityrus, calls on the gods and leaves her apples ungathered.</comment>
+    </entry>
+    <entry>
+        <references>1.39--1.40</references>
+        <comment>He tells Tityrus, with playful exaggeration, that not Amaryllis only, but the
+        very springs and trees regretted his absence.</comment>
+    </entry>
+    <entry>
+        <text>aberat</text>
+        <references>1.39.3</references>
+        <comment>
+            <span class="lt">aberat</span>, a long. The <span class="lt">-at</span> of imperf. was originally long, and Vergil occasionally
+        uses it so (tho' usually in a pause) from fondness for archaic forms. Ennius has '<span class="lt">ponebat
+            ante salutem</span>': Plautus has it long. So G. IV. 137, A. V. 853, VII. 174 &amp;c.</comment>
+    </entry>
+    <entry>
+        <text>quid facerem?</text>
+        <references>1.41.1--1.41.2</references>
+        <comment>
+            <span class="lt">quid facerem?</span> past deliberative: 'what was I to do?'</comment>
+    </entry>
+    <entry>
+        <text>praesentis</text>
+        <references>1.42.3</references>
+        <comment>
+            <span class="lt">praesentes</span>, idiomatically used, with gods, to mean 'powerful'. e.g. <span class="lt">
+            praesentia numina
+            Fauni
+            </span> G. I. 10, <span class="lt">si quid praesentius audes</span> A. XII. 152, <span class="lt">praesentius auxilium</span> G. II. 127.
+            <span class="lt">alibi</span> goes with both clauses, the sense being 'I had to go to Rome, for nowhere else could I
+        either &amp;c.'
+        </comment>
+    </entry>
+    <entry>
+        <text>iuvenem</text>
+        <references>1.43.4</references>
+        <comment>
+            <span class="lt">iuvenem</span>, Octavianus: the figure—the shepherd buying his freedom—is inextricably
+        mixed up with the thing figured—the poet receiving his lands back from Augustus. The slave
+        goes to Rome to buy his freedom; but when he gets there he sees not his master but Augustus;
+        and instead of buying his freedom he receives permission not to leave his home.</comment>
+    </entry>
+    <entry>
+        <text>submittite</text>
+        <references>1.46.6</references>
+        <comment>
+            <span class="lt">submittite</span>, 'rear', the regular word, cf. Georg. III. 75, <span class="lt">
+            in spem submittere
+            gentis
+            </span>.
+        </comment>
+    </entry>
+    <entry>
+        <references>1.47--1.59</references>
+        <comment>[47–59. M. Happy man, you will keep your farm, and, poor tho' the land be, you will be
+        happy in the familiar life, the sights and sounds of the country.]</comment>
+    </entry>
+    <entry>
+        <references>1.48</references>
+        <comment>The sense is:—
+        48. 'Tho' the bare rock mars all your pasture, and the swamp covers them with the muddy
+        rush', obducat being more appropriate to the last sentence, in which it occurs—the figure
+        zeugma.
+        </comment>
+    </entry>
+    <entry>
+        <text>graves... fetas</text>
+        <references>1.50.3, 1.50.6</references>
+        <comment>graves fetas, 'the pregnant ewes'.
+        [fetus also means 'having given birth' and some take it so here translating graves
+        'weakly' 'slow': but the other is the proper meaning of gravis, and fetus too. So A. 11.
+        237, <span class="lt">machina feta armis</span>, of the wooden horse with soldiers inside.]
+        </comment>
+    </entry>
+    <entry>
+        <references>1.52--1.59</references>
+        <comment>This pretty passage shews well Vergil's inborn love of the country.</comment>
+    </entry>
+    <entry>
+        <text>frigus... opacum</text>
+        <references>1.53.4, 1.53.6
+        </references>
+        <comment>
+            <span class="lt">frigus opacum</span>, 'the cool shade'; sacros, as every spring or rill had its god, or
+        nymph.</comment>
+    </entry>
+    <entry>
+        <text>quae semper</text>
+        <references>1.54.3--1.54.4</references>
+        <comment>
+            <span class="lt">quae semper</span>, 'as ever', 'as of old', <span class="lt">ab limite</span>, 'on the border', like span.lt.</comment>
+    </entry>
+    <entry>
+        <text>Hyblaeis apibus florem depasta salicti</text>
+        <references>1.55.1--1.55.5</references>
+        <comment>'its willow blossom rifled by the Hyblaean bees'.
+            <span class="lt">Hyblaeis</span>, the bees of Hybla in Sicily were famous, and this is what is called the
+        'literary' use of epithets: wine is called 'Massic' or 'Falernian', marble is 'Parian', the
+        arrow is 'Cydonian', the bow is 'Parthian', &amp;c. not so much to specify the kind, as to
+        remind the reader of the Greek poets who speak of them.        
+            <span class="lt">florem depasta</span>, might be acc. of respect; but considering Vergil's usage, it is much more
+        probably the Greek use of acc. of the object after the perf. passive, really an elastic
+        extension of the active construction to the passive voice.
+        Thus the Greeks say:
+        Active
+        ἐπιτρέπω σοὶ τὴν ἀρχήν
+        ἐγγράφω τῇ δέλτῳ ξυνθήματα
+        Passive
+        ἐπιτέτραψαι τὴν ἀρχήν
+        δέλτος ἐγγεγραμμένη ξυνθήματα
+        This usage the Roman poets imitated, as well as the acc. after the middle, which they very
+        likely did not distinguish from the other. Other instances of the acc. after passive are
+            <span class="lt">fusus barbam</span> A. X. 838: <span class="lt">inscripti nomina regum</span> Ecl. ΙΙΙ. 106: <span class="lt">per pedes traiectus lora</span> A.
+        ΙΙ. 272: <span class="lt">caesariem effusae</span> G. IV. 337: <span class="lt">caeruleos implexae crinibus angues</span> G. IV. 482.
+        </comment>
+    </entry>
+    <entry>
+        <references>1.56</references>
+        <comment>
+        56. Notice the soothing whispering sound, produced by the sibilants and liquids, to imitate
+        or suggest the thing described. So Tennyson's famous lines in the Princess:
+        'The moan of doves in immemorial elm
+        and murmur of innumerable bees.'
+        </comment>
+    </entry>
+    <entry>
+        <text>frondator</text>
+        <references>1.57.6</references>
+        <comment>
+            <span class="lt">frondator</span>, the 'pruner' or 'dresser' had much to do, we are told in Georg. II.
+        397—419: he clipped the bushes and willows, 'leafed' the elms to let the sun in on the
+        grapes, pruned the vines, and plucked leaves for fodder.</comment>
+    </entry>
+    <entry>
+        <text>palumbes</text>
+        <references>1.58.7</references>
+        <comment>
+            <span class="lt">palumbes</span>. Mr Fowler, in his careful chapter on the Birds of Vergil, identifies
+        the <span class="lt">palumbes</span> with two species, the wood-pigeon and the stock-dove: 'Perhaps the stock-dove
+        is the more likely of the two to have been the bird generally meant: but it is quite
+        possible that Romans confounded the two species' (A year with the birds, p. 115).</comment>
+    </entry>
+    <entry>
+        <text>turtur</text>
+        <references>1.59.5</references>
+        <comment>
+            <span class="lt">turtur</span> is the turtle-dove: 'it is still found in small numbers passing the summer
+        and breeding in Italy, and is most frequent in the subalpine region of which Vergil is here
+        writing' (ib. p. 113).</comment>
+    </entry>
+    <entry>
+        <references>1.60--1.64</references>
+        <comment>[60–64. Tit. Beasts shall leave their element, and barbarians their home, ere I forget
+        Octavianus.]</comment>
+    </entry>
+    <entry>
+        <text>perratis amborum finibus</text>
+        <references>1.62.2--1.62.4</references>
+        <comment>
+            <span class="lt">perratis amborum finibus</span>, 'roaming each o'er the other's lands', phrase slightly
+        strained, but meaning clear. The Parthian shall wander to the German frontier, the German to
+        Parthia.</comment>
+    </entry>
+    <entry>
+        <text>Ararim</text>
+        <references>1.63.2</references>
+        <comment>The Arar (Saône) rises in the Vosges mountains in the E. of France, on the borders
+        of Germany.</comment>
+    </entry>
+    <entry>
+        <text>labatur</text>
+        <references>1.64.4</references>
+        <comment>
+            <span class="lt">labatur</span>, common subj. with <span class="lt">antequam</span>, of anything which is prevented.</comment>
+    </entry>
+    <entry>
+        <references>1.65--1.84</references>
+        <comment>[65–end. M. I shall go to the ends of the earth: shall I ever see my poor home again? a
+        brutal soldier perhaps in possession! this is the result of civil war. Farewell: poor goats,
+        come away! Tit. You might at least stay one more night and feast with me.]</comment>
+    </entry>
+    <entry>
+        <references>1.65--1.67</references>
+        <comment>65–67. We shall be scattered to the ends of the earth, some here, some there.</comment>
+    </entry>
+    <entry>
+        <text>Oaxen</text>
+        <references>1.66.7</references>
+        <comment>The Oaxes of Crete is not known as a river, but there is a town called Axus or Oaxus,
+        and Vergil's river is doubtless named from this.
+        There is no need to suspect or emend the reading.
+        </comment>
+    </entry>
+    <entry>
+        <text>Britannos</text>
+        <references>1.67.6</references>
+        <comment>The Britons are 'parted far from all the world' as being the most northerly country
+        then known, and often proverbially mentioned as remote.</comment>
+    </entry>
+    <entry>
+        <text>post aliquot mea regna uidens mirabor aristas?</text>
+        <references>1.70.1--1.70.7</references>
+        <comment>'At last behold with wonder a few scant ears, my realm of old'. <span class="lt">post</span> resumes <span class="lt">
+            longo post
+            tempore: regna
+            </span> is playfully pathetic exaggeration for the poor farm he loved: <span class="lt">aliquot</span>,
+        either because the land is poor, or because he thinks the new possessor (a soldier) will
+        spoil by ignorance and carelessness his land.
+        This is the best way of taking a rather artificially expressed and obscure line.
+        </comment>
+    </entry>
+    <entry>
+        <text>impius... miles...</text>
+        <references>1.71--1.72</references>
+        <comment>
+            <span class="lt">impius… miles</span> and <span class="lt">discordia cives</span> shew that he traces all this misery to the
+        wicked civil wars of recent years.</comment>
+    </entry>
+    <entry>
+        <text>his</text>
+        <references>1.73.3</references>
+        <comment>
+            <span class="lt">his</span>, indignant, 'is it for these?"</comment>
+    </entry>
+    <entry>
+        <text>pendere</text>
+        <references>1.77.2</references>
+        <comment>
+            <span class="lt">pendere</span>, 'leaning', vividly describes the goat perched on its ledge and reaching
+        out to browse.</comment>
+    </entry>
+    <entry>
+        <text>cytisus</text>
+        <references>1.79.2</references>
+        <comment>
+            <span class="lt">cytisus</span>, 'lucerne' or shrubby clover.</comment>
+    </entry>
+    <entry>
+        <text>poteras</text>
+        <references>1.80.5</references>
+        <comment>
+            <span class="lt">poteras</span>, he means 'you can': but the past is one of the delicacies of speech
+        putting the offer as tho' the other's resolve was taken: 'you might have rested...'.</comment>
+    </entry>
+</root>

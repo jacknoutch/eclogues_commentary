@@ -1,8 +1,10 @@
+// Global variables
+
 // Paths for resources
 
 const lemmatiserPath = "resources/eclogue1LR.xml";
 const lexiconPath = "resources/glosses.xml";
-const commentaryPath = "resources/commentarynotes.xml";
+const commentaryPath = "resources/commentary.xml";
 
 // Sections and their buttons
 
@@ -11,6 +13,24 @@ const nextSectionButton = document.querySelector("#next");
 const previousSectionButton = document.querySelector("#previous");
 
 let currentSection = 0;
+
+// The card
+
+const card = document.getElementById("lookup_card");
+const card_close = card.querySelector(".close")
+
+const cardTitle = card.querySelector(".title");
+const cardContent = card.querySelector("#lookup_card_content");
+const cardPrincipalParts = card.querySelector("#principalParts");
+const cardGloss = card.querySelector("#gloss");
+const cardParsing = card.querySelector("#parsing");
+const cardComments = card.querySelector("#comments");
+
+const infoButton = card.querySelector(".button.info");
+
+let currentLemma = "";
+
+//
 
 nextSectionButton.addEventListener("click", () => nextSection() );
 previousSectionButton.addEventListener("click", () => previousSection() );
@@ -40,6 +60,8 @@ function previousSection() {
 }
 
 function setSectionNavButtons() {
+    closeCard()
+
     if (currentSection == 0) { // first section is displayed
         previousSectionButton.classList.add("invisible");        
     }
@@ -91,11 +113,18 @@ async function makeWordsClickable() {
     words = await spanAllWords()
     words.forEach(word => {
         word.addEventListener("click", () => {
+            card.classList.add("invisible");
             clearFocus();
             word.classList.toggle("focus");
             updateCard(word);
             card.classList.remove("closed");
             cardContent.classList.remove("invisible");
+
+            word.scrollIntoView({ 
+                behavior: "smooth",
+                block: "center",
+            });
+
         })
     });
 }
@@ -106,16 +135,21 @@ async function spanAllWords() {
     // This regex splits a line into words, punctuation, and white space; mecum, tecum, secum, nobiscum and vobiscum are split into pronoun and enclitic
     const spanWordsRegex = new RegExp(/([mts]e|[nv]obis)(?=cum)|\p{L}+|[^\p{L}]+/gu);
 
-    // Wrap a <span> around each match
-    $(".l").each((index, value) => {
-        const matches = $(value).text().match(spanWordsRegex);
-        for (let i = 0; i < matches.length; i++) {
-            if (/\w+/.test(matches[i])) { // Wrap only the regex matches that are words
-                matches[i] = "<span class='w'>" + matches[i] + "</span>" 
+    const lines = document.querySelectorAll(".line_text");
+    lines.forEach(line => {
+        const matches = line.textContent.match(spanWordsRegex); 
+        let text = "";
+        
+        // Wrap a <span> around each match which is not a number
+        matches.forEach(match => {
+            if (/\w+/.test(match)) {
+                match = `<span class='w'>${match}</span>`
             }
-            let text = matches.join("");
-            $(value).html(text);
-        }
+            text += match;
+        });
+
+        // Insert the new spanned word into the line
+        line.innerHTML = text;
     });
 
     // So far the enclitic -que is not separated from the word it is attached to.
@@ -139,34 +173,28 @@ async function spanAllWords() {
         queSpan.replaceWith(newHTML);
     });
 
-    addLineNumbers() // required here since there is an ajax call on which it is dependent
-
     return document.querySelectorAll(".w")
 
 }
 
-makeWordsClickable()
+revealNthLineNumbers(5);
+makeWordsClickable();
 
 // Cards
 
-const card = document.getElementById("lookup_card");
-const card_hide = card.querySelector(".hide")
-const card_close = card.querySelector(".close")
-
-const cardTitle = card.querySelector(".title");
-const cardInfo = card.querySelector(".grammar ul");
-const cardContent = card.querySelector("#lookup_card_content")
+infoButton.addEventListener("click",() => {
+    window.location.href = `https://logeion.uchicago.edu/${currentLemma}`
+});
 
 async function updateCard(word) { // word is an element
-    console.log(word)
+    handleFetchStart();
     cardTitle.innerHTML = word.innerHTML;
-    card.classList.remove("invisible");
-
+    
     const requests = [
         fetch(lemmatiserPath),
         fetch(lexiconPath),
         fetch(commentaryPath)
-    ]
+    ] // TODO: why is this called every time cardUpdate is called?
 
     Promise.all(requests)
         .then((responses) => Promise.all(responses.map((r) => r.text())))
@@ -177,100 +205,240 @@ async function updateCard(word) { // word is an element
 
 function loadDetails(wordElement, xmlFiles) {
     clearCard();
-
+    
     const parser = new DOMParser();
     const [lemmatiser, lexicon, commentary] = xmlFiles.map(
         (file) => parser.parseFromString(file, "text/xml"));
-    
-    const word = getWordFromXML(lemmatiser, wordElement);
-    const lemma = word.attributes.getNamedItem("lemma").nodeValue;
-    
-    const entry = lexicon.querySelector("entry[n='"+lemma+"']");
-    console.log(entry)
-    
-    // the principal parts
-    let principalParts = entry.querySelector("pp")
-    let gender = entry.querySelector("gen");
-    if (principalParts != null && gender != null) {
-        principalParts = principalParts.innerHTML;
-        gender = gender.innerHTML;
+
+        const xmlWord = getWordFromXML(lemmatiser, wordElement);
+        const lemma = loadLemma(xmlWord);
+        currentLemma = lemma;
+        const parseData = loadParseData(xmlWord);
+        const principalPartData = loadPrincipalPartData(lemma, lexicon)
+        const genderData = loadGenderData(lemma, lexicon);
+        const glossData = loadGlossData(lemma, lexicon);
+        const commentaryData = loadCommentaryData(wordElement, commentary);
         
-        const principalPartsElement = document.createElement("li");
-        principalPartsElement.innerHTML = [principalParts, gender].join(", ");
-    
-        cardInfo.append(principalPartsElement);
-    }
+    loadDetailsToCard(parseData, principalPartData, genderData, glossData, commentaryData);
+    card.classList.remove("invisible");
+    handleFetchEnd();
+}
 
-    // the gloss
-    const glossElement = document.createElement("li");
-    glossElement.innerHTML = entry.querySelector("gloss").innerHTML;
+function loadLemma(xmlWord) {
+    return xmlWord.attributes.getNamedItem("lemma").nodeValue;
+}
 
-    cardInfo.append(glossElement);
-
-    // morpho-syntactic descrition
-    const msd = word.attributes.getNamedItem("msd").nodeValue;
+function loadParseData(xmlWord) {
+    // morpho-syntactic description
+    const msd = xmlWord.attributes.getNamedItem("msd").nodeValue;
     const msdText = getParseFromMSD(msd);
 
-    if (msdText) { 
-        const parseInfo = document.createElement("li");
-        parseInfo.innerHTML = msdText;
-        
-        cardInfo.append(parseInfo);
+    return msdText
+}
+
+function loadPrincipalPartData(lemma, lexicon) {
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    const pp = entry.querySelector("pp");
+    if (pp != null) {1
+        return pp.innerHTML;
+    }
+    return null;
+}
+
+function loadGenderData(lemma, lexicon) {
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    const gen = entry.querySelector("gen");
+    if (gen != null) {1
+        return gen.innerHTML;
+    }
+    return null;
+}
+
+function loadGlossData(lemma, lexicon) {
+    const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    return entry.querySelector("gloss").innerHTML;
+}
+
+/**
+ * Retrieves the comment entry elements for a given HTML word element.
+ * @param {HTMLElement} wordElement
+ * @param {Element}
+ * @returns {Element[]}
+ */
+function loadCommentaryData(wordElement, commentary) {
+
+    const index = getIndex(wordElement);
+    const entries  = commentary.getElementsByTagName("entry");
+
+    const matchingEntries = [];
+
+    for (const entry of entries) {
+        const references = entry.getElementsByTagName("references")[0].innerHTML
+        if (isReferenced(index, references)) {
+            matchingEntries.push(entry)
+        }
+    }
+    return matchingEntries
+}
+
+function isReferenced(index, references) {
+    // references may be "1.2.3, 1.2.4, 1.3.5--1.4.2"
+    const references_indexes = references.split(", ")
+
+    for (reference_index of references_indexes) {
+        if (index === reference_index) {
+            return true
+        }
+
+        const index_range = reference_index.split("--")
+        if (index_range.length === 2 && indexWithinRange(index, index_range[0], index_range[1])) {
+            return true
+        }
     }
 
-    // TODO: include comments
+    return false
+}
 
+function indexWithinRange(index, lowBound, highBound) {
+    // e.g. 1.2.3, 1.2.1, 1.2.4 -> true
+    // e.g. 1.2.3, 1.2.4, 1.2.5 -> false
+    // highBound must be larger than lowBound
+    if (!isLargerOrEqual(lowBound, index)) {
+        return false
+    }
+
+    if (!isLargerOrEqual(index, highBound)) {
+        return false
+    }
+
+    return true
+
+    }
+
+function isLargerOrEqual(low, high) {
+    const low_split = low.split(".")
+    const high_split = high.split(".")
+
+    for (i = 0; i < 3; i++) {
+        low_split[i] = Number(low_split[i])
+        high_split[i] = Number(high_split[i])
+        if (low_split[i] != high_split[i]) {
+            return low_split[i] < high_split[i]
+        }
+    }
+
+    return true
+}
+
+function loadDetailsToCard(parseData, principalPartData, genderData, glossData, commentaryData) {
+    let principalPartsSpan = null;
+
+    if (principalPartData != null) {
+        principalPartsSpan = document.createElement("span");
+        principalPartsSpan.classList.add("lt");
+        principalPartsSpan.innerHTML = principalPartData;
+        cardPrincipalParts.appendChild(principalPartsSpan);
+    }
+    
+    if (genderData != null) {
+        if (principalPartsSpan != null) {
+            principalPartsSpan.insertAdjacentHTML("afterend",` ${genderData}`);
+        }
+        else {
+            cardPrincipalParts.innerHTML = genderData;
+        }
+    }
+
+    if (glossData != null) {
+        cardGloss.innerHTML = glossData;
+    }
+
+    if (parseData != null) { 
+        cardParsing.innerHTML = parseData;   
+    }
+
+    if (commentaryData != null) {
+        commentaryData.forEach(entry => {
+            
+            // Create new element
+            const commentaryElement = document.createElement("div");
+            commentaryElement.classList.add("comment");
+
+            // Get SVG
+            fetch("./resources/book.svg")
+                .then(response => response.text())
+                .then(data => {
+                    // Create SVG element
+                    const SVGContainer = document.createElement("span");
+                    SVGContainer.classList.add("bookIcon");
+                    SVGContainer.innerHTML = data;
+
+                    // Create the text element
+                    newPara = document.createElement("p");
+                    quotationText = document.createElement("span");
+                    quotationText.classList.add("lt");
+                    quotationText.innerHTML = entry.querySelector("text").innerHTML + ": ";
+
+                    commentText = document.createElement("span");
+                    commentText.classList.add("commentText");
+                    commentText.innerHTML = entry.querySelector("comment").innerHTML;
+
+                    // Insert the new elements
+                    commentaryElement.append(SVGContainer);
+                    newPara.appendChild(quotationText);
+                    newPara.appendChild(commentText);
+                    commentaryElement.append(newPara);
+                    cardComments.append(commentaryElement);
+                })
+                .catch(error => console.log("Error fetching SVG: ", error));
+        });
+    }
 }
 
 function clearCard() {
-    cardInfo.replaceChildren();
+
+    cardComments.querySelectorAll("div.comment").forEach(element => {
+        element.remove()
+    })
+
+    principalParts.innerHTML = "";
+    gloss.innerHTML = "";
+    parsing.innerHTML = "";
 }
 
-card_hide.addEventListener("click", () => hideCard())
 card_close.addEventListener("click", () => closeCard())
 
-function hideCard() {
-    card.classList.toggle("closed");
-    cardContent.classList.toggle("invisible");
-}
-
 function closeCard() {
-    card.classList.toggle("invisible");
+    card.classList.add("invisible");
 }
 
 //  FUNCTIONS
 
 // Section navigation
 
-function addLineNumbers() {
-    $(".l").each(function(){
-        var rawLineNum = $(this).attr("n");
-        var lineNum = rawLineNum.substring(1+rawLineNum.indexOf("."));
-        /* The empty relative span is required to offset the line numbers correctly. */
-        $(this).prepend("<span class=relative><span class=verse_ref>"+lineNum+"</span></span>")
-        
-        /* Make every 5th line number visible. */
-        var lineNumInt = parseInt(lineNum)
-        if (lineNumInt % 5 == 0) { 
-            var vRef = $(this).find(".verse_ref");
-            vRef.css("visibility", "visible");
+function revealNthLineNumbers(n) {
+    const lineNumbers = document.querySelectorAll(".line_number");
+    lineNumbers.forEach((lineNumber, index) => {
+        if ((index + 1) % n == 0) {
+            lineNumber.style.visibility = "visible";
         }
     });
 }
 
-function getIndices(elem) {
+function getIndex(elem) {
     var closestLine = $(elem).closest(".l");        
     var lineNumber = $(closestLine).attr("n");
     var wordsInLine = $(closestLine).find(".w");
-    var wordIndex = $(wordsInLine).index(elem);
+    var wordIndex = $(wordsInLine).index(elem) + 1; // index string is human readable => not zero indexed
 
-    return [lineNumber, wordIndex];
+    return lineNumber + "." + wordIndex;
 }
 
 function getWordFromXML(xml, elem) {
-    var [lineNumber, wordIndex] = getIndices(elem);
-    var wordElements = $(xml).find("w[n='"+lineNumber+"']");
-    var word = wordElements[wordIndex];
+    var index = getIndex(elem);
+    var [poemNumber, lineNumber, wordIndex] = index.split(".")
+    var wordElements = $(xml).find("w[n='"+poemNumber + "." + lineNumber+"']");
+    var word = wordElements[wordIndex - 1]; // -1 for zero indexing
     return word;
 }
 
@@ -436,7 +604,7 @@ function getParseFromMSD(msd) {
 
         */
     }
-    return false;
+    return null;
 }
 
 function clearFocus() {
@@ -444,4 +612,8 @@ function clearFocus() {
     $(".quickHighlight").toggleClass("quickHighlight");
     $(".focus").children().unwrap()
     $(".focus").toggleClass("focus");
+}
+
+function refer(arg) {
+    console.log("refer:" + arg)
 }
