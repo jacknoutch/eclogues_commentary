@@ -137,6 +137,8 @@ body > .container {
   /* In mobile the lookup panel sticks to the window bottom. */
   position: fixed;
   bottom: 0;
+
+  width: 100%;
 }
 
 footer {
