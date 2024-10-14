@@ -9,12 +9,10 @@
   --body-font-size: 16px;
   --body-line-height: 32.7px;
 
-  --h1-font-size-mobile: 32px;
-  --h1-font-size: 48px;
+  --h1-font-size: calc(var(--body-font-size) * 2);
   --h1-font-weight: 500;
   
-  --h2-font-size-mobile: 24px;
-  --h2-font-size: 32px;
+  --h2-font-size: calc(var(--body-font-size) * 1.5);
   --h2-font-weight: var(--h1-font-weight);
 
   --verse-max-width: 392px;
@@ -32,7 +30,7 @@
   --space-300: 12px;
   --space-150: 6px;
 
-  --button-size-regular: 32px;
+  --button-size-regular: calc(var(--body-font-size) * 1.5);
 
 }
 
@@ -55,12 +53,12 @@ footer p {
 h1 {
   text-align: center;
   font-family: var(--body-font-family);
-  font-size: var(--h1-font-size-mobile);
+  font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
 }
 h2 {
   font-family: var(--body-font-family);
-  font-size: var(--h2-font-size-mobile);
+  font-size: var(--h2-font-size);
   font-weight: var(--h2-font-weight);
 }
 .subtitle {
@@ -69,8 +67,12 @@ h2 {
 img {
   max-width: 100%;
 }
+span, p, a {
+  font-size: var(--body-font-size);
+}
 p {
   text-align: justify;
+  margin: 0;
 }
 a {
   color: #C00;
@@ -123,7 +125,6 @@ button {
   visibility: hidden;
 }
 #utility {
-  /* ... */
   padding: 0 1em;
 }
 #reading {
@@ -141,21 +142,21 @@ button {
   margin: 0 auto;
   text-align: center;
 }
-.undisplayed { /* for unused lines */
-  display: none;
-}
-#loading {
-  text-align: right;
-}
 .l {
   /* Lines of the poem cannot be selected */
   -webkit-user-select: none; /*Safari*/
   -ms-user-select: none; /*IE 10 and IE 11*/
   user-select: none; /*Standard syntax*/
-  padding-left: 3em;
-  text-indent: -3em;
+
   max-width: var(--verse-max-width);
   margin: 0 auto;
+  
+  /* Padding and negative indent allows neat line numbers and overflow text */
+  padding-left: 3em;
+  text-indent: -3em;
+  
+  font-size: var(--body-font-size);
+  
 }
 
 /*** Dynamic classes ***/
@@ -192,6 +193,15 @@ span.verse_ref {
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
+}
+
+.undisplayed { /* for unused lines */
+  display: none;
+}
+
+/*** Utility classes ***/
+#loading {
+  text-align: right;
 }
 
 /*** Card classes ***/
@@ -290,8 +300,6 @@ span.verse_ref {
   margin-left: var(--space-300);
 }
 
-
-
 .lt {
   font-style: italic;
 }
@@ -306,8 +314,18 @@ li {
 /* For tablets */
 
 @media only screen and (min-width: 600px) {
+  :root {
+    --body-font-size: 16px;
+  }
   html, body {
     font-size: 1em;
+  }
+  h1 {
+    font-size: var(--h1-font-size);
+    margin: 1em auto;
+  }
+  h2 {
+    font-size: var(--h2-font-size);
   }
 }
 
@@ -335,12 +353,4 @@ li {
     position: inherit;
     min-width: 400px;
   }
-  #lookup_card {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1em;
-    margin-bottom: 1em;
-  }
-  #lookup_card.closed {
-    margin-bottom: 0; /* When a card is closed there is no gap between it and the card below. */
-  }
+}
