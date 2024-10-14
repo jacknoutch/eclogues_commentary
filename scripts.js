@@ -115,6 +115,7 @@ async function makeWordsClickable() {
             updateCard(word);
             card.classList.remove("closed");
             cardContent.classList.remove("invisible");
+            word.scrollIntoView({ behavior: 'smooth' });
         })
     });
 }
@@ -594,4 +595,8 @@ function clearFocus() {
 
 function refer(arg) {
     console.log("refer:" + arg)
+}
+
+function scrollTo(word) {
+
 }
