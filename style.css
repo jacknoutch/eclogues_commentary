@@ -374,10 +374,7 @@ img {
 .bookIcon {
   width: var(--button-size-regular);
   text-align: center;
-}
-
-.commentText {
-  margin-left: var(--space-300);
+  margin-right: var(--space-300);
 }
 
 /* For tablets */
