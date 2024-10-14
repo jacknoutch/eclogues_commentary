@@ -314,6 +314,33 @@ img {
   stroke: var(--black);
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--white);
+  text-align: center;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position above the element */
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.add_item:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 #lookup_card_content {
   display: flex;
   flex-direction: column;
