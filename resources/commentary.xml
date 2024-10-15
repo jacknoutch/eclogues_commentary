@@ -80,12 +80,12 @@
     </entry>
     <entry>
         <references>1.6--1.10</references>
-        <comment>6–10. Tit: Thanks to him to whom I shall always sacrifice as a god.</comment>
+        <comment>6–10. Tit.: Thanks to him to whom I shall always sacrifice as a god.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <references>1.11--1.19</references>
-        <comment>Mel: I don”t grudge it. There is trouble all over; I am tired, sick, driving my goats,
+        <comment>Mel.: I don’t grudge it. There is trouble all over; I am tired, sick, driving my goats,
         one lately a mother: I ought to have known what that thunder meant!</comment>
         <source>Sidgwick 1901</source>
     </entry>
@@ -94,13 +94,15 @@
         <references>1.12.1--1.12.3</references>
         <comment>“such trouble there is”, impers. pass. He is speaking of the
         suffering and confusion caused by the confiscation of the lands and allotment to the
-        veterans. See introduction.
+        veterans.
 
-        The poor Meliboeus then (with a touch of dramatic pathos) laments his own troubles: he has
-        to go on and on (<span class="lt">protenus</span>): he is sick and tired (<span class="lt">aeger</span>): one of his she goats he can hardly
-        pull by a cord (<span class="lt">duco vix</span>) having left the new-born twin kids on the hard stones (<span class="lt">silice</span>).
-        Then with rustic superstition he adds “he might have known the coming trouble, from seeing
-        the oaks struck by lightning”.</comment>
+        <div>
+            The poor Meliboeus then (with a touch of dramatic pathos) laments his own troubles: he has
+            to go on and on (<span class="lt">protenus</span>): he is sick and tired (<span class="lt">aeger</span>): one of his she goats he can hardly
+            pull by a cord (<span class="lt">duco vix</span>) having left the new-born twin kids on the hard stones (<span class="lt">silice</span>).
+            Then with rustic superstition he adds “he might have known the coming trouble, from seeing
+            the oaks struck by lightning”.
+        </div></comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
@@ -138,7 +140,7 @@
         <text>memini praedicere</text>
         <references>1.17.4--1.17.5</references>
         <comment>“I remember that they foretold”, the pres. inf. being the regular idiom
-            when the thing remembered is part of the person”s own experience, as here.</comment>
+            when the thing remembered is part of the person’s own experience, as here.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
@@ -149,18 +151,18 @@
     </entry>
     <entry>
         <references>1.19</references>
-        <comment>[Before this line a spurious verse '<span class="lt">saepe sinistra cava praedixit ab ilice cornix</span>' has
-        got into the text from IX. 15.]</comment>
+        <comment>Before this line a spurious verse <span class="lt">saepe sinistra cava praedixit ab ilice cornix</span> has
+        got into the text from IX. 15.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <references>1.20--1.26</references>
-        <comment>[20–26. Tit. I used to think Rome a small town like ours: it is quite big.]</comment>
+        <comment>Tit.: I used to think Rome a small town like ours: it is quite big.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
-        <text>1.20.1--1.20.6</text>
-        <references></references>
+        <text>Urbem, quam dicunt Romam, Meliboee, putavi...</text>
+        <references>1.20.1--1.20.6</references>
         <comment>The dramatic colour is kept up. Tityrus tells his story in a roundabout rustic
         style.</comment>
         <source>Sidgwick 1901</source>
@@ -168,7 +170,7 @@
     <entry>
         <text>huic nostrae</text>
         <references>1.21.3--1.21.4</references>
-        <comment>Mantua, near which (at the village of Andes) was Vergil”s home.</comment>
+        <comment>Mantua, near which (at the village of Andes) was Vergil’s home.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
@@ -192,8 +194,8 @@
     </entry>
     <entry>
         <references>1.27--1.36</references>
-        <comment>[27–36. M. What took you to Rome? Tit. To get freedom, now that I have left Galatea and
-        love Amaryllis.]</comment>
+        <comment>Mel.: What took you to Rome? Tit. To get freedom, now that I have left Galatea and
+        love Amaryllis.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
@@ -220,23 +222,27 @@
         <text>peculi</text>
         <references>1.33.7</references>
         <comment>slaves were allowed to have private money, called <span class="lt">peculium</span>. They were also
-        allowed to marry, (though not a legal recognised conubium): but Vergil is here thinking less
+        allowed to marry, (though not a legal recognised <span class="lt">conubium</span>): but Vergil is here thinking less
         of the life of Roman slaves and more of the free loves of Sicilian shepherds.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <text>pinguis</text>
         <references>1.35.1</references>
-        <comment>“rich”: perhaps what we call cream-cheese; anyhow good of its kind.
-        ingratae, playful indignation: the city did not pay him as much as he wanted for his
-        cheeses.
-        </comment>
+        <comment>“rich”: perhaps what we call cream-cheese; anyhow good of its kind.</comment>
+        <source>Sidgwick 1901</source>
+    </entry>
+    <entry>
+        <text>ingratae</text>
+        <references>1.35.3</references>
+        <comment>playful indignation: the city did not pay him as much as he wanted for his
+            cheeses.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <references>1.37--1.46</references>
-        <comment>[37–46. M. I wondered why Amaryllis was so sad. Tit. I had to go. At Rome I saw the
-        youth who gave me leave to stay on my land.]</comment>
+        <comment>Mel.: I wondered why Amaryllis was so sad. Tit. I had to go. At Rome I saw the
+        youth who gave me leave to stay on my land.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
@@ -254,9 +260,9 @@
     <entry>
         <text>aberat</text>
         <references>1.39.3</references>
-        <comment>a long. The <span class="lt">-at</span> of imperf. was originally long, and Vergil occasionally
-        uses it so (tho’ usually in a pause) from fondness for archaic forms. Ennius has '<span class="lt">ponebat
-            ante salutem</span>': Plautus has it long. So G. IV. 137, A. V. 853, VII. 174 &amp;c.</comment>
+        <comment>ā long. The <span class="lt">-āt</span> of imperf. was originally long, and Vergil occasionally
+        uses it so (though usually in a pause) from fondness for archaic forms. Ennius has <span class="lt">ponebat
+            ante salutem</span>; Plautus has it long. So G. IV. 137, A. V. 853, VII. 174 &amp;c.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
@@ -304,15 +310,15 @@
     </entry>
     <entry>
         <references>1.47--1.59</references>
-        <comment>[47–59. M. Happy man, you will keep your farm, and, poor tho’ the land be, you will be
-        happy in the familiar life, the sights and sounds of the country.]</comment>
+        <comment>Mel.: Happy man, you will keep your farm, and, poor though the land be, you will be
+        happy in the familiar life, the sights and sounds of the country.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <references>1.48</references>
         <comment>The sense is:—
-        48. “tho’ the bare rock mars all your pasture, and the swamp covers them with the muddy
-        rush”, obducat being more appropriate to the last sentence, in which it occurs—the figure
+        48. “though the bare rock mars all your pasture, and the swamp covers them with the muddy
+        rush”, <span class="lt">obducat</span> being more appropriate to the last sentence, in which it occurs—the figure
         zeugma.
         </comment>
         <source>Sidgwick 1901</source>
@@ -321,15 +327,15 @@
         <text>graves... fetas</text>
         <references>1.50.3, 1.50.6</references>
         <comment>“the pregnant ewes”.
-        [fetus also means “having given birth” and some take it so here translating graves
-        “weakly” “slow”: but the other is the proper meaning of gravis, and fetus too. So A. 11.
-        237, <span class="lt">machina feta armis</span>, of the wooden horse with soldiers inside.]
+        fetus also means “having given birth” and some take it so here translating <span class="lt">graves</span>
+        “weakly” “slow”: but the other is the proper meaning of <span class="lt">gravis</span>, and <span class="lt">fetus</span> too. So A. 11.
+        237, <span class="lt">machina feta armis</span>, of the wooden horse with soldiers inside.
         </comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <references>1.52--1.59</references>
-        <comment>This pretty passage shews well Vergil”s inborn love of the country.</comment>
+        <comment>This pretty passage shews well Vergil’s inborn love of the country.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
@@ -359,8 +365,8 @@
             <span class="lt">Hyblaeis</span>, the bees of Hybla in Sicily were famous, and this is what is called the
         “literary” use of epithets: wine is called “Massic” or “Falernian”, marble is “Parian”, the
         arrow is “Cydonian”, the bow is “Parthian”, &amp;c. not so much to specify the kind, as to
-        remind the reader of the Greek poets who speak of them.        
-            <span class="lt">florem depasta</span>, might be acc. of respect; but considering Vergil”s usage, it is much more
+        remind the reader of the Greek poets who speak of them.       
+            <span class="lt">florem depasta</span>, might be acc. of respect; but considering Vergil’s usage, it is much more
         probably the Greek use of acc. of the object after the perf. passive, really an elastic
         extension of the active construction to the passive voice.
         Thus the Greeks say:
@@ -379,8 +385,7 @@
     </entry>
     <entry>
         <references>1.56</references>
-        <comment>
-        56. Notice the soothing whispering sound, produced by the sibilants and liquids, to imitate
+        <comment>Notice the soothing whispering sound, produced by the sibilants and liquids, to imitate
         or suggest the thing described. So Tennyson”s famous lines in the Princess:
         “The moan of doves in immemorial elm
         and murmur of innumerable bees.'
@@ -409,19 +414,19 @@
         <references>1.59.5</references>
         <comment>the turtle-dove: “it is still found in small numbers passing the summer
         and breeding in Italy, and is most frequent in the subalpine region of which Vergil is here
-        writing” (ib. p. 113).</comment>
+        writing” (Fowler “A year with the birds”  p. 113).</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <references>1.60--1.64</references>
-        <comment>[60–64. Tit. Beasts shall leave their element, and barbarians their home, ere I forget
-        Octavianus.]</comment>
+        <comment>Tit.: Beasts shall leave their element, and barbarians their home, ere I forget
+        Octavianus.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <text>perratis amborum finibus</text>
         <references>1.62.2--1.62.4</references>
-        <comment>“roaming each o”er the other”s lands”, phrase slightly
+        <comment>“roaming each o’er the other’s lands”, phrase slightly
         strained, but meaning clear. The Parthian shall wander to the German frontier, the German to
         Parthia.</comment>
         <source>Sidgwick 1901</source>
@@ -429,7 +434,7 @@
     <entry>
         <text>Ararim</text>
         <references>1.63.2</references>
-        <comment>The Arar (Saône) rises in the Vosges mountains in the E. of France, on the borders
+        <comment>The Arar (Saône) rises in the Vosges mountains in the East of France, on the borders
         of Germany.</comment>
         <source>Sidgwick 1901</source>
     </entry>
@@ -441,21 +446,21 @@
     </entry>
     <entry>
         <references>1.65--1.84</references>
-        <comment>[65–end. M. I shall go to the ends of the earth: shall I ever see my poor home again? a
+        <comment>Mel.: I shall go to the ends of the earth: shall I ever see my poor home again? a
         brutal soldier perhaps in possession! this is the result of civil war. Farewell: poor goats,
-        come away! Tit. You might at least stay one more night and feast with me.]</comment>
+        come away! Tit. You might at least stay one more night and feast with me.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <references>1.65--1.67</references>
-        <comment>65–67. We shall be scattered to the ends of the earth, some here, some there.</comment>
+        <comment>We shall be scattered to the ends of the earth, some here, some there.</comment>
         <source>Sidgwick 1901</source>
     </entry>
     <entry>
         <text>Oaxen</text>
         <references>1.66.7</references>
         <comment>The Oaxes of Crete is not known as a river, but there is a town called Axus or Oaxus,
-        and Vergil”s river is doubtless named from this.
+        and Vergil’s river is doubtless named from this.
         There is no need to suspect or emend the reading.
         </comment>
         <source>Sidgwick 1901</source>
@@ -472,8 +477,8 @@
         <references>1.70.1--1.70.7</references>
         <comment>“At last behold with wonder a few scant ears, my realm of old”. <span class="lt">post</span> resumes <span class="lt">
             longo post
-            tempore: regna
-            </span> is playfully pathetic exaggeration for the poor farm he loved: <span class="lt">aliquot</span>,
+            tempore; regna
+            </span> is playfully pathetic exaggeration for the poor farm he loved; <span class="lt">aliquot</span>,
         either because the land is poor, or because he thinks the new possessor (a soldier) will
         spoil by ignorance and carelessness his land.
             <div>This is the best way of taking a rather artificially expressed and obscure line.</div>
@@ -510,8 +515,8 @@
     <entry>
         <text>poteras</text>
         <references>1.80.5</references>
-        <comment>he means “you can”: but the past is one of the delicacies of speech
-        putting the offer as tho’ the other”s resolve was taken: “you might have rested...'.</comment>
+        <comment>he means “you can”; but the past is one of the delicacies of speech
+        putting the offer as though the other’s resolve was taken: “you might have rested...”.</comment>
         <source>Sidgwick 1901</source>
     </entry>
 </root>
