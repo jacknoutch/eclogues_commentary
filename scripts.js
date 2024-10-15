@@ -6,6 +6,28 @@ const lemmatiserPath = "resources/eclogue1LR.xml";
 const lexiconPath = "resources/glosses.xml";
 const commentaryPath = "resources/commentary.xml";
 
+let lemmatiserXML = null;
+let lexiconXML = null;
+let commentaryXML = null;
+
+async function loadXMLResource(path, parser) {
+    try {
+        let response = await fetch(path);
+        let text = await response.text();
+        return parser.parseFromString(text, "application/xml");
+    } catch (error) {
+        console.log(`Error loading resourice at ${path}: ${error}`);
+        return null;
+    }
+}
+
+async function loadXMLData() {
+    let parser = new DOMParser();
+    lemmatiserXML = await loadXMLResource(lemmatiserPath, parser);
+    lexiconXML = await loadXMLResource(lexiconPath, parser);
+    commentaryXML = await loadXMLResource(commentaryPath, parser);
+}
+
 // Sections and their buttons
 
 const sections = document.querySelectorAll(".latin_text");
@@ -75,8 +97,6 @@ function setSectionNavButtons() {
         nextSectionButton.classList.remove("invisible");
     }
 }
-
-setSectionNavButtons()
 
 // Loading request indicator
     
@@ -154,11 +174,6 @@ async function spanAllWords() {
 
     // So far the enclitic -que is not separated from the word it is attached to.
     // All instances of -que are retrieved from the lemmatised text, the span which contains that instance is identified and split so as to give que its own span.
-
-    const lemmatiserXML = await makeFetchRequest(lemmatiserPath)
-        .then(response => response.text())
-        .then(text => $.parseXML(text))
-
     const $queTokens = $(lemmatiserXML).find("[lemma=que]");
     $queTokens.each((index, value) => {
         const queLineNumber = $(value).attr("n") // e.g. "1.2"
@@ -177,47 +192,29 @@ async function spanAllWords() {
 
 }
 
-revealNthLineNumbers(5);
-makeWordsClickable();
-
 // Cards
 
 infoButton.addEventListener("click",() => {
     window.location.href = `https://logeion.uchicago.edu/${currentLemma}`
 });
 
-async function updateCard(word) { // word is an element
+function updateCard(word) { // word is an element
     handleFetchStart();
     cardTitle.innerHTML = word.innerHTML;
-    
-    const requests = [
-        fetch(lemmatiserPath),
-        fetch(lexiconPath),
-        fetch(commentaryPath)
-    ] // TODO: why is this called every time cardUpdate is called?
-
-    Promise.all(requests)
-        .then((responses) => Promise.all(responses.map((r) => r.text())))
-        .then((results) => loadDetails(word, results))
-        .catch((error) => console.error(error)); 
-
+    loadDetails(word);
 }
 
-function loadDetails(wordElement, xmlFiles) {
+function loadDetails(wordElement) {
     clearCard();
-    
-    const parser = new DOMParser();
-    const [lemmatiser, lexicon, commentary] = xmlFiles.map(
-        (file) => parser.parseFromString(file, "text/xml"));
 
-        const xmlWord = getWordFromXML(lemmatiser, wordElement);
-        const lemma = loadLemma(xmlWord);
-        currentLemma = lemma;
-        const parseData = loadParseData(xmlWord);
-        const principalPartData = loadPrincipalPartData(lemma, lexicon)
-        const genderData = loadGenderData(lemma, lexicon);
-        const glossData = loadGlossData(lemma, lexicon);
-        const commentaryData = loadCommentaryData(wordElement, commentary);
+    const xmlWord = getWordFromXML(lemmatiserXML, wordElement);
+    const lemma = loadLemma(xmlWord);
+    currentLemma = lemma;
+    const parseData = loadParseData(xmlWord);
+    const principalPartData = loadPrincipalPartData(lemma, lexiconXML)
+    const genderData = loadGenderData(lemma, lexiconXML);
+    const glossData = loadGlossData(lemma, lexiconXML);
+    const commentaryData = loadCommentaryData(wordElement, commentaryXML);
         
     loadDetailsToCard(parseData, principalPartData, genderData, glossData, commentaryData);
     card.classList.remove("invisible");
@@ -437,7 +434,8 @@ function getIndex(elem) {
 function getWordFromXML(xml, elem) {
     var index = getIndex(elem);
     var [poemNumber, lineNumber, wordIndex] = index.split(".")
-    var wordElements = $(xml).find("w[n='"+poemNumber + "." + lineNumber+"']");
+    var wordElements = $(xml).find(`w[n='${poemNumber}.${lineNumber}']`);
+    console.log(wordElements);
     var word = wordElements[wordIndex - 1]; // -1 for zero indexing
     return word;
 }
@@ -617,3 +615,13 @@ function clearFocus() {
 function refer(arg) {
     console.log("refer:" + arg)
 }
+
+//
+
+
+window.addEventListener("load", async () => {
+    await loadXMLData();
+    await setSectionNavButtons();    
+    await revealNthLineNumbers(5);
+    await makeWordsClickable();
+});
