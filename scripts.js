@@ -40,10 +40,10 @@ function nextSection() {
         return
     }
 
-    $(sections[currentSection]).toggleClass("currently_reading")
+    sections[currentSection].classList.toggle("currently_reading");
     currentSection++
-    $(sections[currentSection]).toggleClass("currently_reading")
-
+    sections[currentSection].classList.toggle("currently_reading");
+    
     setSectionNavButtons()
 }
 
@@ -51,10 +51,10 @@ function previousSection() {
     if (currentSection == 0) { // there are no sections before this one
         return
     }
-
-    $(sections[currentSection]).toggleClass("currently_reading")
+    
+    sections[currentSection].classList.toggle("currently_reading");
     currentSection--
-    $(sections[currentSection]).toggleClass("currently_reading")
+    sections[currentSection].classList.toggle("currently_reading");
 
     setSectionNavButtons()
 }
