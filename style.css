@@ -4,6 +4,8 @@
     outline: 1px dotted #C00;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=block');
+
 :root {
   --body-font-family: Alegreya, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --body-font-size: 16px;
@@ -54,7 +56,7 @@ html, body {
 }
 
 h1, h2, button {
-  font-family: var(--body-font-family);
+  font-family: Alegreya;
 }
 
 h1 {
