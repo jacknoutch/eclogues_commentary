@@ -10,6 +10,10 @@ let lemmatiserXML = null;
 let lexiconXML = null;
 let commentaryXML = null;
 
+const bookIconPath = "./resources/book.svg";
+
+let bookIconData = null;
+
 async function loadXMLResource(path, parser) {
     try {
         let response = await fetch(path);
@@ -26,6 +30,10 @@ async function loadXMLData() {
     lemmatiserXML = await loadXMLResource(lemmatiserPath, parser);
     lexiconXML = await loadXMLResource(lexiconPath, parser);
     commentaryXML = await loadXMLResource(commentaryPath, parser);
+
+    // The book icon for comments
+    let response = await fetch(bookIconPath);
+    bookIconData = await response.text();
 }
 
 // Sections and their buttons
@@ -279,7 +287,7 @@ function loadCommentaryData(wordElement, commentary) {
 }
 
 function isReferenced(index, references) {
-    // references may be "1.2.3, 1.2.4, 1.3.5--1.4.2"
+    // references may be "1.2.3, 1.2.4, 1.3.5--1.4.2, 1.2, 1.3--1.4"
     const references_indexes = references.split(", ")
 
     for (reference_index of references_indexes) {
@@ -355,39 +363,40 @@ function loadDetailsToCard(parseData, principalPartData, genderData, glossData, 
     }
 
     if (commentaryData != null) {
-        commentaryData.forEach(entry => {
+        commentaryData.forEach(entry => {   
             
             // Create new element
             const commentaryElement = document.createElement("div");
             commentaryElement.classList.add("comment");
 
-            // Get SVG
-            fetch("./resources/book.svg")
-                .then(response => response.text())
-                .then(data => {
-                    // Create SVG element
-                    const SVGContainer = document.createElement("span");
-                    SVGContainer.classList.add("bookIcon");
-                    SVGContainer.innerHTML = data;
+            // Create SVG element
+            const SVGContainer = document.createElement("span");
+            SVGContainer.classList.add("bookIcon");
+            SVGContainer.innerHTML = bookIconData;
 
-                    // Create the text element
-                    newPara = document.createElement("p");
-                    quotationText = document.createElement("span");
-                    quotationText.classList.add("lt");
-                    quotationText.innerHTML = entry.querySelector("text").innerHTML + ": ";
+            // Create the text element
+            let newPara = document.createElement("p");
+            let lineReference = document.createElement("span");
+            lineReference.innerHTML = getLinesFrom(entry.querySelector("references").innerHTML) + " ";
+            let quotationText = document.createElement("span");
+            quotationText.classList.add("lt");
+            try {
+                quotationText.innerHTML = entry.querySelector("text").innerHTML + ": ";
+            } catch (error) {
+                console.log(`Error: ${error}`);
+            }
 
-                    commentText = document.createElement("span");
-                    commentText.classList.add("commentText");
-                    commentText.innerHTML = entry.querySelector("comment").innerHTML;
+            commentText = document.createElement("span");
+            commentText.classList.add("commentText");
+            commentText.innerHTML = entry.querySelector("comment").innerHTML;
 
-                    // Insert the new elements
-                    commentaryElement.append(SVGContainer);
-                    newPara.appendChild(quotationText);
-                    newPara.appendChild(commentText);
-                    commentaryElement.append(newPara);
-                    cardComments.append(commentaryElement);
-                })
-                .catch(error => console.log("Error fetching SVG: ", error));
+            // Insert the new elements
+            commentaryElement.append(SVGContainer);
+            newPara.appendChild(lineReference);
+            newPara.appendChild(quotationText);
+            newPara.appendChild(commentText);
+            commentaryElement.append(newPara);
+            cardComments.append(commentaryElement);
         });
     }
 }
@@ -435,7 +444,6 @@ function getWordFromXML(xml, elem) {
     var index = getIndex(elem);
     var [poemNumber, lineNumber, wordIndex] = index.split(".")
     var wordElements = $(xml).find(`w[n='${poemNumber}.${lineNumber}']`);
-    console.log(wordElements);
     var word = wordElements[wordIndex - 1]; // -1 for zero indexing
     return word;
 }
@@ -614,6 +622,21 @@ function clearFocus() {
 
 function refer(arg) {
     console.log("refer:" + arg)
+}
+
+function getLinesFrom(references) {
+    let result = "";
+    let lineNumbers = new Set();
+    references = references.split(", ");
+    references.forEach((reference) => {
+        reference = reference.split("--");
+        reference.forEach((point) => {
+            let lineNumber = point.split(".")[1];
+            lineNumbers.add(lineNumber);
+        });
+    });
+    result = [... lineNumbers].sort((a, b) => a - b).join("-");
+    return result;
 }
 
 //
