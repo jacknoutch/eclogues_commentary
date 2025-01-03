@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI.2>
+    <teiHeader type="text" status="new">
+        <fileDesc>
+            <titleStmt>
+                <title>Eclogues</title>
+                <title type="sub">Machine readable text</title>
+                <author n="Verg.">P. Vergilius Maro</author>
+                <editor role="editor" n="Greenough">J. B. Greenough</editor>
+                <sponsor>Perseus Project, Tufts University</sponsor>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <resp>Prepared under the supervision of</resp>
+                    <name>Lisa Cerrato</name>
+                    <name>William Merrill</name>
+                    <name>Elli Mylonas</name>
+                    <name>David Smith</name>
+                </respStmt>
+                <funder n="org:NEH">The National Endowment for the Humanities</funder>
+            </titleStmt>
+            <extent>about 505Kb</extent>
+            <publicationStmt>
+                <publisher>Trustees of Tufts University</publisher>
+                <pubPlace>Medford, MA</pubPlace>
+                <authority>Perseus Project</authority>
+                <availability status="free">
+                    <p>This text may be freely distributed, subject to the following
+    restrictions:</p>
+                    <list>
+                        <item>You credit Perseus, as follows, whenever you use the document:
+                            <quote>Text provided by Perseus Digital Library, with funding from The National Endowment for the Humanities. Original version available for viewing and download at http://www.perseus.tufts.edu/hopper/.</quote>
+                        </item>
+                        <item>You leave this availability statement intact.</item>
+                        <item>You use it for non-commercial purposes only.</item>
+                        <item>You offer Perseus any modifications you make.</item>
+                    </list>
+                </availability>
+            </publicationStmt>
+            <sourceDesc default="NO">
+                <biblStruct default="NO">
+                    <monogr>
+                        <author>Vergil</author>
+                        <title>Bucolics, Aeneid, and Georgics Of Vergil</title>
+                        <editor role="editor">J. B. Greenough</editor>
+                        <imprint>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Ginn &amp; Co.</publisher>
+                            <date>1900</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <refsDecl doctype="TEI.2">
+                <step delim="." refunit="poem" from="DESCENDANT (1 DIV1 N %1)" to="DITTO" />
+                <step refunit="line" from="DESCENDANT (%2 L)" to="DITTO" />
+            </refsDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <langUsage default="NO">
+                <language id="la">Latin
+                </language>
+            </langUsage>
+        </profileDesc>
+
+        <revisionDesc>
+            <change>
+                <date>11/96</date>
+                <respStmt>
+                    <name>WM</name>
+                    <resp>ed.</resp>
+                </respStmt>
+                <item>Mark up public domain text 
+downloaded from Libellus; did diereses; needs line nos.</item>
+            </change>
+            <change>
+                <date>4/7/96</date>
+                <respStmt>
+                    <name>DAS</name>
+                    <resp>ed.</resp>
+                </respStmt>
+                <item>
+$Log: verg.ecl_lat.xml,v $
+Revision 1.2  2011-10-31 18:14:23  lcerrato
+fixed typo at start of line 68 of ecl 1
+
+Revision 1.1  2011-01-17 00:45:56  gcrane
+base SDL files
+
+Revision 1.1  2009/12/09 18:06:48  rsingh04
+moved more xml files around based on copyright status
+
+Revision 1.5  2009/03/17 20:26:48  rsingh04
+is now well-formed
+
+Revision 1.4  2009/01/21 20:31:23  lcerrato
+fixed two typos checked against source
+
+Revision 1.3  2005/11/21 20:06:11  lcerrato
+changed pallelltis to pallentis 2.47
+
+Revision 1.2  2005/08/01 16:34:36  packel
+removed stray item tags
+
+	Revision 1.1  2005/07/25 15:06:56  packel
+	Converted to XML
+	
+Revision 1.16  2003/07/01 22:18:59  yorkc
+Updated texts to TEI P4 and Perseus P4 extensions; minor cleanup (esp. character encodings and typos.)
+
+Revision 1.15  2003/05/21 19:51:06  lcerrato
+added missing first word of 5.1: cur; confirmed with source
+
+Revision 1.14  2003/02/06 21:07:00  lcerrato
+fixed typo calaunos 8.24 to calamos
+
+Revision 1.13  2003/02/04 20:12:43  lcerrato
+fixed typo in 10.77: te to Ite
+
+Revision 1.12  2003/02/04 18:53:18  gcrane
+missing period
+
+Revision 1.11  2001/03/12 14:35:23  amahoney
+add line numbers
+
+Revision 1.10  2000/03/06 22:14:19  amahoney
+remove headers so poem numbers get into short toc
+
+Revision 1.9  2000/03/04 20:35:31  dasmith
+Added separate funder entity to TEI header.
+
+Revision 1.8  1999/08/04 23:08:07  textgod
+Changed header.
+
+Revision 1.7  1997/09/24 20:17:04  textgod
+Changed names and redid headers.
+
+                </item>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div1 type="Poem" n="2" org="uniform" sample="complete">
+                <head>ECLOGA II.</head>
+                <l>Formosum pastor Corydon ardebat Alexim,</l>
+                <l>delicias domini, nec quid speraret habebat;</l>
+                <l>tantum inter densas, umbrosa cacumina, fagos</l>
+                <l>adsidue veniebat. Ibi haec incondita solus</l>
+                <l n="5">montibus et silvis studio iactabat inani:</l>
+                <l>O crudelis Alexi, nihil mea carmina curas?</l>
+                <l>Nil nostri miserere? Mori me denique coges.</l>
+                <l>nunc etiam pecudes umbras et frigora captant;</l>
+                <l>nunc viridis etiam occultant spineta lacertos,</l>
+                <l n="10">Thestylis et rapido fessis messoribus aestu</l>
+                <l>alia serpyllumque herbas contundit olentis.</l>
+                <l>at mecum raucis, tua dum vestigia lustro,</l>
+                <l>sole sub ardenti resonant arbusta cicadis.</l>
+                <l>Nonne fuit satius tristis Amaryllidis iras</l>
+                <l n="15">atque superba pati fastidia, nonne Menalcan,</l>
+                <l>quam vis ille niger, quamvis tu candidus esses ?</l>
+                <l>o formose puer, nimium ne crede colori!</l>
+                <l>alba ligustra cadunt, vaccinia nigra leguntur.</l>
+                <l>Despectus tibi sum, nec qui sim quaeris, Alexi,</l>
+                <l n="20">quam dives pecoris, nivei quam lactis abundans.</l>
+                <l>mille meae Siculis errant in montibus agnae;</l>
+                <l>lac mihi non aestate novum, non frigore defit;</l>
+                <l>canto quae solitus, si quando armenta vocabat,</l>
+                <l>Amphion Dircaeus in Actaeo Aracimtho.</l>
+                <l n="25">Nec sum adeo informis: nuper me in litore vidi,</l>
+                <l>cum placidum ventis staret mare; non ego Daphnim</l>
+                <l>iudice te metuam, si numquam fallit imago.</l>
+                <l>O tantum libeat mecum tibi sordida rura</l>
+                <l>atque humilis habitare casas, et figere cervos,</l>
+                <l n="30">haedorumque gregem viridi compellere hibisco!</l>
+                <l>Mecum una in silvis imitabere Pana canendo.</l>
+                <l>Pan primus calamos cera coniungere pluris</l>
+                <l>instituit; Pan curat ovis oviumque magistros.</l>
+                <l>Nec te paeniteat calamo trivisse labellum:</l>
+                <l n="35">haec eadem ut sciret, quid non faciebat Amyntas?</l>
+                <l>est mihi disparibus septem compacta cicutis</l>
+                <l>fistula, Damoetas dono mihi quam dedit olim,</l>
+                <l>et dixit moriens: “Te nunc habet ista secundum.”</l>
+                <l>dixit Damoetas, invidit stultus Amyntas.</l>
+                <l n="40">Praeterea duo, nec tuta mihi valle reperti,</l>
+                <l>capreoli, sparsis etiam nunc pellibus albo,</l>
+                <l>bina die siccant ovis ubera; quos tibi servo:</l>
+                <l>iam pridem a me illos abducere Thestylis orat;</l>
+                <l>et faciet, quoniam sordent tibi munera nostra.</l>
+                <l n="45">Huc ades, O formose puer: tibi lilia plenis</l>
+                <l>ecce ferunt Nymphae calathis; tibi candida Nais,</l>
+                <l>pallentis violas et summa papavera carpens,</l>
+                <l>narcissum et florem iungit bene olentis anethi;</l>
+                <l>tum casia atque aliis intexens suavibus herbis,</l>
+                <l n="50">mollia luteola pingit vaccinia calta.</l>
+                <l>Ipse ego cana legam tenera lanugine mala,</l>
+                <l>castaneasque nuces, mea quas Amaryllis amabat;</l>
+                <l>addam cerea pruna: honos erit huic quoque pomo;</l>
+                <l>et vos, O lauri, carpam, et te, proxima myrte,</l>
+                <l n="55">sic positae quoniam suavis miscetis odores.</l>
+                <l>Rusticus es, Corydon: nec munera curat Alexis,</l>
+                <l>nec, si muneribus certes, concedat Iollas.</l>
+                <l>Heu, heu, quid volui misero mihi! Floribus austrum</l>
+                <l>perditus et liquidis inmisi fontibus apros.</l>
+                <l n="60">Quem fugis, ah, demens? Habitarunt di quoque silvas,</l>
+                <l>Dardaniusque Paris. Pallas, quas condidit arces,</l>
+                <l>ipsa colat; nobis placeant ante omnia silvae.</l>
+                <l>Torva leaena lupum sequitur; lupus ipse capellam;</l>
+                <l>florentem cytisum sequitur lasciva capella;</l>
+                <l n="65">te Corydon, o Alexi: trahit sua quemque voluptas.</l>
+                <l>Aspice, aratra iugo referunt suspensa iuvenci,</l>
+                <l>et sol crescentis decedens duplicat umbras:</l>
+                <l>me tamen urit amor; quis enim modus adsit amori?</l>
+                <l>Ah, Corydon, Corydon, quae te dementia cepit!</l>
+                <l n="70">Semiputata tibi frondosa vitis in ulmo est;</l>
+                <l>quin tu aliquid saltem potius, quorum indiget usus,</l>
+                <l>viminibus mollique paras detexere iunco?</l>
+                <l>Invenies alium, si te hic fastidit, Alexim.</l>
+            </div1>
+        </body>
+    </text>
+</TEI.2>
