@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- <html lang="grc"> -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eclogue 1</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=optional" rel="stylesheet">
+  <!--  -->
+  <link rel="stylesheet" href="style.css" >
+  <!--  -->
+  <link rel="icon" type="image/png" href="resources/pan-flute.png">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SD4FZ169C5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SD4FZ169C5');
+  </script>
+</head>
+<body>
+  <h1 class="chapter_ref">Eclogue 1</h1>
+  <div class="container">
+    <section class="panel" id="utility">
+      <nav>
+        <ul>
+          <li><a href="./index.html">&#x2191; Vergil's Eclogues</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="panel" id="reading">
+      <section class="latin_text currently_reading">
+        
+      </section>
+      <div id="sectionNav">
+        <button id="previous">previous</button>
+        <button id="next">next</button>
+      </div>
+    </section>
+    <section class="panel" id="lookup">
+      <div id="loading" class="invisible">Loading...</div>
+      <div id="lookup_card" class="animate invisible">
+        <header>
+          <div class="add_item"><svg class="button add_item" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 6.66666V25.3333M6.66666 16H25.3333" stroke="#B3B3B3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="tooltiptext">Feature forthcoming...</span>
+        </div>
+          <h2 class="title">Word form</h2>
+          <svg class="button info" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 21.3333V16M16 10.6667H16.0134M29.3334 16C29.3334 23.3638 23.3638 29.3333 16 29.3333C8.63622 29.3333 2.66669 23.3638 2.66669 16C2.66669 8.63619 8.63622 2.66666 16 2.66666C23.3638 2.66666 29.3334 8.63619 29.3334 16Z" stroke="#B3B3B3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          <svg class="button close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L8 24M8 8L24 24" stroke="#B3B3B3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </header>
+        <div id="lookup_card_content">
+          <div id="grammar">
+            <p id="principalParts">Principal Parts</p>
+            <p id="gloss">Gloss</p>
+            <p id="parsing">Parse</p>
+          </div>
+          <div id="comments">
+            <div class="comment">Comment 1</div>
+          </div> 
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>Got feedback? <a href="mailto:jack.noutch@gmail.com?subject=vergil.co.uk%20feedback">Let me know!</a></p>
+    <p>The source and licence for this website is available on <a href="https://github.com/jacknoutch/eclogues_commentary">GitHub</a>.</p>
+  </footer>
+</body>
+</html>
