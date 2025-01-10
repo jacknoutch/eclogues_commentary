@@ -1,10 +1,25 @@
 // Global variables
 
-// Paths for resources
+// Get the Number of the Eclogue in question
 
-const lemmatiserPath = "resources/eclogue1LR.xml";
-const lexiconPath = "resources/glosses.xml";
-const commentaryPath = "resources/commentary.xml";
+const currentURL = window.location.href;
+const eclogueNumberRegex = /eclogue(\d+)\.html/;
+const match = currentURL.match(eclogueNumberRegex);
+let eclogueNumber;
+
+if (match) {
+    eclogueNumber = match[1];
+    console.log(eclogueNumber);
+}
+else {
+    eclogueNumber = 0;
+}
+
+// Load the resources for that Eclogue
+
+const lemmatiserPath = `resources/eclogue${eclogueNumber}LR.xml`;
+const lexiconPath = `resources/glosses${eclogueNumber}.xml`;
+const commentaryPath = `resources/commentary${eclogueNumber}.xml`;
 
 let lemmatiserXML = null;
 let lexiconXML = null;
