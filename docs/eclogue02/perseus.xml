@@ -1,0 +1,85 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:py="http://codespeak.net/lxml/objectify/pytype"
+    py:pytype="TREE">
+    <text>
+        <body>
+            <div type="edition" xml:lang="lat" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2">
+                <div type="textpart" subtype="poem" n="2">
+                    <head>ECLOGA II.</head>
+                    <l n="1">Formosum pastor Corydon ardebat Alexim,</l>
+                    <l n="2">delicias domini, nec quid speraret habebat;</l>
+                    <l n="3">tantum inter densas, umbrosa cacumina, fagos</l>
+                    <l n="4">adsidue veniebat. Ibi haec incondita solus</l>
+                    <l n="5">montibus et silvis studio iactabat inani:</l>
+                    <l n="6">O crudelis Alexi, nihil mea carmina curas?</l>
+                    <l n="7">Nil nostri miserere? Mori me denique coges.</l>
+                    <l n="8">nunc etiam pecudes umbras et frigora captant;</l>
+                    <l n="9">nunc viridis etiam occultant spineta lacertos,</l>
+                    <l n="10">Thestylis et rapido fessis messoribus aestu</l>
+                    <l n="11">alia serpyllumque herbas contundit olentis.</l>
+                    <l n="12">at mecum raucis, tua dum vestigia lustro,</l>
+                    <l n="13">sole sub ardenti resonant arbusta cicadis.</l>
+                    <l n="14">Nonne fuit satius tristis Amaryllidis iras</l>
+                    <l n="15">atque superba pati fastidia, nonne Menalcan,</l>
+                    <l n="16">quam vis ille niger, quamvis tu candidus esses ?</l>
+                    <l n="17">o formose puer, nimium ne crede colori!</l>
+                    <l n="18">alba ligustra cadunt, vaccinia nigra leguntur.</l>
+                    <l n="19">Despectus tibi sum, nec qui sim quaeris, Alexi,</l>
+                    <l n="20">quam dives pecoris, nivei quam lactis abundans.</l>
+                    <l n="21">mille meae Siculis errant in montibus agnae;</l>
+                    <l n="22">lac mihi non aestate novum, non frigore defit;</l>
+                    <l n="23">canto quae solitus, si quando armenta vocabat,</l>
+                    <l n="24">Amphion Dircaeus in Actaeo Aracimtho.</l>
+                    <l n="25">Nec sum adeo informis: nuper me in litore vidi,</l>
+                    <l n="26">cum placidum ventis staret mare; non ego Daphnim</l>
+                    <l n="27">iudice te metuam, si numquam fallit imago.</l>
+                    <l n="28">O tantum libeat mecum tibi sordida rura</l>
+                    <l n="29">atque humilis habitare casas, et figere cervos,</l>
+                    <l n="30">haedorumque gregem viridi compellere hibisco!</l>
+                    <l n="31">Mecum una in silvis imitabere Pana canendo.</l>
+                    <l n="32">Pan primus calamos cera coniungere pluris</l>
+                    <l n="33">instituit; Pan curat ovis oviumque magistros.</l>
+                    <l n="34">Nec te paeniteat calamo trivisse labellum:</l>
+                    <l n="35">haec eadem ut sciret, quid non faciebat Amyntas?</l>
+                    <l n="36">est mihi disparibus septem compacta cicutis</l>
+                    <l n="37">fistula, Damoetas dono mihi quam dedit olim,</l>
+                    <l n="38">et dixit moriens: “Te nunc habet ista secundum.”</l>
+                    <l n="39">dixit Damoetas, invidit stultus Amyntas.</l>
+                    <l n="40">Praeterea duo, nec tuta mihi valle reperti,</l>
+                    <l n="41">capreoli, sparsis etiam nunc pellibus albo,</l>
+                    <l n="42">bina die siccant ovis ubera; quos tibi servo:</l>
+                    <l n="43">iam pridem a me illos abducere Thestylis orat;</l>
+                    <l n="44">et faciet, quoniam sordent tibi munera nostra.</l>
+                    <l n="45">Huc ades, O formose puer: tibi lilia plenis</l>
+                    <l n="46">ecce ferunt Nymphae calathis; tibi candida Nais,</l>
+                    <l n="47">pallentis violas et summa papavera carpens,</l>
+                    <l n="48">narcissum et florem iungit bene olentis anethi;</l>
+                    <l n="49">tum casia atque aliis intexens suavibus herbis,</l>
+                    <l n="50">mollia luteola pingit vaccinia calta.</l>
+                    <l n="51">Ipse ego cana legam tenera lanugine mala,</l>
+                    <l n="52">castaneasque nuces, mea quas Amaryllis amabat;</l>
+                    <l n="53">addam cerea pruna: honos erit huic quoque pomo;</l>
+                    <l n="54">et vos, O lauri, carpam, et te, proxima myrte,</l>
+                    <l n="55">sic positae quoniam suavis miscetis odores.</l>
+                    <l n="56">Rusticus es, Corydon: nec munera curat Alexis,</l>
+                    <l n="57">nec, si muneribus certes, concedat Iollas.</l>
+                    <l n="58">Heu, heu, quid volui misero mihi! Floribus austrum</l>
+                    <l n="59">perditus et liquidis inmisi fontibus apros.</l>
+                    <l n="60">Quem fugis, ah, demens? Habitarunt di quoque silvas,</l>
+                    <l n="61">Dardaniusque Paris. Pallas, quas condidit arces,</l>
+                    <l n="62">ipsa colat; nobis placeant ante omnia silvae.</l>
+                    <l n="63">Torva leaena lupum sequitur; lupus ipse capellam;</l>
+                    <l n="64">florentem cytisum sequitur lasciva capella;</l>
+                    <l n="65">te Corydon, o Alexi: trahit sua quemque voluptas.</l>
+                    <l n="66">Aspice, aratra iugo referunt suspensa iuvenci,</l>
+                    <l n="67">et sol crescentis decedens duplicat umbras:</l>
+                    <l n="68">me tamen urit amor; quis enim modus adsit amori?</l>
+                    <l n="69">Ah, Corydon, Corydon, quae te dementia cepit!</l>
+                    <l n="70">Semiputata tibi frondosa vitis in ulmo est;</l>
+                    <l n="71">quin tu aliquid saltem potius, quorum indiget usus,</l>
+                    <l n="72">viminibus mollique paras detexere iunco?</l>
+                    <l n="73">Invenies alium, si te hic fastidit, Alexim.</l>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
