@@ -2,15 +2,15 @@
 
 // Paths for resources
 
-const lemmatiserPath = "resources/eclogue1LR.xml";
-const lexiconPath = "resources/glosses.xml";
-const commentaryPath = "resources/commentary.xml";
+const lemmatiserPath = "./docs/eclogue01/eclogue1LR.xml";
+const lexiconPath = "./docs/glosses.xml";
+const commentaryPath = "./docs/eclogue01/commentary.xml";
 
 let lemmatiserXML = null;
 let lexiconXML = null;
 let commentaryXML = null;
 
-const bookIconPath = "./resources/book.svg";
+const bookIconPath = "./static/book.svg";
 
 let bookIconData = null;
 
