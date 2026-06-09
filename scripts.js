@@ -2,13 +2,14 @@
 
 // Paths for resources
 
-const lemmatiserPath = "./docs/eclogue01/eclogue1LR.xml";
+const lemmatiserPath = "./docs/lascivaroma.xml";
 const lexiconPath = "./docs/glosses.xml";
 const commentaryPath = "./docs/eclogue01/commentary.xml";
 
 let lemmatiserXML = null;
 let lexiconXML = null;
 let commentaryXML = null;
+let lemmatiserPoemXML = null;
 
 const bookIconPath = "./static/book.svg";
 
@@ -25,11 +26,35 @@ async function loadXMLResource(path, parser) {
     }
 }
 
+function getPoemNumber() {
+    // Prefer explicit marker on the page
+    try {
+        return String(document.body.dataset.poem);
+        
+    } catch (e) {
+        console.log("getPoemNumber error:", e);
+    }
+    return "1";
+}
+
 async function loadXMLData() {
     let parser = new DOMParser();
     lemmatiserXML = await loadXMLResource(lemmatiserPath, parser);
     lexiconXML = await loadXMLResource(lexiconPath, parser);
     commentaryXML = await loadXMLResource(commentaryPath, parser);
+
+    // Create a per-page slice of the lemmatised XML containing only
+    // the tokens for the current poem (so selectors are scoped)
+    try {
+        const poemNum = getPoemNumber();
+        const poemPrefix = poemNum + ".";
+        lemmatiserPoemXML = document.implementation.createDocument(null, "root");
+        const wNodes = lemmatiserXML.querySelectorAll(`w[n^='${poemPrefix}']`);
+        wNodes.forEach(n => lemmatiserPoemXML.documentElement.appendChild(n.cloneNode(true)));
+    } catch (e) {
+        console.log("Error scoping lemmatiser XML to poem:", e);
+        lemmatiserPoemXML = lemmatiserXML;
+    }
 
     // The book icon for comments
     let response = await fetch(bookIconPath);
@@ -181,17 +206,23 @@ async function spanAllWords() {
     });
 
     // So far the enclitic -que is not separated from the word it is attached to.
-    // All instances of -que are retrieved from the lemmatised text, the span which contains that instance is identified and split so as to give que its own span.
-    const $queTokens = $(lemmatiserXML).find("[lemma=que]");
+    // All instances of -que are retrieved from the lemmatised text.
+    // The span which contains that instance is identified and split so as to give que its own span.
+    const $queTokens = $(lemmatiserPoemXML).find("[lemma=que]");
     $queTokens.each((index, value) => {
-        const queLineNumber = $(value).attr("n") // e.g. "1.2"
-        const queIndex = $(value).index()
+        const queLineNumber = $(value).attr("n"); // e.g. "1.2"
 
-        const lineDiv = $(".l[n='"+queLineNumber+"']")
-        const queSpan = $(lineDiv).find(".w:nth-child("+queIndex+")");
+        // Find the token's position among the tokens for that line (0-based)
+        const queLineWords = $(lemmatiserPoemXML).find(`w[n='${queLineNumber}']`);
+        const queIndexInLine = queLineWords.index(value) - 1; // -1 to convert to 0-based index
+
+        const lineDiv = $(".l[n='" + queLineNumber + "']").find(".line_text");
+
+        // Select the Nth .w element within the HTML line (matching the token index)
+        const queSpan = $(lineDiv).find(".w").eq(queIndexInLine);
 
         const oldHTML = queSpan.html();
-        const newHTML = "<span class='w'>" + oldHTML.slice(0,-3) + "</span><span class='w'>que"
+        const newHTML = "<span class='w'>" + oldHTML.slice(0,-3) + "</span><span class='w'>que</span>";
 
         queSpan.replaceWith(newHTML);
     });
@@ -215,7 +246,7 @@ function updateCard(word) { // word is an element
 function loadDetails(wordElement) {
     clearCard();
 
-    const xmlWord = getWordFromXML(lemmatiserXML, wordElement);
+    const xmlWord = getWordFromXML(lemmatiserPoemXML , wordElement);
     const lemma = loadLemma(xmlWord);
     currentLemma = lemma;
     const parseData = loadParseData(xmlWord);
@@ -441,10 +472,14 @@ function getIndex(elem) {
 }
 
 function getWordFromXML(xml, elem) {
+    console.log("getWordFromXML: ", elem);
     var index = getIndex(elem);
     var [poemNumber, lineNumber, wordIndex] = index.split(".")
+    console.log(`Looking for poem ${poemNumber}, line ${lineNumber}, word index ${wordIndex}`);
     var wordElements = $(xml).find(`w[n='${poemNumber}.${lineNumber}']`);
+    console.log(`Found ${wordElements.length} words for line ${lineNumber}`);
     var word = wordElements[wordIndex - 1]; // -1 for zero indexing
+    console.log("Found word in XML: ", word);
     return word;
 }
 
