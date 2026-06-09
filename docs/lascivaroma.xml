@@ -163,8 +163,10 @@
                 <w rend="line" n="1.10" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="calamus">calamo</w>
                 <w rend="line" n="1.10" pos="VER"
                     msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="permitto">permisit</w>
-                <w rend="line" n="1.10" pos="ADJqua" msd="Case=Nom|Numb=Sing|Deg=Pos"
-                    lemma="agrestimeliboeus">agrestiMeliboeus</w>
+                <w rend="line" n="1.10" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Masc|Deg=Pos"
+                    lemma="agrestis">agresti</w>
+                <w rend="poem" n="1.10" pos="NOMpro" msd="Case=Nom|Numb=Sing|Deg=Pos"
+                    lemma="Meliboeus">Meliboeus</w>
             </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:1.11">
                 <w rend="line" n="1.11" pos="ADVneg" msd="MORPH=empty" lemma="non">Non</w>
