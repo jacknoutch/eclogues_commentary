@@ -49,7 +49,8 @@ async function loadXMLData() {
         const poemNum = getPoemNumber();
         const poemPrefix = poemNum + ".";
         lemmatiserPoemXML = document.implementation.createDocument(null, "root");
-        const wNodes = lemmatiserXML.querySelectorAll(`w[n^='${poemPrefix}']`);
+        // Select only word tokens for this poem; exclude punctuation tokens (pos='PUNC')
+        const wNodes = lemmatiserXML.querySelectorAll(`w[n^='${poemPrefix}']:not([pos='PUNC'])`);
         wNodes.forEach(n => lemmatiserPoemXML.documentElement.appendChild(n.cloneNode(true)));
     } catch (e) {
         console.log("Error scoping lemmatiser XML to poem:", e);
@@ -472,14 +473,10 @@ function getIndex(elem) {
 }
 
 function getWordFromXML(xml, elem) {
-    console.log("getWordFromXML: ", elem);
     var index = getIndex(elem);
     var [poemNumber, lineNumber, wordIndex] = index.split(".")
-    console.log(`Looking for poem ${poemNumber}, line ${lineNumber}, word index ${wordIndex}`);
     var wordElements = $(xml).find(`w[n='${poemNumber}.${lineNumber}']`);
-    console.log(`Found ${wordElements.length} words for line ${lineNumber}`);
     var word = wordElements[wordIndex - 1]; // -1 for zero indexing
-    console.log("Found word in XML: ", word);
     return word;
 }
 
