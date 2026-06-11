@@ -3,7 +3,7 @@
 // Paths for resources
 
 const lemmatiserPath = "./docs/lascivaroma.xml";
-const lexiconPath = "./docs/glosses.xml";
+const lexiconPath = "./docs/lemmas_glosses.xml";
 const commentaryPath = "./docs/eclogue01/commentary.xml";
 
 let lemmatiserXML = null;
