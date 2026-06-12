@@ -86,6 +86,7 @@
     <entry n="Amor">
         <lemma>Amor</lemma>
         <gloss>love, affection, strong friendly feeling; Amor, god of love</gloss>
+        <pp>Amor, Amōris</pp>
         <gen>m.</gen>
     </entry>
     <entry n="Amphion">
@@ -96,7 +97,8 @@
     </entry>
     <entry n="Amyntas">
         <lemma>Amyntas</lemma>
-        <gloss />
+        <gloss>Amyntas (a name)</gloss>
+        <pp>Amyntas, Amyntae</pp>
         <gen>m.</gen>
     </entry>
     <entry n="Antigenes">
@@ -281,7 +283,9 @@
     </entry>
     <entry n="Damoetas">
         <lemma>Damoetas</lemma>
-        <gloss />
+        <gloss>Damoetas (a name)</gloss>
+        <pp>Dāmoetas, Dāmoetae</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="Damon">
         <lemma>Damon</lemma>
@@ -296,6 +300,7 @@
     <entry n="Dardanius">
         <lemma>Dardanius</lemma>
         <gloss>Trojan</gloss>
+        <pp>Dardanius, Dardania, Dardanium</pp>
     </entry>
     <entry n="Darmoeta">
         <lemma>Darmoeta</lemma>
@@ -427,7 +432,9 @@
     </entry>
     <entry n="Iolla">
         <lemma>Iolla</lemma>
-        <gloss />
+        <gloss>Iolla (a name)</gloss>
+        <pp>Iollās, Iollae</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="Ismarus">
         <lemma>Ismarus</lemma>
@@ -557,6 +564,8 @@
     <entry n="Nais">
         <lemma>Nais</lemma>
         <gloss>a water-nymph, Naiad</gloss>
+        <pp>nāis, nāidis</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="Neaera">
         <lemma>Neaera</lemma>
@@ -587,6 +596,7 @@
         <lemma>Nympha</lemma>
         <gloss>a bride, mistress, young woman; nymph, demi-goddess inhabiting water or other natural
             parts</gloss>
+        <pp>nympha, nymphae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="Oaxes">
@@ -619,11 +629,15 @@
     <entry n="Pallas">
         <lemma>Pallas</lemma>
         <gloss>a surname of Athene (identified with the Roman Minerva)</gloss>
+        <pp>Pallas, Palladis/Pallados</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="Pan">
         <lemma>Pan</lemma>
         <gloss>Pan, son of Mercury, god of woods and shepherds, often represented as half man, half
             goat</gloss>
+        <pp>Pān, Pānos</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="Parca">
         <lemma>Parca</lemma>
@@ -635,7 +649,9 @@
     </entry>
     <entry n="Paris">
         <lemma>Paris</lemma>
-        <gloss />
+        <gloss>Paris, son of Priam and Hecuba</gloss>
+        <pp>Paris, Paridis</pp>
+        <gloss>m.</gloss>
     </entry>
     <entry n="Parnasius">
         <lemma>Parnasius</lemma>
@@ -1109,6 +1125,8 @@
     <entry n="album">
         <lemma>album</lemma>
         <gloss>white color, whiteness</gloss>
+        <pp>album, albī</pp>
+        <n>n.</n>
     </entry>
     <entry n="albus">
         <lemma>albus</lemma>
@@ -1131,6 +1149,7 @@
     <entry n="aliquis">
         <lemma>aliquis</lemma>
         <gloss>pron indef., some one, any one, anybody, one or another; neut., something, anything</gloss>
+        <pp>aliquis, aliquid</pp>
     </entry>
     <entry n="aliquot">
         <lemma>aliquot</lemma>
@@ -1222,6 +1241,7 @@
     <entry n="amor">
         <lemma>amor</lemma>
         <gloss>love, affection, strong friendly feeling; Amor, god of love</gloss>
+        <pp>amor, amōris</pp>
         <gen>m.</gen>
     </entry>
     <entry n="ample">
@@ -1239,6 +1259,7 @@
     <entry n="anethum">
         <lemma>anethum</lemma>
         <gloss>dill, anise</gloss>
+        <pp>anēthum, anēthī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="anguis">
@@ -1282,7 +1303,7 @@
     </entry>
     <entry n="ante2">
         <lemma>ante2</lemma>
-        <gloss />
+        <gloss>
     </entry>
     <entry n="antiqui">
         <lemma>antiqui</lemma>
@@ -1298,7 +1319,8 @@
     <entry n="aper">
         <lemma>aper</lemma>
         <gloss>a wild boar</gloss>
-        <gen>f.</gen>
+        <pp>aper, aprī</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="apis">
         <lemma>apis</lemma>
@@ -1352,6 +1374,8 @@
     <entry n="aratrum">
         <lemma>aratrum</lemma>
         <gloss>a plough</gloss>
+        <pp>arātrum, arātrī</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="arbor">
         <lemma>arbor</lemma>
@@ -1436,6 +1460,7 @@
     <entry n="arx">
         <lemma>arx</lemma>
         <gloss>a castle, citadel, fortress, stronghold</gloss>
+        <pp>arx, arcis</pp>
         <gen>f.</gen>
     </entry>
     <entry n="asper">
@@ -1457,7 +1482,8 @@
     </entry>
     <entry n="assum1">
         <lemma>assum1</lemma>
-        <gloss />
+        <gloss>to be at, be present, be at hand</gloss>
+        <pp>adsum, adesse, adfui, adfuturum</pp>
     </entry>
     <entry n="assurgo">
         <lemma>assurgo</lemma>
@@ -1537,6 +1563,7 @@
     <entry n="auster">
         <lemma>auster</lemma>
         <gloss>the south wind</gloss>
+        <pp>auster, austrī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="aut">
@@ -1584,7 +1611,8 @@
     </entry>
     <entry n="binus">
         <lemma>binus</lemma>
-        <gloss />
+        <gloss>two</gloss>
+        <pp>bīnī, bīnae, bīna</pp>
     </entry>
     <entry n="bis">
         <lemma>bis</lemma>
@@ -1660,11 +1688,13 @@
     <entry n="calathus">
         <lemma>calathus</lemma>
         <gloss>a wicker-basket, hand-basket (for flowers, wool, etc.)</gloss>
+        <pp>calathus, calathī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="caltha">
         <lemma>caltha</lemma>
         <gloss>a yellow flower, marigold</gloss>
+        <pp>caltha, calthae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="campus1">
@@ -1700,6 +1730,7 @@
     <entry n="canus">
         <lemma>canus</lemma>
         <gloss>white, hoary</gloss>
+        <pp>cānus, cāna, cānum</pp>
     </entry>
     <entry n="capella">
         <lemma>capella</lemma>
@@ -1720,6 +1751,7 @@
     <entry n="capreolus">
         <lemma>capreolus</lemma>
         <gloss>a wild goat, chamois, roebuck</gloss>
+        <pp>capreolus, capreolī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="capto">
@@ -1773,6 +1805,7 @@
     <entry n="casia">
         <lemma>casia</lemma>
         <gloss>wild cinnamon, a fragrant shrub, mezereon</gloss>
+        <pp>casia, casiae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="castanea">
@@ -1783,7 +1816,8 @@
     </entry>
     <entry n="castaneus">
         <lemma>castaneus</lemma>
-        <gloss />
+        <gloss>(of) chestnut</gloss>
+        <pp>castaneus, castanea, castaneum</pp>
     </entry>
     <entry n="castra2">
         <lemma>castra2</lemma>
@@ -1828,11 +1862,13 @@
     <entry n="cera">
         <lemma>cera</lemma>
         <gloss>wax</gloss>
+        <pp>cēra, cērae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="cereus2">
         <lemma>cereus2</lemma>
         <gloss>a wax-light, taper</gloss>
+        <pp>cēreus, cērea, cēreum</pp>
         <gen>m.</gen>
     </entry>
     <entry n="cerno">
@@ -1851,12 +1887,8 @@
     </entry>
     <entry n="certo1">
         <lemma>certo1</lemma>
-        <gloss />
+        <gloss>to contend, vie, compete</gloss>
         <pp>certo, certare, certaui, certatum</pp>
-    </entry>
-    <entry n="certo?">
-        <lemma>certo?</lemma>
-        <gloss />
     </entry>
     <entry n="certus">
         <lemma>certus</lemma>
@@ -1891,6 +1923,7 @@
     <entry n="cicuta">
         <lemma>cicuta</lemma>
         <gloss>hemlock (given to criminals as poison)</gloss>
+        <pp>cicūta, cicūtae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="cingo">
@@ -2029,8 +2062,8 @@
     </entry>
     <entry n="concedo1">
         <lemma>concedo1</lemma>
-        <gloss />
-        <pp>concedo, concedere, concessi, concessum</pp>
+        <gloss>to yield, grant, give way, depart, retire</gloss>
+        <pp>concēdo, concēdere, concesse, concessum</pp>
     </entry>
     <entry n="concors">
         <lemma>concors</lemma>
@@ -2427,10 +2460,12 @@
     <entry n="demens">
         <lemma>demens</lemma>
         <gloss>out of one’s senses, insane, demented, mad, raving, foolish, distracted</gloss>
+        <pp>dēmens, dēmentis</pp>
     </entry>
     <entry n="dementia">
         <lemma>dementia</lemma>
         <gloss>insanity, madness, distraction, folly</gloss>
+        <pp>dēmentia, dēmentiae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="demitto">
@@ -2572,6 +2607,7 @@
     <entry n="dispar">
         <lemma>dispar</lemma>
         <gloss>unlike, dissimilar, different, unequal, ill-matched</gloss>
+        <pp>dispar, disparis</pp>
     </entry>
     <entry n="disperdo">
         <lemma>disperdo</lemma>
@@ -2662,6 +2698,7 @@
     <entry n="donum">
         <lemma>donum</lemma>
         <gloss>a gift, present</gloss>
+        <pp>donum, donī</pp>
         <gen>n.</gen>
     </entry>
     <entry n="duco">
@@ -3076,6 +3113,7 @@
     <entry n="fistula">
         <lemma>fistula</lemma>
         <gloss>a pipe, tube, water-pipe</gloss>
+        <pp>fistula, fistulae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="flamma">
@@ -3235,6 +3273,7 @@
     <entry n="frondosus">
         <lemma>frondosus</lemma>
         <gloss>full of leaves, leafy</gloss>
+        <pp>frondōsus, frondōsa, frondōsum</pp>
     </entry>
     <entry n="frons1">
         <lemma>frons1</lemma>
@@ -3512,6 +3551,7 @@
     <entry n="honor">
         <lemma>honor</lemma>
         <gloss>honor, (public honor) office, (mark of honor) gift, reward</gloss>
+        <pp>honor, honōris</pp>
         <gen>m.</gen>
     </entry>
     <entry n="hora">
@@ -3587,6 +3627,7 @@
     <entry n="idem">
         <lemma>idem</lemma>
         <gloss>the same</gloss>
+        <pp>īdem, eadem, idem</pp>
     </entry>
     <entry n="igitur">
         <lemma>igitur</lemma>
@@ -3638,6 +3679,7 @@
     <entry n="imitor">
         <lemma>imitor</lemma>
         <gloss>to imitate, act like, copy after, seek to resemble, counterfeit, mimic</gloss>
+        <pp>imitor, imitārī, imitātus</pp>
     </entry>
     <entry n="immemor">
         <lemma>immemor</lemma>
@@ -3950,7 +3992,8 @@
     <entry n="iugum">
         <lemma>iugum</lemma>
         <gloss>a yoke, collar; juger of land, mountain ridge</gloss>
-        <gen>m.</gen>
+        <pp>iugum, iugī</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="iuncus">
         <lemma>iuncus</lemma>
@@ -3985,7 +4028,9 @@
     </entry>
     <entry n="iuuencus1">
         <lemma>iuuencus1</lemma>
-        <gloss />
+        <gloss>bullock</gloss>
+        <pp>iuuencus, iuuenicī</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="iuuenis1">
         <lemma>iuuenis1</lemma>
@@ -4000,7 +4045,8 @@
     </entry>
     <entry n="labellum1">
         <lemma>labellum1</lemma>
-        <gloss />
+        <gloss>lip</gloss>
+        <pp>labellum, labellī</pp>
         <gen>n.</gen>
     </entry>
     <entry n="labor1">
@@ -4081,6 +4127,7 @@
     <entry n="lanugo">
         <lemma>lanugo</lemma>
         <gloss>woolly substance, down</gloss>
+        <pp>lānūgo, lānūginis</pp>
         <gen>f.</gen>
     </entry>
     <entry n="lapis">
@@ -4091,7 +4138,8 @@
     </entry>
     <entry n="lasciuus">
         <lemma>lasciuus</lemma>
-        <gloss />
+        <gloss>wanton, petulant, sportive, playful, frolicsome, roguish</gloss>
+        <pp>lascīuus, lascīua, lascīuum</pp>
     </entry>
     <entry n="lateo">
         <lemma>lateo</lemma>
@@ -4126,6 +4174,7 @@
     <entry n="laurus">
         <lemma>laurus</lemma>
         <gloss>a bay-tree, laurel-tree, laurel (sacred to Apollo)</gloss>
+        <pp>laurus, laurī</pp>
         <gen>f.</gen>
     </entry>
     <entry n="laus">
@@ -4136,6 +4185,7 @@
     <entry n="leaena">
         <lemma>leaena</lemma>
         <gloss>a lioness</gloss>
+        <pp>leaena, leaenae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="lector">
@@ -4217,6 +4267,7 @@
     <entry n="lilium">
         <lemma>lilium</lemma>
         <gloss>a lily</gloss>
+        <pp>līlium, līliī</pp>
         <gen>n.</gen>
     </entry>
     <entry n="limen">
@@ -4258,6 +4309,7 @@
     <entry n="liquidus">
         <lemma>liquidus</lemma>
         <gloss>flowing, fluid, liquid</gloss>
+        <pp>liquidus, liquida, liquidum</pp>
     </entry>
     <entry n="lis">
         <lemma>lis</lemma>
@@ -4312,6 +4364,8 @@
     <entry n="lupus">
         <lemma>lupus</lemma>
         <gloss>a wolf</gloss>
+        <pp>lupus, lupī</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="lustro2">
         <lemma>lustro2</lemma>
@@ -4321,6 +4375,7 @@
     <entry n="luteolus">
         <lemma>luteolus</lemma>
         <gloss>yellowish</gloss>
+        <pp>lūteolus, lūteola, lūteolum</pp>
     </entry>
     <entry n="lutum1">
         <lemma>lutum1</lemma>
@@ -4357,6 +4412,7 @@
     <entry n="magister">
         <lemma>magister</lemma>
         <gloss>a master, chief, head, superior, director, president, leader, commander, conductor</gloss>
+        <pp>magister, magistrī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="magnus">
@@ -4367,7 +4423,7 @@
     <entry n="malo">
         <lemma>malo</lemma>
         <gloss>to choose rather, prefer</gloss>
-        <pp>malo, malle, malui, #DEF#</pp>
+        <pp>malo, malle, malui</pp>
     </entry>
     <entry n="malum1">
         <lemma>malum1</lemma>
@@ -4378,6 +4434,7 @@
     <entry n="malum2">
         <lemma>malum2</lemma>
         <gloss>an apple</gloss>
+        <pp>mālum, mālī</pp>
         <gen>n.</gen>
     </entry>
     <entry n="malus1">
@@ -4609,6 +4666,7 @@
     <entry n="modus">
         <lemma>modus</lemma>
         <gloss>a measure, extent, quantity; way, manner</gloss>
+        <pp>modus, modī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="mola">
@@ -4707,6 +4765,7 @@
     <entry n="munus">
         <lemma>munus</lemma>
         <gloss>a service, office, post, employment, function, duty</gloss>
+        <pp>mūnus, mūneris</pp>
         <gen>n.</gen>
     </entry>
     <entry n="munusculum">
@@ -4751,6 +4810,7 @@
     <entry n="myrtus">
         <lemma>myrtus</lemma>
         <gloss>a myrtle, myrtle-tree</gloss>
+        <pp>myrtus, myrtī</pp>
         <gen>f.</gen>
     </entry>
     <entry n="nam">
@@ -4764,6 +4824,7 @@
     <entry n="narcissus">
         <lemma>narcissus</lemma>
         <gloss>the narcissus</gloss>
+        <pp>narcissus, narcissī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="narro">
@@ -5000,6 +5061,7 @@
     <entry n="nux">
         <lemma>nux</lemma>
         <gloss>a nut</gloss>
+        <pp>nux, nucis</pp>
         <gen>f.</gen>
     </entry>
     <entry n="nympha">
@@ -5225,6 +5287,7 @@
     <entry n="pallens">
         <lemma>pallens</lemma>
         <gloss>pale, wan</gloss>
+        <pp>pallēns, pallentis</pp>
     </entry>
     <entry n="palma">
         <lemma>palma</lemma>
@@ -5254,8 +5317,9 @@
     </entry>
     <entry n="papauer">
         <lemma>papauer</lemma>
-        <gloss />
-        <gen>m.</gen>
+        <gloss>poppy</gloss>
+        <pp>papāuer, papāueris</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="par2">
         <lemma>par2</lemma>
@@ -5417,6 +5481,7 @@
     <entry n="pellis">
         <lemma>pellis</lemma>
         <gloss>hide, skin, leather</gloss>
+        <pp>pellis, pellis</pp>
         <gen>f.</gen>
     </entry>
     <entry n="pello">
@@ -5450,6 +5515,7 @@
     <entry n="perditus">
         <lemma>perditus</lemma>
         <gloss>lost, hopeless, desperate, ruined, past recovery</gloss>
+        <pp>perditus, perdita, perditum</pp>
         <gen>m.</gen>
     </entry>
     <entry n="perduco">
@@ -5575,6 +5641,7 @@
     <entry n="plenus">
         <lemma>plenus</lemma>
         <gloss>full, filled</gloss>
+        <pp>plēnus, plēna, plēnum</pp>
     </entry>
     <entry n="pluuia">
         <lemma>pluuia</lemma>
@@ -5822,6 +5889,7 @@
     <entry n="propior">
         <lemma>propior</lemma>
         <gloss>nearer, nigher</gloss>
+        <pp>propior, ius, gen. ōris; superlative: proximus, proxima, proximum</pp>
     </entry>
     <entry n="proprius">
         <lemma>proprius</lemma>
@@ -5849,6 +5917,7 @@
     <entry n="prunum">
         <lemma>prunum</lemma>
         <gloss>a plum</gloss>
+        <pp>prūnum, prūnī</pp>
         <gen>f.</gen>
     </entry>
     <entry n="pudor">
@@ -6002,7 +6071,7 @@
     </entry>
     <entry n="quin3">
         <lemma>quin3</lemma>
-        <gloss />
+        <gloss>why not?</gloss>
     </entry>
     <entry n="quis1">
         <lemma>quis1</lemma>
@@ -6019,7 +6088,8 @@
     </entry>
     <entry n="quisque2">
         <lemma>quisque2</lemma>
-        <gloss />
+        <gloss>each, every</gloss>
+        <pp>quisque, quaeque, quodque (or, as a noun, quidque/quicque)</pp>
     </entry>
     <entry n="quisquis1">
         <lemma>quisquis1</lemma>
@@ -6330,7 +6400,8 @@
     </entry>
     <entry n="rusticus2">
         <lemma>rusticus2</lemma>
-        <gloss />
+        <gloss>(of the) country, rural</gloss>
+        <pp>rusticus, rustica, rusticum</pp>
     </entry>
     <entry n="sacellum">
         <lemma>sacellum</lemma>
@@ -6400,7 +6471,7 @@
     </entry>
     <entry n="saltem">
         <lemma>saltem</lemma>
-        <gloss>saved, save, at least, at the least, at all events, anyhow</gloss>
+        <gloss>at least, at all events, anyhow</gloss>
     </entry>
     <entry n="salto">
         <lemma>salto</lemma>
@@ -6489,7 +6560,8 @@
     </entry>
     <entry n="secundus2">
         <lemma>secundus2</lemma>
-        <gloss />
+        <gloss>following, second, favourable</gloss>
+        <pp>secundus, secundum, secunda</pp>
     </entry>
     <entry n="sed">
         <lemma>sed</lemma>
@@ -6514,6 +6586,7 @@
     <entry n="semiputatus">
         <lemma>semiputatus</lemma>
         <gloss>half-pruned</gloss>
+        <pp>sēmiputātus, sēmiputāta, sēmiputātum</pp>
     </entry>
     <entry n="semper">
         <lemma>semper</lemma>
@@ -6552,6 +6625,7 @@
     <entry n="sequor">
         <lemma>sequor</lemma>
         <gloss>to follow, come after, follow after, attend, accompany</gloss>
+        <pp>sequor, sequī, secūtus sum</pp>
     </entry>
     <entry n="serius">
         <lemma>serius</lemma>
@@ -6947,7 +7021,8 @@
     </entry>
     <entry n="suauis">
         <lemma>suauis</lemma>
-        <gloss />
+        <gloss>sweet, agreeable, grateful</gloss>
+        <pp>suāuis, suāue</pp>
     </entry>
     <entry n="sub">
         <lemma>sub</lemma>
@@ -7329,7 +7404,8 @@
     </entry>
     <entry n="toruus">
         <lemma>toruus</lemma>
-        <gloss />
+        <gloss>staring, keen, piercing, wild, stern, fierce, grim, savage</gloss>
+        <pp>toruus, torua, toruum</pp>
     </entry>
     <entry n="tot">
         <lemma>tot</lemma>
@@ -7440,6 +7516,7 @@
     <entry n="tutus">
         <lemma>tutus</lemma>
         <gloss>guarded, safe, secure, out of danger</gloss>
+        <pp>tūtus, tūta, tūtum</pp>
     </entry>
     <entry n="tuus">
         <lemma>tuus</lemma>
@@ -7468,7 +7545,9 @@
     </entry>
     <entry n="uallis">
         <lemma>uallis</lemma>
-        <gloss />
+        <gloss>valley, vale</gloss>
+        <pp>uallēs, valle</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="uarius">
         <lemma>uarius</lemma>
@@ -7481,7 +7560,8 @@
     </entry>
     <entry n="uber1">
         <lemma>uber1</lemma>
-        <gloss />
+        <gloss>teat, udder, breast</gloss>
+        <pp>ūber, ūberis</pp>
         <gen>n.</gen>
     </entry>
     <entry n="ubi1">
@@ -7692,6 +7772,7 @@
     <entry n="uimen">
         <lemma>uimen</lemma>
         <gloss>a pliant twig, switch, withe, osier</gloss>
+        <pp>uīmen, uīminis</pp>
         <gen>n.</gen>
     </entry>
     <entry n="uinco">
@@ -7722,6 +7803,7 @@
     <entry n="uiola">
         <lemma>uiola</lemma>
         <gloss>the violet, gillyflower</gloss>
+        <pp>uiola, uiolae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="uir">
@@ -7905,11 +7987,13 @@
     <entry n="uoluptas">
         <lemma>uoluptas</lemma>
         <gloss>satisfaction, enjoyment, pleasure, delight</gloss>
+        <pp>uoluptās, uoluptātis</pp>
         <gen>f.</gen>
     </entry>
     <entry n="uos">
         <lemma>uos</lemma>
         <gloss>you (plural)</gloss>
+        <pp>uos, uestrī/uestrum</pp>
     </entry>
     <entry n="uotum">
         <lemma>uotum</lemma>
@@ -7941,7 +8025,8 @@
     </entry>
     <entry n="usus">
         <lemma>usus</lemma>
-        <gloss />
+        <gloss>use, practice, enjoyment</gloss>
+        <pp>ūsus, ūsūs</pp>
         <gen>m.</gen>
     </entry>
     <entry n="ut">

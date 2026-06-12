@@ -1684,7 +1684,7 @@
                     haec</w>
                 <w rend="line" n="2.35" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="idem">
                     eadem</w>
-                <w rend="line" n="2.35" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w rend="line" n="2.35" pos="CONsub" msd="MORPH=empty" lemma="ut2">ut</w>
                 <w rend="line" n="2.35" pos="VER"
                     msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="scio">sciret</w>
                 <w rend="line" n="2.35" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
@@ -1927,7 +1927,7 @@
                     lemma="tener">tenera</w>
                 <w rend="line" n="2.51" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lanugo">
                     lanugine</w>
-                <w rend="line" n="2.51" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="malum1">mala</w>
+                <w rend="line" n="2.51" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="malum2">mala</w>
                 <w rend="line" n="2.51" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
             </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:2.52">
@@ -2016,7 +2016,7 @@
                 <w rend="line" n="2.57" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="munus">
                     muneribus</w>
                 <w rend="line" n="2.57" pos="ADJqua"
-                    msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="certo?">certes</w>
+                    msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="certo1">certes</w>
                 <w rend="line" n="2.57" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
                 <w rend="line" n="2.57" pos="VER"
                     msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="concedo1">concedat</w>
@@ -2094,7 +2094,7 @@
                 <w rend="line" n="2.62" pos="PROper" msd="Case=Dat|Numb=Plur" lemma="nos">nobis</w>
                 <w rend="line" n="2.62" pos="VER"
                     msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="placeo">placeant</w>
-                <w rend="line" n="2.62" pos="PRE" msd="MORPH=empty" lemma="ante2">ante</w>
+                <w rend="line" n="2.62" pos="PRE" msd="MORPH=empty" lemma="ante1">ante</w>
                 <w rend="line" n="2.62" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=Neut"
                     lemma="omnis">omnia</w>
                 <w rend="line" n="2.62" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="silua">silvae</w>
