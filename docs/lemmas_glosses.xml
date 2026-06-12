@@ -289,7 +289,9 @@
     </entry>
     <entry n="Daphnis">
         <lemma>Daphnis</lemma>
-        <gloss />
+        <gloss>Daphnis (a name)</gloss>
+        <pp>Daphnis, Daphinidis</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="Dardanius">
         <lemma>Dardanius</lemma>
@@ -1473,7 +1475,7 @@
     </entry>
     <entry n="atque1">
         <lemma>atque1</lemma>
-        <gloss />
+        <gloss>and</gloss>
     </entry>
     <entry n="attero">
         <lemma>attero</lemma>
@@ -1759,6 +1761,7 @@
     <entry n="casa">
         <lemma>casa</lemma>
         <gloss>a small house, cottage, hut, cabin, shed</gloss>
+        <pp>casa, casae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="caseus">
@@ -3459,13 +3462,11 @@
         <lemma>hibernus</lemma>
         <gloss>of winter, wintry, winter-</gloss>
     </entry>
-    <entry n="hibisco">
-        <lemma>hibisco</lemma>
-        <gloss />
-    </entry>
     <entry n="hibiscum">
         <lemma>hibiscum</lemma>
         <gloss>the marsh-mallow</gloss>
+        <pp>hibiscum, hibiscī</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="hic1">
         <lemma>hic1</lemma>
@@ -3544,6 +3545,7 @@
     <entry n="humilis">
         <lemma>humilis</lemma>
         <gloss>low, lowly, small, slight</gloss>
+        <pp>humilis, humile</pp>
     </entry>
     <entry n="humor">
         <lemma>humor</lemma>
@@ -3620,6 +3622,7 @@
     <entry n="imago">
         <lemma>imago</lemma>
         <gloss>an imitation, copy, image, representation, likeness, statue, bust, picture</gloss>
+        <pp>imāgo, imāginis</pp>
         <gen>f.</gen>
     </entry>
     <entry n="imber">
@@ -3779,6 +3782,7 @@
     <entry n="informis">
         <lemma>informis</lemma>
         <gloss>without form, unformed, shapeless</gloss>
+        <pp>informis, informe</pp>
     </entry>
     <entry n="ingemisco">
         <lemma>ingemisco</lemma>
@@ -3935,6 +3939,7 @@
     <entry n="iudex">
         <lemma>iudex</lemma>
         <gloss>a judge, juror</gloss>
+        <pp>iūdex, iūdicis</pp>
         <gen>m.</gen>
     </entry>
     <entry n="iudicium">
@@ -4181,6 +4186,7 @@
     <entry n="libet">
         <lemma>libet</lemma>
         <gloss>it pleases, is pleasing, is agreeable</gloss>
+        <pp>libet, libuit (impersonal)</pp>
     </entry>
     <entry n="libo">
         <lemma>libo</lemma>
@@ -4407,6 +4413,7 @@
     <entry n="mare">
         <lemma>mare</lemma>
         <gloss>the sea</gloss>
+        <pp>mare, maris</pp>
         <gen>n.</gen>
     </entry>
     <entry n="marinus">
@@ -5558,6 +5565,7 @@
     <entry n="placidus">
         <lemma>placidus</lemma>
         <gloss>gentle, quiet, still, calm, mild, peaceful, placid</gloss>
+        <pp>placidus, placida, placidum</pp>
     </entry>
     <entry n="planta">
         <lemma>planta</lemma>
@@ -6780,6 +6788,7 @@
     <entry n="sordidus">
         <lemma>sordidus</lemma>
         <gloss>dirty, unclean, foul, filthy, squalid, sordid</gloss>
+        <pp>sordidus, sordida, sordidum</pp>
     </entry>
     <entry n="soror">
         <lemma>soror</lemma>
@@ -7547,6 +7556,7 @@
     <entry n="uentus">
         <lemma>uentus</lemma>
         <gloss>wind</gloss>
+        <pp>uentus, uentī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="uer">

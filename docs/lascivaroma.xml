@@ -1622,7 +1622,7 @@
                     lemma="uiridis">viridi</w>
                 <w rend="line" n="2.30" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act"
                     lemma="compello2">compellere</w>
-                <w rend="line" n="2.30" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="hibisco">
+                <w rend="line" n="2.30" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="hibiscum">
                     hibisco</w>
                 <w rend="line" n="2.30" pos="PUNC" msd="MORPH=empty" lemma="!">!</w>
             </ab>
