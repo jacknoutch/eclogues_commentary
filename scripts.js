@@ -228,6 +228,34 @@ async function spanAllWords() {
         queSpan.replaceWith(newHTML);
     });
 
+    // Also split enclitics like -cum (e.g. mecum, tecum, nobiscum) using the
+    // lemmatised tokens whose lemma attribute ends with 'cum'. This mirrors
+    // how -que was handled above.
+    const $cumTokens = $(lemmatiserPoemXML).find("[lemma=cum3]");
+    $cumTokens.each((index, value) => {
+        const cumLineNumber = $(value).attr('n'); // e.g. "1.2"
+
+        // Find the token's position among the tokens for that line (0-based)
+        const cumLineWords = $(lemmatiserPoemXML).find(`w[n='${cumLineNumber}']`);
+        const cumIndexInLine = cumLineWords.index(value) - 1; // -1 to convert to 0-based index
+
+        const lineDiv = $(".l[n='" + cumLineNumber + "']").find('.line_text');
+
+        // Select the Nth .w element within the HTML line (matching the token index)
+        const cumSpan = $(lineDiv).find('.w').eq(cumIndexInLine);
+        if (!cumSpan || cumSpan.length === 0) return;
+
+        const oldHTML = cumSpan.html();
+        if (!oldHTML) return;
+        const lower = oldHTML.toLowerCase();
+        // only split if the visible span actually ends with 'cum'
+        if (!lower.endsWith('cum')) return;
+
+        const newHTML = "<span class='w'>" + oldHTML.slice(0, -3) + "</span><span class='w'>cum</span>";
+
+        cumSpan.replaceWith(newHTML);
+    });
+
     return document.querySelectorAll(".w")
 
 }
