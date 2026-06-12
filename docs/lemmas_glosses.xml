@@ -63,7 +63,8 @@
     </entry>
     <entry n="Alexis">
         <lemma>Alexis</lemma>
-        <gloss />
+        <gloss>Alexis (name)</gloss>
+        <pp>Alexis, idis</pp>
         <gen>m.</gen>
     </entry>
     <entry n="Alphesiboeus">
@@ -241,7 +242,9 @@
     </entry>
     <entry n="Corydon">
         <lemma>Corydon</lemma>
-        <gloss />
+        <gloss>Corydon (name of a shepherd)</gloss>
+        <pp>Corydōn, ōnis</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="Cremona">
         <lemma>Cremona</lemma>
@@ -802,7 +805,9 @@
     </entry>
     <entry n="Thestylis">
         <lemma>Thestylis</lemma>
-        <gloss />
+        <gloss>Thestylis (a name)</gloss>
+        <pp>Thestylis, Thestylidis</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="Thetis">
         <lemma>Thetis</lemma>
@@ -1017,6 +1022,8 @@
     <entry n="aestus">
         <lemma>aestus</lemma>
         <gloss>an agitation, glow, heat, rage of fire</gloss>
+        <pp>aestus, aestūs</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="aetas">
         <lemma>aetas</lemma>
@@ -1117,6 +1124,12 @@
     <entry n="aliquot">
         <lemma>aliquot</lemma>
         <gloss>some, several, a few, not many, a number:</gloss>
+    </entry>
+    <entry n="alium">
+        <lemma>alium</lemma>
+        <gloss>garlic</gloss>
+        <pp>ālium, ālii</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="alius">
         <lemma>alius</lemma>
@@ -1595,6 +1608,7 @@
     <entry n="cacumen">
         <lemma>cacumen</lemma>
         <gloss>an extremity, point, peak, top, summit</gloss>
+        <pp>cacūmen, cacūminis</pp>
         <gen>n.</gen>
     </entry>
     <entry n="cado">
@@ -2194,6 +2208,7 @@
     <entry n="crudelis">
         <lemma>crudelis</lemma>
         <gloss>rude, unfeeling, hard, unmerciful, hard - hearted, cruel, severe, fierce</gloss>
+        <pp>crūdēlis, crūdēle</pp>
     </entry>
     <entry n="cubile">
         <lemma>cubile</lemma>
@@ -2254,7 +2269,7 @@
     <entry n="curo">
         <lemma>curo</lemma>
         <gloss>to care for, take pains with, be solicitous for, look to, attend to, regard</gloss>
-        <pp>curo, coerare, coeraui, coeratum</pp>
+        <pp>curo, curare, curaui, curatum</pp>
     </entry>
     <entry n="curro">
         <lemma>curro</lemma>
@@ -2379,7 +2394,8 @@
     </entry>
     <entry n="delicia1">
         <lemma>delicia1</lemma>
-        <gloss />
+        <gloss>delight, pleasure; pl. sweetheart, beloved</gloss>
+        <pp>dēlicia, dēliciae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="deligo3">
@@ -2608,6 +2624,7 @@
     <entry n="dominus">
         <lemma>dominus</lemma>
         <gloss>a master, possessor, ruler, lord, proprietor, owner</gloss>
+        <pp>dominus, dominī</pp>
         <gen>m.</gen>
     </entry>
     <entry n="domus">
@@ -2727,6 +2744,7 @@
     <entry n="ego">
         <lemma>ego</lemma>
         <gloss>I, me, we, us</gloss>
+        <pp>ego, meī</pp>
     </entry>
     <entry n="electrum">
         <lemma>electrum</lemma>
@@ -2988,6 +3006,7 @@
     <entry n="fessus">
         <lemma>fessus</lemma>
         <gloss>wearied, tired, fatigued, exhausted, worn out, weak, feeble, infirm</gloss>
+        <pp>fessus, fessa, fessum</pp>
     </entry>
     <entry n="fetura">
         <lemma>fetura</lemma>
@@ -3405,6 +3424,7 @@
     <entry n="herba">
         <lemma>herba</lemma>
         <gloss>an herb, grass, green blades, herbage, turf</gloss>
+        <pp>herba, herbae</pp>
         <gen>f.</gen>
     </entry>
     <entry n="heros">
@@ -3650,6 +3670,7 @@
     <entry n="inanis">
         <lemma>inanis</lemma>
         <gloss>empty, void</gloss>
+        <pp>inānis, ināne</pp>
     </entry>
     <entry n="incendo">
         <lemma>incendo</lemma>
@@ -3678,6 +3699,7 @@
     <entry n="inconditus">
         <lemma>inconditus</lemma>
         <gloss>without order, irregular, disordered</gloss>
+        <pp>inconditus, incondita, inconditum</pp>
     </entry>
     <entry n="incrementum">
         <lemma>incrementum</lemma>
@@ -3993,7 +4015,9 @@
     </entry>
     <entry n="lacertus1">
         <lemma>lacertus1</lemma>
-        <gloss />
+        <gloss>upper arm; strength, muscle</gloss>
+        <pp>lacertus, lacertī</pp>
+        <gen>m.</gen>
     </entry>
     <entry n="lacesso">
         <lemma>lacesso</lemma>
@@ -4478,6 +4502,7 @@
     <entry n="messor">
         <lemma>messor</lemma>
         <gloss>a reaper</gloss>
+        <pp>messor, messōris</pp>
         <gen>f.</gen>
     </entry>
     <entry n="metuo">
@@ -4532,6 +4557,7 @@
     <entry n="misereor">
         <lemma>misereor</lemma>
         <gloss>to feel pity, have compassion, pity, compassionate, commiserate</gloss>
+        <pp>misereor, misererī, miseritus</pp>
     </entry>
     <entry n="mitesco">
         <lemma>mitesco</lemma>
@@ -4599,6 +4625,7 @@
     <entry n="morior">
         <lemma>morior</lemma>
         <gloss>to die, expire</gloss>
+        <pp>morior, morī, mortuus</pp>
     </entry>
     <entry n="moror1">
         <lemma>moror1</lemma>
@@ -4849,6 +4876,7 @@
     <entry n="nos">
         <lemma>nos</lemma>
         <gloss>we, us</gloss>
+        <pp>nōs, nostrī/nostrum</pp>
     </entry>
     <entry n="nosco">
         <lemma>nosco</lemma>
@@ -5024,6 +5052,7 @@
     <entry n="oleo">
         <lemma>oleo</lemma>
         <gloss>to emit a smell, smell of, smell</gloss>
+        <pp>oleo, olere, olui</pp>
     </entry>
     <entry n="olim">
         <lemma>olim</lemma>
@@ -5344,8 +5373,9 @@
     </entry>
     <entry n="pecus">
         <lemma>pecus</lemma>
-        <gloss>cattle</gloss>
-        <gen>n.</gen>
+        <gloss>one animal of a flock; a sheep, a cow</gloss>
+        <pp>pecus, pecudis</pp>
+        <gen>f.</gen>
     </entry>
     <entry n="pecus1">
         <lemma>pecus1</lemma>
@@ -6517,6 +6547,8 @@
     <entry n="serpyllum">
         <lemma>serpyllum</lemma>
         <gloss>wild thyme</gloss>
+        <pp>serpyllum, serpyllī</pp>
+        <gen>n.</gen>
     </entry>
     <entry n="sertum">
         <lemma>sertum</lemma>
@@ -6697,6 +6729,7 @@
     <entry n="solus">
         <lemma>solus</lemma>
         <gloss>alone, only, single, sole</gloss>
+        <pp>solus, sola, solum</pp>
     </entry>
     <entry n="somnium">
         <lemma>somnium</lemma>
@@ -6787,6 +6820,7 @@
     <entry n="spinetum">
         <lemma>spinetum</lemma>
         <gloss>a thorn hedge, thicket of thorns</gloss>
+        <pp>spīnētum, spīnētī</pp>
         <gen>n.</gen>
     </entry>
     <entry n="spiritus">
@@ -6854,6 +6888,7 @@
         <lemma>studium</lemma>
         <gloss>application, assiduity, zeal, eagerness, fondness, inclination, desire, exertion,
             endeavor, study</gloss>
+        <pp>studium, studiī</pp>
         <gen>n.</gen>
     </entry>
     <entry n="stultus">
@@ -7777,6 +7812,7 @@
     <entry n="umbrosus">
         <lemma>umbrosus</lemma>
         <gloss>full of shade, rich in shade, shady, umbrageous</gloss>
+        <pp>umbrōsus, umbrōsa, umbrōsum</pp>
     </entry>
     <entry n="umquam">
         <lemma>umquam</lemma>

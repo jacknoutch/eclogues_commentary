@@ -1342,7 +1342,7 @@
                 <w rend="line" n="2.10" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="aestus">aestu</w>
             </ab>
             <ab type="line" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2:2.11">
-                <w rend="line" n="2.11" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="alius">
+                <w rend="line" n="2.11" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="alium">
                     alia</w>
                 <w rend="line" n="2.11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="serpyllum">
                     serpyllumque</w>
