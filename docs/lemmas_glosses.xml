@@ -85,7 +85,7 @@
     </entry>
     <entry n="Amor">
         <lemma>Amor</lemma>
-        <gloss>love, affection, strong friendly feeling; Amor, god of love</gloss>
+        <gloss>love; Amor, god of love</gloss>
         <pp>Amor, Amōris</pp>
         <gen>m.</gen>
     </entry>
@@ -594,8 +594,7 @@
     </entry>
     <entry n="Nympha">
         <lemma>Nympha</lemma>
-        <gloss>a bride, mistress, young woman; nymph, demi-goddess inhabiting water or other natural
-            parts</gloss>
+        <gloss>a bride, young woman; nymph, water spirit</gloss>
         <pp>nympha, nymphae</pp>
         <gen>f.</gen>
     </entry>
@@ -634,8 +633,7 @@
     </entry>
     <entry n="Pan">
         <lemma>Pan</lemma>
-        <gloss>Pan, son of Mercury, god of woods and shepherds, often represented as half man, half
-            goat</gloss>
+        <gloss>Pan, son of Mercury, god of woods and shepherds</gloss>
         <pp>Pān, Pānos</pp>
         <gen>m.</gen>
     </entry>
@@ -902,7 +900,7 @@
     </entry>
     <entry n="abduco">
         <lemma>abduco</lemma>
-        <gloss>to lead away, take away, carry off, remove, lead aside</gloss>
+        <gloss>to lead away, carry off, remove</gloss>
         <pp>abduco, abdoucere, abduxi, abductum</pp>
     </entry>
     <entry n="abeo1">
@@ -959,7 +957,7 @@
     </entry>
     <entry n="addo">
         <lemma>addo</lemma>
-        <gloss>to put to, place upon, lay on, join, attach</gloss>
+        <gloss>to put to, place upon, join, attach</gloss>
         <pp>addo, addere, addidi, additum</pp>
     </entry>
     <entry n="adeo2">
@@ -1148,7 +1146,7 @@
     </entry>
     <entry n="aliquis">
         <lemma>aliquis</lemma>
-        <gloss>pron indef., some one, any one, anybody, one or another; neut., something, anything</gloss>
+        <gloss>someone, something, anyone, anything</gloss>
         <pp>aliquis, aliquid</pp>
     </entry>
     <entry n="aliquot">
@@ -1240,7 +1238,7 @@
     </entry>
     <entry n="amor">
         <lemma>amor</lemma>
-        <gloss>love, affection, strong friendly feeling; Amor, god of love</gloss>
+        <gloss>love</gloss>
         <pp>amor, amōris</pp>
         <gen>m.</gen>
     </entry>
@@ -1459,7 +1457,7 @@
     </entry>
     <entry n="arx">
         <lemma>arx</lemma>
-        <gloss>a castle, citadel, fortress, stronghold</gloss>
+        <gloss>a citadel, fortress, stronghold</gloss>
         <pp>arx, arcis</pp>
         <gen>f.</gen>
     </entry>
@@ -1469,7 +1467,7 @@
     </entry>
     <entry n="aspicio">
         <lemma>aspicio</lemma>
-        <gloss>to look at, look upon, behold, look</gloss>
+        <gloss>to look at, look upon, look</gloss>
         <pp>aspicio, adspicere, adspexi, adspectum</pp>
     </entry>
     <entry n="assidue">
@@ -1681,7 +1679,7 @@
     </entry>
     <entry n="calamus">
         <lemma>calamus</lemma>
-        <gloss>a reed, cane</gloss>
+        <gloss>a reed, cane; reed-pipe</gloss>
         <pp>calamus, calamī</pp>
         <gen>m.</gen>
     </entry>
@@ -1704,7 +1702,7 @@
     </entry>
     <entry n="candidus">
         <lemma>candidus</lemma>
-        <gloss>shining white, clear, bright</gloss>
+        <gloss>white, clear, bright</gloss>
         <pp>candidus, candida, candidum</pp>
     </entry>
     <entry n="canis">
@@ -1724,7 +1722,7 @@
     </entry>
     <entry n="canto">
         <lemma>canto</lemma>
-        <gloss>to produce melodious sounds, sound, sing, play</gloss>
+        <gloss>to sound, sing, play</gloss>
         <pp>canto, cantare, cantaui, cantatum</pp>
     </entry>
     <entry n="canus">
@@ -1745,12 +1743,12 @@
     </entry>
     <entry n="capio2">
         <lemma>capio2</lemma>
-        <gloss />
+        <gloss>to seize, take</gloss>
         <pp>capio, capere, cepi, captum</pp>
     </entry>
     <entry n="capreolus">
         <lemma>capreolus</lemma>
-        <gloss>a wild goat, chamois, roebuck</gloss>
+        <gloss>a goat</gloss>
         <pp>capreolus, capreolī</pp>
         <gen>m.</gen>
     </entry>
@@ -1783,7 +1781,7 @@
     </entry>
     <entry n="carpo">
         <lemma>carpo</lemma>
-        <gloss>to pick, pluck, pluck off, cull, crop, gather</gloss>
+        <gloss>to pick, pluck, crop, gather</gloss>
         <pp>carpō, carpere, carpsī, carptum</pp>
     </entry>
     <entry n="carus">
@@ -1792,7 +1790,7 @@
     </entry>
     <entry n="casa">
         <lemma>casa</lemma>
-        <gloss>a small house, cottage, hut, cabin, shed</gloss>
+        <gloss>a small house, cottage, hut</gloss>
         <pp>casa, casae</pp>
         <gen>f.</gen>
     </entry>
@@ -1804,7 +1802,7 @@
     </entry>
     <entry n="casia">
         <lemma>casia</lemma>
-        <gloss>wild cinnamon, a fragrant shrub, mezereon</gloss>
+        <gloss>wild cinnamon, a fragrant shrub</gloss>
         <pp>casia, casiae</pp>
         <gen>f.</gen>
     </entry>
@@ -1867,7 +1865,7 @@
     </entry>
     <entry n="cereus2">
         <lemma>cereus2</lemma>
-        <gloss>a wax-light, taper</gloss>
+        <gloss>(of) wax</gloss>
         <pp>cēreus, cērea, cēreum</pp>
         <gen>m.</gen>
     </entry>
@@ -1922,7 +1920,7 @@
     </entry>
     <entry n="cicuta">
         <lemma>cicuta</lemma>
-        <gloss>hemlock (given to criminals as poison)</gloss>
+        <gloss>hemlock; reed; reed-pipe</gloss>
         <pp>cicūta, cicūtae</pp>
         <gen>f.</gen>
     </entry>
@@ -1988,7 +1986,7 @@
     </entry>
     <entry n="cogo">
         <lemma>cogo</lemma>
-        <gloss>to collect, crowd, bring together; to force, compel</gloss>
+        <gloss>to collect, bring together; to force, compel</gloss>
         <pp>cogo, cogere, coegi, coactum</pp>
     </entry>
     <entry n="colligo3">
@@ -2022,7 +2020,7 @@
     </entry>
     <entry n="color">
         <lemma>color</lemma>
-        <gloss>color, hue, tint</gloss>
+        <gloss>colour, hue, tint</gloss>
         <pp>color, colōris</pp>
         <gen>m.</gen>
     </entry>
@@ -2048,7 +2046,7 @@
     </entry>
     <entry n="compingo1">
         <lemma>compingo1</lemma>
-        <gloss />
+        <gloss>join, uunite, put together</gloss>
         <pp>compingo, compingere, compegi, compactum</pp>
     </entry>
     <entry n="complector">
@@ -2081,7 +2079,7 @@
     </entry>
     <entry n="condo">
         <lemma>condo</lemma>
-        <gloss>to put together, make by joining, found, establish, build, settle</gloss>
+        <gloss>to put together, found, establish</gloss>
         <pp>condo, condere, condidi, conditum</pp>
     </entry>
     <entry n="congero2">
@@ -2095,7 +2093,7 @@
     </entry>
     <entry n="coniungo">
         <lemma>coniungo</lemma>
-        <gloss>to fasten together, connect, join, unite, gather</gloss>
+        <gloss>to fasten together, join, gather</gloss>
         <pp>coniungo, coniungere, coniunxi, coniunctum</pp>
     </entry>
     <entry n="coniux">
@@ -2242,7 +2240,7 @@
     </entry>
     <entry n="cresco">
         <lemma>cresco</lemma>
-        <gloss>to come into being, spring up</gloss>
+        <gloss>to grow, spring up</gloss>
         <pp>cresco, crescere, creui, cretum</pp>
     </entry>
     <entry n="crinis">
@@ -2351,7 +2349,7 @@
     </entry>
     <entry n="cytisus">
         <lemma>cytisus</lemma>
-        <gloss>a kind of clover, shrubby clover</gloss>
+        <gloss>clover</gloss>
         <pp>cytisus, cytisī</pp>
         <gen>f.</gen>
     </entry>
@@ -2385,7 +2383,7 @@
     </entry>
     <entry n="decedo1">
         <lemma>decedo1</lemma>
-        <gloss />
+        <gloss>to depart, go away</gloss>
         <pp>decedo, decedere, decessi, decessum</pp>
     </entry>
     <entry n="decem">
@@ -2459,7 +2457,7 @@
     </entry>
     <entry n="demens">
         <lemma>demens</lemma>
-        <gloss>out of one’s senses, insane, demented, mad, raving, foolish, distracted</gloss>
+        <gloss>out of one’s senses, insane, foolish</gloss>
         <pp>dēmens, dēmentis</pp>
     </entry>
     <entry n="dementia">
@@ -2560,12 +2558,12 @@
     </entry>
     <entry n="dico2">
         <lemma>dico2</lemma>
-        <gloss>to say, speak, utter, tell, mention, relate, affirm, declare, state, assert</gloss>
+        <gloss>to say, speak, tell</gloss>
         <pp>dīcō, dīcere, dīxī, dictum</pp>
     </entry>
     <entry n="dies">
         <lemma>dies</lemma>
-        <gloss>a day, civil day</gloss>
+        <gloss>a day</gloss>
         <pp>diēs, diēī</pp>
         <gen>m. (f.)</gen>
     </entry>
@@ -2605,7 +2603,7 @@
     </entry>
     <entry n="dispar">
         <lemma>dispar</lemma>
-        <gloss>unlike, dissimilar, different, unequal, ill-matched</gloss>
+        <gloss>unlike, different, unequal</gloss>
         <pp>dispar, disparis</pp>
     </entry>
     <entry n="disperdo">
@@ -2655,7 +2653,7 @@
     </entry>
     <entry n="do">
         <lemma>do</lemma>
-        <gloss>to hand over, deliver, give up, render, furnish, pay, surrender</gloss>
+        <gloss>to hand over, give</gloss>
         <pp>dō, dāre, dedī, dātum</pp>
     </entry>
     <entry n="doceo">
@@ -2729,7 +2727,7 @@
     </entry>
     <entry n="duplico">
         <lemma>duplico</lemma>
-        <gloss>to double, multiply by two, repeat</gloss>
+        <gloss>to double, repeat</gloss>
         <pp>duplico, duplicare, duplicaui, duplicatum</pp>
     </entry>
     <entry n="duresco">
@@ -2796,7 +2794,7 @@
     </entry>
     <entry n="ego">
         <lemma>ego</lemma>
-        <gloss>I, me, we, us</gloss>
+        <gloss>I, me</gloss>
         <pp>ego, meī</pp>
     </entry>
     <entry n="electrum">
@@ -2841,7 +2839,7 @@
     </entry>
     <entry n="erro2">
         <lemma>erro2</lemma>
-        <gloss>a wanderer, vagabond</gloss>
+        <gloss>to wander, stray</gloss>
         <pp>errō, errāre, errāuī, errātum</pp>
     </entry>
     <entry n="error">
@@ -2861,11 +2859,11 @@
     </entry>
     <entry n="et2">
         <lemma>et2</lemma>
-        <gloss>and</gloss>
+        <gloss>and, also</gloss>
     </entry>
     <entry n="etiam">
         <lemma>etiam</lemma>
-        <gloss>now too, yet, as yet, even yet, still, even now</gloss>
+        <gloss>yet, still, even now</gloss>
     </entry>
     <entry n="euincio">
         <lemma>euincio</lemma>
@@ -2940,7 +2938,7 @@
     </entry>
     <entry n="facio">
         <lemma>facio</lemma>
-        <gloss>to make, construct, fashion, frame, build, erect, produce, compose</gloss>
+        <gloss>to make, construct, produce</gloss>
         <pp>faciō, facere, fēcī, factum</pp>
     </entry>
     <entry n="factum">
@@ -2965,7 +2963,7 @@
     </entry>
     <entry n="fallo">
         <lemma>fallo</lemma>
-        <gloss>deceive, trick, cheat; escape notice; pass. to be mistaken</gloss>
+        <gloss>deceive, cheat; escape notice; pass. to be mistaken</gloss>
         <pp>fallo, fallere, fefelli, falsum</pp>
     </entry>
     <entry n="falsus">
@@ -2994,12 +2992,12 @@
     </entry>
     <entry n="fastidio">
         <lemma>fastidio</lemma>
-        <gloss>to feel disgust, shrink, flinch, loathe, dislike, despise</gloss>
+        <gloss>to feel disgust, shrink, dislike</gloss>
         <pp>fastidio, fastidire, fastidiui, fastiditum</pp>
     </entry>
     <entry n="fastidium">
         <lemma>fastidium</lemma>
-        <gloss>nausea, squeamishness, loathing, distaste, aversion</gloss>
+        <gloss>loathing, distaste, aversion</gloss>
         <pp>fastīdium, fastīdiī</pp>
         <gen>n.</gen>
     </entry>
@@ -3080,7 +3078,7 @@
     </entry>
     <entry n="figo">
         <lemma>figo</lemma>
-        <gloss>to fix, fasten, drive, thrust in, attach, affix, post, erect, set up</gloss>
+        <gloss>to fix, fasten, attach, affix</gloss>
         <pp>figo, figere, fixi, fixum</pp>
     </entry>
     <entry n="fingo">
@@ -3111,7 +3109,7 @@
     </entry>
     <entry n="fistula">
         <lemma>fistula</lemma>
-        <gloss>a pipe, tube, water-pipe</gloss>
+        <gloss>a pipe, tube</gloss>
         <pp>fistula, fistulae</pp>
         <gen>f.</gen>
     </entry>
@@ -3198,7 +3196,7 @@
     </entry>
     <entry n="formosus">
         <lemma>formosus</lemma>
-        <gloss>finely formed, beautiful, handsome</gloss>
+        <gloss>beautiful, handsome</gloss>
         <pp>formōsus, formōsa, formōsum</pp>
     </entry>
     <entry n="forsitan">
@@ -3296,7 +3294,7 @@
     </entry>
     <entry n="fugio">
         <lemma>fugio</lemma>
-        <gloss>to flee, fly, take flight, run away, make off</gloss>
+        <gloss>to flee, fly, run away</gloss>
         <pp>fugiō, fugere, fūgī</pp>
     </entry>
     <entry n="fulcio">
@@ -3424,7 +3422,7 @@
     </entry>
     <entry n="grex">
         <lemma>grex</lemma>
-        <gloss>a flock, herd, drove, swarm</gloss>
+        <gloss>a flock, herd, swarm</gloss>
         <pp>grex, gregis</pp>
         <gen>m.</gen>
     </entry>
@@ -3444,7 +3442,7 @@
     </entry>
     <entry n="habito">
         <lemma>habito</lemma>
-        <gloss>to dwell, abide, reside, live</gloss>
+        <gloss>to dwell, reside, live</gloss>
         <pp>habito, habitare, habitaui, habitatum</pp>
     </entry>
     <entry n="hac">
@@ -3549,7 +3547,7 @@
     </entry>
     <entry n="honor">
         <lemma>honor</lemma>
-        <gloss>honor, (public honor) office, (mark of honor) gift, reward</gloss>
+        <gloss>honor, (public) office, gift, reward</gloss>
         <pp>honor, honōris</pp>
         <gen>m.</gen>
     </entry>
@@ -3661,7 +3659,7 @@
     </entry>
     <entry n="imago">
         <lemma>imago</lemma>
-        <gloss>an imitation, copy, image, representation, likeness, statue, bust, picture</gloss>
+        <gloss>an image, representation, likeness, statue</gloss>
         <pp>imāgo, imāginis</pp>
         <gen>f.</gen>
     </entry>
@@ -3677,7 +3675,7 @@
     </entry>
     <entry n="imitor">
         <lemma>imitor</lemma>
-        <gloss>to imitate, act like, copy after, seek to resemble, counterfeit, mimic</gloss>
+        <gloss>to imitate, mimic</gloss>
         <pp>imitor, imitārī, imitātus</pp>
     </entry>
     <entry n="immemor">
@@ -3691,7 +3689,7 @@
     </entry>
     <entry n="immitto">
         <lemma>immitto</lemma>
-        <gloss>to send in, let in, throw into, admit, introduce</gloss>
+        <gloss>to send in, let in, admit</gloss>
         <pp>immitto, immittere, immisi, immissum</pp>
     </entry>
     <entry n="immo">
@@ -3918,7 +3916,7 @@
     </entry>
     <entry n="intexo">
         <lemma>intexo</lemma>
-        <gloss>to weave in, inweave, interweave, plait, join together, interlace, surround, envelop</gloss>
+        <gloss>to weave in, plait, surround</gloss>
         <pp>intexo, intexere, intexui, intextum</pp>
     </entry>
     <entry n="intonsus">
@@ -3946,7 +3944,7 @@
     </entry>
     <entry n="ipse">
         <lemma>ipse</lemma>
-        <gloss>Self</gloss>
+        <gloss>self</gloss>
         <pp>ipse, ipsa, ipsum</pp>
     </entry>
     <entry n="ira">
@@ -3990,7 +3988,7 @@
     </entry>
     <entry n="iugum">
         <lemma>iugum</lemma>
-        <gloss>a yoke, collar; juger of land, mountain ridge</gloss>
+        <gloss>a yoke; a mountain ridge; a "yoke" of land</gloss>
         <pp>iugum, iugī</pp>
         <gen>n.</gen>
     </entry>
@@ -4002,7 +4000,7 @@
     </entry>
     <entry n="iungo">
         <lemma>iungo</lemma>
-        <gloss>to join together, unite, connect, attach, fasten, yoke, harness</gloss>
+        <gloss>to join together, unite, attach, yoke</gloss>
         <pp>iungo, iungere, iunxi, iunctum</pp>
     </entry>
     <entry n="iuniperus">
@@ -4137,7 +4135,7 @@
     </entry>
     <entry n="lasciuus">
         <lemma>lasciuus</lemma>
-        <gloss>wanton, petulant, sportive, playful, frolicsome, roguish</gloss>
+        <gloss>wanton,, playful, roguish</gloss>
         <pp>lascīuus, lascīua, lascīuum</pp>
     </entry>
     <entry n="lateo">
@@ -4172,7 +4170,7 @@
     </entry>
     <entry n="laurus">
         <lemma>laurus</lemma>
-        <gloss>a bay-tree, laurel-tree, laurel (sacred to Apollo)</gloss>
+        <gloss>a bay-tree, laurel</gloss>
         <pp>laurus, laurī</pp>
         <gen>f.</gen>
     </entry>
@@ -4410,7 +4408,7 @@
     </entry>
     <entry n="magister">
         <lemma>magister</lemma>
-        <gloss>a master, chief, head, superior, director, president, leader, commander, conductor</gloss>
+        <gloss>a master, chief, commander; magistrate</gloss>
         <pp>magister, magistrī</pp>
         <gen>m.</gen>
     </entry>
@@ -4587,7 +4585,7 @@
     </entry>
     <entry n="metuo">
         <lemma>metuo</lemma>
-        <gloss>to fear, be afraid, stand in fear, be apprehensive</gloss>
+        <gloss>to fear, be afraid</gloss>
         <pp>metuo, metuere, metui, metutum</pp>
     </entry>
     <entry n="meus">
@@ -4608,7 +4606,7 @@
     </entry>
     <entry n="mille">
         <lemma>mille</lemma>
-        <gloss>a thousand, ten hundred</gloss>
+        <gloss>a thousand</gloss>
     </entry>
     <entry n="minium">
         <lemma>minium</lemma>
@@ -4622,12 +4620,12 @@
     </entry>
     <entry n="misceo">
         <lemma>misceo</lemma>
-        <gloss>to mix, mingle, intermingle, blend</gloss>
+        <gloss>to mix, blend</gloss>
         <pp>misceo, miscere, miscui, mixtum</pp>
     </entry>
     <entry n="miser">
         <lemma>miser</lemma>
-        <gloss>wretched, unfortunate, miserable, pitiable, lamentable, in distress</gloss>
+        <gloss>wretched, miserable, pitiable</gloss>
         <pp>miser, misera, miserum</pp>
     </entry>
     <entry n="miserabilis">
@@ -4664,7 +4662,7 @@
     </entry>
     <entry n="modus">
         <lemma>modus</lemma>
-        <gloss>a measure, extent, quantity; way, manner</gloss>
+        <gloss>a measure, quantity; way, manner</gloss>
         <pp>modus, modī</pp>
         <gen>m.</gen>
     </entry>
@@ -4675,7 +4673,7 @@
     </entry>
     <entry n="mollis">
         <lemma>mollis</lemma>
-        <gloss>yielding, pliant, flexible, supple, soft, tender, delicate, gentle, mild, pleasant</gloss>
+        <gloss>flexible, soft, tender, delicate</gloss>
         <pp>mollis, molle</pp>
     </entry>
     <entry n="molliter">
@@ -4763,7 +4761,7 @@
     </entry>
     <entry n="munus">
         <lemma>munus</lemma>
-        <gloss>a service, office, post, employment, function, duty</gloss>
+        <gloss>a service, office; gift</gloss>
         <pp>mūnus, mūneris</pp>
         <gen>n.</gen>
     </entry>
@@ -4909,7 +4907,7 @@
     </entry>
     <entry n="niger">
         <lemma>niger</lemma>
-        <gloss>black, sable, dark, dusky</gloss>
+        <gloss>black, dark</gloss>
         <pp>niger, nigra, nigrum</pp>
     </entry>
     <entry n="nihil">
@@ -5050,7 +5048,7 @@
     </entry>
     <entry n="nuper">
         <lemma>nuper</lemma>
-        <gloss>newly, lately, recently, freshly, not long ago, just</gloss>
+        <gloss>lately, recently, freshly</gloss>
     </entry>
     <entry n="nuto">
         <lemma>nuto</lemma>
@@ -5128,12 +5126,12 @@
     </entry>
     <entry n="odor">
         <lemma>odor</lemma>
-        <gloss>smell, scent, stench; inkling</gloss>
+        <gloss>smell, scent</gloss>
         <gen>m.</gen>
     </entry>
     <entry n="offero">
         <lemma>offero</lemma>
-        <gloss>to bring before, present, offer, show, exhibit</gloss>
+        <gloss>to present, offer, show, exhibit</gloss>
         <pp>offero, obferre, obtetuli, oblatum</pp>
     </entry>
     <entry n="oleo">
@@ -5143,7 +5141,7 @@
     </entry>
     <entry n="olim">
         <lemma>olim</lemma>
-        <gloss>at that time, some time ago, once upon a time, once, formerly, of old</gloss>
+        <gloss>at that time, once, once upon a time</gloss>
     </entry>
     <entry n="oliua">
         <lemma>oliua</lemma>
@@ -5227,7 +5225,7 @@
     </entry>
     <entry n="oro">
         <lemma>oro</lemma>
-        <gloss>(to speak;) to treat, argue, plead, to pray, to beg</gloss>
+        <gloss>to speak; argue, pray, beg</gloss>
         <pp>oro, orare, oraui, oratum</pp>
     </entry>
     <entry n="os2">
@@ -5249,8 +5247,7 @@
     </entry>
     <entry n="ouis">
         <lemma>ouis</lemma>
-        <gloss>Little Jupiter, Anti-Jove, an ancient god of vengeance, identified with Apollo, and
-            with the Jupiter of the lower world</gloss>
+        <gloss>sheep</gloss>
         <pp>ouis, ouis</pp>
         <gen>f. (m.)</gen>
     </entry>
@@ -5270,7 +5267,7 @@
     </entry>
     <entry n="paeniteo">
         <lemma>paeniteo</lemma>
-        <gloss>to make sorry, cause to repent</gloss>
+        <gloss>to make sorry, cause to repent; impersonal (me paenitet: "I regret")</gloss>
         <pp>paeniteo, paenitere, paenitui</pp>
     </entry>
     <entry n="pagina">
@@ -5351,7 +5348,7 @@
     </entry>
     <entry n="paro2">
         <lemma>paro2</lemma>
-        <gloss>to make equal</gloss>
+        <gloss>to make ready, prepare, arrange</gloss>
         <pp>paro, parare, paraui, paratum</pp>
     </entry>
     <entry n="pars">
@@ -5412,7 +5409,7 @@
     </entry>
     <entry n="patior">
         <lemma>patior</lemma>
-        <gloss>to bear, support, undergo, suffer, endure</gloss>
+        <gloss>to bear, suffer, endure</gloss>
         <pp>patior, patī, passus</pp>
     </entry>
     <entry n="patria">
@@ -5513,7 +5510,7 @@
     </entry>
     <entry n="perditus">
         <lemma>perditus</lemma>
-        <gloss>lost, hopeless, desperate, ruined, past recovery</gloss>
+        <gloss>lost, hopeless, desperate</gloss>
         <pp>perditus, perdita, perditum</pp>
         <gen>m.</gen>
     </entry>
@@ -5623,13 +5620,12 @@
     </entry>
     <entry n="placeo">
         <lemma>placeo</lemma>
-        <gloss>to please, give pleasure, be approved, be pleasing, be agreeable, be acceptable,
-            suit, satisfy</gloss>
+        <gloss>to please, be pleasing, be acceptable</gloss>
         <pp>placeo, placere, placui, placitum</pp>
     </entry>
     <entry n="placidus">
         <lemma>placidus</lemma>
-        <gloss>gentle, quiet, still, calm, mild, peaceful, placid</gloss>
+        <gloss>gentle, quiet, calm, peaceful</gloss>
         <pp>placidus, placida, placidum</pp>
     </entry>
     <entry n="planta">
@@ -5663,7 +5659,7 @@
     </entry>
     <entry n="pomum">
         <lemma>pomum</lemma>
-        <gloss>a fruit, tree-fruit, orchard-fruit</gloss>
+        <gloss>a fruit, tree-fruit</gloss>
         <pp>pōmum, pōmī; (also pōmus, pōmī)</pp>
         <gen>n. (f.)</gen>
     </entry>
@@ -5812,7 +5808,7 @@
     </entry>
     <entry n="primus">
         <lemma>primus</lemma>
-        <gloss>the first, first</gloss>
+        <gloss>first</gloss>
         <pp>prīmus, prīma, prīmum</pp>
     </entry>
     <entry n="principium">
@@ -5932,7 +5928,7 @@
     </entry>
     <entry n="puer">
         <lemma>puer</lemma>
-        <gloss>a male child, boy, lad, young man</gloss>
+        <gloss>boy, young man; slave</gloss>
         <pp>puer, puerī</pp>
         <gen>m. (f.)</gen>
     </entry>
@@ -6212,7 +6208,7 @@
     </entry>
     <entry n="refero">
         <lemma>refero</lemma>
-        <gloss>to bear back, bring back; report, answer, refer (to the senate)</gloss>
+        <gloss>to bring back; report, answer</gloss>
         <pp>refero, referre, retetuli, relatum</pp>
     </entry>
     <entry n="regno">
@@ -6243,7 +6239,7 @@
     </entry>
     <entry n="reperio">
         <lemma>reperio</lemma>
-        <gloss>to find again, find, meet with, find out, discover</gloss>
+        <gloss>to find, meet with, find out, discover</gloss>
         <pp>reperio, reperire, reperii, repertum</pp>
     </entry>
     <entry n="repeto">
@@ -6388,7 +6384,7 @@
     </entry>
     <entry n="rus">
         <lemma>rus</lemma>
-        <gloss>the country, lands, fields, a country-seat, farm, estate (opp. urbs)</gloss>
+        <gloss>the country, countryside (opp. urbs)</gloss>
         <pp>rūs, rūris</pp>
         <gen>n.</gen>
     </entry>
@@ -6543,7 +6539,7 @@
     </entry>
     <entry n="scio">
         <lemma>scio</lemma>
-        <gloss>to know, understand, perceive, have knowledge of, be skilled in</gloss>
+        <gloss>to know, understand, perceive</gloss>
         <pp>scio, scire, sciui, scitum</pp>
     </entry>
     <entry n="seco">
@@ -6623,7 +6619,7 @@
     </entry>
     <entry n="sequor">
         <lemma>sequor</lemma>
-        <gloss>to follow, come after, follow after, attend, accompany</gloss>
+        <gloss>to follow, accompany</gloss>
         <pp>sequor, sequī, secūtus sum</pp>
     </entry>
     <entry n="serius">
@@ -6662,7 +6658,7 @@
     </entry>
     <entry n="seruo">
         <lemma>seruo</lemma>
-        <gloss />
+        <gloss>to save, preserve</gloss>
         <pp>seruo, seruare, seruaui, seruatum</pp>
     </entry>
     <entry n="serus">
@@ -6676,7 +6672,7 @@
     </entry>
     <entry n="si2">
         <lemma>si2</lemma>
-        <gloss>if ever, if at any time; see quando</gloss>
+        <gloss>if; see quando</gloss>
     </entry>
     <entry n="sibilus1">
         <lemma>sibilus1</lemma>
@@ -6829,7 +6825,7 @@
     </entry>
     <entry n="solus">
         <lemma>solus</lemma>
-        <gloss>alone, only, single, sole</gloss>
+        <gloss>alone, only, single</gloss>
         <pp>solus, sola, solum</pp>
     </entry>
     <entry n="somnium">
@@ -6855,12 +6851,12 @@
     </entry>
     <entry n="sordeo">
         <lemma>sordeo</lemma>
-        <gloss>to be dirty, be mean, be despised, be unvalued, appear worthless</gloss>
+        <gloss>to be dirty, be mean, be despised</gloss>
         <pp>sordeo, sordere, sordui</pp>
     </entry>
     <entry n="sordidus">
         <lemma>sordidus</lemma>
-        <gloss>dirty, unclean, foul, filthy, squalid, sordid</gloss>
+        <gloss>dirty, foul, filthy</gloss>
         <pp>sordidus, sordida, sordidum</pp>
     </entry>
     <entry n="soror">
@@ -6870,7 +6866,7 @@
     </entry>
     <entry n="spargo2">
         <lemma>spargo2</lemma>
-        <gloss />
+        <gloss>sprinkle, scatter</gloss>
         <pp>spargo, spargere, sparsi, sparsum</pp>
     </entry>
     <entry n="spatium">
@@ -6969,8 +6965,8 @@
     </entry>
     <entry n="sto">
         <lemma>sto</lemma>
-        <gloss>to stand, stand still, remain standing, be upright, be erect</gloss>
-        <pp>sto, istare, steti, statum</pp>
+        <gloss>to stand, stand still, be upright</gloss>
+        <pp>sto, stare, steti, statum</pp>
     </entry>
     <entry n="strepo">
         <lemma>strepo</lemma>
@@ -6994,7 +6990,7 @@
     </entry>
     <entry n="stultus">
         <lemma>stultus</lemma>
-        <gloss>foolish, simple, silly, fatuous, stupid, dull</gloss>
+        <gloss>foolish, simple, stupid</gloss>
         <pp>stultus, stulta, stultum</pp>
     </entry>
     <entry n="stupefacio">
@@ -7024,7 +7020,7 @@
     </entry>
     <entry n="sub">
         <lemma>sub</lemma>
-        <gloss>under, below, beneath, underneath, behind</gloss>
+        <gloss>under, below</gloss>
     </entry>
     <entry n="subduco">
         <lemma>subduco</lemma>
@@ -7199,7 +7195,7 @@
     </entry>
     <entry n="suus">
         <lemma>suus</lemma>
-        <gloss>of oneself, belonging to oneself, his own, her own, his, her, its, their</gloss>
+        <gloss>of oneself, his/her/its own</gloss>
         <pp>suus, sua, suum</pp>
     </entry>
     <entry n="tacitus">
@@ -7325,7 +7321,7 @@
     </entry>
     <entry n="tero">
         <lemma>tero</lemma>
-        <gloss>to rub, rub away, wear away, bruise, grind, bray triturate</gloss>
+        <gloss>to rub, wear away, bruise</gloss>
         <pp>tero, terere, terui, tritum</pp>
     </entry>
     <entry n="terra">
@@ -7402,7 +7398,7 @@
     </entry>
     <entry n="toruus">
         <lemma>toruus</lemma>
-        <gloss>staring, keen, piercing, wild, stern, fierce, grim, savage</gloss>
+        <gloss>keen, piercing, fierce, grim</gloss>
         <pp>toruus, torua, toruum</pp>
     </entry>
     <entry n="tot">
@@ -7426,7 +7422,7 @@
     </entry>
     <entry n="traho">
         <lemma>traho</lemma>
-        <gloss>to draw, drag, haul, train along, draw off, pull forth, drag away</gloss>
+        <gloss>to draw, drag</gloss>
         <pp>traho, trahere, traxi, tractum</pp>
     </entry>
     <entry n="trans">
@@ -7769,7 +7765,7 @@
     </entry>
     <entry n="uimen">
         <lemma>uimen</lemma>
-        <gloss>a pliant twig, switch, withe, osier</gloss>
+        <gloss>a pliant twig, branch</gloss>
         <pp>uīmen, uīminis</pp>
         <gen>n.</gen>
     </entry>
@@ -7961,12 +7957,12 @@
     </entry>
     <entry n="uoco">
         <lemma>uoco</lemma>
-        <gloss>to call, summon, invoke, call together, convoke</gloss>
+        <gloss>to call, summon, invoke</gloss>
         <pp>uocō, uocāre, uocāuī, uocātum</pp>
     </entry>
     <entry n="uolo3">
         <lemma>uolo3</lemma>
-        <gloss>a volunteer</gloss>
+        <gloss>to will, wish, want</gloss>
         <pp>uolō, uelle, uoluī</pp>
     </entry>
     <entry n="uolo?">
@@ -7984,7 +7980,7 @@
     </entry>
     <entry n="uoluptas">
         <lemma>uoluptas</lemma>
-        <gloss>satisfaction, enjoyment, pleasure, delight</gloss>
+        <gloss>enjoyment, pleasure, delight</gloss>
         <pp>uoluptās, uoluptātis</pp>
         <gen>f.</gen>
     </entry>
@@ -8106,5 +8102,6 @@
     <entry n="summus">
         <lemma>summus</lemma>
         <gloss>highest, uppermost; most, greatest</gloss>
+        <pp>summus, summa, summum</pp>
     </entry>
 </body>

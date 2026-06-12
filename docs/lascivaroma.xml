@@ -1621,7 +1621,7 @@
                 <w rend="line" n="2.30" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos"
                     lemma="uiridis">viridi</w>
                 <w rend="line" n="2.30" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act"
-                    lemma="compello2">compellere</w>
+                    lemma="compello">compellere</w>
                 <w rend="line" n="2.30" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="hibiscum">
                     hibisco</w>
                 <w rend="line" n="2.30" pos="PUNC" msd="MORPH=empty" lemma="!">!</w>
@@ -1866,7 +1866,7 @@
                 <w rend="line" n="2.47" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uiola">violas</w>
                 <w rend="line" n="2.47" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
                 <w rend="line" n="2.47" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Sup"
-                    lemma="superus">summa</w>
+                    lemma="summus">summa</w>
                 <w rend="line" n="2.47" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="papauer">
                     papavera</w>
                 <w rend="line" n="2.47" pos="VER"
