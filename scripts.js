@@ -88,8 +88,8 @@ let currentLemma = "";
 
 //
 
-nextSectionButton.addEventListener("click", () => nextSection() );
-previousSectionButton.addEventListener("click", () => previousSection() );
+if (nextSectionButton) nextSectionButton.addEventListener("click", () => nextSection() );
+if (previousSectionButton) previousSectionButton.addEventListener("click", () => previousSection() );
 
 function nextSection() {
     if (currentSection == sections.length - 1) { // there are no sections after this one
@@ -117,18 +117,18 @@ function previousSection() {
 
 function setSectionNavButtons() {
     closeCard()
+    // ensure buttons exist
+    if (!previousSectionButton || !nextSectionButton) return;
 
-    if (currentSection == 0) { // first section is displayed
-        previousSectionButton.classList.add("invisible");        
+    // reset visibility first
+    previousSectionButton.classList.remove("invisible");
+    nextSectionButton.classList.remove("invisible");
+
+    if (currentSection <= 0) { // first section is displayed
+        previousSectionButton.classList.add("invisible");
     }
-    
-    else if (currentSection == sections.length - 1) { // last section is displayed
+    if (currentSection >= sections.length - 1) { // last section is displayed
         nextSectionButton.classList.add("invisible");
-    }
-    
-    else { // a middle section is displayed
-        previousSectionButton.classList.remove("invisible");        
-        nextSectionButton.classList.remove("invisible");
     }
 }
 
@@ -275,8 +275,9 @@ function loadParseData(xmlWord) {
 
 function loadPrincipalPartData(lemma, lexicon) {
     const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    if (!entry) return null;
     const pp = entry.querySelector("pp");
-    if (pp != null) {1
+    if (pp != null) {
         return pp.innerHTML;
     }
     return null;
@@ -284,8 +285,9 @@ function loadPrincipalPartData(lemma, lexicon) {
 
 function loadGenderData(lemma, lexicon) {
     const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    if (!entry) return null;
     const gen = entry.querySelector("gen");
-    if (gen != null) {1
+    if (gen != null) {
         return gen.innerHTML;
     }
     return null;
@@ -293,7 +295,10 @@ function loadGenderData(lemma, lexicon) {
 
 function loadGlossData(lemma, lexicon) {
     const entry = lexicon.querySelector(`entry[n='${lemma}']`);
-    return entry.querySelector("gloss").innerHTML;
+    if (!entry) return null;
+    const glossEl = entry.querySelector("gloss");
+    if (!glossEl) return null;
+    return glossEl.innerHTML;
 }
 
 /**
@@ -310,7 +315,9 @@ function loadCommentaryData(wordElement, commentary) {
     const matchingEntries = [];
 
     for (const entry of entries) {
-        const references = entry.getElementsByTagName("references")[0].innerHTML
+        const refsEl = entry.getElementsByTagName("references")[0];
+        if (!refsEl) continue;
+        const references = refsEl.innerHTML;
         if (isReferenced(index, references)) {
             matchingEntries.push(entry)
         }
@@ -321,8 +328,7 @@ function loadCommentaryData(wordElement, commentary) {
 function isReferenced(index, references) {
     // references may be "1.2.3, 1.2.4, 1.3.5--1.4.2, 1.2, 1.3--1.4"
     const references_indexes = references.split(", ")
-
-    for (reference_index of references_indexes) {
+    for (const reference_index of references_indexes) {
         if (index === reference_index) {
             return true
         }
@@ -356,7 +362,7 @@ function isLargerOrEqual(low, high) {
     const low_split = low.split(".")
     const high_split = high.split(".")
 
-    for (i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
         low_split[i] = Number(low_split[i])
         high_split[i] = Number(high_split[i])
         if (low_split[i] != high_split[i]) {
