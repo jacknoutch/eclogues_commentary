@@ -2,13 +2,14 @@
 
 // Paths for resources
 
-const lemmatiserPath = "./docs/eclogue01/eclogue1LR.xml";
-const lexiconPath = "./docs/glosses.xml";
+const lemmatiserPath = "./docs/lascivaroma.xml";
+const lexiconPath = "./docs/lemmas_glosses.xml";
 const commentaryPath = "./docs/eclogue01/commentary.xml";
 
 let lemmatiserXML = null;
 let lexiconXML = null;
 let commentaryXML = null;
+let lemmatiserPoemXML = null;
 
 const bookIconPath = "./static/book.svg";
 
@@ -25,11 +26,36 @@ async function loadXMLResource(path, parser) {
     }
 }
 
+function getPoemNumber() {
+    // Prefer explicit marker on the page
+    try {
+        return String(document.body.dataset.poem);
+        
+    } catch (e) {
+        console.log("getPoemNumber error:", e);
+    }
+    return "1";
+}
+
 async function loadXMLData() {
     let parser = new DOMParser();
     lemmatiserXML = await loadXMLResource(lemmatiserPath, parser);
     lexiconXML = await loadXMLResource(lexiconPath, parser);
     commentaryXML = await loadXMLResource(commentaryPath, parser);
+
+    // Create a per-page slice of the lemmatised XML containing only
+    // the tokens for the current poem (so selectors are scoped)
+    try {
+        const poemNum = getPoemNumber();
+        const poemPrefix = poemNum + ".";
+        lemmatiserPoemXML = document.implementation.createDocument(null, "root");
+        // Select only word tokens for this poem; exclude punctuation tokens (pos='PUNC')
+        const wNodes = lemmatiserXML.querySelectorAll(`w[n^='${poemPrefix}']:not([pos='PUNC'])`);
+        wNodes.forEach(n => lemmatiserPoemXML.documentElement.appendChild(n.cloneNode(true)));
+    } catch (e) {
+        console.log("Error scoping lemmatiser XML to poem:", e);
+        lemmatiserPoemXML = lemmatiserXML;
+    }
 
     // The book icon for comments
     let response = await fetch(bookIconPath);
@@ -62,8 +88,8 @@ let currentLemma = "";
 
 //
 
-nextSectionButton.addEventListener("click", () => nextSection() );
-previousSectionButton.addEventListener("click", () => previousSection() );
+if (nextSectionButton) nextSectionButton.addEventListener("click", () => nextSection() );
+if (previousSectionButton) previousSectionButton.addEventListener("click", () => previousSection() );
 
 function nextSection() {
     if (currentSection == sections.length - 1) { // there are no sections after this one
@@ -91,18 +117,18 @@ function previousSection() {
 
 function setSectionNavButtons() {
     closeCard()
+    // ensure buttons exist
+    if (!previousSectionButton || !nextSectionButton) return;
 
-    if (currentSection == 0) { // first section is displayed
-        previousSectionButton.classList.add("invisible");        
+    // reset visibility first
+    previousSectionButton.classList.remove("invisible");
+    nextSectionButton.classList.remove("invisible");
+
+    if (currentSection <= 0) { // first section is displayed
+        previousSectionButton.classList.add("invisible");
     }
-    
-    else if (currentSection == sections.length - 1) { // last section is displayed
+    if (currentSection >= sections.length - 1) { // last section is displayed
         nextSectionButton.classList.add("invisible");
-    }
-    
-    else { // a middle section is displayed
-        previousSectionButton.classList.remove("invisible");        
-        nextSectionButton.classList.remove("invisible");
     }
 }
 
@@ -181,19 +207,53 @@ async function spanAllWords() {
     });
 
     // So far the enclitic -que is not separated from the word it is attached to.
-    // All instances of -que are retrieved from the lemmatised text, the span which contains that instance is identified and split so as to give que its own span.
-    const $queTokens = $(lemmatiserXML).find("[lemma=que]");
+    // All instances of -que are retrieved from the lemmatised text.
+    // The span which contains that instance is identified and split so as to give que its own span.
+    const $queTokens = $(lemmatiserPoemXML).find("[lemma=que]");
     $queTokens.each((index, value) => {
-        const queLineNumber = $(value).attr("n") // e.g. "1.2"
-        const queIndex = $(value).index()
+        const queLineNumber = $(value).attr("n"); // e.g. "1.2"
 
-        const lineDiv = $(".l[n='"+queLineNumber+"']")
-        const queSpan = $(lineDiv).find(".w:nth-child("+queIndex+")");
+        // Find the token's position among the tokens for that line (0-based)
+        const queLineWords = $(lemmatiserPoemXML).find(`w[n='${queLineNumber}']`);
+        const queIndexInLine = queLineWords.index(value) - 1; // -1 to convert to 0-based index
+
+        const lineDiv = $(".l[n='" + queLineNumber + "']").find(".line_text");
+
+        // Select the Nth .w element within the HTML line (matching the token index)
+        const queSpan = $(lineDiv).find(".w").eq(queIndexInLine);
 
         const oldHTML = queSpan.html();
-        const newHTML = "<span class='w'>" + oldHTML.slice(0,-3) + "</span><span class='w'>que"
+        const newHTML = "<span class='w'>" + oldHTML.slice(0,-3) + "</span><span class='w'>que</span>";
 
         queSpan.replaceWith(newHTML);
+    });
+
+    // Also split enclitics like -cum (e.g. mecum, tecum, nobiscum) using the
+    // lemmatised tokens whose lemma attribute ends with 'cum'. This mirrors
+    // how -que was handled above.
+    const $cumTokens = $(lemmatiserPoemXML).find("[lemma=cum3]");
+    $cumTokens.each((index, value) => {
+        const cumLineNumber = $(value).attr('n'); // e.g. "1.2"
+
+        // Find the token's position among the tokens for that line (0-based)
+        const cumLineWords = $(lemmatiserPoemXML).find(`w[n='${cumLineNumber}']`);
+        const cumIndexInLine = cumLineWords.index(value) - 1; // -1 to convert to 0-based index
+
+        const lineDiv = $(".l[n='" + cumLineNumber + "']").find('.line_text');
+
+        // Select the Nth .w element within the HTML line (matching the token index)
+        const cumSpan = $(lineDiv).find('.w').eq(cumIndexInLine);
+        if (!cumSpan || cumSpan.length === 0) return;
+
+        const oldHTML = cumSpan.html();
+        if (!oldHTML) return;
+        const lower = oldHTML.toLowerCase();
+        // only split if the visible span actually ends with 'cum'
+        if (!lower.endsWith('cum')) return;
+
+        const newHTML = "<span class='w'>" + oldHTML.slice(0, -3) + "</span><span class='w'>cum</span>";
+
+        cumSpan.replaceWith(newHTML);
     });
 
     return document.querySelectorAll(".w")
@@ -215,7 +275,7 @@ function updateCard(word) { // word is an element
 function loadDetails(wordElement) {
     clearCard();
 
-    const xmlWord = getWordFromXML(lemmatiserXML, wordElement);
+    const xmlWord = getWordFromXML(lemmatiserPoemXML , wordElement);
     const lemma = loadLemma(xmlWord);
     currentLemma = lemma;
     const parseData = loadParseData(xmlWord);
@@ -243,8 +303,11 @@ function loadParseData(xmlWord) {
 
 function loadPrincipalPartData(lemma, lexicon) {
     const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    console.log(entry)
+    if (!entry) return null;
     const pp = entry.querySelector("pp");
-    if (pp != null) {1
+    console.log(pp)
+    if (pp != null) {
         return pp.innerHTML;
     }
     return null;
@@ -252,8 +315,9 @@ function loadPrincipalPartData(lemma, lexicon) {
 
 function loadGenderData(lemma, lexicon) {
     const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    if (!entry) return null;
     const gen = entry.querySelector("gen");
-    if (gen != null) {1
+    if (gen != null) {
         return gen.innerHTML;
     }
     return null;
@@ -261,7 +325,11 @@ function loadGenderData(lemma, lexicon) {
 
 function loadGlossData(lemma, lexicon) {
     const entry = lexicon.querySelector(`entry[n='${lemma}']`);
-    return entry.querySelector("gloss").innerHTML;
+    console.log(lemma)
+    if (!entry) return null;
+    const glossEl = entry.querySelector("gloss");
+    if (!glossEl) return null;
+    return glossEl.innerHTML;
 }
 
 /**
@@ -278,7 +346,9 @@ function loadCommentaryData(wordElement, commentary) {
     const matchingEntries = [];
 
     for (const entry of entries) {
-        const references = entry.getElementsByTagName("references")[0].innerHTML
+        const refsEl = entry.getElementsByTagName("references")[0];
+        if (!refsEl) continue;
+        const references = refsEl.innerHTML;
         if (isReferenced(index, references)) {
             matchingEntries.push(entry)
         }
@@ -289,8 +359,7 @@ function loadCommentaryData(wordElement, commentary) {
 function isReferenced(index, references) {
     // references may be "1.2.3, 1.2.4, 1.3.5--1.4.2, 1.2, 1.3--1.4"
     const references_indexes = references.split(", ")
-
-    for (reference_index of references_indexes) {
+    for (const reference_index of references_indexes) {
         if (index === reference_index) {
             return true
         }
@@ -324,7 +393,7 @@ function isLargerOrEqual(low, high) {
     const low_split = low.split(".")
     const high_split = high.split(".")
 
-    for (i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
         low_split[i] = Number(low_split[i])
         high_split[i] = Number(high_split[i])
         if (low_split[i] != high_split[i]) {

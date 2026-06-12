@@ -1,0 +1,2163 @@
+<body>
+    <entry n="Afri">
+        <lemma>Afri</lemma>
+        <pp>&#256;fr&#299;, &#256;fr&#333;rum</pp>
+        <pos>NOMpro</pos>
+        <gloss>Africans</gloss>
+        <instances>1.65</instances>
+    </entry>
+    <entry n="Amaryllis">
+        <lemma>Amaryllis</lemma>
+        <pp>Amaryllis, Amaryllidis</pp>
+        <pos>NOMpro</pos>
+        <gen>f.</gen>
+        <gloss>Amaryllis, a shepherdess</gloss>
+        <instances>1.5, 1.31, 1.37</instances>
+    </entry>
+    <entry n="Meliboeus">
+        <lemma>Meliboeus</lemma>
+        <pp>Meliboeus, Meliboe&#299;</pp>
+        <pos>NOMpro</pos>
+        <gen>m.</gen>
+        <gloss>Meliboeus, a shepherd</gloss>
+        <instances>1.6; 1.20; 1.43; 1.74</instances>
+    </entry>
+    <entry n="Musa">
+        <lemma>Musa</lemma>
+        <pp>M&#363;sa, M&#363;sae</pp>
+        <pos>NOMpro</pos>
+        <gen>f.</gen>
+        <gloss>Muse</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="Tityrus">
+        <lemma>Tityrus</lemma>
+        <pp>T&#299;tyrus, T&#299;tyr&#299;</pp>
+        <pos>NOMpro</pos>
+        <gen>m.</gen>
+        <gloss>Tityrus, a herdsman</gloss>
+        <instances>1.1; 1.4; 1.13; 1.19; 1.39; 1.39</instances>
+    </entry>
+    <entry n="ab">
+        <lemma>ab</lemma>
+        <pos>PRE</pos>
+        <gloss>from, away from, out of</gloss>
+        <instances>1.8; 1.54; 1.59</instances>
+    </entry>
+    <entry n="agnus">
+        <lemma>agnus</lemma>
+        <pp>agnus, agn&#299;</pp>
+        <pos>NOMcom</pos>
+        <gen>m.</gen>
+        <gloss>lamb</gloss>
+        <instances>1.8</instances>
+    </entry>
+    <entry n="agrestis">
+        <lemma>agrestis</lemma>
+        <pp>agrestis, agreste</pp>
+        <pos>ADJqua</pos>
+        <gloss>country, rustic</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="ara">
+        <lemma>ara</lemma>
+        <pp>&#257;ra, &#257;rae</pp>
+        <pos>NOMcom</pos>
+        <gen>f.</gen>
+        <gloss>altar</gloss>
+        <instances>1.7</instances>
+    </entry>
+    <entry n="aruum">
+        <lemma>aruum</lemma>
+        <pp>aruum, aru&#299;</pp>
+        <pos>NOMcom</pos>
+        <gen>n.</gen>
+        <gloss>field, (pl.) fields, region</gloss>
+        <instances>1.3</instances>
+    </entry>
+    <entry n="auena">
+        <lemma>auena</lemma>
+        <pp>au&#275;na, au&#275;nae</pp>
+        <pos>NOMcom</pos>
+        <gen>f.</gen>
+        <gloss>reed, pipe</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="bos">
+        <lemma>bos</lemma>
+        <pp>b&#333;s, bovis</pp>
+        <pos>NOMcom</pos>
+        <gen>c.</gen>
+        <gloss>(m.) ox, bull, (f.) cow, (pl.) cattle</gloss>
+        <instances>1.9; 1.46</instances>
+    </entry>
+    <entry n="calamus">
+        <lemma>calamus</lemma>
+        <pp>calamus, calam&#299;</pp>
+        <gen>m.</gen>
+        <gloss>reed, reed-pipe</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="cerno">
+        <lemma>cerno</lemma>
+        <pp>cern&#333;, cernere, cr&#275;u&#275;, cr&#275;tum</pp>
+        <gloss>see</gloss>
+        <instances>1.9</instances>
+    </entry>
+    <entry n="deus">
+        <lemma>deus</lemma>
+        <pp>deus, de&#299;</pp>
+        <gen>m.</gen>
+        <gloss>a god</gloss>
+        <instances>1.6; 1.7; 1.19; 1.37</instances>
+    </entry>
+    <entry n="doceo">
+        <lemma>doceo</lemma>
+        <pp>doce&#333;, doc&#275;re, docu&#299;, doctum</pp>
+        <gloss>teach, instruct, show</gloss>
+    </entry>
+    <entry n="dulcis">
+        <lemma>dulcis</lemma>
+        <pp>dulcis, dulce</pp>
+        <gloss>dear, beloved</gloss>
+        <instances>1.3</instances>
+    </entry>
+    <entry n="ego">
+        <lemma>ego</lemma>
+        <gloss>I, me</gloss>
+        <instances>1.7; 1.21; 1.32; 1.36; 1.41; 1.45; 1.76; 1.78; 1.80</instances>
+    </entry>
+    <entry n="erro2">
+        <lemma>erro</lemma>
+        <pp>err&#333;, err&#257;re, err&#257;u&#299;, err&#257;tum</pp>
+        <gloss>wander, roam</gloss>
+        <instances>1.9</instances>
+    </entry>
+    <entry n="et2">
+        <lemma>et</lemma>
+        <gloss>and</gloss>
+        <instances>1.3; 1.9; 1.27; 1.30; 1.35; 1.48; 1.53; 1.61; 1.66; 1.67; 1.69; 1.79; 1.82; 1.83</instances>
+    </entry>
+    <entry n="facio">
+        <lemma>facio</lemma>
+        <pp>faci&#333;, facere, f&#275;c&#299;, factum</pp>
+        <gloss>make, bring about</gloss>
+        <instances>1.6; 1.41</instances>
+    </entry>
+    <entry n="fagus">
+        <lemma>fagus</lemma>
+        <pp>f&#257;gus, f&#257;g&#299;</pp>
+        <gen>f.</gen>
+        <gloss>beech tree</gloss>
+        <instances>1.1</instances>
+    </entry>
+    <entry n="finis">
+        <lemma>finis</lemma>
+        <pp>f&#299;nis, f&#299;nis</pp>
+        <gen>m.</gen>
+        <gloss>borders, territory</gloss>
+        <instances>1.3; 1.62; 1.68</instances>
+    </entry>
+    <entry n="formosus">
+        <lemma>formosus</lemma>
+        <pp>form&#333;sus, form&#333;sa, form&#333;sum</pp>
+        <gloss>lovely, beautiful</gloss>
+        <instances>1.5</instances>
+    </entry>
+    <entry n="fugio">
+        <lemma>fugio</lemma>
+        <pp>fugi&#333;, fugere, f&#363;g&#299;</pp>
+        <gloss>flee, patriam fugio - to go into exile</gloss>
+        <instances>1.4</instances>
+    </entry>
+    <entry n="hic1">
+        <lemma>hic</lemma>
+        <pp>hic, haec, hoc</pp>
+        <gloss>this, these</gloss>
+        <instances>1.6; 1.13; 1.16; 1.21; 1.25; 1.40; 1.45; 1.71; 1.72; 1.73; 1.80</instances>
+    </entry>
+    <entry n="ille">
+        <lemma>ille</lemma>
+        <pp>ille, illa, illud</pp>
+        <gloss>he, she, it, that (one)</gloss>
+        <instances>1.7; 1.7; 1.9; 1.43; 1.45; 1.64</instances>
+    </entry>
+    <entry n="imbuo">
+        <lemma>imbuo</lemma>
+        <pp>imbu&#333;, imbuere, imbu&#299;, imb&#299;tum</pp>
+        <gloss>stain (with blood)</gloss>
+        <instances>1.8</instances>
+    </entry>
+    <entry n="in">
+        <lemma>in</lemma>
+        <gloss>in, into</gloss>
+        <instances>1.4; 1.15; 1.38; 1.60; 1.61; 1.76</instances>
+    </entry>
+    <entry n="ipse">
+        <lemma>ipse</lemma>
+        <pp>ipse, ipsa, ipsum</pp>
+        <gloss>-self, him-/her-/itself, themselves</gloss>
+        <instances>1.9; 1.12; 1.39; 1.40; 1.40</instances>
+    </entry>
+    <entry n="lentus">
+        <lemma>lentus</lemma>
+        <pp>lentus, lenta, lentum</pp>
+        <gloss>slow; pliant, malleable; (l. 4) untroubled</gloss>
+        <instances>1.4; 1.26</instances>
+    </entry>
+    <entry n="linquo">
+        <lemma>linquo</lemma>
+        <pp>linqu&#333;, linquere, l&#299;qui</pp>
+        <gloss>leave</gloss>
+        <instances>1.3</instances>
+    </entry>
+    <entry n="ludo">
+        <lemma>ludo</lemma>
+        <pp>l&#363;d&#333;, l&#363;dere, l&#363;d&#299;, l&#363;dum</pp>
+        <gloss>play, make music</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="meditor">
+        <lemma>meditor</lemma>
+        <pp>meditor, medit&#257;r&#299;, medit&#257;tus</pp>
+        <gloss>consider; rehearse, practise</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="meus">
+        <lemma>meus</lemma>
+        <pp>meus, mea, meum</pp>
+        <gloss>my</gloss>
+        <instances>1.9; 1.34; 1.70; 1.75</instances>
+    </entry>
+    <entry n="namque">
+        <lemma>namque</lemma>
+        <gloss>certainly, to be sure; because</gloss>
+        <instances>1.7; 1.14; 1.32</instances>
+    </entry>
+    <entry n="nos">
+        <lemma>nos</lemma>
+        <gloss>we, us</gloss>
+        <instances>1.3; 1.4; 1.6; 1.16; 1.19; 1.31; 1.65; 1.73; 1.81</instances>
+    </entry>
+    <entry n="noster">
+        <lemma>noster</lemma>
+        <pp>noster, nostra, nostrum</pp>
+        <gloss>our</gloss>
+        <instances>1.8; 1.21; 1.44; 1.64</instances>
+    </entry>
+    <entry n="o">
+        <lemma>o</lemma>
+        <gloss>O...! A particle for addressing someone directly</gloss>
+        <instances>1.6</instances>
+    </entry>
+    <entry n="otium">
+        <lemma>otium</lemma>
+        <pp>&#333;tium, &#333;ti&#299;</pp>
+        <gen>n.</gen>
+        <gloss>leisure, time for rest</gloss>
+        <instances>1.6</instances>
+    </entry>
+    <entry n="ouile">
+        <lemma>ouile</lemma>
+        <pp>ou&#299;le, ou&#299;lis</pp>
+        <gen>n.</gen>
+        <gloss>sheepfold</gloss>
+        <instances>1.8</instances>
+    </entry>
+    <entry n="patria">
+        <lemma>patria</lemma>
+        <pp>patria, patriae</pp>
+        <gen>f.</gen>
+        <gloss>homeland, fatherland</gloss>
+        <instances>1.3; 1.4</instances>
+    </entry>
+    <entry n="patulus">
+        <lemma>patulus</lemma>
+        <pp>patulus, patula, patulum</pp>
+        <gloss>broad, spreading</gloss>
+        <instances>1.1</instances>
+    </entry>
+    <entry n="permitto">
+        <lemma>permitto</lemma>
+        <pp>permitt&#333;, permittere, perm&#299;s&#299;, permissum</pp>
+        <gloss>allow, sanction</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="qui1">
+        <lemma>qui</lemma>
+        <pp>qu&#299;, quae, quod</pp>
+        <gloss>who, which (relative pronoun)</gloss>
+        <instances>1.10; 1.19; 1.20; 1.28; 1.38; 1.44; 1.54</instances>
+    </entry>
+    <entry n="recubo">
+        <lemma>recubo</lemma>
+        <pp>recub&#333;, recub&#257;re, recub&#257;u&#299;, recub&#257;tum</pp>
+        <gloss>lie back, recline</gloss>
+        <instances>1.1</instances>
+    </entry>
+    <entry n="resono1">
+        <lemma>resono</lemma>
+        <pp>reson&#333;, reson&#257;re, reson&#257;u&#299;</pp>
+        <gloss>resound; "call out the name of"</gloss>
+        <instances>1.5</instances>
+    </entry>
+    <entry n="saepe">
+        <lemma>saepe</lemma>
+        <gloss>often, frequently</gloss>
+        <instances>1.8; 1.16; 1.21; 1.56</instances>
+    </entry>
+    <entry n="semper">
+        <lemma>semper</lemma>
+        <gloss>always</gloss>
+        <instances>1.7; 1.54</instances>
+    </entry>
+    <entry n="silua">
+        <lemma>silua</lemma>
+        <pp>silua, siluae</pp>
+        <gen>f.</gen>
+        <gloss>woods, forest</gloss>
+    </entry>
+    <entry n="siluestris">
+        <lemma>siluestris</lemma>
+        <pp>siluestris, siluestre</pp>
+        <gloss>woodland, of the forest</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="sub">
+        <lemma>sub</lemma>
+        <gloss>under, underneath</gloss>
+        <instances>1.1; 1.57</instances>
+    </entry>
+    <entry n="sum1">
+        <lemma>sum</lemma>
+        <pp>sum, esse, fu&#299;</pp>
+        <gloss>to be</gloss>
+        <instances>1.7; 1.16; 1.19; 1.27; 1.33; 1.81</instances>
+    </entry>
+    <entry n="tegimen">
+        <lemma>tegmen</lemma>
+        <pp>tegmen, tegminis</pp>
+        <gen>n.</gen>
+        <gloss>cover, covering</gloss>
+        <instances>1.1</instances>
+    </entry>
+    <entry n="tener">
+        <lemma>tener</lemma>
+        <pp>tener, tenera, tenerum</pp>
+        <gloss>tender, young</gloss>
+        <instances>1.8; 1.22</instances>
+    </entry>
+    <entry n="tenuis">
+        <lemma>tenuis</lemma>
+        <pp>tenuis, tenue</pp>
+        <gloss>thin, slender</gloss>
+        <instances>1.2</instances>
+    </entry>
+    <entry n="tu">
+        <lemma>tu</lemma>
+        <gloss>you</gloss>
+        <instances>1.1; 1.4; 1.27; 1.39; 1.40; 1.48; 1.54</instances>
+    </entry>
+    <entry n="umbra">
+        <lemma>umbra</lemma>
+        <pp>umbra, umbrae</pp>
+        <gen>f.</gen>
+        <gloss>shadow</gloss>
+        <instances>1.4; 1.84</instances>
+    </entry>
+    <entry n="uolo3">
+        <lemma>uolo</lemma>
+        <pp>uol&#333;, uelle, uolu&#299;</pp>
+        <gloss>wish, want</gloss>
+        <instances>1.10</instances>
+    </entry>
+    <entry n="ut1">
+        <lemma>ut</lemma>
+        <gloss>as</gloss>
+        <instances>1.9; 1.46</instances>
+    </entry>
+    <entry n="Araris">
+        <lemma>Araris</lemma>
+        <gloss>the river Arar, a river in Gaul</gloss>
+        <pp>Araris, Araris</pp>
+        <gen>m.</gen>
+    </entry>
+    <entry n="Britanni">
+        <lemma>Britanni</lemma>
+        <gloss>the Britons</gloss>
+        <pp>Britann&#299;, Britann&#333;rum</pp>
+        <gen>m.</gen>
+    </entry>
+    <entry n="Creta">
+        <lemma>Creta</lemma>
+        <gloss>Crete</gloss>
+        <pp>Cr&#275;ta, Cr&#275;tae</pp>
+        <gen>f.</gen>
+    </entry>
+    <entry n="Galatea">
+        <lemma>Galatea</lemma>
+        <pp>Galat&#275;a, Galat&#275;a</pp>
+        <gen>f.</gen>
+        <gloss>Galatea, a woman</gloss>
+    </entry>
+    <entry n="Germania">
+        <lemma>Germania</lemma>
+        <gloss>Germany, the people of Germany</gloss>
+        <gen>f.</gen>
+        <pp>Germ&#257;nia, Germ&#257;niae</pp>
+    </entry>
+    <entry n="Hyblaeus">
+        <lemma>Hyblaeus</lemma>
+        <pp>Hyblaeus, Hyblaea, Hyblaeum</pp>
+        <gloss>Hyblaean, of mount Hybla</gloss>
+    </entry>
+    <entry n="Oaxes">
+        <lemma>Oaxes</lemma>
+        <pp>Oaxes, Oaxidis</pp>
+        <gen>f.</gen>
+        <gloss>the river Oaxes, a river in Crete</gloss>
+    </entry>
+    <entry n="Parthus">
+        <lemma>Parthus</lemma>
+        <pp>Parthus, Parth&#299;</pp>
+        <gen>m.</gen>
+        <gloss>a Parthian</gloss>
+    </entry>
+    <entry n="Roma">
+        <lemma>Roma</lemma>
+        <pp>R&#333;ma, R&#333;mae</pp>
+        <gen>f.</gen>
+        <gloss>Rome, the city of Rome</gloss>
+    </entry>
+    <entry n="Scythia">
+        <lemma>Scythia</lemma>
+        <pp>Scythia, Scythiae</pp>
+        <gen>f.</gen>
+        <gloss>Scythia</gloss>
+    </entry>
+    <entry n="Tigris">
+        <lemma>Tigris</lemma>
+        <gloss>the river Tigris, a river in the Euphrates</gloss>
+        <pp>T&#299;gris, T&#299;gridis</pp>
+        <gen>m.</gen>
+    </entry>
+    <entry n="absum1">
+        <lemma>absum</lemma>
+        <gloss>to be away from, be absent</gloss>
+        <pp>absum, abesse, &#257;fu&#299;, &#257;fut&#363;rus</pp>
+    </entry>
+    <entry n="ad2">
+        <lemma>ad</lemma>
+        <gloss>to, toward</gloss>
+    </entry>
+    <entry n="adeo2">
+        <lemma>adeo</lemma>
+        <gloss>very, very much; likewise; (<span class="lt">usque adeo</span>: "so much")</gloss>
+    </entry>
+    <entry n="aeger2">
+        <lemma>aeger</lemma>
+        <gloss>sick, feeble</gloss>
+        <pp>aeger, aegra, aegrum</pp>
+    </entry>
+    <entry n="aequor">
+        <lemma>aequor</lemma>
+        <gloss>the sea</gloss>
+        <pp>aequor, aequoris</pp>
+        <gen>n.</gen>
+    </entry>
+    <entry n="aerius">
+        <lemma>aerius</lemma>
+        <gloss>of the air, high</gloss>
+        <pp>&#257;&#235;rius, &#257;&#235;ria, &#257;&#235;rium</pp>
+    </entry>
+    <entry n="aes">
+        <lemma>aes</lemma>
+        <gloss>copper (coins)</gloss>
+        <pp>aes, aeris</pp>
+        <gen>n.</gen>
+    </entry>
+    <entry n="ager">
+        <lemma>ager</lemma>
+        <gloss>field, pasture</gloss>
+        <pp>ager, agr&#299;</pp>
+        <gen>m.</gen>
+    </entry>
+    <entry n="ago">
+        <lemma>ago</lemma>
+        <gloss>to move, drive, tend</gloss>
+        <pp>ag&#333;, agere, &#275;g&#299;, actum</pp>
+    </entry>
+    <entry n="ah">
+        <lemma>ah</lemma>
+        <gloss>ah!</gloss>
+    </entry>
+    <entry n="alibi">
+        <lemma>alibi</lemma>
+        <gloss>elsewhere, somewhere else, at another place</gloss>
+    </entry>
+    <entry n="aliquot">
+        <lemma>aliquot</lemma>
+        <gloss>some, several</gloss>
+    </entry>
+    <entry n="alius">
+        <lemma>alius</lemma>
+        <gloss>another, other, different</gloss>
+        <pp>alius, alia, aliud</pp>
+    </entry>
+    <entry n="altaria">
+        <lemma>altaria</lemma>
+        <gloss>altar</gloss>
+        <pp>alt&#257;ria, alt&#257;rium</pp>
+        <gen>n. pl.</gen>
+    </entry>
+    <entry n="altus">
+        <lemma>altus</lemma>
+        <gloss>high, tall; deep</gloss>
+        <pp>altus, alta, altum</pp>
+    </entry>
+    <entry n="amarus">
+        <lemma>amarus</lemma>
+        <gloss>bitter, pungent</gloss>
+        <pp>am&#257;rus, am&#257;ra, am&#257;rum</pp>
+    </entry>
+    <entry n="ambo2">
+        <lemma>ambo</lemma>
+        <gloss>both</gloss>
+    </entry>
+    <entry n="annus">
+        <lemma>annus</lemma>
+        <gloss>a year</gloss>
+        <pp>annus, ann&#299;</pp>
+        <gen>m.</gen>
+    </entry>
+    <entry n="ante1">
+        <lemma>ante</lemma>
+        <gloss>before, in front, forwards; previously</gloss>
+    </entry>
+    <entry n="antrum">
+        <lemma>antrum</lemma>
+        <gloss>a cave</gloss>
+        <pp>antrum, antr&#299;</pp>
+        <gen>n.</gen>
+    </entry>
+    <entry n="apis">
+        <lemma>apis</lemma>
+        <gloss>a bee</gloss>
+        <pp>apis, apis</pp>
+        <gen>f.</gen>
+    </entry>
+    <entry n="arbor">
+        <lemma>arbor</lemma>
+        <gloss>a tree</gloss>
+        <pp>arbor, arboris</pp>
+        <gen>f.</gen>
+    </entry>
+    <entry n="arbustum">
+        <lemma>arbustum</lemma>
+        <gloss>copse, a wood; (pl.) trees, shrubs</gloss>
+        <pp>arbustum, arbust&#299;</pp>
+        <gen>n.</gen>
+    </entry>
+    <entry n="arista">
+        <lemma>arista</lemma>
+        <gloss>ear of corn; (poet. pl.) a crop of grain</gloss>
+        <pp>arista, aristae</pp>
+        <gen>f.</gen>
+    </entry>
+    <entry n="at2">
+        <lemma>at</lemma>
+        <gloss>but</gloss>
+    </entry>
+    <entry n="aura">
+        <lemma>aura</lemma>
+        <gloss>a breeze, wind</gloss>
+        <pp>aura, aurae</pp>
+        <gen>f.</gen>
+    </entry>
+    <entry n="aut">
+        <lemma>aut</lemma>
+        <gloss>either, or</gloss>
+    </entry>
+    <entry n="barba">
+        <lemma>barba</lemma>
+        <gloss>beard</gloss>
+        <pp>barba, barbae</pp>
+        <gen>f.</gen>
+    </entry>
+    <entry n="barbarus2">
+        <lemma>barbarus</lemma>
+        <gloss>barbarian</gloss>
+        <pp>barbarus, barbara, barbarum</pp>
+    </entry>
+    <entry n="bibo2">
+        <lemma>bibo</lemma>
+        <gloss>to drink</gloss>
+        <pp>bib&#333;, bibere, bib&#299;</pp>
+    </entry>
+    <entry n="bis">
+        <lemma>bis</lemma>
+        <gloss>twice</gloss>
+    </entry>
+    <entry n="cado">
+        <lemma>cado</lemma>
+        <gloss>to fall (down), descend</gloss>
+        <pp>cad&#333;, cadere, cecid&#299;, c&#257;sum</pp>
+    </entry>
+    <entry n="caelum1">
+        <lemma>caelum</lemma>
+        <gloss>the sky, heaven</gloss>
+        <pp>caelum, cael&#299;</pp>
+        <gen>n.</gen>
+    </entry>
+    <entry n="caespes">
+        <lemma>caespes</lemma>
+        <gloss>a turf, cut sod</gloss>
+        <pp>caespes, caespitis</pp>
+        <gen>m.</gen>
+    </entry>
+    <entry n="candidus">
+        <lemma>candidus</lemma>
+        <gloss>white; clear, bright</gloss>
+        <pp>candidus, candida, candidum</pp>
+    </entry>
+    <entry n="canis">
+        <lemma>canis</lemma>
+        <gloss>a dog</gloss>
+        <pp>canis, canis</pp>
+        <gen>c.</gen>
+    </entry>
+    <entry n="cano">
+        <lemma>cano</lemma>
+        <gloss>to sing; to prophesy</gloss>
+        <pp>can&#333;, canere, cecin&#299;, cantum</pp>
+    </entry>
+    <entry n="capella">
+        <lemma>capella</lemma>
+        <gloss>a she-goat</gloss>
+        <pp>capella, capellae</pp>
+        <gen>f.</gen>
+    </entry>
+    <entry n="capto">
+        <lemma>capto</lemma>
+        <gloss>to try to get, try to capture, seek</gloss>
+        <pp>capt&#333;, capt&#257;re, capt&#257;u&#299;, capt&#257;tum</pp>
+    </entry>
+    <entry n="caput">
+        <lemma>caput</lemma>
+        <gloss>the head</gloss>
+        <pp>caput, capitis</pp>
+        <gen>n.</gen>
+    </entry>
+    <entry n="carmen1">
+        <lemma>carmen</lemma>
+        <gloss>a song, poem</gloss>
+        <pp>carmen, carminis</pp>
+        <gen>n.</gen>
+    </entry>
+    <entry n="carpo">
+        <lemma>carpo</lemma>
+        <gloss>to pick, pluck off, crop gather</gloss>
+        <pp>carp&#333;, carpere, carps&#299;, carptum</pp>
+    </entry>
+    <entry n="caseus">
+        <lemma>caseus</lemma>
+        <gloss>cheese</gloss>
+        <pp>c&#257;seus, c&#257;se&#299;</pp>
+        <gen>m.</gen>
+    </entry>
+    <entry n="castanea">
+        <lemma>castanea</lemma>
+        <gloss>chestnut (the nut or the tree)</gloss>
+        <pp>castanea, castaneae</pp>
+        <gen>f.</gen>
+    </entry>
+    <entry n="catulus">
+        <lemma>catulus</lemma>
+        <gloss>pup, puppy</gloss>
+        <pp>catulus, catul&#299;</pp>
+        <gen>m.</gen>
+    </entry>
+    <entry n="causa">
+        <lemma>causa</lemma>
+        <gloss>a cause, reason, motive</gloss>
+        <gen>f.</gen>
+        <pp>causa, causae</pp>
+    </entry>
+    <entry n="ceruus">
+        <lemma>ceruus</lemma>
+        <gloss>deer</gloss>
+        <gen>m.</gen>
+        <pp>ceruus, ceru&#299;</pp>
+    </entry>
+    <entry n="cesso">
+        <lemma>cesso</lemma>
+        <gloss>cease from, stop</gloss>
+        <pp>cess&#333;, cess&#257;re, cess&#257;u&#299;, cess&#257;tum</pp>
+    </entry>
+    <entry n="ciuis">
+        <lemma>ciuis</lemma>
+        <gloss>civis, a citizen</gloss>
+        <pp>c&#299;uis, c&#299;uis</pp>
+        <gen>m. f.</gen>
+    </entry>
+    <entry n="cognosco">
+        <lemma>cognosco</lemma>
+        <gloss>to get to know, learn, understand; (perf.) to know</gloss>
+        <pp>cognosc&#333;, cognoscere, cogn&#333;u&#299;, cognitum</pp>
+    </entry>
+    <entry n="colo2">
+        <lemma>colo</lemma>
+        <gloss>to till, tend, care for, cultivate</gloss>
+        <pp>col&#333;, colere, colu&#299;, cultum</pp>
+    </entry>
+    <entry n="compono">
+        <lemma>compono</lemma>
+        <gloss>to bring together; arrange; compare</gloss>
+        <pp>comp&#333;n&#333;, comp&#333;nere, composu&#299;, compositum</pp>
+    </entry>
+    <entry n="congero2">
+        <lemma>congero</lemma>
+        <gloss>to bring together, collect, heap up</gloss>
+        <pp>conger&#333;, congerere, congess&#299;, congestum</pp>
+    </entry>
+    <entry n="connitor2">
+        <lemma>connitor</lemma>
+        <gloss>strive, struggle, endeavor; (l. 15) give birth</gloss>
+        <pp>c&#333;n&#299;tor, c&#333;n&#299;t&#299;, c&#333;n&#299;xus</pp>
+    </entry>
+    <entry n="consero3">
+        <lemma>consero</lemma>
+        <gloss>to sow, plant</gloss>
+        <pp>conser&#333;, conserere, conseru&#299;, consertum</pp>
+    </entry>
+    <entry n="contagium">
+        <lemma>contagium</lemma>
+        <gloss>infection, taint</gloss>
+        <pp>cont&#257;gium, cont&#257;gi&#299;</pp>
+        <gen>n.</gen>
+    </entry>
+    <entry n="copia">
+        <lemma>copia</lemma>
+        <gloss>an abundance, plenty</gloss>
+        <pp>c&#333;pia, c&#333;piae</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="corylus">
+        <lemma>corylus</lemma>
+        <gloss>a hazel-tree</gloss>
+        <pp>corylus, coryl&#299;</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="culmen">
+        <lemma>culmen</lemma>
+        <gloss>the top; roof</gloss>
+        <pp>culmen, culminis</pp>
+        <gen>n.</gen>
+
+    </entry>
+    <entry n="cum3">
+        <lemma>cum</lemma>
+        <gloss>with</gloss>
+
+    </entry>
+    <entry n="cupressus">
+        <lemma>cupressus</lemma>
+        <gloss>cypress (tree)</gloss>
+        <pp>cupressus, cupress&#299;</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="cura">
+        <lemma>cura</lemma>
+        <gloss>care, attention; (l. 58) object of care, pet</gloss>
+        <pp>c&#363;ra, c&#363;rae</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="cytisus">
+        <lemma>cytisus</lemma>
+        <gloss>cytisus, a kind of clover</gloss>
+        <pp>cytisus, cytis&#299;</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="de">
+        <lemma>de</lemma>
+        <gloss>from, down (from), out of</gloss>
+
+    </entry>
+    <entry n="densus">
+        <lemma>densus</lemma>
+        <gloss>thick, close, dense</gloss>
+        <pp>densus, densa, densum</pp>
+
+    </entry>
+    <entry n="depascor">
+        <lemma>depascor</lemma>
+        <gloss>to eat up, feed on, consume</gloss>
+        <pp>d&#275;pascor, d&#275;pasc&#299;, d&#275;pastus</pp>
+        
+    </entry>
+    <entry n="depello">
+        <lemma>depello</lemma>
+        <gloss>to drive (away), remove; expel</gloss>
+        <pp>d&#275;pell&#333;, d&#275;pellere, d&#275;pul&#299;, d&#275;pulsum</pp>
+
+    </entry>
+    <entry n="destituo">
+        <lemma>destituo</lemma>
+        <gloss>to set down, abandon, leave alone</gloss>
+        <pp>destitu&#333;, destituere, destitu&#299;, destit&#363;tum</pp>
+
+    </entry>
+    <entry n="dextera">
+        <lemma>dextera</lemma>
+        <gloss>the right hand</gloss>
+        <pp>dext(e)ra, dext(e)rae</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="dico2">
+        <lemma>dico</lemma>
+        <gloss>to say, speak, call</gloss>
+        <pp>d&#299;c&#333;, d&#299;cere, d&#299;x&#299;, dictum</pp>
+
+    </entry>
+    <entry n="dies">
+        <lemma>dies</lemma>
+        <gloss>day</gloss>
+        <pp>di&#275;s, di&#275;&#299;</pp>
+        <gen>m. (f.)</gen>
+
+    </entry>
+    <entry n="discordia">
+        <lemma>discordia</lemma>
+        <gloss> disagreement, discord</gloss>
+        <pp>discordia, discordiae</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="diuido">
+        <lemma>diuido</lemma>
+        <gloss>to divide, force apart, part</gloss>
+        <pp>d&#299;uid&#333;, d&#299;uidere, d&#299;u&#299;s&#299;, d&#299;u&#299;sum</pp>
+
+    </entry>
+    <entry n="diuus1">
+        <lemma>diuus</lemma>
+        <gloss>a god</gloss>
+        <pp>d&#299;uus, d&#299;u&#299;</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="do">
+        <lemma>do</lemma>
+        <gloss>give, hand over; tell</gloss>
+        <pp>d&#333;, d&#257;re, ded&#299;, d&#257;tum</pp>
+
+    </entry>
+    <entry n="domus">
+        <lemma>domus</lemma>
+        <gloss>house, home</gloss>
+        <pp>domus, dom&#363;s</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="duco">
+        <lemma>duco</lemma>
+        <gloss>to lead, guide</gloss>
+        <pp>d&#363;c&#333;, d&#363;cere, d&#363;x&#299;, ductum</pp>
+
+    </entry>
+    <entry n="dum2">
+        <lemma>dum2</lemma>
+        <gloss>while, until</gloss>
+
+    </entry>
+    <entry n="dumosus">
+        <lemma>dumosus</lemma>
+        <gloss>bushy</gloss>
+        <pp>d&#363;m&#333;sus, d&#363;m&#333;sa, d&#363;m&#333;sum</pp>
+
+    </entry>
+    <entry n="effero2">
+        <lemma>effero</lemma>
+        <gloss>to carry out; take away, remove; lift up</gloss>
+        <pp>effer&#333;, efferre, extul&#299;, &#275;l&#257;tum</pp>
+
+    </entry>
+    <entry n="en">
+        <lemma>en</lemma>
+        <gloss>look! see!</gloss>
+
+    </entry>
+    <entry n="enim2">
+        <lemma>enim</lemma>
+        <gloss>for; namely, I mean, in fact</gloss>
+
+    </entry>
+    <entry n="eo1">
+        <lemma>eo</lemma>
+        <gloss>to go</gloss>
+        <pp>e&#333;, &#299;re, i&#299; (iu&#299;), itum</pp>
+
+    </entry>
+    <entry n="equidem">
+        <lemma>equidem</lemma>
+        <gloss>indeed, at least; (with first person) for my part</gloss>
+
+    </entry>
+    <entry n="ergo2">
+        <lemma>ergo</lemma>
+        <gloss>therefore, because of (this)</gloss>
+
+    </entry>
+    <entry n="etiam">
+        <lemma>etiam</lemma>
+        <gloss>yet, still, even now</gloss>
+
+    </entry>
+    <entry n="exeo1">
+        <lemma>exeo</lemma>
+        <gloss>to go out, depart, leave</gloss>
+        <pp>exe&#333;, ex&#299;re, exi&#299; (exiu&#299;), exitum</pp>
+
+    </entry>
+    <entry n="exsul">
+        <lemma>exsul</lemma>
+        <gloss>a banished person, wanderer, exile</gloss>
+        <pp>exsul, exsulis</pp>
+        <gen>m. (f.)</gen>
+
+    </entry>
+    <entry n="fateor">
+        <lemma>fateor</lemma>
+        <gloss>to confess, acknowledge</gloss>
+        <pp>fateor, fat&#275;r&#299;, fassus</pp>
+
+    </entry>
+    <entry n="felix">
+        <lemma>felix</lemma>
+        <gloss>fruitful, productive; happy</gloss>
+        <pp>f&#275;lix, f&#275;licis</pp>
+
+    </entry>
+    <entry n="fetus1">
+        <lemma>fetus</lemma>
+        <gloss>breeding, begetting; offspring; fruit</gloss>
+        <pp>f&#275;tus, f&#275;t&#363;s</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="fetus2">
+        <lemma>fetus</lemma>
+        <gloss>pregnant, with young</gloss>
+        <pp>f&#275;tus, f&#275;ta, f&#275;tum</pp>
+
+    </entry>
+    <entry n="floreo">
+        <lemma>floreo</lemma>
+        <gloss>to bloom, flower</gloss>
+        <pp>fl&#333;re&#333;, fl&#333;r&#275;re, fl&#333;ru&#299;</pp>
+        
+    </entry>
+    <entry n="flos">
+        <lemma>flos</lemma>
+        <gloss>a blossom, flower</gloss>
+        <pp>fl&#333;s, fl&#333;ris</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="flumen">
+        <lemma>flumen</lemma>
+        <gloss>river, stream</gloss>
+        <pp>fl&#363;men, fl&#363;minis</pp>
+        <gen>n.</gen>
+
+    </entry>
+    <entry n="fons">
+        <lemma>fons</lemma>
+        <gloss>a spring, fountain, well</gloss>
+        <pp>fons, fontis</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="fortunatus">
+        <lemma>fortunatus</lemma>
+        <gloss>lucky, happy</gloss>
+        <pp>fort&#363;n&#257;tus, fort&#363;n&#257;ta, fort&#363;n&#257;tum</pp>
+
+    </entry>
+    <entry n="fretum">
+        <lemma>fretum</lemma>
+        <gloss>a strait; the sea, waters</gloss>
+        <pp>fretum, fret&#299;</pp>
+        <gen>n.</gen>
+
+    </entry>
+    <entry n="frigus">
+        <lemma>frigus</lemma>
+        <gloss>cold, coolness</gloss>
+        <pp>fr&#299;gus, fr&#299;goris</pp>
+        <gen>n.</gen>
+
+    </entry>
+    <entry n="frondator">
+        <lemma>frondator</lemma>
+        <gloss>pruner</gloss>
+        <pp>frond&#257;tor, frond&#257;t&#333;ris</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="frons2">
+        <lemma>frons</lemma>
+        <gloss>foliage</gloss>
+        <pp>frons, frondis</pp>
+        <gen>f. (m.)</gen>
+
+    </entry>
+    <entry n="fumo">
+        <lemma>fumo</lemma>
+        <gloss>to smoke</gloss>
+        <pp>f&#363;m&#333;, f&#363;m&#257;re, f&#363;m&#257;u&#299;, f&#363;m&#257;tus</pp>
+
+    </entry>
+    <entry n="gemellus2">
+        <lemma>gemellus</lemma>
+        <gloss>twin</gloss>
+        <pp>gemellus, gemella, gemellum</pp>
+
+    </entry>
+    <entry n="gemo">
+        <lemma>gemo</lemma>
+        <gloss>to sigh, groan, lament</gloss>
+        <pp>gem&#333;, gemere, gemu&#299;, gemitum</pp>
+
+    </entry>
+    <entry n="grauis">
+        <lemma>grauis</lemma>
+        <gloss>heavy, weighty, laden</gloss>
+        <pp>grauis, graue</pp>
+
+    </entry>
+    <entry n="grex">
+        <lemma>grex</lemma>
+        <gloss>a flock, herd</gloss>
+        <pp>grex, gregis</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="habeo">
+        <lemma>habeo</lemma>
+        <gloss>to have, hold</gloss>
+        <pp>habe&#333;, hab&#275;re, habu&#299;, habitum</pp>
+
+    </entry>
+    <entry n="haedus">
+        <lemma>haedus</lemma>
+        <gloss>a young goat, kid</gloss>
+        <pp>haedus, haed&#299;</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="hic2">
+        <lemma>hic</lemma>
+        <gloss>here</gloss>
+        <pp>h&#299;c</pp>
+
+    </entry>
+    <entry n="hinc">
+        <lemma>hinc</lemma>
+        <gloss>from this place, hence; henceforth</gloss>
+
+    </entry>
+    <entry n="iam">
+        <lemma>iam</lemma>
+        <gloss>now, just now</gloss>
+
+    </entry>
+    <entry n="impius">
+        <lemma>impius</lemma>
+        <gloss>ungodly, wicked, impious</gloss>
+        <pp>impius, impia, impium</pp>
+
+    </entry>
+    <entry n="ineo1">
+        <lemma>ineo</lemma>
+        <gloss>to go into, enter</gloss>
+        <pp>ine&#333;, in&#299;re, ini&#299; (in&#299;u&#299;), initum</pp>
+
+    </entry>
+    <entry n="iners">
+        <lemma>iners</lemma>
+        <gloss>unskilful; lazy; idle, inactive</gloss>
+        <pp>iners, inertis</pp>
+
+    </entry>
+    <entry n="ingratus">
+        <lemma>ingratus</lemma>
+        <gloss>unpleasant, disagreeable; ungrateful</gloss>
+        <pp>ingr&#257;tus, ingr&#257;ta, ingr&#257;tum</pp>
+
+    </entry>
+    <entry n="insero3">
+        <lemma>insero</lemma>
+        <gloss>to plant, sow</gloss>
+        <pp>inser&#333;, inserere, inseru&#299;, insertum</pp>
+
+    </entry>
+    <entry n="insuetus">
+        <lemma>insuetus</lemma>
+        <gloss>unaccustomed, unused</gloss>
+        <pp>insu&#275;tus, insu&#275;ta, insu&#275;tum</pp>
+
+    </entry>
+    <entry n="inter">
+        <lemma>inter</lemma>
+        <gloss>between, among</gloss>
+
+    </entry>
+    <entry n="interea">
+        <lemma>interea</lemma>
+        <gloss>meanwhile</gloss>
+
+    </entry>
+    <entry n="inuideo">
+        <lemma>inuideo</lemma>
+        <gloss>envy</gloss>
+        <pp>inuide&#333;, inuid&#275;re, inu&#299;s&#299;, inu&#299;sum</pp>
+
+    </entry>
+    <entry n="iste">
+        <lemma>iste</lemma>
+        <gloss>this, that, he, she</gloss>
+        <pp>iste, ista, istud</pp>
+
+    </entry>
+    <entry n="iuncus">
+        <lemma>iuncus</lemma>
+        <gloss>rush (of a plant)</gloss>
+        <pp>iuncus, iunc&#299;</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="iuuenis1">
+        <lemma>iuuenis</lemma>
+        <gloss>young man, youth</gloss>
+        <pp>iuuenis, iuuenis</pp>
+        <gen>m. (f.)</gen>
+
+    </entry>
+    <entry n="labor2">
+        <lemma>labor</lemma>
+        <gloss>to glide, slip (away), pass</gloss>
+        <pp>l&#257;bor, l&#257;b&#299;, l&#257;psus</pp>
+
+    </entry>
+    <entry n="lac">
+        <lemma>lac</lemma>
+        <gloss>milk</gloss>
+        <pp>lac, lactis</pp>
+        <gen>n.</gen>
+
+    </entry>
+    <entry n="laedo">
+        <lemma>laedo</lemma>
+        <gloss>to hurt, wound, injure</gloss>
+        <pp>laed&#333;, laedere, laes&#299;, laesum</pp>
+
+    </entry>
+    <entry n="laeuus">
+        <lemma>laeuus</lemma>
+        <gloss>left; (of omens) unfavourable; (l. 16) "ruled by an ill omen"</gloss>
+        <pp>laeuus, laeua, laeuum</pp>
+
+    </entry>
+    <entry n="lapis">
+        <lemma>lapis</lemma>
+        <gloss>a stone</gloss>
+        <pp>lapis, lapidis</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="leuis1">
+        <lemma>leuis1</lemma>
+        <gloss>light, not heavy</gloss>
+        <pp>leuis, leue</pp>
+
+    </entry>
+    <entry n="libertas">
+        <lemma>libertas</lemma>
+        <gloss>freedom</gloss>
+        <pp>l&#299;bert&#257;s, l&#299;bert&#257;tis</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="licet1">
+        <lemma>licet</lemma>
+        <gloss>(impers.) it is lawful, is allowed, is permitted</gloss>
+        <pp>licet, lic&#275;re, licuit/licitum est</pp>
+
+    </entry>
+    <entry n="limes">
+        <lemma>limes</lemma>
+        <gloss>a path, way, track</gloss>
+        <pp>l&#299;mes, l&#299;mitis</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="limosus">
+        <lemma>limosus</lemma>
+        <gloss>muddy, slimy</gloss>
+        <pp>l&#299;m&#333;sus, l&#299;m&#333;sa, l&#299;m&#333;sum</pp>
+
+    </entry>
+    <entry n="litus">
+        <lemma>litus</lemma>
+        <gloss>sea-shore, coast</gloss>
+        <pp>l&#299;tus, l&#299;toris</pp>
+        <gen>n.</gen>
+
+    </entry>
+    <entry n="longus">
+        <lemma>longus</lemma>
+        <gloss>long, extended</gloss>
+        <pp>longus, longa, longum</pp>
+
+    </entry>
+    <entry n="maestus">
+        <lemma>maestus</lemma>
+        <gloss>sad, melancholy</gloss>
+        <pp>maestus, maesta, maestum</pp>
+
+    </entry>
+    <entry n="magis2">
+        <lemma>magis</lemma>
+        <gloss>more; rather</gloss>
+
+    </entry>
+    <entry n="magnus">
+        <lemma>magnus</lemma>
+        <gloss>large, great, big, high</gloss>
+        <pp>magnus, magna, magnum</pp>
+
+    </entry>
+    <entry n="malum1">
+        <lemma>malum</lemma>
+        <gloss>an evil, mischief</gloss>
+        <pp>malum, mal&#299;</pp>
+        <gen>n.</gen>
+
+    </entry>
+    <entry n="malus">
+        <lemma>malus</lemma>
+        <gloss>bad, evil, harmful</gloss>
+        <pp>malus, mala, malum</pp>
+
+    </entry>
+    <entry n="maneo">
+        <lemma>maneo</lemma>
+        <gloss>to stay, remain</gloss>
+        <pp>mane&#333;, man&#275;re, m&#257;ns&#299;, m&#257;nsum</pp>
+
+    </entry>
+    <entry n="mater">
+        <lemma>mater</lemma>
+        <gloss>a mother; (l. 23) dam, mother goat</gloss>
+        <pp>m&#257;ter, m&#257;tris</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="memini">
+        <lemma>memini</lemma>
+        <gloss>I remember, think of</gloss>
+        <pp>memin&#299;, meminisse</pp>
+
+    </entry>
+    <entry n="mens">
+        <lemma>mens</lemma>
+        <gloss>the mind</gloss>
+        <pp>mens, mentis</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="miles">
+        <gloss>a soldier</gloss>
+        <lemma>miles</lemma>
+        <pp>m&#299;les, m&#299;litis</pp>
+        <gen>m. (f.)</gen>
+
+    </entry>
+    <entry n="miror">
+        <lemma>miror</lemma>
+        <gloss>to marvel (at), be astonished, admire</gloss>
+        <pp>m&#299;ror, m&#299;r&#257;r&#299;, m&#299;r&#257;tus</pp>
+
+    </entry>
+    <entry n="miser">
+        <lemma>miser</lemma>
+        <gloss>wretched, unhappy, pitiable</gloss>
+        <pp>miser, misera, miserum</pp>
+
+    </entry>
+    <entry n="mitis">
+        <lemma>mitis</lemma>
+        <gloss>juicy, ripe</gloss>
+        <pp>m&#299;tis, m&#299;te</pp>
+
+    </entry>
+    <entry n="modo1">
+        <lemma>modo</lemma>
+        <gloss>just now</gloss>
+
+    </entry>
+    <entry n="mollis">
+        <lemma>mollis</lemma>
+        <gloss>soft, tender, pleasant</gloss>
+        <pp>mollis, molle</pp>
+
+    </entry>
+    <entry n="mons">
+        <lemma>mons</lemma>
+        <gloss>a mountain, mount</gloss>
+        <gen>f.</gen>
+        <pp>mons, montis</pp>
+
+    </entry>
+    <entry n="multus">
+        <lemma>multus</lemma>
+        <gloss>much, many</gloss>
+        <pp>multus, multa, multum</pp>
+
+    </entry>
+    <entry n="nec2">
+        <lemma>nec2</lemma>
+        <gloss>and not; neither, nor</gloss>
+
+    </entry>
+    <entry n="neque">
+        <lemma>neque</lemma>
+        <gloss>and not; neither, nor</gloss>
+
+    </entry>
+    <entry n="non">
+        <lemma>non</lemma>
+        <gloss>not</gloss>
+
+    </entry>
+    <entry n="nosco">
+        <lemma>nosco</lemma>
+        <gloss>come to know, learn, be familiar with, know</gloss>
+        <pp>nosc&#333;, noscere, n&#333;u&#299;, n&#333;tum</pp>
+
+    </entry>
+    <entry n="notus2">
+        <lemma>notus</lemma>
+        <gloss>known, familiar</gloss>
+        <pp>n&#333;tus, n&#333;ta, n&#333;tum</pp>
+
+    </entry>
+    <entry n="nouale">
+        <lemma>nouale</lemma>
+        <gloss>newly ploughed land, fallow land, field</gloss>
+        <pp>nou&#257;le, nou&#257;lis</pp>
+        <gen>n. (also f.)</gen>
+
+    </entry>
+    <entry n="nox">
+        <lemma>nox</lemma>
+        <gloss>night</gloss>
+        <gen>f.</gen>
+        <pp>nox, noctis</pp>
+
+    </entry>
+    <entry n="nudus">
+        <lemma>nudus</lemma>
+        <gloss>naked, bare, exposed</gloss>
+        <pp>n&#363;dus, n&#363;da, n&#363;dum</pp>
+
+    </entry>
+    <entry n="nullus">
+        <lemma>nullus</lemma>
+        <gloss>no, none</gloss>
+        <pp>nullus, nulla, nullum</pp>
+
+    </entry>
+    <entry n="nunc">
+        <lemma>nunc</lemma>
+        <gloss>now</gloss>
+
+    </entry>
+    <entry n="obduco">
+        <lemma>obduco</lemma>
+        <gloss>to draw before, obstruct, cover</gloss>
+        <pp>obd&#363;c&#333;, obd&#363;cere, obd&#363;x&#299;, obductum</pp>
+
+    </entry>
+    <entry n="omnis">
+        <lemma>omnis</lemma>
+        <gloss>all, every</gloss>
+        <pp>omnis, omne</pp>
+
+    </entry>
+    <entry n="opacus">
+        <lemma>opacus</lemma>
+        <gloss>in the shade, shady</gloss>
+        <pp>op&#257;cus, op&#257;ca, op&#257;cum</pp>
+
+    </entry>
+    <entry n="orbis">
+        <lemma>orbis</lemma>
+        <gloss>circle; the world</gloss>
+        <pp>orbis, orbis</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="ordo">
+        <lemma>ordo</lemma>
+        <gloss>a row, line, order</gloss>
+        <pp>ordo, ordinis</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="ouis">
+        <lemma>ouis</lemma>
+        <gloss>a sheep</gloss>
+        <pp>ouis, ouis</pp>
+        <gen>f. (m.)</gen>
+
+    </entry>
+    <entry n="pabulum">
+        <lemma>pabulum</lemma>
+        <gloss>fodder, pasturage, grass</gloss>
+        <gen>n.</gen>
+        <pp>p&#257;bulum, p&#257;bul&#299;</pp>
+
+    </entry>
+    <entry n="palumbes">
+        <lemma>palumbes</lemma>
+        <gloss>pigeon, dove</gloss>
+        <pp>palumb&#275;s, palumbis</pp>
+        <gen>m. f.</gen>
+
+    </entry>
+    <entry n="palus2">
+        <lemma>palus</lemma>
+        <gloss>pool, pond</gloss>
+        <gen>f.</gen>
+        <pp>pal&#363;s, pal&#363;dis</pp>
+
+    </entry>
+    <entry n="pars">
+        <lemma>pars</lemma>
+        <gloss>part</gloss>
+        <pp>pars, partis</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="paruus2">
+        <lemma>paruus</lemma>
+        <gloss>little, small; (superl. adv. <span class="lt">minime</span>) not at all</gloss>
+        <pp>paruus, parua, paruum</pp>
+
+    </entry>
+    <entry n="pasco">
+        <lemma>pasco</lemma>
+        <gloss>feed, supply with food</gloss>
+        <pp>pasc&#333;, pascere, p&#257;u&#299;, pastum</pp>
+
+    </entry>
+    <entry n="pascuum">
+        <lemma>pascuum</lemma>
+        <gloss>pasture</gloss>
+        <gen>n.</gen>
+        <pp>pascuum, pascu&#299;</pp>
+
+    </entry>
+    <entry n="pastor">
+        <lemma>pastor</lemma>
+        <gloss>a herdsman, shepherd</gloss>
+        <pp>pastor, past&#333;ris</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="patior">
+        <lemma>patior</lemma>
+        <gloss>to suffer, endure, allow</gloss>
+        <pp>patior, pat&#299;, passus</pp>
+
+    </entry>
+    <entry n="patrius">
+        <lemma>patrius</lemma>
+        <gloss>of a father, paternal, ancestral</gloss>
+        <pp>patrius, patria, patrium</pp>
+
+    </entry>
+    <entry n="pauper">
+        <lemma>pauper</lemma>
+        <gloss>poor, not wealthy</gloss>
+        <pp>pauper, pauperis</pp>
+
+    </entry>
+    <entry n="pectus">
+        <lemma>pectus</lemma>
+        <gloss>a breast, chest</gloss>
+        <gen>n.</gen>
+        <pp>pectus, pectoris</pp>
+
+    </entry>
+    <entry n="peculium">
+        <lemma>peculium</lemma>
+        <gloss>money, (a slave's) allowance</gloss>
+        <gen>n.</gen>
+        <pp>peculium, peculi&#299;</pp>
+
+    </entry>
+    <entry n="pecus1">
+        <lemma>pecus</lemma>
+        <gloss>cattle, flock</gloss>
+        <gen>n.</gen>
+        <pp>pecus, pecoris</pp>
+
+    </entry>
+    <entry n="pendeo">
+        <lemma>pendeo</lemma>
+        <gloss>to hang, hang down, be suspended</gloss>
+        <pp>pende&#333;, pend&#275;re, pepend&#299;</pp>
+
+    </entry>
+    <entry n="pendo">
+        <lemma>pendo</lemma>
+        <gloss>to suspend, weigh, weigh out; pay; value (w gen)</gloss>
+        <pp>pend&#333;, pendere, pepend&#299;, pensum</pp>
+
+    </entry>
+    <entry n="penitus2">
+        <lemma>penitus</lemma>
+        <gloss>(from) within, inwardly, deeply</gloss>
+
+    </entry>
+    <entry n="pererro2">
+        <lemma>pererro</lemma>
+        <gloss>to wander through, roam over</gloss>
+        <pp>pererr&#333;, pererr&#257;re, pererr&#257;u&#299;, pererr&#257;tum</pp>
+
+    </entry>
+    <entry n="peto">
+        <lemma>peto</lemma>
+        <gloss>make for, seek, ask (for)</gloss>
+        <pp>pet&#333;, petere, pet&#299;u&#299;, pet&#299;tum</pp>
+
+    </entry>
+    <entry n="pinguis">
+        <lemma>pinguis</lemma>
+        <gloss>fat</gloss>
+        <pp>pinguis, pingue</pp>
+
+    </entry>
+    <entry n="pinus">
+        <lemma>pinus</lemma>
+        <gloss>a pine or fir tree</gloss>
+        <pp>p&#299;nus, p&#299;n&#363;s; (also p&#299;nus, p&#299;n&#299;)</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="pirus">
+        <lemma>pirus</lemma>
+        <gloss>a pear-tree</gloss>
+        <pp>pirus, pir&#299;</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="piscis">
+        <lemma>piscis</lemma>
+        <gloss>a fish</gloss>
+        <pp>piscis, piscis</pp>
+        <gen>m.</gen>
+
+    </entry>
+    <entry n="pomum">
+        <lemma>pomum</lemma>
+        <gloss>a fruit, apple, pear</gloss>
+        <pp>p&#333;mum, p&#333;m&#299;; (also p&#333;mus, p&#333;m&#299;)</pp>
+        <gen>n. (f.)</gen>
+
+    </entry>
+    <entry n="pono">
+        <lemma>pono</lemma>
+        <gloss>to put, place, plant</gloss>
+        <p>p&#333;n&#333;, p&#333;nere, posu&#299;, positum</p>
+
+    </entry>
+    <entry n="possum1">
+        <lemma>possum1</lemma>
+        <gloss>to be able, have power, can</gloss>
+        <pp>possum, posse, potu&#299;</pp>
+
+    </entry>
+    <entry n="post1">
+        <lemma>post</lemma>
+        <gloss>after, afterwards</gloss>
+
+    </entry>
+    <entry n="posthac">
+        <lemma>posthac</lemma>
+        <gloss>after this, in future</gloss>
+
+    </entry>
+    <entry n="postquam">
+        <lemma>postquam</lemma>
+        <gloss>after, when</gloss>
+
+    </entry>
+    <entry n="praedico2">
+        <lemma>praedico</lemma>
+        <gloss>to foretell, prophesy</gloss>
+        <pp>praed&#299;c&#333;, praed&#299;cere, praed&#299;x&#299;, praed&#299;ctum</pp>
+
+    </entry>
+    <entry n="praesens">
+        <lemma>praesens</lemma>
+        <gloss>being at hand, present, immediate</gloss>
+        <pp>praesens, praesentis</pp>
+
+    </entry>
+    <entry n="premo">
+        <lemma>premo</lemma>
+        <gloss>to press</gloss>
+        <pp>prem&#333;, premere, press&#299;, pressum</pp>
+
+    </entry>
+    <entry n="primus">
+        <lemma>primus</lemma>
+        <gloss>the first, first</gloss>
+        <pp>pr&#299;mus, pr&#299;ma, pr&#299;mum</pp>
+
+    </entry>
+    <entry n="procul">
+        <lemma>procul</lemma>
+        <gloss>at a distance, from afar</gloss>
+
+    </entry>
+    <entry n="produco">
+        <lemma>produco</lemma>
+        <gloss>to lead forth, lead forward; bring up</gloss>
+        <pp>pr&#333;d&#363;c&#333;, pr&#333;d&#363;cere, pr&#333;d&#363;x&#299;, pr&#333;ductum</pp>
+
+    </entry>
+    <entry n="proicio">
+        <lemma>proicio</lemma>
+        <gloss>to throw (forth), cast before; abandon</gloss>
+        <pp>pr&#333;ici&#333;, pr&#333;icere, pr&#333;i&#275;c&#299;, pr&#333;iectum</pp>
+
+    </entry>
+    <entry n="protinus">
+        <lemma>protinus</lemma>
+        <gloss>forward, farther on, onward</gloss>
+
+    </entry>
+    <entry n="puer">
+        <lemma>puer</lemma>
+        <gloss>boy; slave</gloss>
+        <pp>puer, puer&#299;</pp>
+        <gen>m. (f.)</gen>
+
+    </entry>
+    <entry n="puto">
+        <lemma>puto</lemma>
+        <gloss>to reckon, think</gloss>
+        <pp>put&#333;, put&#257;re, put&#257;u&#299;, put&#257;tum</pp>
+        
+    </entry>
+    <entry n="quam1">
+        <lemma>quam1</lemma>
+        <gloss>how, how much; than</gloss>
+
+    </entry>
+    <entry n="quamuis1">
+        <lemma>quamuis2</lemma>
+        <gloss>however much, as ... as you like, although</gloss>
+
+    </entry>
+    <entry n="quantum3">
+        <lemma>quantum3</lemma>
+        <gloss>as, as much as</gloss>
+
+    </entry>
+    <entry n="que">
+        <lemma>que</lemma>
+        <gloss>and</gloss>
+
+    </entry>
+    <entry n="quercus">
+        <lemma>quercus</lemma>
+        <gloss>an oak (tree)</gloss>
+        <pp>quercus, querc&#363;s</pp>
+        <gen>f.</gen>
+
+    </entry>
+    <entry n="quis1">
+        <lemma>quis1</lemma>
+        <gloss>who? what? which one?</gloss>
+        <pp>quis, quid</pp>
+
+    </entry>
+    <entry n="quo1">
+        <lemma>quo1</lemma>
+        <gloss>whither, to where</gloss>
+
+    </entry>
+    <entry n="quondam">
+        <lemma>quondam</lemma>
+        <gloss>once, formerly</gloss>
+
+    </entry>
+    <entry n="quot1">
+        <lemma>quot1</lemma>
+        <gloss>how many?</gloss>
+
+    </entry>
+    <entry n="quotannis">
+        <lemma>quotannis</lemma>
+        <gloss>yearly, every year</gloss>
+
+    </entry>
+    <entry n="rapidus">
+        <lemma>rapidus</lemma>
+        <gloss>swift, rapid, fierce</gloss>
+        <pp>rapidus, rapida, rapidum</pp>
+
+    </entry>
+    <entry n="raucus">
+        <lemma>raucus</lemma>
+        <gloss>noisy</gloss>
+        <pp>raucus, rauca, raucum</pp>
+
+    </entry>
+    <entry n="redeo1">
+        <lemma>redeo1</lemma>
+        <gloss>to go back, return</gloss>
+        <pp>rede&#333;, red&#299;re, redi&#299;, reditum</pp>
+
+    </entry>
+    <entry n="regnum">
+        <lemma>regnum</lemma>
+        <gloss>monarchy; kingdom, realm</gloss>
+        <gen>n.</gen>
+        <pp>regnum, regn&#299;</pp>
+
+    </entry>
+    <entry n="relinquo">
+        <lemma>relinquo</lemma>
+        <gloss>to leave (behind), abandon</gloss>
+        <pp>relinqu&#333;, relinquere, rel&#299;qu&#299;, relictum</pp>
+
+    </entry>
+    <entry n="requiesco">
+        <lemma>requiesco</lemma>
+        <gloss>to rest, take rest, repose</gloss>
+        <pp>requiesc&#333;, requiescere, requi&#275;u&#299;, requi&#275;tum</pp>
+
+    </entry>
+    <entry n="respicio">
+        <lemma>respicio</lemma>
+        <gloss>to look back (upon), gaze at, look for</gloss>
+        <pp>respici&#333;, respicere, respex&#299;, respectum</pp>
+
+    </entry>
+    <entry n="responsum">
+        <lemma>responsum</lemma>
+        <gloss>an answer, reply, response</gloss>
+        <pp>responsum, respons&#299;</pp>
+        <gen>n.</gen>
+        <pos>noun</pos>
+
+    </entry>
+    <entry n="rupes">
+        <lemma>rupes</lemma>
+        <gloss>a rock, cliff</gloss>
+        <gen>f.</gen>
+        <pp>r&#363;p&#275;s, r&#363;pis</pp>
+
+    </entry>
+    <entry n="rus">
+        <lemma>rus</lemma>
+        <gloss>the country, countryside; farm, fields</gloss>
+        <gen>n.</gen>
+        <pp>r&#363;s, r&#363;ris</pp>
+
+    </entry>
+    <entry n="sacer">
+        <lemma>sacer</lemma>
+        <gloss>sacred</gloss>
+        <pp>sacer, sacra, sacrum</pp>
+
+    </entry>
+    <entry n="saepes">
+        <lemma>saepes</lemma>
+        <gloss>a hedge, fence</gloss>
+        <gen>f.</gen>
+        <pp>saep&#275;s, saepis</pp>
+
+    </entry>
+    <entry n="saepio">
+        <lemma>saepio</lemma>
+        <gloss>to surround with a hedge, hedge in, fence in, enclose</gloss>
+        <pp>saepi&#333;, saep&#299;re, saeps&#299;, saeptum</pp>
+
+    </entry>
+    <entry n="saeptum">
+        <lemma>saeptum</lemma>
+        <gloss>enclosure, paddock, animal fold</gloss>
+        <gen>n.</gen>
+        <pp>saeptum, saept&#299;</pp>
+    </entry>
+    <entry n="salictum">
+        <lemma>salictum</lemma>
+        <gloss>a group of willows, willow-grove</gloss>
+        <gen>n.</gen>
+        <pp>salictum, salict&#299;</pp>
+
+    </entry>
+    <entry n="salix">
+        <lemma>salix</lemma>
+        <gloss>willow (tree)</gloss>
+        <gen>f.</gen>
+        <pp>salix, salicis</pp>
+
+    </entry>
+    <entry n="satis1">
+        <lemma>satis1</lemma>
+        <gloss>enough</gloss>
+
+    </entry>
+    <entry n="sed">
+        <lemma>sed</lemma>
+        <gloss>but</gloss>
+
+    </entry>
+    <entry n="seges">
+        <lemma>seges</lemma>
+        <gloss>a grainfield</gloss>
+        <gen>f.</gen>
+        <pp>seges, segetis</pp>
+
+    </entry>
+    <entry n="senex1">
+        <lemma>senex1</lemma>
+        <gloss>old man</gloss>
+        <gen>m.</gen>
+        <pp>senex, senis</pp>
+
+    </entry>
+    <entry n="senus">
+        <lemma>senus</lemma>
+        <gloss>six</gloss>
+        <pp>s&#275;n&#299;, s&#275;nae, s&#275;na; gen. m. \&amp; n. ~um</pp>
+
+    </entry>
+    <entry n="seruitium">
+        <lemma>seruitium</lemma>
+        <gloss>slavery, servitude</gloss>
+        <gen>n.</gen>
+        <pp>seruitium, seruiti&#299;</pp>
+
+    </entry>
+    <entry n="serus">
+        <lemma>serus</lemma>
+        <gloss>slow, late</gloss>
+        <pp>s&#275;rus, s&#275;ra, s&#275;rum</pp>
+
+    </entry>
+    <entry n="si2">
+        <lemma>si2</lemma>
+        <gloss>if</gloss>
+
+    </entry>
+    <entry n="sic">
+        <lemma>sic</lemma>
+        <gloss>thus, in this way</gloss>
+
+    </entry>
+    <entry n="silex">
+        <lemma>silex</lemma>
+        <gloss>a hard stone, rock, flagstone</gloss>
+        <gen>m. (f.)</gen>
+        <pp>silex, silicis</pp>
+
+    </entry>
+    <entry n="similis">
+        <lemma>similis</lemma>
+        <gloss>like, similar</gloss>
+        <pp>similis, simile</pp>
+
+    </entry>
+    <entry n="sitio">
+        <lemma>sitio</lemma>
+        <gloss>to thirst, be thirsty</gloss>
+        <pp>siti&#333;, sit&#299;re</pp>
+
+    </entry>
+    <entry n="soleo">
+        <lemma>soleo</lemma>
+        <gloss>be used to, be wont, be accustomed</gloss>
+        <pp>sole&#333;, sol&#275;re, solitus</pp>
+
+    </entry>
+    <entry n="somnus">
+        <lemma>somnus</lemma>
+        <gloss>sleep</gloss>
+        <gen>m.</gen>
+        <pp>somnus, somn&#299;</pp>
+
+    </entry>
+    <entry n="spes">
+        <lemma>spes</lemma>
+        <gloss>hope</gloss>
+        <gen>f.</gen>
+        <pp>sp&#275;s, spe&#299;</pp>
+
+    </entry>
+    <entry n="stultus">
+        <lemma>stultus</lemma>
+        <gloss>foolish, stupid</gloss>
+        <pp>stultus, stulta, stultum</pp>
+
+    </entry>
+    <entry n="suadeo">
+        <lemma>suadeo</lemma>
+        <gloss>to recommend, urge, persuade</gloss>
+        <pp>su&#257;de&#333;, su&#257;d&#275;re, su&#257;s&#299;, su&#257;sum</pp>
+
+    </entry>
+    <entry n="submitto">
+        <lemma>submitto</lemma>
+        <gloss>(of animals) to rear, raise; let down, lower</gloss>
+        <pp>submitt&#333;, submittere, subm&#299;s&#299;, submissum</pp>
+
+    </entry>
+    <entry n="super1">
+        <lemma>super</lemma>
+        <gloss>above, on top (of)</gloss>
+
+    </entry>
+    <entry n="superus">
+        <lemma>superus</lemma>
+        <gloss>upper, higher</gloss>
+        <pp>superus, supera, superum</pp>
+
+    </entry>
+    <entry n="summus">
+        <lemma>summus</lemma>
+        <gloss>highest, uppermost; most, greatest</gloss>
+    </entry>
+    <entry n="susurrus">
+        <lemma>susurrus</lemma>
+        <gloss>a humming, murmuring, whispering</gloss>
+        <gen>m.</gen>
+        <pp> susurrus, susurr&#299;</pp>
+
+    </entry>
+    <entry n="suus">
+        <lemma>suus</lemma>
+        <gloss>his/her/its/their (own), of oneself</gloss>
+        <pp>suus, sua, suum</pp>
+
+    </entry>
+    <entry n="tam">
+        <lemma>tam</lemma>
+        <gloss>as much, so, so much</gloss>
+
+    </entry>
+    <entry n="tamen">
+        <lemma>tamen</lemma>
+        <gloss>nevertheless, yet, still</gloss>
+
+    </entry>
+    <entry n="tango">
+        <lemma>tango</lemma>
+        <gloss>to touch; (of lightning) strike</gloss>
+        <pp>tang&#333;, tangere, tetig&#299;, tactum</pp>
+
+    </entry>
+    <entry n="tantum2">
+        <lemma>tantum</lemma>
+        <gloss>so much, to such a degree</gloss>
+
+    </entry>
+    <entry n="tantus">
+        <lemma>tantus</lemma>
+        <gloss>so great, such</gloss>
+        <pp>tantus, tanta, tantum</pp>
+
+    </entry>
+    <entry n="taurus">
+        <lemma>taurus</lemma>
+        <gloss>bull</gloss>
+        <gen>m.</gen>
+        <pp>taurus, taur&#299;</pp>
+
+    </entry>
+    <entry n="tempus1">
+        <lemma>tempus1</lemma>
+        <gloss>time, season; (pl.) temples (of the head)</gloss>
+        <gen>n.</gen>
+        <pp>tempus, temporis</pp>
+
+    </entry>
+    <entry n="teneo">
+        <lemma>teneo</lemma>
+        <gloss>to hold, keep, hold fast</gloss>
+        <pp>tene&#333;, ten&#275;re, tenu&#299;, tentum</pp>
+
+    </entry>
+    <entry n="tento">
+        <lemma>tento</lemma>
+        <gloss>to handle, touch, feel; try; afflict</gloss>
+        <pp>tempt&#333;, tempt&#257;re, tempt&#257;u&#299;, tempt&#257;tum; (also tent~)</pp>
+
+    </entry>
+    <entry n="tondeo">
+        <lemma>tondeo</lemma>
+        <gloss>to shear, crop, shave</gloss>
+        <pp>tonde&#333;, tond&#275;re, (totond&#299;), tonsum</pp>
+
+    </entry>
+    <entry n="totus">
+        <lemma>totus</lemma>
+        <gloss>all (the), whole, entire</gloss>
+        <pp>t&#333;tus, t&#333;ta, t&#333;tum</pp>
+
+    </entry>
+    <entry n="tugurium">
+        <lemma>tugurium</lemma>
+        <gloss>a hut, cottage</gloss>
+        <gen>n.</gen>
+        <pp>tugurium, tuguri&#299;</pp>
+
+    </entry>
+    <entry n="turbo2">
+        <lemma>turbo2</lemma>
+        <gloss>to make an uproar, disturb, be in disorder</gloss>
+        <pp>turb&#333;, turb&#257;re, turb&#257;u&#299;, turb&#257;tum</pp>
+
+    </entry>
+    <entry n="turtur">
+        <lemma>turtur</lemma>
+        <gloss>turtle-dove</gloss>
+        <gen>m.</gen>
+        <pp>turtur, turturis</pp>
+
+    </entry>
+    <entry n="tuus">
+        <lemma>tuus</lemma>
+        <gloss>(sg.) your, yours</gloss>
+        <pp>tuus, tua, tuum</pp>
+
+    </entry>
+    <entry n="uenio">
+        <lemma>uenio</lemma>
+        <gloss>to come</gloss>
+        <pp>ueni&#333;, uen&#299;re, u&#275;n&#299;, uentum</pp>
+
+    </entry>
+    <entry n="uerum4">
+        <lemma>uerum</lemma>
+        <gloss>but, yet (in truth)</gloss>
+
+    </entry>
+    <entry n="uiburnum">
+        <lemma>uiburnum</lemma>
+        <gloss>the wayfaring-tree</gloss>
+        <gen>n.</gen>
+        <pp>u&#299;burnum, u&#299;burn&#299;</pp>
+
+    </entry>
+    <entry n="uicinus2">
+        <lemma>uicinus</lemma>
+        <gloss>neighboring, neighbour's</gloss>
+        <pp>u&#299;c&#299;nus, u&#299;c&#299;na, u&#299;c&#299;num</pp>
+
+    </entry>
+    <entry n="uictima">
+        <lemma>uictima</lemma>
+        <gloss>(a beast for) sacrifice, victim</gloss>
+        <gen>f.</gen>
+        <pp>uictima, uictimae</pp>
+
+    </entry>
+    <entry n="uideo">
+        <lemma>uideo</lemma>
+        <gloss>to see, discern, perceive</gloss>
+        <pp>uide&#333;, uid&#275;re, u&#299;d&#299;, u&#299;sum</pp>
+
+    </entry>
+    <entry n="uilla">
+        <lemma>uilla</lemma>
+        <gloss>a country-house, farm, villa</gloss>
+        <gen>f.</gen>
+        <pp>uilla, uillae</pp>
+
+    </entry>
+    <entry n="uiridis">
+        <lemma>uiridis</lemma>
+        <gloss>green</gloss>
+        <pp>uiridis, uiride</pp>
+    </entry>
+    <entry n="uitis">
+        <lemma>uitis</lemma>
+        <gloss>a (grape) vine</gloss>
+        <gen>f.</gen>
+        <pp>u&#299;tis, u&#299;tis</pp>
+    </entry>
+    <entry n="uix">
+        <lemma>uix</lemma>
+        <gloss>scarcely, barely</gloss>
+
+    </entry>
+    <entry n="ulmus">
+        <lemma>ulmus</lemma>
+        <gloss>elm (tree)</gloss>
+        <gen>f.</gen>
+        <pp>ulmus, ulm&#299;</pp>
+    </entry>
+    <entry n="umquam">
+        <lemma>umquam</lemma>
+        <gloss>at any time, ever</gloss>
+
+    </entry>
+    <entry n="undique">
+        <lemma>undique</lemma>
+        <gloss>everywhere, on every part</gloss>
+
+    </entry>
+    <entry n="uoco">
+        <lemma>uoco</lemma>
+        <gloss>to call; summon</gloss>
+        <pp>uoc&#333;, uoc&#257;re, uoc&#257;u&#299;, uoc&#257;tum</pp>
+    </entry>
+    <entry n="uos">
+        <lemma>uos</lemma>
+        <gloss>you (plural)</gloss>
+
+    </entry>
+    <entry n="urbs">
+        <lemma>urbs</lemma>
+        <gloss>a city; Rome</gloss>
+        <gen>f.</gen>
+        <pp>urbs, urbis</pp>
+    </entry>
+    <entry n="usque">
+        <lemma>usque</lemma>
+        <gloss>(right) up to, continuously so much; (with <span class="lt">adeo</span>) "so much"</gloss>
+
+    </entry>
+    <entry n="uultus">
+        <lemma>uultus</lemma>
+        <gloss>facial expression, face</gloss>
+        <gen>m.</gen>
+        <pp>vultus, vult&#363;s (also volt-)</pp>
+    </entry>
+<entry n="!"><lemma>!</lemma></entry><entry n="("><lemma>(</lemma></entry><entry n=")"><lemma>)</lemma></entry><entry n=","><lemma>,</lemma></entry><entry n="."><lemma>.</lemma></entry><entry n=":"><lemma>:</lemma></entry><entry n=";"><lemma>;</lemma></entry><entry n="?"><lemma>?</lemma></entry><entry n="Achilles"><lemma>Achilles</lemma></entry><entry n="Actaeus"><lemma>Actaeus</lemma></entry><entry n="Adonis"><lemma>Adonis</lemma></entry><entry n="Aegle"><lemma>Aegle</lemma></entry><entry n="Aegon"><lemma>Aegon</lemma></entry><entry n="Aethiopes"><lemma>Aethiopes</lemma></entry><entry n="Aganippe"><lemma>Aganippe</lemma></entry><entry n="Alcides"><lemma>Alcides</lemma></entry><entry n="Alcimedon"><lemma>Alcimedon</lemma></entry><entry n="Alcippe"><lemma>Alcippe</lemma></entry><entry n="Alcon"><lemma>Alcon</lemma></entry><entry n="Alexis"><lemma>Alexis</lemma></entry><entry n="Alphesiboeus"><lemma>Alphesiboeus</lemma></entry><entry n="Alpinus"><lemma>Alpinus</lemma></entry><entry n="Amor"><lemma>Amor</lemma></entry><entry n="Amphion"><lemma>Amphion</lemma></entry><entry n="Amyntas"><lemma>Amyntas</lemma></entry><entry n="Antigenes"><lemma>Antigenes</lemma></entry><entry n="Aones"><lemma>Aones</lemma></entry><entry n="Aonius"><lemma>Aonius</lemma></entry><entry n="Apollo"><lemma>Apollo</lemma></entry><entry n="Aracimthus"><lemma>Aracimthus</lemma></entry><entry n="Arcades"><lemma>Arcades</lemma></entry><entry n="Arcadia"><lemma>Arcadia</lemma></entry><entry n="Arethusa"><lemma>Arethusa</lemma></entry><entry n="Argo"><lemma>Argo</lemma></entry><entry n="Arion"><lemma>Arion</lemma></entry><entry n="Ariusius"><lemma>Ariusius</lemma></entry><entry n="Armenius"><lemma>Armenius</lemma></entry><entry n="Ascraeus"><lemma>Ascraeus</lemma></entry><entry n="Assyrius"><lemma>Assyrius</lemma></entry><entry n="Bacchus"><lemma>Bacchus</lemma></entry><entry n="Bauius"><lemma>Bauius</lemma></entry><entry n="Bianor"><lemma>Bianor</lemma></entry><entry n="Boreas"><lemma>Boreas</lemma></entry><entry n="Caesar"><lemma>Caesar</lemma></entry><entry n="Calliope"><lemma>Calliope</lemma></entry><entry n="Camenae"><lemma>Camenae</lemma></entry><entry n="Cancer"><lemma>Cancer</lemma></entry><entry n="Caucasius"><lemma>Caucasius</lemma></entry><entry n="Ceres"><lemma>Ceres</lemma></entry><entry n="Chalcidicus"><lemma>Chalcidicus</lemma></entry><entry n="Chaonius"><lemma>Chaonius</lemma></entry><entry n="Chromis"><lemma>Chromis</lemma></entry><entry n="Cinna"><lemma>Cinna</lemma></entry><entry n="Circe"><lemma>Circe</lemma></entry><entry n="Codrus"><lemma>Codrus</lemma></entry><entry n="Conon"><lemma>Conon</lemma></entry><entry n="Corydon"><lemma>Corydon</lemma></entry><entry n="Cremona"><lemma>Cremona</lemma></entry><entry n="Cumaeus"><lemma>Cumaeus</lemma></entry><entry n="Custos"><lemma>Custos</lemma></entry><entry n="Cydonius"><lemma>Cydonius</lemma></entry><entry n="Cynthius"><lemma>Cynthius</lemma></entry><entry n="Cyrneus"><lemma>Cyrneus</lemma></entry><entry n="Damoetas"><lemma>Damoetas</lemma></entry><entry n="Damon"><lemma>Damon</lemma></entry><entry n="Daphnis"><lemma>Daphnis</lemma></entry><entry n="Dardanius"><lemma>Dardanius</lemma></entry><entry n="Darmoeta"><lemma>Darmoeta</lemma></entry><entry n="Delia"><lemma>Delia</lemma></entry><entry n="Dictaeus"><lemma>Dictaeus</lemma></entry><entry n="Dionaeus"><lemma>Dionaeus</lemma></entry><entry n="Dircaeus"><lemma>Dircaeus</lemma></entry><entry n="Doris"><lemma>Doris</lemma></entry><entry n="Dryades"><lemma>Dryades</lemma></entry><entry n="Dulichius"><lemma>Dulichius</lemma></entry><entry n="Eurotas"><lemma>Eurotas</lemma></entry><entry n="Faunus"><lemma>Faunus</lemma></entry><entry n="Formonius"><lemma>Formonius</lemma></entry><entry n="Formonsis"><lemma>Formonsis</lemma></entry><entry n="Fors"><lemma>Fors</lemma></entry><entry n="Fortunatus"><lemma>Fortunatus</lemma></entry><entry n="Gallus"><lemma>Gallus</lemma></entry><entry n="Garamantes"><lemma>Garamantes</lemma></entry><entry n="Gortynius"><lemma>Gortynius</lemma></entry><entry n="Gryneus"><lemma>Gryneus</lemma></entry><entry n="Hebrus"><lemma>Hebrus</lemma></entry><entry n="Hesperides"><lemma>Hesperides</lemma></entry><entry n="Hesperus"><lemma>Hesperus</lemma></entry><entry n="Hin"><lemma>Hin</lemma></entry><entry n="Hybla"><lemma>Hybla</lemma></entry><entry n="Hylas"><lemma>Hylas</lemma></entry><entry n="Iacchus"><lemma>Iacchus</lemma></entry><entry n="Illon"><lemma>Illon</lemma></entry><entry n="Illyricus"><lemma>Illyricus</lemma></entry><entry n="Iolla"><lemma>Iolla</lemma></entry><entry n="Ismarus"><lemma>Ismarus</lemma></entry><entry n="Iuppiter"><lemma>Iuppiter</lemma></entry><entry n="Liber"><lemma>Liber</lemma></entry><entry n="Libertas"><lemma>Libertas</lemma></entry><entry n="Libethrides"><lemma>Libethrides</lemma></entry><entry n="Linus"><lemma>Linus</lemma></entry><entry n="Lucifer"><lemma>Lucifer</lemma></entry><entry n="Lucina"><lemma>Lucina</lemma></entry><entry n="Luna"><lemma>Luna</lemma></entry><entry n="Lycaeus"><lemma>Lycaeus</lemma></entry><entry n="Lycidas"><lemma>Lycidas</lemma></entry><entry n="Lycisca"><lemma>Lycisca</lemma></entry><entry n="Lycoris"><lemma>Lycoris</lemma></entry><entry n="Lyctius"><lemma>Lyctius</lemma></entry><entry n="Maenalius"><lemma>Maenalius</lemma></entry><entry n="Maenalus"><lemma>Maenalus</lemma></entry><entry n="Maeuius"><lemma>Maeuius</lemma></entry><entry n="Mantua"><lemma>Mantua</lemma></entry><entry n="Mars"><lemma>Mars</lemma></entry><entry n="Martius"><lemma>Martius</lemma></entry><entry n="Menalcas"><lemma>Menalcas</lemma></entry><entry n="Micon"><lemma>Micon</lemma></entry><entry n="Mincius"><lemma>Mincius</lemma></entry><entry n="Mnasyllis"><lemma>Mnasyllis</lemma></entry><entry n="Moeris"><lemma>Moeris</lemma></entry><entry n="Mopsus"><lemma>Mopsus</lemma></entry><entry n="Nais"><lemma>Nais</lemma></entry><entry n="Neaera"><lemma>Neaera</lemma></entry><entry n="Nereus"><lemma>Nereus</lemma></entry><entry n="Nerinus"><lemma>Nerinus</lemma></entry><entry n="Nisa"><lemma>Nisa</lemma></entry><entry n="Nisae"><lemma>Nisae</lemma></entry><entry n="Notus"><lemma>Notus</lemma></entry><entry n="Nympha"><lemma>Nympha</lemma></entry><entry n="Oeta"><lemma>Oeta</lemma></entry><entry n="Olympus"><lemma>Olympus</lemma></entry><entry n="Orpheus"><lemma>Orpheus</lemma></entry><entry n="Palaemon"><lemma>Palaemon</lemma></entry><entry n="Pales"><lemma>Pales</lemma></entry><entry n="Pallas"><lemma>Pallas</lemma></entry><entry n="Pan"><lemma>Pan</lemma></entry><entry n="Parca"><lemma>Parca</lemma></entry><entry n="Parcius"><lemma>Parcius</lemma></entry><entry n="Paris"><lemma>Paris</lemma></entry><entry n="Parnasius"><lemma>Parnasius</lemma></entry><entry n="Parnasus"><lemma>Parnasus</lemma></entry><entry n="Parthenius"><lemma>Parthenius</lemma></entry><entry n="Pasiphae"><lemma>Pasiphae</lemma></entry><entry n="Peloris"><lemma>Peloris</lemma></entry><entry n="Permessus"><lemma>Permessus</lemma></entry><entry n="Phaethontiades"><lemma>Phaethontiades</lemma></entry><entry n="Phillis"><lemma>Phillis</lemma></entry><entry n="Philomela"><lemma>Philomela</lemma></entry><entry n="Phoebus"><lemma>Phoebus</lemma></entry><entry n="Phyllis"><lemma>Phyllis</lemma></entry><entry n="Pierides"><lemma>Pierides</lemma></entry><entry n="Pindus"><lemma>Pindus</lemma></entry><entry n="Poeni"><lemma>Poeni</lemma></entry><entry n="Pollio"><lemma>Pollio</lemma></entry><entry n="Pontus"><lemma>Pontus</lemma></entry><entry n="Priapus"><lemma>Priapus</lemma></entry><entry n="Proetides"><lemma>Proetides</lemma></entry><entry n="Prometheus"><lemma>Prometheus</lemma></entry><entry n="Pyrrha"><lemma>Pyrrha</lemma></entry><entry n="Rhenus"><lemma>Rhenus</lemma></entry><entry n="Rhodope"><lemma>Rhodope</lemma></entry><entry n="Sardonius"><lemma>Sardonius</lemma></entry><entry n="Saturnius"><lemma>Saturnius</lemma></entry><entry n="Scylla"><lemma>Scylla</lemma></entry><entry n="Sicanus"><lemma>Sicanus</lemma></entry><entry n="Sicelis"><lemma>Sicelis</lemma></entry><entry n="Siculus"><lemma>Siculus</lemma></entry><entry n="Sider"><lemma>Sider</lemma></entry><entry n="Silenus"><lemma>Silenus</lemma></entry><entry n="Siluanus"><lemma>Siluanus</lemma></entry><entry n="Siluie"><lemma>Siluie</lemma></entry><entry n="Sithonius"><lemma>Sithonius</lemma></entry><entry n="Sophocleus"><lemma>Sophocleus</lemma></entry><entry n="Stimichon"><lemma>Stimichon</lemma></entry><entry n="Syracosius"><lemma>Syracosius</lemma></entry><entry n="Tereus"><lemma>Tereus</lemma></entry><entry n="Thalia"><lemma>Thalia</lemma></entry><entry n="Thestylis"><lemma>Thestylis</lemma></entry><entry n="Thetis"><lemma>Thetis</lemma></entry><entry n="Thracius"><lemma>Thracius</lemma></entry><entry n="Thyrsis"><lemma>Thyrsis</lemma></entry><entry n="Timauus"><lemma>Timauus</lemma></entry><entry n="Tiphys"><lemma>Tiphys</lemma></entry><entry n="Tmarus"><lemma>Tmarus</lemma></entry><entry n="Troia"><lemma>Troia</lemma></entry><entry n="Uarus"><lemma>Uarus</lemma></entry><entry n="Uenus"><lemma>Uenus</lemma></entry><entry n="Uesper"><lemma>Uesper</lemma></entry><entry n="Ulixes"><lemma>Ulixes</lemma></entry><entry n="`"><lemma>`</lemma></entry><entry n="abduco"><lemma>abduco</lemma></entry><entry n="abeo1"><lemma>abeo1</lemma></entry><entry n="abies"><lemma>abies</lemma></entry><entry n="abundans2"><lemma>abundans2</lemma></entry><entry n="ac1"><lemma>ac1</lemma></entry><entry n="acanthus"><lemma>acanthus</lemma></entry><entry n="accipio"><lemma>accipio</lemma></entry><entry n="acer2"><lemma>acer2</lemma></entry><entry n="acutus"><lemma>acutus</lemma></entry><entry n="addo"><lemma>addo</lemma></entry><entry n="adhuc"><lemma>adhuc</lemma></entry><entry n="adiungo"><lemma>adiungo</lemma></entry><entry n="admoneo"><lemma>admoneo</lemma></entry><entry n="admoueo"><lemma>admoueo</lemma></entry><entry n="adoleo"><lemma>adoleo</lemma></entry><entry n="aduena"><lemma>aduena</lemma></entry><entry n="aduentus"><lemma>aduentus</lemma></entry><entry n="aduersus1"><lemma>aduersus1</lemma></entry><entry n="aequiparo"><lemma>aequiparo</lemma></entry><entry n="aequum"><lemma>aequum</lemma></entry><entry n="aestas"><lemma>aestas</lemma></entry><entry n="aestus"><lemma>aestus</lemma></entry><entry n="aetas"><lemma>aetas</lemma></entry><entry n="aeuum"><lemma>aeuum</lemma></entry><entry n="age"><lemma>age</lemma></entry><entry n="agellus"><lemma>agellus</lemma></entry><entry n="aggredior"><lemma>aggredior</lemma></entry><entry n="agna"><lemma>agna</lemma></entry><entry n="agrestis2"><lemma>agrestis2</lemma></entry><entry n="agricola"><lemma>agricola</lemma></entry><entry n="ala"><lemma>ala</lemma></entry><entry n="alacer"><lemma>alacer</lemma></entry><entry n="album"><lemma>album</lemma></entry><entry n="albus"><lemma>albus</lemma></entry><entry n="alga"><lemma>alga</lemma></entry><entry n="alienus2"><lemma>alienus2</lemma></entry><entry n="aliquis"><lemma>aliquis</lemma></entry><entry n="alloquor"><lemma>alloquor</lemma></entry><entry n="almus"><lemma>almus</lemma></entry><entry n="alnus"><lemma>alnus</lemma></entry><entry n="alo"><lemma>alo</lemma></entry><entry n="altar"><lemma>altar</lemma></entry><entry n="alte"><lemma>alte</lemma></entry><entry n="alter"><lemma>alter</lemma></entry><entry n="alternis"><lemma>alternis</lemma></entry><entry n="alternus"><lemma>alternus</lemma></entry><entry n="amans1"><lemma>amans1</lemma></entry><entry n="amnis"><lemma>amnis</lemma></entry><entry n="amo"><lemma>amo</lemma></entry><entry n="amomum"><lemma>amomum</lemma></entry><entry n="amor"><lemma>amor</lemma></entry><entry n="ample"><lemma>ample</lemma></entry><entry n="amplector"><lemma>amplector</lemma></entry><entry n="an"><lemma>an</lemma></entry><entry n="anethum"><lemma>anethum</lemma></entry><entry n="anguis"><lemma>anguis</lemma></entry><entry n="anima"><lemma>anima</lemma></entry><entry n="animal"><lemma>animal</lemma></entry><entry n="animus"><lemma>animus</lemma></entry><entry n="ansa"><lemma>ansa</lemma></entry><entry n="anser"><lemma>anser</lemma></entry><entry n="ante2"><lemma>ante2</lemma></entry><entry n="antiqui"><lemma>antiqui</lemma></entry><entry n="aper"><lemma>aper</lemma></entry><entry n="apium"><lemma>apium</lemma></entry><entry n="appareo"><lemma>appareo</lemma></entry><entry n="apricus"><lemma>apricus</lemma></entry><entry n="apud"><lemma>apud</lemma></entry><entry n="aqua"><lemma>aqua</lemma></entry><entry n="aquila"><lemma>aquila</lemma></entry><entry n="aquosus"><lemma>aquosus</lemma></entry><entry n="arator"><lemma>arator</lemma></entry><entry n="aratrum"><lemma>aratrum</lemma></entry><entry n="arbutus"><lemma>arbutus</lemma></entry><entry n="arcus"><lemma>arcus</lemma></entry><entry n="ardens"><lemma>ardens</lemma></entry><entry n="ardeo"><lemma>ardeo</lemma></entry><entry n="arena"><lemma>arena</lemma></entry><entry n="areo"><lemma>areo</lemma></entry><entry n="argutus"><lemma>argutus</lemma></entry><entry n="aries"><lemma>aries</lemma></entry><entry n="arma"><lemma>arma</lemma></entry><entry n="armentum"><lemma>armentum</lemma></entry><entry n="artus1"><lemma>artus1</lemma></entry><entry n="arundo"><lemma>arundo</lemma></entry><entry n="arx"><lemma>arx</lemma></entry><entry n="asper"><lemma>asper</lemma></entry><entry n="aspicio"><lemma>aspicio</lemma></entry><entry n="assidue"><lemma>assidue</lemma></entry><entry n="assiduus"><lemma>assiduus</lemma></entry><entry n="assum1"><lemma>assum1</lemma></entry><entry n="assurgo"><lemma>assurgo</lemma></entry><entry n="astrum"><lemma>astrum</lemma></entry><entry n="atque1"><lemma>atque1</lemma></entry><entry n="attero"><lemma>attero</lemma></entry><entry n="attingo"><lemma>attingo</lemma></entry><entry n="attondeo"><lemma>attondeo</lemma></entry><entry n="audeo"><lemma>audeo</lemma></entry><entry n="audio"><lemma>audio</lemma></entry><entry n="auerto"><lemma>auerto</lemma></entry><entry n="aufero"><lemma>aufero</lemma></entry><entry n="aureus2"><lemma>aureus2</lemma></entry><entry n="auris"><lemma>auris</lemma></entry><entry n="auster"><lemma>auster</lemma></entry><entry n="bacca"><lemma>bacca</lemma></entry><entry n="baccar"><lemma>baccar</lemma></entry><entry n="beatus"><lemma>beatus</lemma></entry><entry n="bellum"><lemma>bellum</lemma></entry><entry n="bene"><lemma>bene</lemma></entry><entry n="binus"><lemma>binus</lemma></entry><entry n="bitumen"><lemma>bitumen</lemma></entry><entry n="blandus"><lemma>blandus</lemma></entry><entry n="bonus"><lemma>bonus</lemma></entry><entry n="breuis"><lemma>breuis</lemma></entry><entry n="bucula"><lemma>bucula</lemma></entry><entry n="cacumen"><lemma>cacumen</lemma></entry><entry n="caelo"><lemma>caelo</lemma></entry><entry n="caelum"><lemma>caelum</lemma></entry><entry n="calathus"><lemma>calathus</lemma></entry><entry n="caltha"><lemma>caltha</lemma></entry><entry n="campus1"><lemma>campus1</lemma></entry><entry n="cantharus"><lemma>cantharus</lemma></entry><entry n="canto"><lemma>canto</lemma></entry><entry n="canus"><lemma>canus</lemma></entry><entry n="caper"><lemma>caper</lemma></entry><entry n="capio2"><lemma>capio2</lemma></entry><entry n="capreolus"><lemma>capreolus</lemma></entry><entry n="carduus"><lemma>carduus</lemma></entry><entry n="carectum"><lemma>carectum</lemma></entry><entry n="carus"><lemma>carus</lemma></entry><entry n="casa"><lemma>casa</lemma></entry><entry n="casia"><lemma>casia</lemma></entry><entry n="castaneus"><lemma>castaneus</lemma></entry><entry n="castra2"><lemma>castra2</lemma></entry><entry n="castus2"><lemma>castus2</lemma></entry><entry n="caueo"><lemma>caueo</lemma></entry><entry n="causor"><lemma>causor</lemma></entry><entry n="cauus2"><lemma>cauus2</lemma></entry><entry n="cedo1"><lemma>cedo1</lemma></entry><entry n="cera"><lemma>cera</lemma></entry><entry n="cereus2"><lemma>cereus2</lemma></entry><entry n="certamen"><lemma>certamen</lemma></entry><entry n="certe"><lemma>certe</lemma></entry><entry n="certo1"><lemma>certo1</lemma></entry><entry n="certo?"><lemma>certo?</lemma></entry><entry n="certus"><lemma>certus</lemma></entry><entry n="ceterus"><lemma>ceterus</lemma></entry><entry n="chorus"><lemma>chorus</lemma></entry><entry n="cicada"><lemma>cicada</lemma></entry><entry n="cicuta"><lemma>cicuta</lemma></entry><entry n="cingo"><lemma>cingo</lemma></entry><entry n="cinis"><lemma>cinis</lemma></entry><entry n="circum1"><lemma>circum1</lemma></entry><entry n="circum2"><lemma>circum2</lemma></entry><entry n="circumdo"><lemma>circumdo</lemma></entry><entry n="clamo"><lemma>clamo</lemma></entry><entry n="claudo1"><lemma>claudo1</lemma></entry><entry n="cliuus"><lemma>cliuus</lemma></entry><entry n="coepio"><lemma>coepio</lemma></entry><entry n="cogito"><lemma>cogito</lemma></entry><entry n="cogo"><lemma>cogo</lemma></entry><entry n="colligo3"><lemma>colligo3</lemma></entry><entry n="collis"><lemma>collis</lemma></entry><entry n="collum"><lemma>collum</lemma></entry><entry n="colocasium"><lemma>colocasium</lemma></entry><entry n="colonus1"><lemma>colonus1</lemma></entry><entry n="color"><lemma>color</lemma></entry><entry n="columba"><lemma>columba</lemma></entry><entry n="commaculo"><lemma>commaculo</lemma></entry><entry n="compello"><lemma>compello</lemma></entry><entry n="compello2"><lemma>compello2</lemma></entry><entry n="compingo1"><lemma>compingo1</lemma></entry><entry n="complector"><lemma>complector</lemma></entry><entry n="concedo1"><lemma>concedo1</lemma></entry><entry n="concors"><lemma>concors</lemma></entry><entry n="concresco"><lemma>concresco</lemma></entry><entry n="concubitus"><lemma>concubitus</lemma></entry><entry n="condo"><lemma>condo</lemma></entry><entry n="coniunctus"><lemma>coniunctus</lemma></entry><entry n="coniungo"><lemma>coniungo</lemma></entry><entry n="coniux"><lemma>coniux</lemma></entry><entry n="consido"><lemma>consido</lemma></entry><entry n="consul"><lemma>consul</lemma></entry><entry n="consulo"><lemma>consulo</lemma></entry><entry n="consumo"><lemma>consumo</lemma></entry><entry n="contendo"><lemma>contendo</lemma></entry><entry n="contingo1"><lemma>contingo1</lemma></entry><entry n="contra1"><lemma>contra1</lemma></entry><entry n="contundo"><lemma>contundo</lemma></entry><entry n="conuenio"><lemma>conuenio</lemma></entry><entry n="conuexus"><lemma>conuexus</lemma></entry><entry n="conuiuium"><lemma>conuiuium</lemma></entry><entry n="cornix"><lemma>cornix</lemma></entry><entry n="cornu"><lemma>cornu</lemma></entry><entry n="corpus"><lemma>corpus</lemma></entry><entry n="corripio"><lemma>corripio</lemma></entry><entry n="cortex"><lemma>cortex</lemma></entry><entry n="corymbus"><lemma>corymbus</lemma></entry><entry n="cotes"><lemma>cotes</lemma></entry><entry n="cothurnus"><lemma>cothurnus</lemma></entry><entry n="cras2"><lemma>cras2</lemma></entry><entry n="cratera"><lemma>cratera</lemma></entry><entry n="credo"><lemma>credo</lemma></entry><entry n="credulus"><lemma>credulus</lemma></entry><entry n="cresco"><lemma>cresco</lemma></entry><entry n="crinis"><lemma>crinis</lemma></entry><entry n="croceus"><lemma>croceus</lemma></entry><entry n="crudelis"><lemma>crudelis</lemma></entry><entry n="cubile"><lemma>cubile</lemma></entry><entry n="cuius1"><lemma>cuius1</lemma></entry><entry n="cultus1"><lemma>cultus1</lemma></entry><entry n="cum"><lemma>cum</lemma></entry><entry n="cum2"><lemma>cum2</lemma></entry><entry n="cunabula"><lemma>cunabula</lemma></entry><entry n="cupio"><lemma>cupio</lemma></entry><entry n="cur"><lemma>cur</lemma></entry><entry n="curo"><lemma>curo</lemma></entry><entry n="curro"><lemma>curro</lemma></entry><entry n="currus"><lemma>currus</lemma></entry><entry n="cursus"><lemma>cursus</lemma></entry><entry n="curuus"><lemma>curuus</lemma></entry><entry n="custos"><lemma>custos</lemma></entry><entry n="cycnus"><lemma>cycnus</lemma></entry><entry n="dama"><lemma>dama</lemma></entry><entry n="damno"><lemma>damno</lemma></entry><entry n="daps"><lemma>daps</lemma></entry><entry n="dea"><lemma>dea</lemma></entry><entry n="debeo"><lemma>debeo</lemma></entry><entry n="decedo1"><lemma>decedo1</lemma></entry><entry n="decem"><lemma>decem</lemma></entry><entry n="decipio"><lemma>decipio</lemma></entry><entry n="decurro"><lemma>decurro</lemma></entry><entry n="decus"><lemma>decus</lemma></entry><entry n="deduco"><lemma>deduco</lemma></entry><entry n="deerro2"><lemma>deerro2</lemma></entry><entry n="defendo"><lemma>defendo</lemma></entry><entry n="defero"><lemma>defero</lemma></entry><entry n="defio"><lemma>defio</lemma></entry><entry n="deinde"><lemma>deinde</lemma></entry><entry n="delabor2"><lemma>delabor2</lemma></entry><entry n="delicia1"><lemma>delicia1</lemma></entry><entry n="deligo3"><lemma>deligo3</lemma></entry><entry n="delphin"><lemma>delphin</lemma></entry><entry n="demens"><lemma>demens</lemma></entry><entry n="dementia"><lemma>dementia</lemma></entry><entry n="demitto"><lemma>demitto</lemma></entry><entry n="denique"><lemma>denique</lemma></entry><entry n="depono"><lemma>depono</lemma></entry><entry n="descendo"><lemma>descendo</lemma></entry><entry n="describo"><lemma>describo</lemma></entry><entry n="desero2"><lemma>desero2</lemma></entry><entry n="desero?"><lemma>desero?</lemma></entry><entry n="desino"><lemma>desino</lemma></entry><entry n="despicio"><lemma>despicio</lemma></entry><entry n="desum1"><lemma>desum1</lemma></entry><entry n="detexo"><lemma>detexo</lemma></entry><entry n="detineo"><lemma>detineo</lemma></entry><entry n="diffundo2"><lemma>diffundo2</lemma></entry><entry n="dignor"><lemma>dignor</lemma></entry><entry n="dignus"><lemma>dignus</lemma></entry><entry n="discedo1"><lemma>discedo1</lemma></entry><entry n="discludo"><lemma>discludo</lemma></entry><entry n="disco"><lemma>disco</lemma></entry><entry n="dispar"><lemma>dispar</lemma></entry><entry n="disperdo"><lemma>disperdo</lemma></entry><entry n="distendo"><lemma>distendo</lemma></entry><entry n="diua"><lemma>diua</lemma></entry><entry n="diuersus"><lemma>diuersus</lemma></entry><entry n="diues"><lemma>diues</lemma></entry><entry n="diuinus2"><lemma>diuinus2</lemma></entry><entry n="diuus"><lemma>diuus</lemma></entry><entry n="doleo"><lemma>doleo</lemma></entry><entry n="dolus"><lemma>dolus</lemma></entry><entry n="dominus"><lemma>dominus</lemma></entry><entry n="donec"><lemma>donec</lemma></entry><entry n="dono"><lemma>dono</lemma></entry><entry n="donum"><lemma>donum</lemma></entry><entry n="dum"><lemma>dum</lemma></entry><entry n="duo"><lemma>duo</lemma></entry><entry n="duplico"><lemma>duplico</lemma></entry><entry n="duresco"><lemma>duresco</lemma></entry><entry n="duro"><lemma>duro</lemma></entry><entry n="durus"><lemma>durus</lemma></entry><entry n="dux"><lemma>dux</lemma></entry><entry n="ebulum"><lemma>ebulum</lemma></entry><entry n="ecce"><lemma>ecce</lemma></entry><entry n="ecquis"><lemma>ecquis</lemma></entry><entry n="edisco"><lemma>edisco</lemma></entry><entry n="edo1"><lemma>edo1</lemma></entry><entry n="efficio"><lemma>efficio</lemma></entry><entry n="effigies"><lemma>effigies</lemma></entry><entry n="effugio"><lemma>effugio</lemma></entry><entry n="electrum"><lemma>electrum</lemma></entry><entry n="equus"><lemma>equus</lemma></entry><entry n="erigo"><lemma>erigo</lemma></entry><entry n="errabundus"><lemma>errabundus</lemma></entry><entry n="error"><lemma>error</lemma></entry><entry n="erubesco"><lemma>erubesco</lemma></entry><entry n="eruum"><lemma>eruum</lemma></entry><entry n="euincio"><lemma>euincio</lemma></entry><entry n="ex"><lemma>ex</lemma></entry><entry n="examen"><lemma>examen</lemma></entry><entry n="excio"><lemma>excio</lemma></entry><entry n="excipio"><lemma>excipio</lemma></entry><entry n="exitium"><lemma>exitium</lemma></entry><entry n="exordium"><lemma>exordium</lemma></entry><entry n="experior"><lemma>experior</lemma></entry><entry n="exspecto"><lemma>exspecto</lemma></entry><entry n="exstinguo"><lemma>exstinguo</lemma></entry><entry n="exter"><lemma>exter</lemma></entry><entry n="exuuiae"><lemma>exuuiae</lemma></entry><entry n="facilis"><lemma>facilis</lemma></entry><entry n="factum"><lemma>factum</lemma></entry><entry n="faginus"><lemma>faginus</lemma></entry><entry n="fallax"><lemma>fallax</lemma></entry><entry n="fallo"><lemma>fallo</lemma></entry><entry n="falsus"><lemma>falsus</lemma></entry><entry n="falx"><lemma>falx</lemma></entry><entry n="fama"><lemma>fama</lemma></entry><entry n="fascino"><lemma>fascino</lemma></entry><entry n="fascis"><lemma>fascis</lemma></entry><entry n="fastidio"><lemma>fastidio</lemma></entry><entry n="fastidium"><lemma>fastidium</lemma></entry><entry n="fatum"><lemma>fatum</lemma></entry><entry n="faueo"><lemma>faueo</lemma></entry><entry n="fax"><lemma>fax</lemma></entry><entry n="fera"><lemma>fera</lemma></entry><entry n="ferio"><lemma>ferio</lemma></entry><entry n="fero"><lemma>fero</lemma></entry><entry n="ferreus"><lemma>ferreus</lemma></entry><entry n="ferula"><lemma>ferula</lemma></entry><entry n="ferus2"><lemma>ferus2</lemma></entry><entry n="fessus"><lemma>fessus</lemma></entry><entry n="fetura"><lemma>fetura</lemma></entry><entry n="figo"><lemma>figo</lemma></entry><entry n="fingo"><lemma>fingo</lemma></entry><entry n="fio"><lemma>fio</lemma></entry><entry n="firmo"><lemma>firmo</lemma></entry><entry n="fiscella"><lemma>fiscella</lemma></entry><entry n="fistula"><lemma>fistula</lemma></entry><entry n="flamma"><lemma>flamma</lemma></entry><entry n="flauesco"><lemma>flauesco</lemma></entry><entry n="fleo"><lemma>fleo</lemma></entry><entry n="florens"><lemma>florens</lemma></entry><entry n="fluctus"><lemma>fluctus</lemma></entry><entry n="fluo"><lemma>fluo</lemma></entry><entry n="fluuius"><lemma>fluuius</lemma></entry><entry n="focus"><lemma>focus</lemma></entry><entry n="folium"><lemma>folium</lemma></entry><entry n="foras"><lemma>foras</lemma></entry><entry n="forma"><lemma>forma</lemma></entry><entry n="formido1"><lemma>formido1</lemma></entry><entry n="forsitan"><lemma>forsitan</lemma></entry><entry n="forte"><lemma>forte</lemma></entry><entry n="foueo"><lemma>foueo</lemma></entry><entry n="fraga"><lemma>fraga</lemma></entry><entry n="fragilis"><lemma>fragilis</lemma></entry><entry n="frango"><lemma>frango</lemma></entry><entry n="fraus"><lemma>fraus</lemma></entry><entry n="fraxinus"><lemma>fraxinus</lemma></entry><entry n="frigidus"><lemma>frigidus</lemma></entry><entry n="frondeo"><lemma>frondeo</lemma></entry><entry n="frondosus"><lemma>frondosus</lemma></entry><entry n="frons1"><lemma>frons1</lemma></entry><entry n="frustra"><lemma>frustra</lemma></entry><entry n="frux"><lemma>frux</lemma></entry><entry n="fulcio"><lemma>fulcio</lemma></entry><entry n="fuligo"><lemma>fuligo</lemma></entry><entry n="fundo2"><lemma>fundo2</lemma></entry><entry n="fundo?"><lemma>fundo?</lemma></entry><entry n="funus"><lemma>funus</lemma></entry><entry n="fur"><lemma>fur</lemma></entry><entry n="furor1"><lemma>furor1</lemma></entry><entry n="furtum"><lemma>furtum</lemma></entry><entry n="fuscus"><lemma>fuscus</lemma></entry><entry n="fusus1"><lemma>fusus1</lemma></entry><entry n="futurus"><lemma>futurus</lemma></entry><entry n="gaudeo"><lemma>gaudeo</lemma></entry><entry n="gelidus"><lemma>gelidus</lemma></entry><entry n="gemma"><lemma>gemma</lemma></entry><entry n="gens"><lemma>gens</lemma></entry><entry n="genus1"><lemma>genus1</lemma></entry><entry n="glacies"><lemma>glacies</lemma></entry><entry n="glans"><lemma>glans</lemma></entry><entry n="gracilis"><lemma>gracilis</lemma></entry><entry n="gramen"><lemma>gramen</lemma></entry><entry n="grandis"><lemma>grandis</lemma></entry><entry n="gratus"><lemma>gratus</lemma></entry><entry n="gryps"><lemma>gryps</lemma></entry><entry n="gurges"><lemma>gurges</lemma></entry><entry n="habito"><lemma>habito</lemma></entry><entry n="hac"><lemma>hac</lemma></entry><entry n="haereo"><lemma>haereo</lemma></entry><entry n="hamadryas"><lemma>hamadryas</lemma></entry><entry n="hasta"><lemma>hasta</lemma></entry><entry n="hedera"><lemma>hedera</lemma></entry><entry n="herba"><lemma>herba</lemma></entry><entry n="heros"><lemma>heros</lemma></entry><entry n="hesternus"><lemma>hesternus</lemma></entry><entry n="heu"><lemma>heu</lemma></entry><entry n="hibernus"><lemma>hibernus</lemma></entry><entry n="hibisco"><lemma>hibisco</lemma></entry><entry n="hibiscum"><lemma>hibiscum</lemma></entry><entry n="hiems"><lemma>hiems</lemma></entry><entry n="hilaro"><lemma>hilaro</lemma></entry><entry n="hircus"><lemma>hircus</lemma></entry><entry n="hirsutus"><lemma>hirsutus</lemma></entry><entry n="hodie"><lemma>hodie</lemma></entry><entry n="homo"><lemma>homo</lemma></entry><entry n="honor"><lemma>honor</lemma></entry><entry n="hora"><lemma>hora</lemma></entry><entry n="hordeum"><lemma>hordeum</lemma></entry><entry n="horridus"><lemma>horridus</lemma></entry><entry n="hortus"><lemma>hortus</lemma></entry><entry n="hostis"><lemma>hostis</lemma></entry><entry n="huc"><lemma>huc</lemma></entry><entry n="humilis"><lemma>humilis</lemma></entry><entry n="humor"><lemma>humor</lemma></entry><entry n="humus"><lemma>humus</lemma></entry><entry n="hyacinthus"><lemma>hyacinthus</lemma></entry><entry n="iaceo"><lemma>iaceo</lemma></entry><entry n="iacio"><lemma>iacio</lemma></entry><entry n="iacto"><lemma>iacto</lemma></entry><entry n="ibi"><lemma>ibi</lemma></entry><entry n="idem"><lemma>idem</lemma></entry><entry n="igitur"><lemma>igitur</lemma></entry><entry n="ignarus"><lemma>ignarus</lemma></entry><entry n="ignis"><lemma>ignis</lemma></entry><entry n="ignobilis"><lemma>ignobilis</lemma></entry><entry n="ilex"><lemma>ilex</lemma></entry><entry n="ilia"><lemma>ilia</lemma></entry><entry n="imago"><lemma>imago</lemma></entry><entry n="imber"><lemma>imber</lemma></entry><entry n="imitor"><lemma>imitor</lemma></entry><entry n="immemor"><lemma>immemor</lemma></entry><entry n="immineo"><lemma>immineo</lemma></entry><entry n="immitto"><lemma>immitto</lemma></entry><entry n="immo"><lemma>immo</lemma></entry><entry n="impar"><lemma>impar</lemma></entry><entry n="impleo"><lemma>impleo</lemma></entry><entry n="improbus"><lemma>improbus</lemma></entry><entry n="inane"><lemma>inane</lemma></entry><entry n="inanis"><lemma>inanis</lemma></entry><entry n="incendo"><lemma>incendo</lemma></entry><entry n="incertus"><lemma>incertus</lemma></entry><entry n="incido1"><lemma>incido1</lemma></entry><entry n="incido2"><lemma>incido2</lemma></entry><entry n="incipio"><lemma>incipio</lemma></entry><entry n="inconditus"><lemma>inconditus</lemma></entry><entry n="incrementum"><lemma>incrementum</lemma></entry><entry n="incultus"><lemma>incultus</lemma></entry><entry n="incumbo"><lemma>incumbo</lemma></entry><entry n="indigeo"><lemma>indigeo</lemma></entry><entry n="indignus"><lemma>indignus</lemma></entry><entry n="indoctus"><lemma>indoctus</lemma></entry><entry n="induco"><lemma>induco</lemma></entry><entry n="infelix"><lemma>infelix</lemma></entry><entry n="inferus"><lemma>inferus</lemma></entry><entry n="infindo"><lemma>infindo</lemma></entry><entry n="inflo"><lemma>inflo</lemma></entry><entry n="informis"><lemma>informis</lemma></entry><entry n="ingemisco"><lemma>ingemisco</lemma></entry><entry n="inguen"><lemma>inguen</lemma></entry><entry n="inicio"><lemma>inicio</lemma></entry><entry n="iniussus2"><lemma>iniussus2</lemma></entry><entry n="iniustus"><lemma>iniustus</lemma></entry><entry n="inquio"><lemma>inquio</lemma></entry><entry n="insanio"><lemma>insanio</lemma></entry><entry n="insanus"><lemma>insanus</lemma></entry><entry n="inscribo"><lemma>inscribo</lemma></entry><entry n="insidiae"><lemma>insidiae</lemma></entry><entry n="instituo"><lemma>instituo</lemma></entry><entry n="insto"><lemma>insto</lemma></entry><entry n="integer"><lemma>integer</lemma></entry><entry n="interitus"><lemma>interitus</lemma></entry><entry n="intermisceo"><lemma>intermisceo</lemma></entry><entry n="intexo"><lemma>intexo</lemma></entry><entry n="intonsus"><lemma>intonsus</lemma></entry><entry n="inuenio"><lemma>inuenio</lemma></entry><entry n="inuidia"><lemma>inuidia</lemma></entry><entry n="inuitus"><lemma>inuitus</lemma></entry><entry n="ira"><lemma>ira</lemma></entry><entry n="irritus"><lemma>irritus</lemma></entry><entry n="is"><lemma>is</lemma></entry><entry n="iterum"><lemma>iterum</lemma></entry><entry n="iubeo"><lemma>iubeo</lemma></entry><entry n="iudex"><lemma>iudex</lemma></entry><entry n="iudicium"><lemma>iudicium</lemma></entry><entry n="iugum"><lemma>iugum</lemma></entry><entry n="iungo"><lemma>iungo</lemma></entry><entry n="iuniperus"><lemma>iuniperus</lemma></entry><entry n="iurgium"><lemma>iurgium</lemma></entry><entry n="iussum"><lemma>iussum</lemma></entry><entry n="iuuenca"><lemma>iuuenca</lemma></entry><entry n="iuuencus1"><lemma>iuuencus1</lemma></entry><entry n="iuuo"><lemma>iuuo</lemma></entry><entry n="labellum1"><lemma>labellum1</lemma></entry><entry n="labor1"><lemma>labor1</lemma></entry><entry n="labrum1"><lemma>labrum1</lemma></entry><entry n="labrusca"><lemma>labrusca</lemma></entry><entry n="lacero"><lemma>lacero</lemma></entry><entry n="lacertus1"><lemma>lacertus1</lemma></entry><entry n="lacesso"><lemma>lacesso</lemma></entry><entry n="lacrima"><lemma>lacrima</lemma></entry><entry n="laetitia"><lemma>laetitia</lemma></entry><entry n="laetor"><lemma>laetor</lemma></entry><entry n="laetus2"><lemma>laetus2</lemma></entry><entry n="lana"><lemma>lana</lemma></entry><entry n="lanugo"><lemma>lanugo</lemma></entry><entry n="lasciuus"><lemma>lasciuus</lemma></entry><entry n="lateo"><lemma>lateo</lemma></entry><entry n="latro2"><lemma>latro2</lemma></entry><entry n="latus1"><lemma>latus1</lemma></entry><entry n="laudo"><lemma>laudo</lemma></entry><entry n="lauo1"><lemma>lauo1</lemma></entry><entry n="laurea"><lemma>laurea</lemma></entry><entry n="laurus"><lemma>laurus</lemma></entry><entry n="laus"><lemma>laus</lemma></entry><entry n="leaena"><lemma>leaena</lemma></entry><entry n="lector"><lemma>lector</lemma></entry><entry n="lego2"><lemma>lego2</lemma></entry><entry n="lego?"><lemma>lego?</lemma></entry><entry n="leo"><lemma>leo</lemma></entry><entry n="leuo1"><lemma>leuo1</lemma></entry><entry n="liber2"><lemma>liber2</lemma></entry><entry n="libet"><lemma>libet</lemma></entry><entry n="libo"><lemma>libo</lemma></entry><entry n="libum"><lemma>libum</lemma></entry><entry n="licium"><lemma>licium</lemma></entry><entry n="ligustrum"><lemma>ligustrum</lemma></entry><entry n="lilium"><lemma>lilium</lemma></entry><entry n="limen"><lemma>limen</lemma></entry><entry n="limus1"><lemma>limus1</lemma></entry><entry n="lingua"><lemma>lingua</lemma></entry><entry n="liquesco"><lemma>liquesco</lemma></entry><entry n="liquidus"><lemma>liquidus</lemma></entry><entry n="lis"><lemma>lis</lemma></entry><entry n="locus"><lemma>locus</lemma></entry><entry n="lolium"><lemma>lolium</lemma></entry><entry n="loquor"><lemma>loquor</lemma></entry><entry n="lucesco"><lemma>lucesco</lemma></entry><entry n="lucus"><lemma>lucus</lemma></entry><entry n="ludus"><lemma>ludus</lemma></entry><entry n="lupus"><lemma>lupus</lemma></entry><entry n="lustro2"><lemma>lustro2</lemma></entry><entry n="luteolus"><lemma>luteolus</lemma></entry><entry n="lutum1"><lemma>lutum1</lemma></entry><entry n="lux"><lemma>lux</lemma></entry><entry n="lynx"><lemma>lynx</lemma></entry><entry n="macer"><lemma>macer</lemma></entry><entry n="magicus"><lemma>magicus</lemma></entry><entry n="magister"><lemma>magister</lemma></entry><entry n="malo"><lemma>malo</lemma></entry><entry n="malum2"><lemma>malum2</lemma></entry><entry n="malus1"><lemma>malus1</lemma></entry><entry n="malus2"><lemma>malus2</lemma></entry><entry n="malus3"><lemma>malus3</lemma></entry><entry n="mando2"><lemma>mando2</lemma></entry><entry n="manus1"><lemma>manus1</lemma></entry><entry n="mare"><lemma>mare</lemma></entry><entry n="marinus"><lemma>marinus</lemma></entry><entry n="maritus1"><lemma>maritus1</lemma></entry><entry n="marmor"><lemma>marmor</lemma></entry><entry n="marmoreus"><lemma>marmoreus</lemma></entry><entry n="masculus"><lemma>masculus</lemma></entry><entry n="maturus"><lemma>maturus</lemma></entry><entry n="medeor"><lemma>medeor</lemma></entry><entry n="medicina"><lemma>medicina</lemma></entry><entry n="medium"><lemma>medium</lemma></entry><entry n="medius"><lemma>medius</lemma></entry><entry n="mel"><lemma>mel</lemma></entry><entry n="mensa"><lemma>mensa</lemma></entry><entry n="mensis"><lemma>mensis</lemma></entry><entry n="mentior"><lemma>mentior</lemma></entry><entry n="merces"><lemma>merces</lemma></entry><entry n="mereo"><lemma>mereo</lemma></entry><entry n="merx"><lemma>merx</lemma></entry><entry n="messis"><lemma>messis</lemma></entry><entry n="messor"><lemma>messor</lemma></entry><entry n="metuo"><lemma>metuo</lemma></entry><entry n="migro"><lemma>migro</lemma></entry><entry n="mille"><lemma>mille</lemma></entry><entry n="minium"><lemma>minium</lemma></entry><entry n="misceo"><lemma>misceo</lemma></entry><entry n="miserabilis"><lemma>miserabilis</lemma></entry><entry n="misereor"><lemma>misereor</lemma></entry><entry n="mitesco"><lemma>mitesco</lemma></entry><entry n="mitto"><lemma>mitto</lemma></entry><entry n="modulor"><lemma>modulor</lemma></entry><entry n="modus"><lemma>modus</lemma></entry><entry n="mola"><lemma>mola</lemma></entry><entry n="molliter"><lemma>molliter</lemma></entry><entry n="moneo"><lemma>moneo</lemma></entry><entry n="monstrum"><lemma>monstrum</lemma></entry><entry n="mora"><lemma>mora</lemma></entry><entry n="morior"><lemma>morior</lemma></entry><entry n="moror1"><lemma>moror1</lemma></entry><entry n="mortalis2"><lemma>mortalis2</lemma></entry><entry n="mos"><lemma>mos</lemma></entry><entry n="moto"><lemma>moto</lemma></entry><entry n="mugitus"><lemma>mugitus</lemma></entry><entry n="mulctra"><lemma>mulctra</lemma></entry><entry n="mulgeo"><lemma>mulgeo</lemma></entry><entry n="multo2"><lemma>multo2</lemma></entry><entry n="multum2"><lemma>multum2</lemma></entry><entry n="mundus1"><lemma>mundus1</lemma></entry><entry n="munus"><lemma>munus</lemma></entry><entry n="munusculum"><lemma>munusculum</lemma></entry><entry n="murex"><lemma>murex</lemma></entry><entry n="murmur"><lemma>murmur</lemma></entry><entry n="murus"><lemma>murus</lemma></entry><entry n="muscosus"><lemma>muscosus</lemma></entry><entry n="muscus"><lemma>muscus</lemma></entry><entry n="muto2"><lemma>muto2</lemma></entry><entry n="myrice"><lemma>myrice</lemma></entry><entry n="myrtus"><lemma>myrtus</lemma></entry><entry n="nam"><lemma>nam</lemma></entry><entry n="narcissus"><lemma>narcissus</lemma></entry><entry n="narro"><lemma>narro</lemma></entry><entry n="nascor"><lemma>nascor</lemma></entry><entry n="natalis2"><lemma>natalis2</lemma></entry><entry n="natus1"><lemma>natus1</lemma></entry><entry n="nauta"><lemma>nauta</lemma></entry><entry n="nauticus"><lemma>nauticus</lemma></entry><entry n="ne3"><lemma>ne3</lemma></entry><entry n="ne4"><lemma>ne4</lemma></entry><entry n="necdum1"><lemma>necdum1</lemma></entry><entry n="necdum2"><lemma>necdum2</lemma></entry><entry n="nectar"><lemma>nectar</lemma></entry><entry n="necto"><lemma>necto</lemma></entry><entry n="nego"><lemma>nego</lemma></entry><entry n="nemus"><lemma>nemus</lemma></entry><entry n="nepos1"><lemma>nepos1</lemma></entry><entry n="nescio"><lemma>nescio</lemma></entry><entry n="niger"><lemma>niger</lemma></entry><entry n="nihil"><lemma>nihil</lemma></entry><entry n="nimium2"><lemma>nimium2</lemma></entry><entry n="nisi"><lemma>nisi</lemma></entry><entry n="niueus"><lemma>niueus</lemma></entry><entry n="nix"><lemma>nix</lemma></entry><entry n="noceo"><lemma>noceo</lemma></entry><entry n="nodus"><lemma>nodus</lemma></entry><entry n="nomen"><lemma>nomen</lemma></entry><entry n="nonne"><lemma>nonne</lemma></entry><entry n="noto"><lemma>noto</lemma></entry><entry n="nouellus"><lemma>nouellus</lemma></entry><entry n="nouerca"><lemma>nouerca</lemma></entry><entry n="nouus"><lemma>nouus</lemma></entry><entry n="nubes"><lemma>nubes</lemma></entry><entry n="numen"><lemma>numen</lemma></entry><entry n="numero1"><lemma>numero1</lemma></entry><entry n="numerus"><lemma>numerus</lemma></entry><entry n="numquam"><lemma>numquam</lemma></entry><entry n="nuper"><lemma>nuper</lemma></entry><entry n="nuto"><lemma>nuto</lemma></entry><entry n="nux"><lemma>nux</lemma></entry><entry n="nympha"><lemma>nympha</lemma></entry><entry n="obicio"><lemma>obicio</lemma></entry><entry n="obliuiscor"><lemma>obliuiscor</lemma></entry><entry n="obuius"><lemma>obuius</lemma></entry><entry n="occido1"><lemma>occido1</lemma></entry><entry n="occulto"><lemma>occulto</lemma></entry><entry n="occurso"><lemma>occurso</lemma></entry><entry n="ociter"><lemma>ociter</lemma></entry><entry n="oculus"><lemma>oculus</lemma></entry><entry n="odi"><lemma>odi</lemma></entry><entry n="odium"><lemma>odium</lemma></entry><entry n="odor"><lemma>odor</lemma></entry><entry n="offero"><lemma>offero</lemma></entry><entry n="oleo"><lemma>oleo</lemma></entry><entry n="olim"><lemma>olim</lemma></entry><entry n="oliua"><lemma>oliua</lemma></entry><entry n="oliuum"><lemma>oliuum</lemma></entry><entry n="olor1"><lemma>olor1</lemma></entry><entry n="oportet"><lemma>oportet</lemma></entry><entry n="oppidum"><lemma>oppidum</lemma></entry><entry n="opus1"><lemma>opus1</lemma></entry><entry n="ora"><lemma>ora</lemma></entry><entry n="origo"><lemma>origo</lemma></entry><entry n="orior"><lemma>orior</lemma></entry><entry n="ornate"><lemma>ornate</lemma></entry><entry n="ornatus2"><lemma>ornatus2</lemma></entry><entry n="ornus"><lemma>ornus</lemma></entry><entry n="oro"><lemma>oro</lemma></entry><entry n="os2"><lemma>os2</lemma></entry><entry n="pacatus"><lemma>pacatus</lemma></entry><entry n="paene"><lemma>paene</lemma></entry><entry n="paeniteo"><lemma>paeniteo</lemma></entry><entry n="pagina"><lemma>pagina</lemma></entry><entry n="paliurus"><lemma>paliurus</lemma></entry><entry n="pallens"><lemma>pallens</lemma></entry><entry n="palma"><lemma>palma</lemma></entry><entry n="palmes"><lemma>palmes</lemma></entry><entry n="pampineus"><lemma>pampineus</lemma></entry><entry n="papauer"><lemma>papauer</lemma></entry><entry n="par2"><lemma>par2</lemma></entry><entry n="paratus2"><lemma>paratus2</lemma></entry><entry n="parco"><lemma>parco</lemma></entry><entry n="parens1"><lemma>parens1</lemma></entry><entry n="pareo"><lemma>pareo</lemma></entry><entry n="pario2"><lemma>pario2</lemma></entry><entry n="paro2"><lemma>paro2</lemma></entry><entry n="parturio"><lemma>parturio</lemma></entry><entry n="parum2"><lemma>parum2</lemma></entry><entry n="pascor"><lemma>pascor</lemma></entry><entry n="passim"><lemma>passim</lemma></entry><entry n="pateo"><lemma>pateo</lemma></entry><entry n="pater"><lemma>pater</lemma></entry><entry n="paucus"><lemma>paucus</lemma></entry><entry n="paulatim"><lemma>paulatim</lemma></entry><entry n="paulo"><lemma>paulo</lemma></entry><entry n="pecus"><lemma>pecus</lemma></entry><entry n="pecus2"><lemma>pecus2</lemma></entry><entry n="pellis"><lemma>pellis</lemma></entry><entry n="pello"><lemma>pello</lemma></entry><entry n="per"><lemma>per</lemma></entry><entry n="percutio"><lemma>percutio</lemma></entry><entry n="perditus"><lemma>perditus</lemma></entry><entry n="perduco"><lemma>perduco</lemma></entry><entry n="pereo1"><lemma>pereo1</lemma></entry><entry n="perficio"><lemma>perficio</lemma></entry><entry n="perfidus1"><lemma>perfidus1</lemma></entry><entry n="pergo"><lemma>pergo</lemma></entry><entry n="peritus"><lemma>peritus</lemma></entry><entry n="permisceo"><lemma>permisceo</lemma></entry><entry n="perpetuus"><lemma>perpetuus</lemma></entry><entry n="peruenio"><lemma>peruenio</lemma></entry><entry n="peruersus"><lemma>peruersus</lemma></entry><entry n="pes"><lemma>pes</lemma></entry><entry n="pignus"><lemma>pignus</lemma></entry><entry n="pingo"><lemma>pingo</lemma></entry><entry n="pinifer"><lemma>pinifer</lemma></entry><entry n="placeo"><lemma>placeo</lemma></entry><entry n="placidus"><lemma>placidus</lemma></entry><entry n="planta"><lemma>planta</lemma></entry><entry n="plenus"><lemma>plenus</lemma></entry><entry n="pluuia"><lemma>pluuia</lemma></entry><entry n="poculum"><lemma>poculum</lemma></entry><entry n="poeniteo"><lemma>poeniteo</lemma></entry><entry n="poeta"><lemma>poeta</lemma></entry><entry n="pondus"><lemma>pondus</lemma></entry><entry n="pontus"><lemma>pontus</lemma></entry><entry n="populus1"><lemma>populus1</lemma></entry><entry n="populus2"><lemma>populus2</lemma></entry><entry n="possessor"><lemma>possessor</lemma></entry><entry n="post2"><lemma>post2</lemma></entry><entry n="posthabes"><lemma>posthabes</lemma></entry><entry n="postis"><lemma>postis</lemma></entry><entry n="potius"><lemma>potius</lemma></entry><entry n="poto"><lemma>poto</lemma></entry><entry n="prae"><lemma>prae</lemma></entry><entry n="praeceps2"><lemma>praeceps2</lemma></entry><entry n="praecipio"><lemma>praecipio</lemma></entry><entry n="praefero"><lemma>praefero</lemma></entry><entry n="praesaepe"><lemma>praesaepe</lemma></entry><entry n="praescribo"><lemma>praescribo</lemma></entry><entry n="praeterea"><lemma>praeterea</lemma></entry><entry n="praetexo"><lemma>praetexo</lemma></entry><entry n="pratia"><lemma>pratia</lemma></entry><entry n="pratum"><lemma>pratum</lemma></entry><entry n="presso"><lemma>presso</lemma></entry><entry n="pridem"><lemma>pridem</lemma></entry><entry n="primum"><lemma>primum</lemma></entry><entry n="principium"><lemma>principium</lemma></entry><entry n="prior"><lemma>prior</lemma></entry><entry n="priscus"><lemma>priscus</lemma></entry><entry n="pro1"><lemma>pro1</lemma></entry><entry n="procedo1"><lemma>procedo1</lemma></entry><entry n="procerus"><lemma>procerus</lemma></entry><entry n="procumbo"><lemma>procumbo</lemma></entry><entry n="proelium"><lemma>proelium</lemma></entry><entry n="proficio"><lemma>proficio</lemma></entry><entry n="profundus"><lemma>profundus</lemma></entry><entry n="progenies"><lemma>progenies</lemma></entry><entry n="promitto"><lemma>promitto</lemma></entry><entry n="propior"><lemma>propior</lemma></entry><entry n="proprius"><lemma>proprius</lemma></entry><entry n="propter2"><lemma>propter2</lemma></entry><entry n="proripio"><lemma>proripio</lemma></entry><entry n="prosum1"><lemma>prosum1</lemma></entry><entry n="prunum"><lemma>prunum</lemma></entry><entry n="pudor"><lemma>pudor</lemma></entry><entry n="puella"><lemma>puella</lemma></entry><entry n="pulcher"><lemma>pulcher</lemma></entry><entry n="puniceus"><lemma>puniceus</lemma></entry><entry n="purpureus"><lemma>purpureus</lemma></entry><entry n="purus"><lemma>purus</lemma></entry><entry n="qua"><lemma>qua</lemma></entry><entry n="qua1"><lemma>qua1</lemma></entry><entry n="quacumque1"><lemma>quacumque1</lemma></entry><entry n="quadrupes1"><lemma>quadrupes1</lemma></entry><entry n="quaero"><lemma>quaero</lemma></entry><entry n="qualis1"><lemma>qualis1</lemma></entry><entry n="quam2"><lemma>quam2</lemma></entry><entry n="quamquam2"><lemma>quamquam2</lemma></entry><entry n="quamuis2"><lemma>quamuis2</lemma></entry><entry n="quando1"><lemma>quando1</lemma></entry><entry n="quandoquidem"><lemma>quandoquidem</lemma></entry><entry n="quantum1"><lemma>quantum1</lemma></entry><entry n="quasso"><lemma>quasso</lemma></entry><entry n="quatuor"><lemma>quatuor</lemma></entry><entry n="queror"><lemma>queror</lemma></entry><entry n="quicumque1"><lemma>quicumque1</lemma></entry><entry n="quicumque2"><lemma>quicumque2</lemma></entry><entry n="quidem"><lemma>quidem</lemma></entry><entry n="quiesco"><lemma>quiesco</lemma></entry><entry n="quin1"><lemma>quin1</lemma></entry><entry n="quin3"><lemma>quin3</lemma></entry><entry n="quis2"><lemma>quis2</lemma></entry><entry n="quisquam"><lemma>quisquam</lemma></entry><entry n="quisque2"><lemma>quisque2</lemma></entry><entry n="quisquis1"><lemma>quisquis1</lemma></entry><entry n="quo2"><lemma>quo2</lemma></entry><entry n="quo3"><lemma>quo3</lemma></entry><entry n="quocumque1"><lemma>quocumque1</lemma></entry><entry n="quod1"><lemma>quod1</lemma></entry><entry n="quod2"><lemma>quod2</lemma></entry><entry n="quoniam"><lemma>quoniam</lemma></entry><entry n="quoque"><lemma>quoque</lemma></entry><entry n="quotiens2"><lemma>quotiens2</lemma></entry><entry n="racemus"><lemma>racemus</lemma></entry><entry n="radius"><lemma>radius</lemma></entry><entry n="ramosus"><lemma>ramosus</lemma></entry><entry n="ramus"><lemma>ramus</lemma></entry><entry n="rapio"><lemma>rapio</lemma></entry><entry n="rarus"><lemma>rarus</lemma></entry><entry n="raster"><lemma>raster</lemma></entry><entry n="ratis"><lemma>ratis</lemma></entry><entry n="recuso"><lemma>recuso</lemma></entry><entry n="reddo"><lemma>reddo</lemma></entry><entry n="refero"><lemma>refero</lemma></entry><entry n="regno"><lemma>regno</lemma></entry><entry n="rego"><lemma>rego</lemma></entry><entry n="reicio"><lemma>reicio</lemma></entry><entry n="reperio"><lemma>reperio</lemma></entry><entry n="repeto"><lemma>repeto</lemma></entry><entry n="repono"><lemma>repono</lemma></entry><entry n="res"><lemma>res</lemma></entry><entry n="respondeo"><lemma>respondeo</lemma></entry><entry n="restinguo"><lemma>restinguo</lemma></entry><entry n="rete"><lemma>rete</lemma></entry><entry n="reuiso"><lemma>reuiso</lemma></entry><entry n="rex"><lemma>rex</lemma></entry><entry n="rideo"><lemma>rideo</lemma></entry><entry n="rigidus"><lemma>rigidus</lemma></entry><entry n="ripa"><lemma>ripa</lemma></entry><entry n="risus"><lemma>risus</lemma></entry><entry n="riuus"><lemma>riuus</lemma></entry><entry n="robustus"><lemma>robustus</lemma></entry><entry n="rogo"><lemma>rogo</lemma></entry><entry n="ros"><lemma>ros</lemma></entry><entry n="roscidus"><lemma>roscidus</lemma></entry><entry n="rosetum"><lemma>rosetum</lemma></entry><entry n="rubeo"><lemma>rubeo</lemma></entry><entry n="rubus"><lemma>rubus</lemma></entry><entry n="rumino"><lemma>rumino</lemma></entry><entry n="rumpo"><lemma>rumpo</lemma></entry><entry n="rursus"><lemma>rursus</lemma></entry><entry n="ruscum"><lemma>ruscum</lemma></entry><entry n="rusticus2"><lemma>rusticus2</lemma></entry><entry n="sacellum"><lemma>sacellum</lemma></entry><entry n="sacrum"><lemma>sacrum</lemma></entry><entry n="saeculum"><lemma>saeculum</lemma></entry><entry n="saetosus"><lemma>saetosus</lemma></entry><entry n="saeuus"><lemma>saeuus</lemma></entry><entry n="salio1"><lemma>salio1</lemma></entry><entry n="saliunca"><lemma>saliunca</lemma></entry><entry n="saltem"><lemma>saltem</lemma></entry><entry n="salto"><lemma>salto</lemma></entry><entry n="saltus2"><lemma>saltus2</lemma></entry><entry n="saluus"><lemma>saluus</lemma></entry><entry n="sandyx"><lemma>sandyx</lemma></entry><entry n="sanguineus"><lemma>sanguineus</lemma></entry><entry n="sanguis"><lemma>sanguis</lemma></entry><entry n="sanus"><lemma>sanus</lemma></entry><entry n="satis2"><lemma>satis2</lemma></entry><entry n="satur"><lemma>satur</lemma></entry><entry n="saturo"><lemma>saturo</lemma></entry><entry n="satyrus"><lemma>satyrus</lemma></entry><entry n="saxosus"><lemma>saxosus</lemma></entry><entry n="saxum"><lemma>saxum</lemma></entry><entry n="scelus"><lemma>scelus</lemma></entry><entry n="scio"><lemma>scio</lemma></entry><entry n="seco"><lemma>seco</lemma></entry><entry n="sector2"><lemma>sector2</lemma></entry><entry n="secundus2"><lemma>secundus2</lemma></entry><entry n="sedeo"><lemma>sedeo</lemma></entry><entry n="semen1"><lemma>semen1</lemma></entry><entry n="semiputatus"><lemma>semiputatus</lemma></entry><entry n="sensus"><lemma>sensus</lemma></entry><entry n="sentis"><lemma>sentis</lemma></entry><entry n="septem"><lemma>septem</lemma></entry><entry n="sepulcrum"><lemma>sepulcrum</lemma></entry><entry n="sequor"><lemma>sequor</lemma></entry><entry n="serius"><lemma>serius</lemma></entry><entry n="sero3"><lemma>sero3</lemma></entry><entry n="serpens"><lemma>serpens</lemma></entry><entry n="serpo"><lemma>serpo</lemma></entry><entry n="serpyllum"><lemma>serpyllum</lemma></entry><entry n="sertum"><lemma>sertum</lemma></entry><entry n="seruo"><lemma>seruo</lemma></entry><entry n="seu1"><lemma>seu1</lemma></entry><entry n="sibilus1"><lemma>sibilus1</lemma></entry><entry n="sicco"><lemma>sicco</lemma></entry><entry n="siccus"><lemma>siccus</lemma></entry><entry n="sidus"><lemma>sidus</lemma></entry><entry n="signum"><lemma>signum</lemma></entry><entry n="sileo"><lemma>sileo</lemma></entry><entry n="simul1"><lemma>simul1</lemma></entry><entry n="simul3"><lemma>simul3</lemma></entry><entry n="simus"><lemma>simus</lemma></entry><entry n="sine"><lemma>sine</lemma></entry><entry n="sinister"><lemma>sinister</lemma></entry><entry n="sinus"><lemma>sinus</lemma></entry><entry n="sitis"><lemma>sitis</lemma></entry><entry n="siue2"><lemma>siue2</lemma></entry><entry n="socius1"><lemma>socius1</lemma></entry><entry n="socius2"><lemma>socius2</lemma></entry><entry n="sol"><lemma>sol</lemma></entry><entry n="solatium"><lemma>solatium</lemma></entry><entry n="solemnis"><lemma>solemnis</lemma></entry><entry n="sollicitus"><lemma>sollicitus</lemma></entry><entry n="solor"><lemma>solor</lemma></entry><entry n="solstitium"><lemma>solstitium</lemma></entry><entry n="solum1"><lemma>solum1</lemma></entry><entry n="solum2"><lemma>solum2</lemma></entry><entry n="soluo"><lemma>soluo</lemma></entry><entry n="solus"><lemma>solus</lemma></entry><entry n="somnium"><lemma>somnium</lemma></entry><entry n="sono1"><lemma>sono1</lemma></entry><entry n="sopor"><lemma>sopor</lemma></entry><entry n="sordeo"><lemma>sordeo</lemma></entry><entry n="sordidus"><lemma>sordidus</lemma></entry><entry n="soror"><lemma>soror</lemma></entry><entry n="spargo2"><lemma>spargo2</lemma></entry><entry n="spatium"><lemma>spatium</lemma></entry><entry n="specto"><lemma>specto</lemma></entry><entry n="specula1"><lemma>specula1</lemma></entry><entry n="spelaeum"><lemma>spelaeum</lemma></entry><entry n="sperno"><lemma>sperno</lemma></entry><entry n="spero"><lemma>spero</lemma></entry><entry n="spiculum"><lemma>spiculum</lemma></entry><entry n="spina"><lemma>spina</lemma></entry><entry n="spinetum"><lemma>spinetum</lemma></entry><entry n="spiritus"><lemma>spiritus</lemma></entry><entry n="spons"><lemma>spons</lemma></entry><entry n="spumo"><lemma>spumo</lemma></entry><entry n="stabilis"><lemma>stabilis</lemma></entry><entry n="stabulum"><lemma>stabulum</lemma></entry><entry n="statuo"><lemma>statuo</lemma></entry><entry n="sterilis"><lemma>sterilis</lemma></entry><entry n="sterno"><lemma>sterno</lemma></entry><entry n="stipula"><lemma>stipula</lemma></entry><entry n="sto"><lemma>sto</lemma></entry><entry n="strepo"><lemma>strepo</lemma></entry><entry n="strideo"><lemma>strideo</lemma></entry><entry n="stringo"><lemma>stringo</lemma></entry><entry n="studium"><lemma>studium</lemma></entry><entry n="stupefacio"><lemma>stupefacio</lemma></entry><entry n="stupeo"><lemma>stupeo</lemma></entry><entry n="suaue"><lemma>suaue</lemma></entry><entry n="suauis"><lemma>suauis</lemma></entry><entry n="subduco"><lemma>subduco</lemma></entry><entry n="subeo1"><lemma>subeo1</lemma></entry><entry n="subicio"><lemma>subicio</lemma></entry><entry n="subiungo"><lemma>subiungo</lemma></entry><entry n="sublego2"><lemma>sublego2</lemma></entry><entry n="sublime2"><lemma>sublime2</lemma></entry><entry n="submoueo"><lemma>submoueo</lemma></entry><entry n="suboles"><lemma>suboles</lemma></entry><entry n="subsum1"><lemma>subsum1</lemma></entry><entry n="subterlabor2"><lemma>subterlabor2</lemma></entry><entry n="subulcus"><lemma>subulcus</lemma></entry><entry n="succedo1"><lemma>succedo1</lemma></entry><entry n="succingo"><lemma>succingo</lemma></entry><entry n="sucus"><lemma>sucus</lemma></entry><entry n="sudo"><lemma>sudo</lemma></entry><entry n="sui1"><lemma>sui1</lemma></entry><entry n="sulcus"><lemma>sulcus</lemma></entry><entry n="sumo"><lemma>sumo</lemma></entry><entry n="superaddo"><lemma>superaddo</lemma></entry><entry n="superbus2"><lemma>superbus2</lemma></entry><entry n="supercilium"><lemma>supercilium</lemma></entry><entry n="supero"><lemma>supero</lemma></entry><entry n="superuenio"><lemma>superuenio</lemma></entry><entry n="superuolito"><lemma>superuolito</lemma></entry><entry n="suppleo"><lemma>suppleo</lemma></entry><entry n="sura"><lemma>sura</lemma></entry><entry n="surdus"><lemma>surdus</lemma></entry><entry n="surgo"><lemma>surgo</lemma></entry><entry n="suspendo"><lemma>suspendo</lemma></entry><entry n="suspicio2"><lemma>suspicio2</lemma></entry><entry n="tacitus"><lemma>tacitus</lemma></entry><entry n="taeda"><lemma>taeda</lemma></entry><entry n="talis"><lemma>talis</lemma></entry><entry n="tamquam2"><lemma>tamquam2</lemma></entry><entry n="tantum1"><lemma>tantum1</lemma></entry><entry n="tardus"><lemma>tardus</lemma></entry><entry n="taxus"><lemma>taxus</lemma></entry><entry n="tectum"><lemma>tectum</lemma></entry><entry n="tego"><lemma>tego</lemma></entry><entry n="tellus"><lemma>tellus</lemma></entry><entry n="telum"><lemma>telum</lemma></entry><entry n="ter"><lemma>ter</lemma></entry><entry n="teres"><lemma>teres</lemma></entry><entry n="ternus"><lemma>ternus</lemma></entry><entry n="tero"><lemma>tero</lemma></entry><entry n="terra"><lemma>terra</lemma></entry><entry n="testis1"><lemma>testis1</lemma></entry><entry n="texo"><lemma>texo</lemma></entry><entry n="thiasus"><lemma>thiasus</lemma></entry><entry n="thymum"><lemma>thymum</lemma></entry><entry n="tibia"><lemma>tibia</lemma></entry><entry n="tigris"><lemma>tigris</lemma></entry><entry n="timeo"><lemma>timeo</lemma></entry><entry n="timidus"><lemma>timidus</lemma></entry><entry n="tollo"><lemma>tollo</lemma></entry><entry n="tornus"><lemma>tornus</lemma></entry><entry n="torqueo"><lemma>torqueo</lemma></entry><entry n="torrens2"><lemma>torrens2</lemma></entry><entry n="torridus"><lemma>torridus</lemma></entry><entry n="toruus"><lemma>toruus</lemma></entry><entry n="tot"><lemma>tot</lemma></entry><entry n="trado"><lemma>trado</lemma></entry><entry n="traduco"><lemma>traduco</lemma></entry><entry n="traho"><lemma>traho</lemma></entry><entry n="trans"><lemma>trans</lemma></entry><entry n="transuersus"><lemma>transuersus</lemma></entry><entry n="tremulus3"><lemma>tremulus3</lemma></entry><entry n="tres"><lemma>tres</lemma></entry><entry n="trhyrsus"><lemma>trhyrsus</lemma></entry><entry n="triplex"><lemma>triplex</lemma></entry><entry n="tristis"><lemma>tristis</lemma></entry><entry n="triuium"><lemma>triuium</lemma></entry><entry n="tueor"><lemma>tueor</lemma></entry><entry n="tum"><lemma>tum</lemma></entry><entry n="tumulus"><lemma>tumulus</lemma></entry><entry n="turgeo"><lemma>turgeo</lemma></entry><entry n="turpis"><lemma>turpis</lemma></entry><entry n="tus"><lemma>tus</lemma></entry><entry n="tutus"><lemma>tutus</lemma></entry><entry n="uacca"><lemma>uacca</lemma></entry><entry n="uaccinium"><lemma>uaccinium</lemma></entry><entry n="uae"><lemma>uae</lemma></entry><entry n="ualeo"><lemma>ualeo</lemma></entry><entry n="uallis"><lemma>uallis</lemma></entry><entry n="uarius"><lemma>uarius</lemma></entry><entry n="uates"><lemma>uates</lemma></entry><entry n="uber1"><lemma>uber1</lemma></entry><entry n="ubi1"><lemma>ubi1</lemma></entry><entry n="ubi3"><lemma>ubi3</lemma></entry><entry n="uector1"><lemma>uector1</lemma></entry><entry n="ueho"><lemma>ueho</lemma></entry><entry n="uel1"><lemma>uel1</lemma></entry><entry n="uel2"><lemma>uel2</lemma></entry><entry n="uello"><lemma>uello</lemma></entry><entry n="uellus"><lemma>uellus</lemma></entry><entry n="uena"><lemma>uena</lemma></entry><entry n="uenenum"><lemma>uenenum</lemma></entry><entry n="uenia"><lemma>uenia</lemma></entry><entry n="uenor"><lemma>uenor</lemma></entry><entry n="uentosus"><lemma>uentosus</lemma></entry><entry n="uenturum"><lemma>uenturum</lemma></entry><entry n="uentus"><lemma>uentus</lemma></entry><entry n="uer"><lemma>uer</lemma></entry><entry n="uerbena"><lemma>uerbena</lemma></entry><entry n="uerbum"><lemma>uerbum</lemma></entry><entry n="uereor"><lemma>uereor</lemma></entry><entry n="uero4"><lemma>uero4</lemma></entry><entry n="uerso"><lemma>uerso</lemma></entry><entry n="uersus1"><lemma>uersus1</lemma></entry><entry n="uerto"><lemma>uerto</lemma></entry><entry n="uester"><lemma>uester</lemma></entry><entry n="uestigium"><lemma>uestigium</lemma></entry><entry n="uestio"><lemma>uestio</lemma></entry><entry n="ueto"><lemma>ueto</lemma></entry><entry n="uetus"><lemma>uetus</lemma></entry><entry n="uexo"><lemma>uexo</lemma></entry><entry n="uia"><lemma>uia</lemma></entry><entry n="uicinus1"><lemma>uicinus1</lemma></entry><entry n="uicissim"><lemma>uicissim</lemma></entry><entry n="uictrix1"><lemma>uictrix1</lemma></entry><entry n="uictus"><lemma>uictus</lemma></entry><entry n="uilis"><lemma>uilis</lemma></entry><entry n="uimen"><lemma>uimen</lemma></entry><entry n="uinco"><lemma>uinco</lemma></entry><entry n="uinculum"><lemma>uinculum</lemma></entry><entry n="uinea"><lemma>uinea</lemma></entry><entry n="uinitor"><lemma>uinitor</lemma></entry><entry n="uinum"><lemma>uinum</lemma></entry><entry n="uiola"><lemma>uiola</lemma></entry><entry n="uir"><lemma>uir</lemma></entry><entry n="uireo2"><lemma>uireo2</lemma></entry><entry n="uirgo"><lemma>uirgo</lemma></entry><entry n="uirgultum"><lemma>uirgultum</lemma></entry><entry n="uirtus"><lemma>uirtus</lemma></entry><entry n="uita"><lemma>uita</lemma></entry><entry n="uitium"><lemma>uitium</lemma></entry><entry n="uitta"><lemma>uitta</lemma></entry><entry n="uitula"><lemma>uitula</lemma></entry><entry n="uiuax"><lemma>uiuax</lemma></entry><entry n="uiuo"><lemma>uiuo</lemma></entry><entry n="uiuus2"><lemma>uiuus2</lemma></entry><entry n="ullus"><lemma>ullus</lemma></entry><entry n="ulna"><lemma>ulna</lemma></entry><entry n="ultimus"><lemma>ultimus</lemma></entry><entry n="ultra2"><lemma>ultra2</lemma></entry><entry n="ultro"><lemma>ultro</lemma></entry><entry n="ulua"><lemma>ulua</lemma></entry><entry n="ulula"><lemma>ulula</lemma></entry><entry n="umbraculum"><lemma>umbraculum</lemma></entry><entry n="umbrosus"><lemma>umbrosus</lemma></entry><entry n="una"><lemma>una</lemma></entry><entry n="unda"><lemma>unda</lemma></entry><entry n="unde2"><lemma>unde2</lemma></entry><entry n="undecimus"><lemma>undecimus</lemma></entry><entry n="unus"><lemma>unus</lemma></entry><entry n="uolo?"><lemma>uolo?</lemma></entry><entry n="uolucris"><lemma>uolucris</lemma></entry><entry n="uoluo"><lemma>uoluo</lemma></entry><entry n="uoluptas"><lemma>uoluptas</lemma></entry><entry n="uotum"><lemma>uotum</lemma></entry><entry n="uox"><lemma>uox</lemma></entry><entry n="upilius"><lemma>upilius</lemma></entry><entry n="uro"><lemma>uro</lemma></entry><entry n="usus"><lemma>usus</lemma></entry><entry n="ut"><lemma>ut</lemma></entry><entry n="ut2"><lemma>ut2</lemma></entry><entry n="ut4"><lemma>ut4</lemma></entry><entry n="uterque"><lemma>uterque</lemma></entry><entry n="utinam"><lemma>utinam</lemma></entry><entry n="uua"><lemma>uua</lemma></entry><entry n="uuidus"><lemma>uuidus</lemma></entry><entry n="uulgo2"><lemma>uulgo2</lemma></entry><entry n="uulpes"><lemma>uulpes</lemma></entry><entry n="uxor"><lemma>uxor</lemma></entry><entry n="zephyrus"><lemma>zephyrus</lemma></entry><entry n="&#8212;"><lemma>&#8212;</lemma></entry><entry n="&#8220;"><lemma>&#8220;</lemma></entry><entry n="&#8221;"><lemma>&#8221;</lemma></entry></body>

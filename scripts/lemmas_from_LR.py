@@ -4,7 +4,7 @@ import os
 import xml.etree.ElementTree as ET
 
 path = os.path.abspath(os.path.join(os.path.dirname(__file__),".."))
-path += "/resources/eclogue1LR.xml"
+path += "/docs/lascivaroma.xml"
 print(path)
 
 words = []
@@ -27,6 +27,6 @@ with open(path) as file:
     for word in words:
         csv_text += word + "\n"
 
-    with open("/home/jacknoutch/ecl_commentary/resources/lemmas.csv", "w") as file2:
+    with open("docs/lemmas.csv", "w") as file2:
 
         file2.write(csv_text)

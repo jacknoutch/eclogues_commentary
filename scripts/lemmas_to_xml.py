@@ -4,8 +4,8 @@ import os, csv, xml
 import xml.etree.ElementTree as ET
 
 file_path = os.path.abspath(os.path.join(os.path.dirname(__file__),".."))
-csv_path = file_path + "/resources/lemmas.csv"
-xml_path = file_path + "/resources/glosses.xml"
+csv_path = file_path + "/docs/lemmas.csv"
+xml_path = file_path + "/docs/glosses.xml"
 
 words = []
 csv_text = ""
