@@ -275,8 +275,10 @@ function loadParseData(xmlWord) {
 
 function loadPrincipalPartData(lemma, lexicon) {
     const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    console.log(entry)
     if (!entry) return null;
     const pp = entry.querySelector("pp");
+    console.log(pp)
     if (pp != null) {
         return pp.innerHTML;
     }
