@@ -1046,7 +1046,7 @@
     </entry>
     <entry n="aestus">
         <lemma>aestus</lemma>
-        <gloss>an agitation, glow, heat, rage of fire</gloss>
+        <gloss>heat</gloss>
         <pp>aestus, aestūs</pp>
         <gen>m.</gen>
     </entry>
@@ -1303,7 +1303,7 @@
     </entry>
     <entry n="ante2">
         <lemma>ante2</lemma>
-        <gloss>
+        <gloss />
     </entry>
     <entry n="antiqui">
         <lemma>antiqui</lemma>
@@ -1385,7 +1385,7 @@
     </entry>
     <entry n="arbustum">
         <lemma>arbustum</lemma>
-        <gloss>a place where trees are planted, plantation, vineyard planted with trees</gloss>
+        <gloss>orchard, plantation</gloss>
         <pp>arbustum, arbustī</pp>
         <gen>n.</gen>
     </entry>
@@ -1756,7 +1756,7 @@
     </entry>
     <entry n="capto">
         <lemma>capto</lemma>
-        <gloss>to strive to seize, lay hold of, catch at, snatch, chase, hunt, capture</gloss>
+        <gloss>to try to seize, lay hold of, chase, hunt, capture</gloss>
         <pp>captō, captāre, captāuī, captātum</pp>
     </entry>
     <entry n="caput">
@@ -2155,7 +2155,7 @@
     </entry>
     <entry n="contundo">
         <lemma>contundo</lemma>
-        <gloss>to beat, bruise, grind, crush, pound, break to pieces</gloss>
+        <gloss>to beat, bruise, grind</gloss>
         <pp>contundo, contundere, contudi, contunsum</pp>
     </entry>
     <entry n="conuenio">
@@ -2256,7 +2256,7 @@
     </entry>
     <entry n="crudelis">
         <lemma>crudelis</lemma>
-        <gloss>rude, unfeeling, hard, unmerciful, hard - hearted, cruel, severe, fierce</gloss>
+        <gloss>rude, unfeeling, hard, cruel</gloss>
         <pp>crūdēlis, crūdēle</pp>
     </entry>
     <entry n="cubile">
@@ -2317,7 +2317,7 @@
     </entry>
     <entry n="curo">
         <lemma>curo</lemma>
-        <gloss>to care for, take pains with, be solicitous for, look to, attend to, regard</gloss>
+        <gloss>to care for, attend to</gloss>
         <pp>curo, curare, curaui, curatum</pp>
     </entry>
     <entry n="curro">
@@ -2475,12 +2475,11 @@
     </entry>
     <entry n="denique">
         <lemma>denique</lemma>
-        <gloss>and thenceforward, and thereafter, at last, at length, finally, lastly, only, not
-            until</gloss>
+        <gloss>finally, lastly, only, until</gloss>
     </entry>
     <entry n="densus">
         <lemma>densus</lemma>
-        <gloss>thick, close, compact, dense, crowded</gloss>
+        <gloss>thick, compact, dense, crowded</gloss>
         <pp>densus, densa, densum</pp>
     </entry>
     <entry n="depascor">
@@ -2676,7 +2675,7 @@
     </entry>
     <entry n="dominus">
         <lemma>dominus</lemma>
-        <gloss>a master, possessor, ruler, lord, proprietor, owner</gloss>
+        <gloss>master, lord</gloss>
         <pp>dominus, dominī</pp>
         <gen>m.</gen>
     </entry>
@@ -2717,7 +2716,7 @@
     </entry>
     <entry n="dum2">
         <lemma>dum2</lemma>
-        <gloss>while, whilst, at the time that, during the time in which, where</gloss>
+        <gloss>while, whilst</gloss>
     </entry>
     <entry n="dumosus">
         <lemma>dumosus</lemma>
@@ -3060,7 +3059,7 @@
     </entry>
     <entry n="fessus">
         <lemma>fessus</lemma>
-        <gloss>wearied, tired, fatigued, exhausted, worn out, weak, feeble, infirm</gloss>
+        <gloss>wearied, tired, infirm</gloss>
         <pp>fessus, fessa, fessum</pp>
     </entry>
     <entry n="fetura">
@@ -3255,7 +3254,7 @@
     </entry>
     <entry n="frigus">
         <lemma>frigus</lemma>
-        <gloss>cold, coldness, coolness, chilliness</gloss>
+        <gloss>cold, coolness</gloss>
         <pp>frīgus, frīgoris</pp>
         <gen>n.</gen>
     </entry>
@@ -3440,7 +3439,7 @@
     </entry>
     <entry n="habeo">
         <lemma>habeo</lemma>
-        <gloss>to have, hold, support, carry, wear</gloss>
+        <gloss>to have, hold, wear</gloss>
         <pp>habeō, habēre, habuī, habitum</pp>
     </entry>
     <entry n="habito">
@@ -3480,7 +3479,7 @@
     </entry>
     <entry n="herba">
         <lemma>herba</lemma>
-        <gloss>an herb, grass, green blades, herbage, turf</gloss>
+        <gloss>herb, grass</gloss>
         <pp>herba, herbae</pp>
         <gen>f.</gen>
     </entry>
@@ -3901,7 +3900,7 @@
     </entry>
     <entry n="inter">
         <lemma>inter</lemma>
-        <gloss>between, betwixt</gloss>
+        <gloss>between</gloss>
     </entry>
     <entry n="interea">
         <lemma>interea</lemma>
@@ -3952,7 +3951,7 @@
     </entry>
     <entry n="ira">
         <lemma>ira</lemma>
-        <gloss>anger, wrath, rage, ire, passion, indignation</gloss>
+        <gloss>anger, wrath</gloss>
         <pp>īra, īrae</pp>
         <gen>f.</gen>
     </entry>
@@ -4369,7 +4368,7 @@
     </entry>
     <entry n="lustro2">
         <lemma>lustro2</lemma>
-        <gloss>a wanderer, vagabond</gloss>
+        <gloss>purify; go round, wander over</gloss>
         <pp>lustro, lustrare, lustraui, lustratum</pp>
     </entry>
     <entry n="luteolus">
@@ -4593,7 +4592,7 @@
     </entry>
     <entry n="meus">
         <lemma>meus</lemma>
-        <gloss>of me, my, mine, belonging to me, my own</gloss>
+        <gloss>my, mine</gloss>
         <pp>meus, mea, meum</pp>
     </entry>
     <entry n="migro">
@@ -4637,7 +4636,7 @@
     </entry>
     <entry n="misereor">
         <lemma>misereor</lemma>
-        <gloss>to feel pity, have compassion, pity, compassionate, commiserate</gloss>
+        <gloss>to feel pity, have compassion, pity</gloss>
         <pp>misereor, misererī, miseritus</pp>
     </entry>
     <entry n="mitesco">
@@ -4690,7 +4689,7 @@
     </entry>
     <entry n="mons">
         <lemma>mons</lemma>
-        <gloss>a mountain, mount, range of mountains</gloss>
+        <gloss>mountain</gloss>
         <pp>mons, montis</pp>
         <gen>f.</gen>
     </entry>
@@ -5101,7 +5100,7 @@
     </entry>
     <entry n="occulto">
         <lemma>occulto</lemma>
-        <gloss />
+        <gloss>to hide, conceal</gloss>
         <pp>occulto, occultare, occultaui, occultatum</pp>
     </entry>
     <entry n="occurso">
@@ -5139,7 +5138,7 @@
     </entry>
     <entry n="oleo">
         <lemma>oleo</lemma>
-        <gloss>to emit a smell, smell of, smell</gloss>
+        <gloss>to smell of, smell</gloss>
         <pp>oleo, olere, olui</pp>
     </entry>
     <entry n="olim">
@@ -5464,7 +5463,6 @@
     <entry n="pecus">
         <lemma>pecus</lemma>
         <gloss>one animal of a flock; a sheep, a cow</gloss>
-        <pp>pecus, pecudis</pp>
         <gen>f.</gen>
     </entry>
     <entry n="pecus1">
@@ -5475,7 +5473,8 @@
     </entry>
     <entry n="pecus2">
         <lemma>pecus2</lemma>
-        <gloss>a head of cattle, beast, brute, animal, one of a herd</gloss>
+        <gloss>one animal of a flock; a sheep, a cow</gloss>
+        <pp>pecus, pecudis</pp>
         <gen>n.</gen>
     </entry>
     <entry n="pellis">
@@ -6164,7 +6163,7 @@
     </entry>
     <entry n="rapidus">
         <lemma>rapidus</lemma>
-        <gloss>tearing away, seizing, fierce</gloss>
+        <gloss>quick, fierce</gloss>
         <pp>rapidus, rapida, rapidum</pp>
     </entry>
     <entry n="rapio">
@@ -6901,7 +6900,7 @@
     </entry>
     <entry n="spero">
         <lemma>spero</lemma>
-        <gloss>to hope, look for, trust, expect, promise oneself</gloss>
+        <gloss>to hope, look for</gloss>
         <pp>spero, sperare, speraui, speratum</pp>
     </entry>
     <entry n="spes">
@@ -6989,8 +6988,7 @@
     </entry>
     <entry n="studium">
         <lemma>studium</lemma>
-        <gloss>application, assiduity, zeal, eagerness, fondness, inclination, desire, exertion,
-            endeavor, study</gloss>
+        <gloss>eagerness, desire, study</gloss>
         <pp>studium, studiī</pp>
         <gen>n.</gen>
     </entry>
@@ -7457,7 +7455,7 @@
     </entry>
     <entry n="tristis">
         <lemma>tristis</lemma>
-        <gloss>sad, sorrowful, mournful, dejected, melancholy, gloomy, downcast, disconsolate</gloss>
+        <gloss>sad, sorrowful, mournful</gloss>
         <pp>tristis, triste</pp>
     </entry>
     <entry n="triuium">
@@ -7520,7 +7518,7 @@
     </entry>
     <entry n="tuus">
         <lemma>tuus</lemma>
-        <gloss>thy, thine, your, yours</gloss>
+        <gloss>your, yours (sg)</gloss>
         <pp>tuus, tua, tuum</pp>
     </entry>
     <entry n="uacca">
@@ -7690,7 +7688,7 @@
     </entry>
     <entry n="uestigium">
         <lemma>uestigium</lemma>
-        <gloss>the bottom of the foot, sole; footprint, trace</gloss>
+        <gloss>sole of foot; footprint, trace</gloss>
         <pp>uestigium, uestigii</pp>
         <gen>n.</gen>
     </entry>
@@ -7928,7 +7926,7 @@
     </entry>
     <entry n="umbrosus">
         <lemma>umbrosus</lemma>
-        <gloss>full of shade, rich in shade, shady, umbrageous</gloss>
+        <gloss>shady</gloss>
         <pp>umbrōsus, umbrōsa, umbrōsum</pp>
     </entry>
     <entry n="umquam">

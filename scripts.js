@@ -325,6 +325,7 @@ function loadGenderData(lemma, lexicon) {
 
 function loadGlossData(lemma, lexicon) {
     const entry = lexicon.querySelector(`entry[n='${lemma}']`);
+    console.log(lemma)
     if (!entry) return null;
     const glossEl = entry.querySelector("gloss");
     if (!glossEl) return null;
