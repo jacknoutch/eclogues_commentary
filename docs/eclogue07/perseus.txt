@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Scaife Viewer | </title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        
+  <link type="text/css" href="/site_media/static/1.cddce4cf4329b878b136.f76fc154fd9f.css" rel="stylesheet" />
+  <link type="text/css" href="/site_media/static/main.cddce4cf4329b878b136.645fadeb1bfe.css" rel="stylesheet" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107671034-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-107671034-1');
+</script>
+
+
+  
+
+    </head>
+    <body class="" id="body" >
+        <div class="">
+
+            
+  <header>
+    <nav>
+      <div class="container">
+        
+          
+          <div class="row">
+            <div class="col pr-0">
+              <a class="navbar-brand" href="/">
+                <img src="/site_media/static/images/perseus_running_man_small.png" style="margin: 0;">
+              </a>
+            </div>
+            <div class="col pl-0">
+              <a class="navbar-brand" href="/">
+                <span>Scaife Viewer <br /><small class="fs-6 mt-2">Hosted by Tufts University</small></span>
+              </a>
+            </div>
+          </div>
+          
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="fa fa-bars"></span>
+            </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+              <ul class="navbar-nav mr-auto">
+                
+                  <li class="nav-item"><a class="nav-link" href="/library/">Browse Library</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/search/">Text Search</a></li>
+                
+              </ul>
+            
+            
+          </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+            
+  <div id="app"></div>
+
+
+            
+        </div>
+
+        
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/site_media/static/vendor-cddce4cf4329b878b136.f7a8af42e776.js" ></script>
+    <script type="text/javascript" src="/site_media/static/main-cddce4cf4329b878b136.0c5cdd540d4a.js" ></script>
+
+
+        
+
+        
+  
+  
+
+    </body>
+</html>

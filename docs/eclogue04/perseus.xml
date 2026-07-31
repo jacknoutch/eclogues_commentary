@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:py="http://codespeak.net/lxml/objectify/pytype"
+    py:pytype="TREE">
+    <text>
+        <body>
+            <div type="edition" xml:lang="lat" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2">
+                <div type="textpart" subtype="poem" n="4">
+                    <head>ECLOGA IV.</head>
+                    <lg type="stanza">
+                        <l n="1">Sicelides Musae, paulo maiora canamus!</l>
+                        <l n="2">Non omnis arbusta iuvant humilesque myricae;</l>
+                        <l n="3">si canimus silvas, silvae sint consule dignae.</l>
+                        <l n="4">Ultima Cumaei venit iam carminis aetas;</l>
+                        <l n="5">magnus ab integro saeclorum nascitur ordo:</l>
+                        <l n="6">iam redit et Virgo, redeunt Saturnia regna;</l>
+                        <l n="7">iam nova progenies caelo demittitur alto.</l>
+                        <l n="8">Tu modo nascenti puero, quo ferrea primum</l>
+                        <l n="9">desinet ac toto surget gens aurea mundo,</l>
+                        <l n="10">casta fave Lucina: tuus iam regnat Apollo.</l>
+                    </lg>
+                    <lg>
+                        <l n="11">Teque adeo decus hoc aevi te consule inibit,</l>
+                        <l n="12">Pollio, et incipient magni procedere menses.</l>
+                        <l n="13">te duce, si qua manent sceleris vestigia nostri,</l>
+                        <l n="14">inrita perpetua solvent formidine terras.</l>
+                        <l n="15">ille deum vitam accipiet, divisque videbit</l>
+                        <l n="16">permixtos heroas, et ipse videbitur illis,</l>
+                        <l n="17">pacatumque reget patriis virtutibus orbem.</l>
+                    </lg>
+                    <lg>
+                        <l n="18"> At tibi prima, puer, nullo munuscula cultu</l>
+                        <l n="19">errantis hederas passim cum baccare tellus</l>
+                        <l n="20">mixtaque ridenti colocasia fundet acantho.</l>
+                        <l n="21">Ipsae lacte domum referent distenta capellae</l>
+                        <l n="22">ubera, nec magnos metuent armenta leones;</l>
+                        <l n="23">ipsa tibi blandos fundent cunabula flores,</l>
+                        <l n="24">occidet et serpens, et fallax herba veneni</l>
+                        <l n="25">occidet, Assyrium volgo nascetur amomum.</l>
+                        <l n="26">at simul heroum laudes et facta parentis</l>
+                        <l n="27">iam legere et quae sit poteris cognoscere virtus,</l>
+                        <l n="28">molli paulatim flavescet campus arista,</l>
+                        <l n="29">incultisque rubens pendebit sentibus uva,</l>
+                        <l n="30">et durae quercus sudabunt roscida mella</l>
+                        <l n="31">Pauca tamen suberunt priscae vestigia fraudis,</l>
+                        <l n="32">quae temptare Thetim ratibus, quae cingere muris</l>
+                        <l n="33">oppida, quae iubeant telluri infindere sulcos:</l>
+                        <l n="34">alter erit tum Tiphys, et altera quae vehat Argo</l>
+                        <l n="35">delectos Heroas; erunt etiam altera bella,</l>
+                        <l n="36">atque iterum ad Troiam magnus mittetur Achilles.</l>
+                        <l n="37">Hinc, ubi iam firmata virum te fecerit aetas,</l>
+                        <l n="38">cedet et ipse mari vector, nec nautica pinus</l>
+                        <l n="39">mutabit merces: omnis feret omnia tellus:</l>
+                        <l n="40">non rastros patietur humus, non vinea falcem;</l>
+                        <l n="41">robustus quoque iam tauris iuga solvet arator;</l>
+                        <l n="42">nec varios discet mentiri lana colores:</l>
+                        <l n="43">ipse sed in pratis aries iam suave rubenti</l>
+                        <l n="44">murice, iam croceo mutabit vellera luto;</l>
+                        <l n="45">sponte sua sandyx pascentis vestiet agnos.</l>
+                    </lg>
+                    <lg>
+                        <l n="46"> Talia saecla, suis dixerunt, currite, fusis</l>
+                        <l n="47">concordes stabili fatorum numine Parcae.</l>
+                        <l n="48">Adgredere o magnos—aderit iam tempus—honores,</l>
+                        <l n="49">cara deum suboles, magnum Iovis incrementum!</l>
+                        <l n="50">Aspice convexo nutantem pondere mundum,</l>
+                        <l n="51">terrasque tractusque maris caelumque profundum!</l>
+                        <l n="52">Aspice, venturo laetentur ut omnia saeclo!</l>
+                        <l n="53">O mihi tam longae maneat pars ultima vitae,</l>
+                        <l n="54">spiritus et quantum sat erit tua dicere facta!</l>
+                        <l n="55">Non me carminibus vincet nec Thracius Orpheus,</l>
+                        <l n="56">nec Linus, huic mater quamvis atque huic pater adsit,</l>
+                        <l n="57">Orphei Calliopea, Lino formosus Apollo,</l>
+                        <l n="58">Pan etiam, Arcadia mecum si iudice certet,</l>
+                        <l n="59">Pan etiam Arcadia dicat se iudice victum.</l>
+                        <l n="60">Incipe, parve puer, risu cognoscere matrem,</l>
+                        <l n="61">matri longa decem tulerunt fastidia menses.</l>
+                        <l n="62">Incipe, parve puer, cui non risere parentes,</l>
+                        <l n="63">nec deus hunc mensa, dea nec dignata cubili est.</l>
+                    </lg>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

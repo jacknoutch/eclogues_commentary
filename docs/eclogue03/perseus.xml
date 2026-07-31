@@ -1,0 +1,243 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:py="http://codespeak.net/lxml/objectify/pytype"
+    py:pytype="TREE">
+    <text>
+        <body>
+            <div type="edition" xml:lang="lat" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2">
+                <div type="textpart" subtype="poem" n="3">
+                    <head>ECLOGA III. MENALCAS, DAMOETAS, PALAEMON</head>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="1">Dic mihi, Damoeta, cuium pecus, an Meliboei?</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="2">Non, verum Aegonis; nuper mihi tradidit Aegon.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="3">Infelix o semper, ovis, pecus, ipse Neaeram</l>
+                        <l n="4">dum fovet, ac ne me sibi praeferat illa veretur,</l>
+                        <l n="5">hic alienus ovis custos bis mulget in hora,</l>
+                        <l n="6">et sucus pecori et lac subducitur agnis.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="7">Parcius ista viris tamen obicienda memento:</l>
+                        <l n="8">novimus et qui te, transversa tuentibus hircis,</l>
+                        <l n="9">et quo—sed faciles Nymphae risere—sacello.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="10">Tum, credo, cum me arbustum videre Miconis</l>
+                        <l n="11">atque mala vitis incidere falce novellas.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="12">Aut hic ad veteres fagos cum Daphnidis arcum</l>
+                        <l n="13">fregisti et calamos quae tu, perverse Menalca,</l>
+                        <l n="14">et cum vidisti puero donata, dolebas,</l>
+                        <l n="15">et si non aliqua nocuisses, mortuus esses.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="16">Quid domini faciant, audent cum talia fures!</l>
+                        <l n="17">non ego te vidi Damonis, pessime, caprum</l>
+                        <l n="18">excipere insidiis, multum latrante Lycisca?</l>
+                        <l n="19">et cum clamarem: “Quo nunc se proripit ille?</l>
+                        <l n="20">Tityre, coge pecus,” tu post carecta latebas.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="21">An mihi cantando victus non redderet ille</l>
+                        <l n="22">quem mea carminibus meruisset fistula caprum?</l>
+                        <l n="23">Si nescis, meus ille caper fuit; et mihi Damon</l>
+                        <l n="24">ipse fatebatur, sed reddere posse negabat.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="25">Cantando tu illum, aut umquam tibi fistula cera</l>
+                        <l n="26">iuncta fuit? Non tu in triviis, indocte, solebas</l>
+                        <l n="27">stridenti miserum stipula disperdere carmen?</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="28">Vis ergo inter nos quid possit uterque vicissim</l>
+                        <l n="29">experiamur? Ego hanc vitulam—ne forte recuses,</l>
+                        <l n="30">bis venit ad mulctram, binos alit ubere fetus—</l>
+                        <l n="31">depono: tu dic, mecum quo pignore certes.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="32">De grege non ausim quicquam deponere tecum.</l>
+                        <l n="33">Est mihi namque domi pater, est iniusta noverca;</l>
+                        <l n="34">bisque die numerant ambo pecus, alter et haedos.</l>
+                        <l n="35">Verum, id quod multo tute ipse fatebere maius,</l>
+                        <l n="36">insanire libet quoniam tibi, pocula ponam</l>
+                        <l n="37">fagina, caelatum divini opus Alcimedontis;</l>
+                        <l n="38">lenta quibus torno facili superaddita vitis</l>
+                        <l n="39">diffusos hedera vestit pallente corymbos:</l>
+                        <l n="40">in medio duo signa, Conon, et—quis fuit alter,</l>
+                        <l n="41">descripsit radio totum qui gentibus orbem,</l>
+                        <l n="42">tempora quae messor, quae curvus arator haberet?</l>
+                        <l n="43">Necdum illis labra admovi, sed condita servo.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="44">Et nobis idem Alcimedon duo pocula fecit,</l>
+                        <l n="45">et molli circum est ansas amplexus acantho,</l>
+                        <l n="46">Orpheaque in medio posuit silvasque sequentis.</l>
+                        <l n="47">Necdum illis labra admovi, sed condita servo:</l>
+                        <l n="48">si ad vitulam spectas, nihil est quod pocula laudes.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="49">Nunquam hodie effugies; veniam, quocumque vocari</l>
+                        <l n="50">audiat haec tantum—vel qui venit ecce Palaemon</l>
+                        <l n="51">efficiam posthac ne quemquam voce lacessas.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="52">Quin age, si quid habes, in me mora non erit ulla,</l>
+                        <l n="53">nec quemquam fugio: tantum, vicine Palaemon,</l>
+                        <l n="54">sensibus haec imis, res est non parva, reponas.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Palaemon</speaker>
+                        <l n="55">Dicite, quandoquidem in molli consedimus herba:</l>
+                        <l n="56">et nunc omnis ager, nunc omnis parturit arbos,</l>
+                        <l n="57">nunc frondent silvae, nunc formosissimus annus.</l>
+                        <l n="58">Incipe, Darmoeta; tu deinde sequere Menalca:</l>
+                        <l n="59">alternis dicetis; amant alterna Camenae.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="60">Ab Iove principium, Musae; Iovis omnia plena:</l>
+                        <l n="61">ille colit terras, illi mea carmina curae.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="62">Et me Phoebus amat; Phoebo sua semper apud me</l>
+                        <l n="63">munera sunt, lauri et suave rubens hyacinthus.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="64">Malo me Galatea petit, lasciva puella,</l>
+                        <l n="65">et fugit ad salices, et se cupit ante videri.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="66">At mihi sese offert ultro, meus ignis, Amyntas,</l>
+                        <l n="67">notior ut iam sit canibus non Delia nostris.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="68">Parta meae Veneri sunt munera: namque notavi</l>
+                        <l n="69">ipse locum, aëriae quo congessere palumbes.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="70">Quod potui, puero silvestri ex arbore lecta</l>
+                        <l n="71">aurea mala decem misi; cras altera mittam.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="72">O quotiens et quae nobis Galatea locuta est!</l>
+                        <l n="73">partem aliquam, venti, divom referatis ad auris!</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="74">Quid prodest, quod me ipse animo non spernis, Amynta.</l>
+                        <l n="75">si, dum tu sectaris apros, ego retia servo?</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="76">Phyllida mitte mihi: meus est natalis, Iolla;</l>
+                        <l n="77">cum faciam vitula pro frugibus, ipse venito.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="78">Phyllida amo ante alias; nam me discedere flevit,</l>
+                        <l n="79">et longum “formose, vale, vale,” inquit, “Iolla.”</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="80">Triste lupus stabulis, maturis frugibus imbres.</l>
+                        <l n="81">arboribus venti, nobis Amaryllidis irae.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="82">Dulce satis umor, depulsis arbutus haedis,</l>
+                        <l n="83">lenta salix feto pecori, mihi solus Amyntas.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="84">Pollio amat nostram, quamvis est rustica, Musam:</l>
+                        <l n="85">Pierides vitulam lectori pascite vestro.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="86">Pollio et ipse facit nova carmina: pascite taurum,</l>
+                        <l n="87">iam cornu petat et pedibus qui spargat arenam.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="88">Qui te, Pollio, amat, veniat quo te quoque gaudet:</l>
+                        <l n="89">mella fluant illi, ferat et rubus asper amomum.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="90">Qui Bavium non odit, amet tua carmina, Maevi,</l>
+                        <l n="91">atque idem iungat vulpes et mulgeat hircos.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="92">Qui legitis flores et humi nascentia fraga,</l>
+                        <l n="93">frigidus, O pueri, fugite hinc, latet anguis in herba.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="94">Parcite, oves, nimium procedere; non bene ripae</l>
+                        <l n="95">creditur; ipse aries etiam nunc vellera siccat.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="96">Tityre, pascentes a flumine reice capellas:</l>
+                        <l n="97">ipse ubi tempus erit, omnis in fonte lavabo.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="98">Cogite ovis, pueri; si lac praeceperit aestus,</l>
+                        <l n="99">ut nuper, frustra pressabimus ubera palmis.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="100">Heu, heu, quam pingui macer est mihi taurus in ervo!</l>
+                        <l n="101">Idem amor exitium est pecori pecorisque magistro.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="102">His certe neque amor causa est; vix ossibus haerent.</l>
+                        <l n="103">nescio quis teneros oculus mihi fascinat agnos.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Damoetas</speaker>
+                        <l n="104">Dic, quibus in terris—et eris mihi magnus Apollo—</l>
+                        <l n="105">tris pateat caeli spatium non amplius ulnas.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="106">Dic, quibus in terris inscripti nomina regum</l>
+                        <l n="107">nascantur flores, et Phyllida solus habeto.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Palaemon</speaker>
+                        <l n="108">Non nostrum inter vos tantas componere lites.</l>
+                        <l n="109">Et vitula tu dignus, et hic, et quisquis amores</l>
+                        <l n="110">aut metuet dulces, aut experietur amaros.</l>
+                        <l n="111">Claudite iam rivos, pueri, sat prata biberunt.</l>
+                    </sp>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
