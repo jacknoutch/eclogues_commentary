@@ -1,1 +1,150 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="TREE"><text><body><div type="edition" xml:lang="lat" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2"><div type="textpart" subtype="poem" n="5"><head>ECLOGA V. MENALCAS, MOPSUS</head><sp><speaker>Menalcas</speaker><l n="1">Cur non, Mopse, boni quoniam convenimus ambo,</l><l n="2">tu calamos inflare levis, ego dicere versus,</l><l n="3">hic corylis mixtas inter consedimus ulmos?</l></sp><sp><speaker>Mopsus</speaker><l n="4">Tu maior; tibi me est aequum parere, Menalca,</l><l n="5">sive sub incertas zephyris motantibus umbras,</l><l n="6">sive antro potius succedimus: aspice, ut antrum</l><l n="7">silvestris raris sparsit labrusca racemis.</l></sp><sp><speaker>Menalcas</speaker><l n="8">Montibus in nostris solus tibi certat Amyntas.</l></sp><sp><speaker>Mopsus</speaker><l n="9">Quid, si idem certet Phoebum superare canendo?</l></sp><sp><speaker>Menalcas</speaker><l n="10">Incipe, Mopse, prior, si quos aut Phyllidis ignes,</l><l n="11">aut Alconis habes laudes, aut iurgia Codri:</l><l n="12">incipe, pascentis servabit Tityrus haedos.</l></sp><sp><speaker>Mopsus</speaker><l n="13">Immo haec, in viridi nuper quae cortice fagi</l><l n="14">carmina descripsi et modulans alterna notavi,</l><l n="15">experiar, tu deinde iubeto ut certet Amyntas.</l></sp><sp><speaker>Menalcas</speaker><l n="16">Lenta salix quantum pallenti cedit olivae,</l><l n="17">puniceis humilis quantum saliunca rosetis,</l><l n="18">iudicio nostro tantum tibi cedit Amyntas.</l><l n="19">sed tu desine plura, puer; successimus antro.</l></sp><sp><speaker>Mopsus</speaker><l n="20">Extinctum nymphae crudeli funere Daphnim</l><l n="21">flebant; vos coryli testes et flumina nymphis;</l><l n="22">cum complexa sui corpus miserabile nati,</l><l n="23">atque deos atque astra vocat crudelia mater.</l><l n="24">Non ulli pastos illis egere diebus</l><l n="25">frigida, Daphni, boves ad flumina; nulla neque amnem</l><l n="26">libavit quadrupes, nec graminis attigit herbam.</l><l n="27">Daphni, tuum Poenos etiam ingemuisse leones</l><l n="28">interitum montesque feri silvaeque loquuntur.</l><l n="29">Daphnis et Armenias curru subiungere tigres</l><l n="30">instituit; Daphnis thiasos inducere Bacchi,</l><l n="31">et foliis lentas intexere mollibus hastas.</l><l n="32">Vitis ut arboribus decori est, ut vitibus uvae,</l><l n="33">ut gregibus tauri, segetes ut pinguibus arvis,</l><l n="34">tu decus omne tuis. Postquam te fata tulerunt,</l><l n="35">ipsa Pales agros atque ipse reliquit Apollo.</l><l n="36">Grandia saepe quibus mandavimus hordea sulcis,</l><l n="37">infelix lolium et steriles nascuntur avenae;</l><l n="38">pro molli viola, pro purpureo narcisso,</l><l n="39">carduus et spinis surgit paliurus acutis.</l><l n="40">Spargite humum foliis, inducite fontibus umbras,</l><l n="41">pastores, mandat fieri sibi talia Daphnis;</l><l n="42">et tumulum facite, et tumulo superaddite carmen:</l><l n="43"><quote n="inscription">DAPHNIS EGO IN SILVIS HINC VSQUE AD SIDERA NOTVS</quote></l><l n="44"><quote n="inscription">FORMONSI PECORIS CVSTOS FORMONSIOR IPSE.</quote></l></sp><sp><speaker>Menalcas</speaker><l n="45">Tale tuum carmen nobis, divine poeta,</l><l n="46">quale sopor fessis in gramine, quale per aestum</l><l n="47">dulcis aquae saliente sitim restinguere rivo:</l><l n="48">nec calamis solum aequiparas, sed voce magistrum.</l><l n="49"><del>Fortunate puer, tu nunc eris alter ab illo.</del></l><l n="50">Nos tamen haec quocumque modo tibi nostra vicissim</l><l n="51">dicemus, Daphnimque tuum tollemus ad astra;</l><l n="52">Daphnin ad astra feremus: amavit nos quoque Daphnis.</l></sp><sp><speaker>Mopsus</speaker><l n="53">An quicquam nobis tali sit munere maius</l><l n="54">Et puer ipse fuit cantari dignus, et ista</l><l n="55">iam pridem Stimichon laudavit carmina nobis.</l></sp><sp><speaker>Menalcas</speaker><l n="56">Candidus insuetum miratur limen Olympi,</l><l n="57">sub pedibusque videt nubes et sidera Daphnis.</l><l n="58">ergo alacris silvas et cetera rura voluptas</l><l n="59">Panaque pastoresque tenet, Dryadasque puellas;</l><l n="60">nec lupus insidias pecori, nec retia cervis</l><l n="61">ulla dolum meditantur: amat bonus otia Daphnis.</l><l n="62">ipsi laetitia voces ad sidera iactant</l><l n="63">intonsi montes; ipsae iam carmina rupes,</l><l n="64">ipsa sonant arbusta: “Deus, deus ille, Menalca.”</l><l n="65">Sis bonus O felixque tuis! En quattuor aras:</l><l n="66">ecce duas tibi, Daphni, duas altaria Phoebo.</l><l n="67">pocula bina novo spumantia lacte quotannis,</l><l n="68">craterasque duo statuam tibi pinguis olivi,</l><l n="69">et multo in primis hilarans convivia Baccho,—</l><l n="70">ante focum, si frigus erit, si messis, in umbra,—</l><l n="71">vina novum fundam calathis Ariusia nectar.</l><l n="72">cantabunt mihi Damoetas et Lyctius Aegon;</l><l n="73">saltantis satyros imitabitur Alphesiboeus.</l><l n="74">Haec tibi semper erunt, et cum solemnia vota</l><l n="75">reddemus Nymphis, et cum lustrabimus agros.</l><l n="76">Dum iuga montis aper, fluvios dum piscis amabit,</l><l n="77">dumque thymo pascentur apes, dum rore cicadae,</l><l n="78">semper honos nomenque tuum laudesque manebunt;</l><l n="79">ut Baccho Cererique, tibi sic vota quotannis</l><l n="80">agricolae facient: damnabis tu quoque votis.</l></sp><sp><speaker>Mopsus</speaker><l n="81">Quae tibi, quae tali reddam pro carmine dona?</l><l n="82">Nam neque me tantum venientis sibilus austri,</l><l n="83">nec percussa iuvant fluctu tam litora, nec quae</l><l n="84">saxosas inter decurrunt flumina valles.</l></sp><sp><speaker>Menalcas</speaker><l n="85">Hac te nos fragili donabimus ante cicuta:</l><l n="86">haec nos, “Formosum Corydon ardebat Alexim,”</l><l n="87">haec eadem docuit, “Cuium pecus, an Meliboei?”</l></sp><sp><speaker>Mopsus</speaker><l n="88">At tu sume pedum, quod, me cum saepe rogaret,</l><l n="89">non tulit Antigenes—et erat tum dignus amari—</l><l n="90">formosum paribus nodis atque aere, Menalca.</l></sp></div></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:py="http://codespeak.net/lxml/objectify/pytype"
+    py:pytype="TREE">
+    <text>
+        <body>
+            <div type="edition" xml:lang="lat" n="urn:cts:latinLit:phi0690.phi001.perseus-lat2">
+                <div type="textpart" subtype="poem" n="5">
+                    <head>ECLOGA V. MENALCAS, MOPSUS</head>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="1">Cur non, Mopse, boni quoniam convenimus ambo,</l>
+                        <l n="2">tu calamos inflare levis, ego dicere versus,</l>
+                        <l n="3">hic corylis mixtas inter consedimus ulmos?</l>
+                    </sp>
+                    <sp>
+                        <speaker>Mopsus</speaker>
+                        <l n="4">Tu maior; tibi me est aequum parere, Menalca,</l>
+                        <l n="5">sive sub incertas zephyris motantibus umbras,</l>
+                        <l n="6">sive antro potius succedimus: aspice, ut antrum</l>
+                        <l n="7">silvestris raris sparsit labrusca racemis.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="8">Montibus in nostris solus tibi certat Amyntas.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Mopsus</speaker>
+                        <l n="9">Quid, si idem certet Phoebum superare canendo?</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="10">Incipe, Mopse, prior, si quos aut Phyllidis ignes,</l>
+                        <l n="11">aut Alconis habes laudes, aut iurgia Codri:</l>
+                        <l n="12">incipe, pascentis servabit Tityrus haedos.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Mopsus</speaker>
+                        <l n="13">Immo haec, in viridi nuper quae cortice fagi</l>
+                        <l n="14">carmina descripsi et modulans alterna notavi,</l>
+                        <l n="15">experiar, tu deinde iubeto ut certet Amyntas.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="16">Lenta salix quantum pallenti cedit olivae,</l>
+                        <l n="17">puniceis humilis quantum saliunca rosetis,</l>
+                        <l n="18">iudicio nostro tantum tibi cedit Amyntas.</l>
+                        <l n="19">sed tu desine plura, puer; successimus antro.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Mopsus</speaker>
+                        <l n="20">Extinctum nymphae crudeli funere Daphnim</l>
+                        <l n="21">flebant; vos coryli testes et flumina nymphis;</l>
+                        <l n="22">cum complexa sui corpus miserabile nati,</l>
+                        <l n="23">atque deos atque astra vocat crudelia mater.</l>
+                        <l n="24">Non ulli pastos illis egere diebus</l>
+                        <l n="25">frigida, Daphni, boves ad flumina; nulla neque amnem</l>
+                        <l n="26">libavit quadrupes, nec graminis attigit herbam.</l>
+                        <l n="27">Daphni, tuum Poenos etiam ingemuisse leones</l>
+                        <l n="28">interitum montesque feri silvaeque loquuntur.</l>
+                        <l n="29">Daphnis et Armenias curru subiungere tigres</l>
+                        <l n="30">instituit; Daphnis thiasos inducere Bacchi,</l>
+                        <l n="31">et foliis lentas intexere mollibus hastas.</l>
+                        <l n="32">Vitis ut arboribus decori est, ut vitibus uvae,</l>
+                        <l n="33">ut gregibus tauri, segetes ut pinguibus arvis,</l>
+                        <l n="34">tu decus omne tuis. Postquam te fata tulerunt,</l>
+                        <l n="35">ipsa Pales agros atque ipse reliquit Apollo.</l>
+                        <l n="36">Grandia saepe quibus mandavimus hordea sulcis,</l>
+                        <l n="37">infelix lolium et steriles nascuntur avenae;</l>
+                        <l n="38">pro molli viola, pro purpureo narcisso,</l>
+                        <l n="39">carduus et spinis surgit paliurus acutis.</l>
+                        <l n="40">Spargite humum foliis, inducite fontibus umbras,</l>
+                        <l n="41">pastores, mandat fieri sibi talia Daphnis;</l>
+                        <l n="42">et tumulum facite, et tumulo superaddite carmen:</l>
+                        <l n="43">
+                            <quote n="inscription">DAPHNIS EGO IN SILVIS HINC VSQUE AD SIDERA NOTVS</quote>
+                        </l>
+                        <l n="44">
+                            <quote n="inscription">FORMONSI PECORIS CVSTOS FORMONSIOR IPSE.</quote>
+                        </l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="45">Tale tuum carmen nobis, divine poeta,</l>
+                        <l n="46">quale sopor fessis in gramine, quale per aestum</l>
+                        <l n="47">dulcis aquae saliente sitim restinguere rivo:</l>
+                        <l n="48">nec calamis solum aequiparas, sed voce magistrum.</l>
+                        <l n="49">
+                            <del>Fortunate puer, tu nunc eris alter ab illo.</del>
+                        </l>
+                        <l n="50">Nos tamen haec quocumque modo tibi nostra vicissim</l>
+                        <l n="51">dicemus, Daphnimque tuum tollemus ad astra;</l>
+                        <l n="52">Daphnin ad astra feremus: amavit nos quoque Daphnis.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Mopsus</speaker>
+                        <l n="53">An quicquam nobis tali sit munere maius</l>
+                        <l n="54">Et puer ipse fuit cantari dignus, et ista</l>
+                        <l n="55">iam pridem Stimichon laudavit carmina nobis.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="56">Candidus insuetum miratur limen Olympi,</l>
+                        <l n="57">sub pedibusque videt nubes et sidera Daphnis.</l>
+                        <l n="58">ergo alacris silvas et cetera rura voluptas</l>
+                        <l n="59">Panaque pastoresque tenet, Dryadasque puellas;</l>
+                        <l n="60">nec lupus insidias pecori, nec retia cervis</l>
+                        <l n="61">ulla dolum meditantur: amat bonus otia Daphnis.</l>
+                        <l n="62">ipsi laetitia voces ad sidera iactant</l>
+                        <l n="63">intonsi montes; ipsae iam carmina rupes,</l>
+                        <l n="64">ipsa sonant arbusta: “Deus, deus ille, Menalca.”</l>
+                        <l n="65">Sis bonus O felixque tuis! En quattuor aras:</l>
+                        <l n="66">ecce duas tibi, Daphni, duas altaria Phoebo.</l>
+                        <l n="67">pocula bina novo spumantia lacte quotannis,</l>
+                        <l n="68">craterasque duo statuam tibi pinguis olivi,</l>
+                        <l n="69">et multo in primis hilarans convivia Baccho,—</l>
+                        <l n="70">ante focum, si frigus erit, si messis, in umbra,—</l>
+                        <l n="71">vina novum fundam calathis Ariusia nectar.</l>
+                        <l n="72">cantabunt mihi Damoetas et Lyctius Aegon;</l>
+                        <l n="73">saltantis satyros imitabitur Alphesiboeus.</l>
+                        <l n="74">Haec tibi semper erunt, et cum solemnia vota</l>
+                        <l n="75">reddemus Nymphis, et cum lustrabimus agros.</l>
+                        <l n="76">Dum iuga montis aper, fluvios dum piscis amabit,</l>
+                        <l n="77">dumque thymo pascentur apes, dum rore cicadae,</l>
+                        <l n="78">semper honos nomenque tuum laudesque manebunt;</l>
+                        <l n="79">ut Baccho Cererique, tibi sic vota quotannis</l>
+                        <l n="80">agricolae facient: damnabis tu quoque votis.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Mopsus</speaker>
+                        <l n="81">Quae tibi, quae tali reddam pro carmine dona?</l>
+                        <l n="82">Nam neque me tantum venientis sibilus austri,</l>
+                        <l n="83">nec percussa iuvant fluctu tam litora, nec quae</l>
+                        <l n="84">saxosas inter decurrunt flumina valles.</l>
+                    </sp>
+                    <sp>
+                        <speaker>Menalcas</speaker>
+                        <l n="85">Hac te nos fragili donabimus ante cicuta:</l>
+                        <l n="86">haec nos, “Formosum Corydon ardebat Alexim,”</l>
+                        <l n="87">haec eadem docuit, “Cuium pecus, an Meliboei?”</l>
+                    </sp>
+                    <sp>
+                        <speaker>Mopsus</speaker>
+                        <l n="88">At tu sume pedum, quod, me cum saepe rogaret,</l>
+                        <l n="89">non tulit Antigenes—et erat tum dignus amari—</l>
+                        <l n="90">formosum paribus nodis atque aere, Menalca.</l>
+                    </sp>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
