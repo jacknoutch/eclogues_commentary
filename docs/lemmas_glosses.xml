@@ -22,8 +22,9 @@
     </entry>
     <entry n="Aegon">
         <lemma>Aegon</lemma>
-        <gloss />
+        <gloss>Aegon (name)</gloss>
         <gen>m.</gen>
+        <pp>Aegon, Aegōnis</pp>
     </entry>
     <entry n="Aethiopes">
         <lemma>Aethiopes</lemma>
@@ -2264,7 +2265,8 @@
     </entry>
     <entry n="cuius1">
         <lemma>cuius1</lemma>
-        <gloss />
+        <gloss>of whom, whose</gloss>
+        <pp>cūius, cūia, cūium</pp>
     </entry>
     <entry n="culmen">
         <lemma>culmen</lemma>
